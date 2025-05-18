@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HYDRA Dashboard</title>
+</head>
+<body>
+    <h1>HYDRA Dashboard</h1>
+    <ul id="log-list"></ul>
+    <script>
+        fetch('/logs').then(res => res.json()).then(data => {
+            const list = document.getElementById('log-list');
+            data.forEach(log => {
+                let li = document.createElement('li');
+                li.textContent = log;
+                list.appendChild(li);
+            });
+        });
+    </script>
+</body>
+</html>
