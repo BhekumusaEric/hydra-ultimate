@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HYDRA - Advanced Security Validation Platform</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #333;
+            line-height: 1.6;
+        }
+        .header {
+            background-color: #0066cc;
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+        }
+        .main-content {
+            padding: 2rem 0;
+        }
+        .card {
+            margin-bottom: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        .card-header {
+            background-color: #f0f7ff;
+            border-bottom: none;
+            font-weight: bold;
+        }
+        .feature-icon {
+            font-size: 2.5rem;
+            color: #0066cc;
+            margin-bottom: 1rem;
+        }
+        .btn-primary {
+            background-color: #0066cc;
+            border-color: #0066cc;
+        }
+        .btn-primary:hover {
+            background-color: #0055aa;
+            border-color: #0055aa;
+        }
+        .footer {
+            background-color: #f8f9fa;
+            padding: 2rem 0;
+            text-align: center;
+        }
+        .dashboard-preview {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+        .feature-card {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        .feature-card .card-body {
+            flex: 1;
+        }
+        .mitre-tag {
+            display: inline-block;
+            background-color: #34495e;
+            color: white;
+            padding: 3px 8px;
+            border-radius: 3px;
+            font-size: 12px;
+            margin-right: 5px;
+            margin-bottom: 5px;
+        }
+        .credential-theft-card {
+            background-color: #f8f0ff;
+            border-left: 5px solid #9b59b6;
+            padding: 1rem;
+            margin-bottom: 1rem;
+        }
+        .lolbin-card {
+            background-color: #fffaf0;
+            border-left: 5px solid #f39c12;
+            padding: 1rem;
+            margin-bottom: 1rem;
+        }
+        .attack-path-card {
+            background-color: #f0f7ff;
+            border-left: 5px solid #3498db;
+            padding: 1rem;
+            margin-bottom: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <h1>HYDRA</h1>
+            <p class="lead">Advanced AI-based Security Validation Platform</p>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            <!-- Introduction -->
+            <section class="mb-5">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <h2>Next-Generation Security Validation</h2>
+                        <p>HYDRA is a groundbreaking cybersecurity platform that leverages artificial intelligence to simulate sophisticated cyber attacks and autonomous defense responses. By creating a digital twin of your network infrastructure, HYDRA enables organizations to identify vulnerabilities before real attackers do.</p>
+                        <a href="https://github.com/yourusername/hydra-ultimate" class="btn btn-primary">View on GitHub</a>
+                    </div>
+                    <div class="col-lg-6">
+                        <img src="https://via.placeholder.com/600x400?text=HYDRA+Dashboard" alt="HYDRA Dashboard" class="img-fluid dashboard-preview">
+                    </div>
+                </div>
+            </section>
+
+            <!-- Key Features -->
+            <section class="mb-5">
+                <h2 class="text-center mb-4">Key Features</h2>
+                <div class="row">
+                    <div class="col-md-4 mb-4">
+                        <div class="card feature-card">
+                            <div class="card-body text-center">
+                                <div class="feature-icon">🔴</div>
+                                <h5 class="card-title">Advanced Red Team Simulation</h5>
+                                <p class="card-text">Multi-strategy attack agents that adapt to your environment using realistic attack patterns based on real-world threat intelligence.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card feature-card">
+                            <div class="card-body text-center">
+                                <div class="feature-icon">🔵</div>
+                                <h5 class="card-title">Intelligent Blue Team Response</h5>
+                                <p class="card-text">Autonomous defense mechanisms that react to detected threats with proactive vulnerability management based on risk assessment.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card feature-card">
+                            <div class="card-body text-center">
+                                <div class="feature-icon">📊</div>
+                                <h5 class="card-title">Advanced Analytics & Visualization</h5>
+                                <p class="card-text">Real-time attack visualization with network topology mapping and comprehensive security metrics and KPIs.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Enhanced Dashboard Features -->
+            <section class="mb-5">
+                <h2 class="text-center mb-4">Enhanced Dashboard Features</h2>
+                
+                <!-- Attack Path Visualization -->
+                <div class="card mb-4">
+                    <div class="card-header">Interactive Attack Path Visualization</div>
+                    <div class="card-body">
+                        <div class="row align-items-center">
+                            <div class="col-lg-6">
+                                <p>Visualize how attackers move through your network with interactive attack path mapping. Understand the sequence of compromises and techniques used at each step.</p>
+                                <div class="attack-path-card">
+                                    <h5 style="color: #333333;">Attack Path #1 (3 steps)</h5>
+                                    <ol style="color: #333333;">
+                                        <li style="color: #333333;">Node 0 → Node 3 using exploit_vulnerability (2025-05-20 16:53:30)</li>
+                                        <li style="color: #333333;">Node 3 → Node 5 using lateral_movement (2025-05-20 16:53:35)</li>
+                                        <li style="color: #333333;">Node 5 → Node 8 using privilege_escalation (2025-05-20 16:53:40)</li>
+                                    </ol>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <img src="https://via.placeholder.com/500x300?text=Attack+Path+Visualization" alt="Attack Path Visualization" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Credential Theft Visualization -->
+                <div class="card mb-4">
+                    <div class="card-header">Credential Theft Visualization</div>
+                    <div class="card-body">
+                        <div class="row align-items-center">
+                            <div class="col-lg-6">
+                                <img src="https://via.placeholder.com/500x300?text=Credential+Theft+Visualization" alt="Credential Theft Visualization" class="img-fluid">
+                            </div>
+                            <div class="col-lg-6">
+                                <p>Track and analyze credential theft attempts across your network. Identify which techniques were used, whether they were successful, and if they were detected.</p>
+                                <div class="credential-theft-card">
+                                    <h5 style="color: #333333;">Credential Theft on Node 5</h5>
+                                    <p style="color: #333333;"><strong style="color: #333333;">Technique:</strong> mimikatz</p>
+                                    <p style="color: #333333;"><strong style="color: #333333;">Status:</strong> Successful (Undetected)</p>
+                                    <p style="color: #333333;"><strong style="color: #333333;">Timestamp:</strong> 2025-05-20 16:53:42</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Living-Off-The-Land Techniques -->
+                <div class="card mb-4">
+                    <div class="card-header">Living-Off-The-Land Techniques</div>
+                    <div class="card-body">
+                        <div class="row align-items-center">
+                            <div class="col-lg-6">
+                                <p>Visualize how attackers use legitimate system tools for malicious purposes. Understand which living-off-the-land techniques were used and their impact.</p>
+                                <div class="lolbin-card">
+                                    <h5 style="color: #333333;">LOLBin Technique on Node 8</h5>
+                                    <p style="color: #333333;"><strong style="color: #333333;">Technique:</strong> powershell_execution</p>
+                                    <p style="color: #333333;"><strong style="color: #333333;">Purpose:</strong> data_collection</p>
+                                    <p style="color: #333333;"><strong style="color: #333333;">Status:</strong> Successful (Undetected)</p>
+                                    <p style="color: #333333;"><strong style="color: #333333;">Timestamp:</strong> 2025-05-20 16:53:45</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <img src="https://via.placeholder.com/500x300?text=LOLBin+Techniques" alt="Living-Off-The-Land Techniques" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- MITRE ATT&CK Mapping -->
+                <div class="card">
+                    <div class="card-header">MITRE ATT&CK Framework Mapping</div>
+                    <div class="card-body">
+                        <div class="row align-items-center">
+                            <div class="col-lg-6">
+                                <img src="https://via.placeholder.com/500x300?text=MITRE+ATT%26CK+Mapping" alt="MITRE ATT&CK Mapping" class="img-fluid">
+                            </div>
+                            <div class="col-lg-6">
+                                <p>Map all attack techniques to the MITRE ATT&CK framework for better analysis and reporting. Understand which tactics and techniques were used in the simulation.</p>
+                                <div>
+                                    <h5>Initial Access</h5>
+                                    <span class="mitre-tag">T1190</span> Exploit Public-Facing Application<br>
+                                    <span class="mitre-tag">T1133</span> External Remote Services<br>
+                                    <h5 class="mt-3">Execution</h5>
+                                    <span class="mitre-tag">T1059</span> Command and Scripting Interpreter<br>
+                                    <span class="mitre-tag">T1053</span> Scheduled Task/Job<br>
+                                    <h5 class="mt-3">Credential Access</h5>
+                                    <span class="mitre-tag">T1110</span> Brute Force<br>
+                                    <span class="mitre-tag">T1003</span> OS Credential Dumping<br>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>© 2025 HYDRA Security Platform. All rights reserved.</p>
+            <p>
+                <a href="https://github.com/yourusername/hydra-ultimate" class="text-decoration-none">GitHub</a> |
+                <a href="#" class="text-decoration-none">Documentation</a> |
+                <a href="#" class="text-decoration-none">Contact</a>
+            </p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

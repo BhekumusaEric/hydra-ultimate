@@ -1,0 +1,6 @@
+theme: jekyll-theme-cayman
+title: HYDRA - Advanced Security Validation Platform
+description: AI-based Red-Blue simulation platform for automated penetration testing and self-defense
+show_downloads: true
+github:
+  repository_url: https://github.com/yourusername/hydra-ultimate
