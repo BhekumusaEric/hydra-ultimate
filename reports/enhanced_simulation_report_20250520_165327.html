@@ -1,0 +1,184 @@
+
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <title>HYDRA Enhanced Simulation Report</title>
+        <style>
+            body { font-family: Arial, sans-serif; margin: 40px; }
+            h1, h2, h3, h4 { color: #2c3e50; }
+            .summary { background-color: #f8f9fa; padding: 20px; border-radius: 5px; }
+            .metrics { display: flex; flex-wrap: wrap; }
+            .metric-card { background-color: #ffffff; border: 1px solid #e0e0e0;
+                          border-radius: 5px; padding: 15px; margin: 10px; width: 200px; }
+            .metric-value { font-size: 24px; font-weight: bold; color: #3498db; }
+            .attack { background-color: #fff8f8; border-left: 4px solid #e74c3c;
+                     padding: 10px; margin: 10px 0; }
+            .defense { background-color: #f8fff8; border-left: 4px solid #2ecc71;
+                      padding: 10px; margin: 10px 0; }
+            .success { color: #2ecc71; }
+            .failure { color: #e74c3c; }
+            .attack-path { background-color: #f9f9f9; border: 1px solid #ddd; padding: 15px; margin: 15px 0; border-radius: 5px; }
+            .attack-path-step { margin: 5px 0; padding: 5px; border-bottom: 1px dashed #ddd; }
+            .technique-card { background-color: #f0f7ff; border-left: 4px solid #3498db; padding: 10px; margin: 10px 0; }
+            .mitre-tag { display: inline-block; background-color: #34495e; color: white; padding: 3px 8px; border-radius: 3px; font-size: 12px; margin-right: 5px; }
+            .credential-theft { background-color: #fff0f7; border-left: 4px solid #9b59b6; padding: 10px; margin: 10px 0; }
+            .lolbin { background-color: #fffaf0; border-left: 4px solid #f39c12; padding: 10px; margin: 10px 0; }
+            table { border-collapse: collapse; width: 100%; margin: 15px 0; }
+            th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+            th { background-color: #f2f2f2; }
+            tr:nth-child(even) { background-color: #f9f9f9; }
+        </style>
+    </head>
+    <body>
+        <h1>HYDRA Enhanced Simulation Report</h1>
+        <p>Simulation conducted on 2025-05-20 16:53:28</p>
+
+        <div class="summary">
+            <h2>Executive Summary</h2>
+            <p>This report presents the findings from an enhanced simulation conducted using HYDRA with real-world attack patterns.</p>
+            <p>The simulation tested your network against advanced attack techniques including credential theft, privilege escalation, and living-off-the-land techniques.</p>
+
+            <div class="metrics">
+                <div class="metric-card">
+                    <h3>Simulation Time</h3>
+                    <div class="metric-value">0.90s</div>
+                </div>
+                <div class="metric-card">
+                    <h3>Compromised Nodes</h3>
+                    <div class="metric-value">2</div>
+                </div>
+                <div class="metric-card">
+                    <h3>Patched Nodes</h3>
+                    <div class="metric-value">5</div>
+                </div>
+                <div class="metric-card">
+                    <h3>Red Success Rate</h3>
+                    <div class="metric-value">35.0%</div>
+                </div>
+                <div class="metric-card">
+                    <h3>Blue Success Rate</h3>
+                    <div class="metric-value">100.0%</div>
+                </div>
+                <div class="metric-card">
+                    <h3>Campaign Goal</h3>
+                    <div class="metric-value">data_theft</div>
+                </div>
+                <div class="metric-card">
+                    <h3>Campaign Progress</h3>
+                    <div class="metric-value">71.0%</div>
+                </div>
+            </div>
+        </div>
+
+        <h2>Simulation Configuration</h2>
+        <pre>{
+  "network_size": "medium",
+  "network_complexity": "high",
+  "num_steps": 20,
+  "red_skill_level": 0.9,
+  "threat_intel_file": "data/threat_intelligence.json",
+  "model_path": null
+}</pre>
+
+        <h2>Key Findings</h2>
+        <p>The simulation revealed several important insights about your network's security posture:</p>
+        <ul>
+            <li>The Red Agent was able to compromise 2 nodes.</li>
+            <li>The Blue Agent successfully patched 5 nodes.</li>
+            <li>The Red Agent's campaign goal was <strong>data_theft</strong> and achieved 71.0% progress.</li>
+            <li>The Red Agent collected data from 2 sources.</li>
+            <li>The Red Agent performed 1 lateral movements.</li>
+            <li>The simulation identified 1 distinct attack paths.</li>
+            <li>The Red Agent attempted 1 credential theft operations.</li>
+            <li>The Red Agent used 0 living-off-the-land techniques.</li>
+        </ul>
+
+        <h2>MITRE ATT&CK Techniques Used</h2>
+        <p>The simulation utilized techniques mapped to the MITRE ATT&CK framework:</p>
+        <div class="technique-card">
+            <h3>Initial Access</h3>
+            <span class="mitre-tag">T1190</span> Exploit Public-Facing Application<br>
+            <span class="mitre-tag">T1133</span> External Remote Services<br>
+            <span class="mitre-tag">T1078</span> Valid Accounts
+        </div>
+
+        <div class="technique-card">
+            <h3>Execution</h3>
+            <span class="mitre-tag">T1059</span> Command and Scripting Interpreter<br>
+            <span class="mitre-tag">T1053</span> Scheduled Task/Job<br>
+            <span class="mitre-tag">T1569</span> System Services
+        </div>
+
+        <div class="technique-card">
+            <h3>Persistence</h3>
+            <span class="mitre-tag">T1547</span> Boot or Logon Autostart Execution<br>
+            <span class="mitre-tag">T1136</span> Create Account<br>
+            <span class="mitre-tag">T1053</span> Scheduled Task/Job<br>
+            <span class="mitre-tag">T1505</span> Server Software Component
+        </div>
+
+        <div class="technique-card">
+            <h3>Privilege Escalation</h3>
+            <span class="mitre-tag">T1548</span> Abuse Elevation Control Mechanism<br>
+            <span class="mitre-tag">T1134</span> Access Token Manipulation<br>
+            <span class="mitre-tag">T1068</span> Exploitation for Privilege Escalation
+        </div>
+
+        <div class="technique-card">
+            <h3>Credential Access</h3>
+            <span class="mitre-tag">T1110</span> Brute Force<br>
+            <span class="mitre-tag">T1555</span> Credentials from Password Stores<br>
+            <span class="mitre-tag">T1003</span> OS Credential Dumping<br>
+            <span class="mitre-tag">T1558</span> Steal or Forge Kerberos Tickets
+        </div>
+    
+        <h2>Attack Paths</h2>
+        <p>The following attack paths were identified during the simulation:</p>
+        
+            <div class="attack-path">
+                <h3>Attack Path #1 (1 steps)</h3>
+                <ol>
+            
+                    <li class="attack-path-step">
+                        Node 0 → Node 2 using sql_injection (2025-05-20 16:53:27)
+                    </li>
+                
+                </ol>
+            </div>
+            
+        <h2>Credential Theft Techniques</h2>
+        <p>The following credential theft techniques were attempted during the simulation:</p>
+        <table>
+            <tr>
+                <th>Target Node</th>
+                <th>Technique</th>
+                <th>Success</th>
+                <th>Detected</th>
+                <th>Timestamp</th>
+            </tr>
+        
+            <tr>
+                <td>Node 15</td>
+                <td>default_credentials</td>
+                <td class="failure">False</td>
+                <td class="success">False</td>
+                <td>2025-05-20 16:53:27</td>
+            </tr>
+            
+        </table>
+        
+        <h2>Recommendations</h2>
+        <p>Based on the simulation results, consider the following recommendations:</p>
+        <ol>
+            <li>Improve detection capabilities for credential theft techniques, particularly memory dumping and token manipulation.</li>
+            <li>Enhance network segmentation to limit lateral movement between critical systems.</li>
+            <li>Implement stronger access controls and privileged access management for critical systems.</li>
+            <li>Regularly patch vulnerabilities to reduce the attack surface.</li>
+            <li>Deploy additional monitoring for living-off-the-land techniques that abuse legitimate system tools.</li>
+            <li>Implement application whitelisting to prevent execution of unauthorized scripts and binaries.</li>
+            <li>Use multi-factor authentication to mitigate the impact of credential theft.</li>
+            <li>Deploy endpoint detection and response (EDR) solutions to detect and respond to advanced attacks.</li>
+        </ol>
+    </body>
+    </html>
+    

@@ -1,0 +1,336 @@
+[
+  [
+    {
+      "step": 9,
+      "action": "default_credentials",
+      "target": 0,
+      "target_type": "firewall"
+    },
+    {
+      "step": 10,
+      "action": "default_credentials",
+      "target": 47,
+      "target_type": "scada_controller"
+    }
+  ],
+  [
+    {
+      "step": 25,
+      "action": "unpatched_cve",
+      "target": 6,
+      "target_type": "server"
+    }
+  ],
+  [
+    {
+      "step": 31,
+      "action": "privilege_escalation",
+      "target": 2,
+      "target_type": "router"
+    }
+  ],
+  [
+    {
+      "step": 39,
+      "action": "unpatched_cve",
+      "target": 45,
+      "target_type": "database"
+    }
+  ],
+  [
+    {
+      "step": 45,
+      "action": "privilege_escalation",
+      "target": 28,
+      "target_type": "workstation"
+    },
+    {
+      "step": 46,
+      "action": "unpatched_cve",
+      "target": 45,
+      "target_type": "database"
+    },
+    {
+      "step": 47,
+      "action": "privilege_escalation",
+      "target": 2,
+      "target_type": "router"
+    },
+    {
+      "step": 48,
+      "action": "unpatched_cve",
+      "target": 45,
+      "target_type": "database"
+    },
+    {
+      "step": 49,
+      "action": "privilege_escalation",
+      "target": 28,
+      "target_type": "workstation"
+    },
+    {
+      "step": 50,
+      "action": "unpatched_cve",
+      "target": 45,
+      "target_type": "database"
+    },
+    {
+      "step": 51,
+      "action": "privilege_escalation",
+      "target": 28,
+      "target_type": "workstation"
+    }
+  ],
+  [
+    {
+      "step": 53,
+      "action": "unpatched_cve",
+      "target": 45,
+      "target_type": "database"
+    },
+    {
+      "step": 54,
+      "action": "privilege_escalation",
+      "target": 28,
+      "target_type": "workstation"
+    },
+    {
+      "step": 55,
+      "action": "unpatched_cve",
+      "target": 45,
+      "target_type": "database"
+    }
+  ],
+  [
+    {
+      "step": 59,
+      "action": "privilege_escalation",
+      "target": 28,
+      "target_type": "workstation"
+    }
+  ],
+  [
+    {
+      "step": 62,
+      "action": "unpatched_cve",
+      "target": 45,
+      "target_type": "database"
+    },
+    {
+      "step": 63,
+      "action": "privilege_escalation",
+      "target": 28,
+      "target_type": "workstation"
+    },
+    {
+      "step": 64,
+      "action": "unpatched_cve",
+      "target": 45,
+      "target_type": "database"
+    }
+  ],
+  [
+    {
+      "step": 68,
+      "action": "privilege_escalation",
+      "target": 28,
+      "target_type": "workstation"
+    },
+    {
+      "step": 69,
+      "action": "unpatched_cve",
+      "target": 45,
+      "target_type": "database"
+    },
+    {
+      "step": 70,
+      "action": "privilege_escalation",
+      "target": 28,
+      "target_type": "workstation"
+    },
+    {
+      "step": 71,
+      "action": "unpatched_cve",
+      "target": 45,
+      "target_type": "database"
+    },
+    {
+      "step": 72,
+      "action": "privilege_escalation",
+      "target": 28,
+      "target_type": "workstation"
+    }
+  ],
+  [
+    {
+      "step": 74,
+      "action": "unpatched_cve",
+      "target": 45,
+      "target_type": "database"
+    },
+    {
+      "step": 75,
+      "action": "privilege_escalation",
+      "target": 28,
+      "target_type": "workstation"
+    },
+    {
+      "step": 76,
+      "action": "unpatched_cve",
+      "target": 45,
+      "target_type": "database"
+    },
+    {
+      "step": 77,
+      "action": "privilege_escalation",
+      "target": 28,
+      "target_type": "workstation"
+    },
+    {
+      "step": 78,
+      "action": "unpatched_cve",
+      "target": 45,
+      "target_type": "database"
+    },
+    {
+      "step": 79,
+      "action": "privilege_escalation",
+      "target": 28,
+      "target_type": "workstation"
+    }
+  ],
+  [
+    {
+      "step": 81,
+      "action": "unpatched_cve",
+      "target": 45,
+      "target_type": "database"
+    },
+    {
+      "step": 82,
+      "action": "privilege_escalation",
+      "target": 28,
+      "target_type": "workstation"
+    },
+    {
+      "step": 83,
+      "action": "unpatched_cve",
+      "target": 45,
+      "target_type": "database"
+    }
+  ],
+  [
+    {
+      "step": 120,
+      "action": "privilege_escalation",
+      "target": 28,
+      "target_type": "workstation"
+    },
+    {
+      "step": 121,
+      "action": "unpatched_cve",
+      "target": 45,
+      "target_type": "database"
+    },
+    {
+      "step": 122,
+      "action": "privilege_escalation",
+      "target": 28,
+      "target_type": "workstation"
+    },
+    {
+      "step": 123,
+      "action": "unpatched_cve",
+      "target": 45,
+      "target_type": "database"
+    },
+    {
+      "step": 124,
+      "action": "privilege_escalation",
+      "target": 28,
+      "target_type": "workstation"
+    },
+    {
+      "step": 125,
+      "action": "unpatched_cve",
+      "target": 45,
+      "target_type": "database"
+    }
+  ],
+  [
+    {
+      "step": 127,
+      "action": "privilege_escalation",
+      "target": 28,
+      "target_type": "workstation"
+    },
+    {
+      "step": 128,
+      "action": "unpatched_cve",
+      "target": 45,
+      "target_type": "database"
+    },
+    {
+      "step": 129,
+      "action": "privilege_escalation",
+      "target": 28,
+      "target_type": "workstation"
+    },
+    {
+      "step": 130,
+      "action": "unpatched_cve",
+      "target": 45,
+      "target_type": "database"
+    },
+    {
+      "step": 131,
+      "action": "privilege_escalation",
+      "target": 28,
+      "target_type": "workstation"
+    },
+    {
+      "step": 132,
+      "action": "unpatched_cve",
+      "target": 45,
+      "target_type": "database"
+    },
+    {
+      "step": 133,
+      "action": "privilege_escalation",
+      "target": 28,
+      "target_type": "workstation"
+    },
+    {
+      "step": 134,
+      "action": "unpatched_cve",
+      "target": 45,
+      "target_type": "database"
+    },
+    {
+      "step": 135,
+      "action": "privilege_escalation",
+      "target": 28,
+      "target_type": "workstation"
+    }
+  ],
+  [
+    {
+      "step": 138,
+      "action": "unpatched_cve",
+      "target": 45,
+      "target_type": "database"
+    },
+    {
+      "step": 139,
+      "action": "privilege_escalation",
+      "target": 28,
+      "target_type": "workstation"
+    },
+    {
+      "step": 140,
+      "action": "unpatched_cve",
+      "target": 45,
+      "target_type": "database"
+    }
+  ]
+]

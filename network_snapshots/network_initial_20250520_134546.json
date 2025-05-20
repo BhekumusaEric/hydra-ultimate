@@ -1,0 +1,490 @@
+{
+  "graph": {
+    "directed": true,
+    "multigraph": false,
+    "graph": {},
+    "nodes": [
+      {
+        "type": "firewall",
+        "vulnerabilities": [
+          {
+            "type": "cross_site_scripting",
+            "severity": 5.230195670269055,
+            "exploitability": 0.5909702688942737,
+            "patched": false
+          },
+          {
+            "type": "unpatched_cve",
+            "severity": 5.8320179335083235,
+            "exploitability": 0.41130860616991893,
+            "patched": false
+          }
+        ],
+        "services": [],
+        "os": {
+          "type": "Linux",
+          "version": "RHEL 8",
+          "patch_level": "High",
+          "installed_patches": []
+        },
+        "patch_level": 0.8244421858808215,
+        "security_controls": [
+          "Antivirus",
+          "Host Firewall",
+          "Packet Inspection"
+        ],
+        "id": 0
+      },
+      {
+        "type": "router",
+        "vulnerabilities": [
+          {
+            "type": "misconfiguration",
+            "severity": 2.783150727382974,
+            "exploitability": 0.9233613528361504,
+            "patched": false
+          }
+        ],
+        "services": [],
+        "os": {
+          "type": "Linux",
+          "version": "Ubuntu 20.04",
+          "patch_level": "Low",
+          "installed_patches": []
+        },
+        "patch_level": 0.7815591801780729,
+        "security_controls": [
+          "Antivirus",
+          "Host Firewall",
+          "EDR"
+        ],
+        "id": 1
+      },
+      {
+        "type": "server",
+        "vulnerabilities": [
+          {
+            "type": "misconfiguration",
+            "severity": 8.258269408532751,
+            "exploitability": 0.20686942712818362,
+            "patched": false
+          }
+        ],
+        "services": [
+          {
+            "name": "FTP",
+            "version": "3.7.7",
+            "port": 21,
+            "exposed": true
+          },
+          {
+            "name": "SMTP",
+            "version": "2.5.14",
+            "port": 25,
+            "exposed": true
+          },
+          {
+            "name": "DNS",
+            "version": "3.9.3",
+            "port": 53,
+            "exposed": true
+          },
+          {
+            "name": "LDAP",
+            "version": "1.2.15",
+            "port": 389,
+            "exposed": true
+          }
+        ],
+        "os": {
+          "type": "Linux",
+          "version": "RHEL 8",
+          "patch_level": "Latest",
+          "installed_patches": []
+        },
+        "patch_level": 0.834178239645772,
+        "security_controls": [
+          "Antivirus",
+          "File Integrity Monitoring"
+        ],
+        "id": 2
+      },
+      {
+        "type": "database",
+        "vulnerabilities": [
+          {
+            "type": "sql_injection",
+            "severity": 1.3769935671336762,
+            "exploitability": 0.3977457112643623,
+            "patched": false
+          },
+          {
+            "type": "privilege_escalation",
+            "severity": 9.587836289102233,
+            "exploitability": 0.6783663661523279,
+            "patched": false
+          }
+        ],
+        "services": [
+          {
+            "name": "PostgreSQL",
+            "version": "10.9",
+            "port": 5432,
+            "exposed": true
+          }
+        ],
+        "os": {
+          "type": "Linux",
+          "version": "Debian 11",
+          "patch_level": "Low",
+          "installed_patches": []
+        },
+        "patch_level": 0.9511106691373639,
+        "security_controls": [
+          "Antivirus",
+          "EDR"
+        ],
+        "id": 3
+      },
+      {
+        "type": "cloud_instance",
+        "vulnerabilities": [
+          {
+            "type": "cross_site_scripting",
+            "severity": 4.341227650661706,
+            "exploitability": 0.20709933672231734,
+            "patched": false
+          },
+          {
+            "type": "unpatched_cve",
+            "severity": 4.333141114651548,
+            "exploitability": 0.6928248551910127,
+            "patched": false
+          }
+        ],
+        "services": [],
+        "os": {
+          "type": "macOS",
+          "version": "Ventura",
+          "patch_level": "Low",
+          "installed_patches": []
+        },
+        "patch_level": 0.5904010341160162,
+        "security_controls": [
+          "Antivirus",
+          "Host Firewall",
+          "EDR"
+        ],
+        "id": 4
+      },
+      {
+        "type": "workstation",
+        "vulnerabilities": [
+          {
+            "type": "sql_injection",
+            "severity": 5.405224735546247,
+            "exploitability": 0.8479900771280295,
+            "patched": false
+          },
+          {
+            "type": "privilege_escalation",
+            "severity": 3.5100073619569647,
+            "exploitability": 0.6954020313688019,
+            "patched": false
+          }
+        ],
+        "services": [],
+        "os": {
+          "type": "Windows",
+          "version": "Server 2019",
+          "patch_level": "Low",
+          "installed_patches": [
+            "KB5004945",
+            "KB5005033"
+          ]
+        },
+        "patch_level": 0.5432677726228922,
+        "security_controls": [
+          "Antivirus",
+          "Host Firewall"
+        ],
+        "id": 5
+      },
+      {
+        "type": "workstation",
+        "vulnerabilities": [
+          {
+            "type": "buffer_overflow",
+            "severity": 2.1901854263027896,
+            "exploitability": 0.6818814527363327,
+            "patched": false
+          }
+        ],
+        "services": [],
+        "os": {
+          "type": "Windows",
+          "version": "Server 2019",
+          "patch_level": "Latest",
+          "installed_patches": [
+            "KB5003173",
+            "KB5004945"
+          ]
+        },
+        "patch_level": 0.8334892360355683,
+        "security_controls": [
+          "Host Firewall",
+          "EDR"
+        ],
+        "id": 6
+      },
+      {
+        "type": "workstation",
+        "vulnerabilities": [
+          {
+            "type": "cross_site_scripting",
+            "severity": 3.190450201922374,
+            "exploitability": 0.8922420432849183,
+            "patched": false
+          },
+          {
+            "type": "default_credentials",
+            "severity": 5.273659275578256,
+            "exploitability": 0.6658029497974753,
+            "patched": false
+          },
+          {
+            "type": "misconfiguration",
+            "severity": 6.086169050651672,
+            "exploitability": 0.8182786967338362,
+            "patched": false
+          }
+        ],
+        "services": [],
+        "os": {
+          "type": "macOS",
+          "version": "Sonoma",
+          "patch_level": "High",
+          "installed_patches": []
+        },
+        "patch_level": 0.8242372244535716,
+        "security_controls": [
+          "Antivirus"
+        ],
+        "id": 7
+      },
+      {
+        "type": "workstation",
+        "vulnerabilities": [
+          {
+            "type": "sql_injection",
+            "severity": 7.621817525808988,
+            "exploitability": 0.8346301778108508,
+            "patched": false
+          }
+        ],
+        "services": [
+          {
+            "name": "FTP",
+            "version": "3.1",
+            "port": 21,
+            "exposed": true
+          }
+        ],
+        "os": {
+          "type": "Linux",
+          "version": "Debian 11",
+          "patch_level": "Medium",
+          "installed_patches": []
+        },
+        "patch_level": 0.9284754792112123,
+        "security_controls": [
+          "Antivirus"
+        ],
+        "id": 8
+      },
+      {
+        "type": "workstation",
+        "vulnerabilities": [
+          {
+            "type": "sql_injection",
+            "severity": 6.27203446432144,
+            "exploitability": 0.9752370133100593,
+            "patched": false
+          },
+          {
+            "type": "privilege_escalation",
+            "severity": 9.603350110884454,
+            "exploitability": 0.8893789149882515,
+            "patched": false
+          },
+          {
+            "type": "misconfiguration",
+            "severity": 7.598376640116128,
+            "exploitability": 0.4932990078920294,
+            "patched": false
+          }
+        ],
+        "services": [],
+        "os": {
+          "type": "Linux",
+          "version": "Debian 11",
+          "patch_level": "Latest",
+          "installed_patches": []
+        },
+        "patch_level": 0.8068215013158789,
+        "security_controls": [],
+        "id": 9
+      },
+      {
+        "type": "workstation",
+        "vulnerabilities": [
+          {
+            "type": "cross_site_scripting",
+            "severity": 8.248588442556773,
+            "exploitability": 0.8270122892818187,
+            "patched": false
+          },
+          {
+            "type": "default_credentials",
+            "severity": 4.582614652573028,
+            "exploitability": 0.5714429607119054,
+            "patched": false
+          }
+        ],
+        "services": [],
+        "os": {
+          "type": "Windows",
+          "version": "Server 2019",
+          "patch_level": "High",
+          "installed_patches": [
+            "KB5004945"
+          ]
+        },
+        "patch_level": 0.576966845934673,
+        "security_controls": [
+          "EDR"
+        ],
+        "id": 10
+      },
+      {
+        "type": "workstation",
+        "vulnerabilities": [
+          {
+            "type": "unpatched_cve",
+            "severity": 6.430400924789277,
+            "exploitability": 0.9593879048315442,
+            "patched": false
+          }
+        ],
+        "services": [],
+        "os": {
+          "type": "macOS",
+          "version": "Monterey",
+          "patch_level": "Latest",
+          "installed_patches": []
+        },
+        "patch_level": 0.6411326837174093,
+        "security_controls": [
+          "Antivirus"
+        ],
+        "id": 11
+      }
+    ],
+    "links": [
+      {
+        "weight": 1.0,
+        "source": 0,
+        "target": 1
+      },
+      {
+        "weight": 0.7703464379046597,
+        "source": 0,
+        "target": 4
+      },
+      {
+        "weight": 0.9556233980392393,
+        "source": 1,
+        "target": 2
+      },
+      {
+        "weight": 0.6064348028920847,
+        "source": 1,
+        "target": 5
+      },
+      {
+        "weight": 0.6591728234816223,
+        "source": 1,
+        "target": 7
+      },
+      {
+        "weight": 0.6310812046533671,
+        "source": 1,
+        "target": 8
+      },
+      {
+        "weight": 0.9695545954582483,
+        "source": 1,
+        "target": 9
+      },
+      {
+        "weight": 0.998678469945,
+        "source": 1,
+        "target": 10
+      },
+      {
+        "weight": 0.557004571726111,
+        "source": 1,
+        "target": 11
+      },
+      {
+        "weight": 0.9694727036139648,
+        "source": 2,
+        "target": 1
+      },
+      {
+        "weight": 0.8094269995401864,
+        "source": 4,
+        "target": 0
+      },
+      {
+        "weight": 0.6831361028030947,
+        "source": 5,
+        "target": 1
+      },
+      {
+        "weight": 0.7743859695145424,
+        "source": 7,
+        "target": 1
+      },
+      {
+        "weight": 0.6369408762627065,
+        "source": 8,
+        "target": 1
+      },
+      {
+        "weight": 0.5270937534361733,
+        "source": 9,
+        "target": 1
+      },
+      {
+        "weight": 0.5344461999752363,
+        "source": 10,
+        "target": 1
+      },
+      {
+        "weight": 0.9632638224305254,
+        "source": 11,
+        "target": 1
+      }
+    ]
+  },
+  "compromised_nodes": [],
+  "patched_nodes": [],
+  "logs": [
+    "Enterprise network created with 12 nodes and 17 connections"
+  ],
+  "alerts": [],
+  "entry_points": [
+    0
+  ]
+}

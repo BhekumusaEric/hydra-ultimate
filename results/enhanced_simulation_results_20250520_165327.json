@@ -1,0 +1,1651 @@
+{
+  "config": {
+    "network_size": "medium",
+    "network_complexity": "high",
+    "num_steps": 20,
+    "red_skill_level": 0.9,
+    "threat_intel_file": "data/threat_intelligence.json",
+    "model_path": null
+  },
+  "steps": [
+    {
+      "step": 1,
+      "red_action": {
+        "strategy": "Planned",
+        "target": 0,
+        "attack_type": "unpatched_cve",
+        "success": false,
+        "detected": false,
+        "zero_day": false,
+        "evasion": false,
+        "info": "No unpatched_cve vulnerability found",
+        "timestamp": "2025-05-20 16:53:27"
+      },
+      "blue_actions": [],
+      "compromised_nodes": [],
+      "patched_nodes": [],
+      "alerts": [],
+      "campaign_status": {
+        "goal": "data_theft",
+        "progress": 0.0,
+        "compromised_nodes": 0,
+        "data_collected": 0,
+        "lateral_movements": 0
+      }
+    },
+    {
+      "step": 2,
+      "red_action": {
+        "strategy": "APT29",
+        "target": 0,
+        "attack_type": "privilege_escalation",
+        "success": false,
+        "detected": false,
+        "zero_day": false,
+        "evasion": true,
+        "info": "Attack failed",
+        "timestamp": "2025-05-20 16:53:27"
+      },
+      "blue_actions": [
+        {
+          "action": "investigate",
+          "node_id": 28,
+          "found_compromise": false,
+          "success": true
+        }
+      ],
+      "compromised_nodes": [],
+      "patched_nodes": [],
+      "alerts": [],
+      "campaign_status": {
+        "goal": "data_theft",
+        "progress": 0.0,
+        "compromised_nodes": 0,
+        "data_collected": 0,
+        "lateral_movements": 0
+      }
+    },
+    {
+      "step": 3,
+      "red_action": {
+        "strategy": "Planned",
+        "target": 0,
+        "attack_type": "unpatched_cve",
+        "success": false,
+        "detected": false,
+        "zero_day": false,
+        "evasion": true,
+        "info": "No unpatched_cve vulnerability found",
+        "timestamp": "2025-05-20 16:53:27"
+      },
+      "blue_actions": [
+        {
+          "action": "investigate",
+          "node_id": 28,
+          "found_compromise": false,
+          "success": true
+        },
+        {
+          "action": "investigate",
+          "node_id": 34,
+          "found_compromise": false,
+          "success": true
+        }
+      ],
+      "compromised_nodes": [],
+      "patched_nodes": [],
+      "alerts": [],
+      "campaign_status": {
+        "goal": "data_theft",
+        "progress": 0.0,
+        "compromised_nodes": 0,
+        "data_collected": 0,
+        "lateral_movements": 0
+      }
+    },
+    {
+      "step": 4,
+      "red_action": {
+        "strategy": "APT29",
+        "target": 0,
+        "attack_type": "privilege_escalation",
+        "success": true,
+        "detected": false,
+        "zero_day": false,
+        "evasion": false,
+        "info": "Attack successful",
+        "timestamp": "2025-05-20 16:53:27"
+      },
+      "blue_actions": [
+        {
+          "action": "investigate",
+          "node_id": 28,
+          "found_compromise": false,
+          "success": true
+        },
+        {
+          "action": "investigate",
+          "node_id": 41,
+          "found_compromise": false,
+          "success": true
+        },
+        {
+          "action": "investigate",
+          "node_id": 34,
+          "found_compromise": false,
+          "success": true
+        },
+        {
+          "action": "investigate",
+          "node_id": 5,
+          "found_compromise": false,
+          "success": true
+        },
+        {
+          "action": "investigate",
+          "node_id": 35,
+          "found_compromise": false,
+          "success": true
+        }
+      ],
+      "compromised_nodes": [
+        0
+      ],
+      "patched_nodes": [],
+      "alerts": [
+        {
+          "type": "compromise",
+          "node_id": 0,
+          "attack_type": "privilege_escalation",
+          "timestamp": "now"
+        },
+        {
+          "type": "credential_theft",
+          "node_id": 0,
+          "technique": "browser_credential_theft",
+          "timestamp": "2025-05-20 16:53:27"
+        }
+      ],
+      "campaign_status": {
+        "goal": "data_theft",
+        "progress": 0.1,
+        "compromised_nodes": 1,
+        "data_collected": 1,
+        "lateral_movements": 0
+      }
+    },
+    {
+      "step": 5,
+      "red_action": {
+        "strategy": "Planned",
+        "target": 0,
+        "attack_type": "unpatched_cve",
+        "success": true,
+        "detected": false,
+        "zero_day": false,
+        "evasion": false,
+        "info": "Node already compromised",
+        "timestamp": "2025-05-20 16:53:27"
+      },
+      "blue_actions": [
+        {
+          "action": "investigate",
+          "node_id": 28,
+          "found_compromise": false,
+          "success": true
+        },
+        {
+          "action": "investigate",
+          "node_id": 41,
+          "found_compromise": false,
+          "success": true
+        },
+        {
+          "action": "investigate",
+          "node_id": 34,
+          "found_compromise": false,
+          "success": true
+        },
+        {
+          "action": "investigate",
+          "node_id": 5,
+          "found_compromise": false,
+          "success": true
+        },
+        {
+          "action": "investigate",
+          "node_id": 35,
+          "found_compromise": false,
+          "success": true
+        }
+      ],
+      "compromised_nodes": [
+        0
+      ],
+      "patched_nodes": [],
+      "alerts": [
+        {
+          "type": "compromise",
+          "node_id": 0,
+          "attack_type": "privilege_escalation",
+          "timestamp": "now"
+        },
+        {
+          "type": "credential_theft",
+          "node_id": 0,
+          "technique": "browser_credential_theft",
+          "timestamp": "2025-05-20 16:53:27"
+        },
+        {
+          "type": "credential_theft",
+          "node_id": 0,
+          "technique": "browser_credential_theft",
+          "timestamp": "2025-05-20 16:53:27"
+        }
+      ],
+      "campaign_status": {
+        "goal": "data_theft",
+        "progress": 0.2,
+        "compromised_nodes": 1,
+        "data_collected": 1,
+        "lateral_movements": 0
+      }
+    },
+    {
+      "step": 6,
+      "red_action": {
+        "strategy": "APT29",
+        "target": 2,
+        "attack_type": "sql_injection",
+        "success": false,
+        "detected": false,
+        "zero_day": false,
+        "evasion": false,
+        "info": "Attack failed",
+        "timestamp": "2025-05-20 16:53:27"
+      },
+      "blue_actions": [
+        {
+          "action": "investigate",
+          "node_id": 28,
+          "found_compromise": false,
+          "success": true
+        },
+        {
+          "action": "investigate",
+          "node_id": 41,
+          "found_compromise": false,
+          "success": true
+        },
+        {
+          "action": "investigate",
+          "node_id": 34,
+          "found_compromise": false,
+          "success": true
+        },
+        {
+          "action": "investigate",
+          "node_id": 5,
+          "found_compromise": false,
+          "success": true
+        },
+        {
+          "action": "investigate",
+          "node_id": 35,
+          "found_compromise": false,
+          "success": true
+        },
+        {
+          "action": "investigate",
+          "node_id": 31,
+          "found_compromise": false,
+          "success": true
+        },
+        {
+          "action": "investigate",
+          "node_id": 17,
+          "found_compromise": false,
+          "success": true
+        }
+      ],
+      "compromised_nodes": [
+        0
+      ],
+      "patched_nodes": [],
+      "alerts": [
+        {
+          "type": "compromise",
+          "node_id": 0,
+          "attack_type": "privilege_escalation",
+          "timestamp": "now"
+        },
+        {
+          "type": "credential_theft",
+          "node_id": 0,
+          "technique": "browser_credential_theft",
+          "timestamp": "2025-05-20 16:53:27"
+        },
+        {
+          "type": "credential_theft",
+          "node_id": 0,
+          "technique": "browser_credential_theft",
+          "timestamp": "2025-05-20 16:53:27"
+        }
+      ],
+      "campaign_status": {
+        "goal": "data_theft",
+        "progress": 0.2,
+        "compromised_nodes": 1,
+        "data_collected": 1,
+        "lateral_movements": 0
+      }
+    },
+    {
+      "step": 7,
+      "red_action": {
+        "strategy": "Planned",
+        "target": 0,
+        "attack_type": "unpatched_cve",
+        "success": true,
+        "detected": false,
+        "zero_day": false,
+        "evasion": true,
+        "info": "Node already compromised",
+        "timestamp": "2025-05-20 16:53:27"
+      },
+      "blue_actions": [
+        {
+          "action": "investigate",
+          "node_id": 5,
+          "found_compromise": false,
+          "success": true
+        },
+        {
+          "action": "investigate",
+          "node_id": 31,
+          "found_compromise": false,
+          "success": true
+        },
+        {
+          "action": "investigate",
+          "node_id": 35,
+          "found_compromise": false,
+          "success": true
+        },
+        {
+          "action": "investigate",
+          "node_id": 17,
+          "found_compromise": false,
+          "success": true
+        }
+      ],
+      "compromised_nodes": [
+        0
+      ],
+      "patched_nodes": [],
+      "alerts": [
+        {
+          "type": "compromise",
+          "node_id": 0,
+          "attack_type": "privilege_escalation",
+          "timestamp": "now"
+        },
+        {
+          "type": "credential_theft",
+          "node_id": 0,
+          "technique": "browser_credential_theft",
+          "timestamp": "2025-05-20 16:53:27"
+        },
+        {
+          "type": "credential_theft",
+          "node_id": 0,
+          "technique": "browser_credential_theft",
+          "timestamp": "2025-05-20 16:53:27"
+        },
+        {
+          "type": "credential_theft",
+          "node_id": 0,
+          "technique": "keylogging",
+          "timestamp": "2025-05-20 16:53:27"
+        },
+        {
+          "type": "lolbin_execution",
+          "node_id": 0,
+          "technique": "bash_execution",
+          "purpose": "data_collection",
+          "timestamp": "2025-05-20 16:53:27"
+        }
+      ],
+      "campaign_status": {
+        "goal": "data_theft",
+        "progress": 0.32999999999999996,
+        "compromised_nodes": 1,
+        "data_collected": 1,
+        "lateral_movements": 0
+      }
+    },
+    {
+      "step": 8,
+      "red_action": {
+        "strategy": "Planned",
+        "target": 0,
+        "attack_type": "unpatched_cve",
+        "success": true,
+        "detected": false,
+        "zero_day": false,
+        "evasion": true,
+        "info": "Node already compromised",
+        "timestamp": "2025-05-20 16:53:27"
+      },
+      "blue_actions": [
+        {
+          "action": "investigate",
+          "node_id": 31,
+          "found_compromise": false,
+          "success": true
+        },
+        {
+          "action": "investigate",
+          "node_id": 35,
+          "found_compromise": false,
+          "success": true
+        },
+        {
+          "action": "investigate",
+          "node_id": 5,
+          "found_compromise": false,
+          "success": true
+        },
+        {
+          "action": "investigate",
+          "node_id": 17,
+          "found_compromise": false,
+          "success": true
+        },
+        {
+          "action": "investigate",
+          "node_id": 28,
+          "found_compromise": false,
+          "success": true
+        },
+        {
+          "action": "investigate",
+          "node_id": 7,
+          "found_compromise": false,
+          "success": true
+        },
+        {
+          "action": "investigate",
+          "node_id": 33,
+          "found_compromise": false,
+          "success": true
+        }
+      ],
+      "compromised_nodes": [
+        0
+      ],
+      "patched_nodes": [],
+      "alerts": [
+        {
+          "type": "credential_theft",
+          "node_id": 0,
+          "technique": "browser_credential_theft",
+          "timestamp": "2025-05-20 16:53:27"
+        },
+        {
+          "type": "credential_theft",
+          "node_id": 0,
+          "technique": "browser_credential_theft",
+          "timestamp": "2025-05-20 16:53:27"
+        },
+        {
+          "type": "credential_theft",
+          "node_id": 0,
+          "technique": "keylogging",
+          "timestamp": "2025-05-20 16:53:27"
+        },
+        {
+          "type": "lolbin_execution",
+          "node_id": 0,
+          "technique": "bash_execution",
+          "purpose": "data_collection",
+          "timestamp": "2025-05-20 16:53:27"
+        },
+        {
+          "type": "credential_theft",
+          "node_id": 0,
+          "technique": "keylogging",
+          "timestamp": "2025-05-20 16:53:27"
+        }
+      ],
+      "campaign_status": {
+        "goal": "data_theft",
+        "progress": 0.42999999999999994,
+        "compromised_nodes": 1,
+        "data_collected": 1,
+        "lateral_movements": 0
+      }
+    },
+    {
+      "step": 9,
+      "red_action": {
+        "strategy": "APT29",
+        "target": 15,
+        "attack_type": "default_credentials",
+        "success": false,
+        "detected": false,
+        "zero_day": false,
+        "evasion": false,
+        "info": "Attack failed",
+        "timestamp": "2025-05-20 16:53:27"
+      },
+      "blue_actions": [
+        {
+          "action": "investigate",
+          "node_id": 17,
+          "found_compromise": false,
+          "success": true
+        },
+        {
+          "action": "investigate",
+          "node_id": 28,
+          "found_compromise": false,
+          "success": true
+        },
+        {
+          "action": "investigate",
+          "node_id": 7,
+          "found_compromise": false,
+          "success": true
+        },
+        {
+          "action": "investigate",
+          "node_id": 31,
+          "found_compromise": false,
+          "success": true
+        },
+        {
+          "action": "investigate",
+          "node_id": 33,
+          "found_compromise": false,
+          "success": true
+        }
+      ],
+      "compromised_nodes": [
+        0
+      ],
+      "patched_nodes": [],
+      "alerts": [
+        {
+          "type": "credential_theft",
+          "node_id": 0,
+          "technique": "browser_credential_theft",
+          "timestamp": "2025-05-20 16:53:27"
+        },
+        {
+          "type": "credential_theft",
+          "node_id": 0,
+          "technique": "browser_credential_theft",
+          "timestamp": "2025-05-20 16:53:27"
+        },
+        {
+          "type": "credential_theft",
+          "node_id": 0,
+          "technique": "keylogging",
+          "timestamp": "2025-05-20 16:53:27"
+        },
+        {
+          "type": "lolbin_execution",
+          "node_id": 0,
+          "technique": "bash_execution",
+          "purpose": "data_collection",
+          "timestamp": "2025-05-20 16:53:27"
+        },
+        {
+          "type": "credential_theft",
+          "node_id": 0,
+          "technique": "keylogging",
+          "timestamp": "2025-05-20 16:53:27"
+        }
+      ],
+      "campaign_status": {
+        "goal": "data_theft",
+        "progress": 0.42999999999999994,
+        "compromised_nodes": 1,
+        "data_collected": 1,
+        "lateral_movements": 0
+      }
+    },
+    {
+      "step": 10,
+      "red_action": {
+        "strategy": "Planned",
+        "target": 0,
+        "attack_type": "unpatched_cve",
+        "success": true,
+        "detected": false,
+        "zero_day": false,
+        "evasion": true,
+        "info": "Node already compromised",
+        "timestamp": "2025-05-20 16:53:27"
+      },
+      "blue_actions": [
+        {
+          "action": "investigate",
+          "node_id": 23,
+          "found_compromise": false,
+          "success": true
+        },
+        {
+          "action": "investigate",
+          "node_id": 31,
+          "found_compromise": false,
+          "success": true
+        },
+        {
+          "action": "investigate",
+          "node_id": 33,
+          "found_compromise": false,
+          "success": true
+        },
+        {
+          "action": "investigate",
+          "node_id": 17,
+          "found_compromise": false,
+          "success": true
+        },
+        {
+          "action": "investigate",
+          "node_id": 7,
+          "found_compromise": false,
+          "success": true
+        },
+        {
+          "action": "investigate",
+          "node_id": 40,
+          "found_compromise": false,
+          "success": true
+        },
+        {
+          "action": "investigate",
+          "node_id": 5,
+          "found_compromise": false,
+          "success": true
+        },
+        {
+          "action": "investigate",
+          "node_id": 28,
+          "found_compromise": false,
+          "success": true
+        }
+      ],
+      "compromised_nodes": [
+        0
+      ],
+      "patched_nodes": [],
+      "alerts": [
+        {
+          "type": "credential_theft",
+          "node_id": 0,
+          "technique": "browser_credential_theft",
+          "timestamp": "2025-05-20 16:53:27"
+        },
+        {
+          "type": "credential_theft",
+          "node_id": 0,
+          "technique": "keylogging",
+          "timestamp": "2025-05-20 16:53:27"
+        },
+        {
+          "type": "lolbin_execution",
+          "node_id": 0,
+          "technique": "bash_execution",
+          "purpose": "data_collection",
+          "timestamp": "2025-05-20 16:53:27"
+        },
+        {
+          "type": "credential_theft",
+          "node_id": 0,
+          "technique": "keylogging",
+          "timestamp": "2025-05-20 16:53:27"
+        },
+        {
+          "type": "lolbin_execution",
+          "node_id": 0,
+          "technique": "python_execution",
+          "purpose": "data_collection",
+          "timestamp": "2025-05-20 16:53:27"
+        }
+      ],
+      "campaign_status": {
+        "goal": "data_theft",
+        "progress": 0.4799999999999999,
+        "compromised_nodes": 1,
+        "data_collected": 1,
+        "lateral_movements": 0
+      }
+    },
+    {
+      "step": 11,
+      "red_action": {
+        "strategy": "Planned",
+        "target": 0,
+        "attack_type": "unpatched_cve",
+        "success": true,
+        "detected": false,
+        "zero_day": false,
+        "evasion": false,
+        "info": "Node already compromised",
+        "timestamp": "2025-05-20 16:53:27"
+      },
+      "blue_actions": [
+        {
+          "action": "patch",
+          "node_id": 0,
+          "vulnerability_type": "privilege_escalation",
+          "success": true
+        }
+      ],
+      "compromised_nodes": [
+        0
+      ],
+      "patched_nodes": [
+        0
+      ],
+      "alerts": [
+        {
+          "type": "credential_theft",
+          "node_id": 0,
+          "technique": "browser_credential_theft",
+          "timestamp": "2025-05-20 16:53:27"
+        },
+        {
+          "type": "credential_theft",
+          "node_id": 0,
+          "technique": "keylogging",
+          "timestamp": "2025-05-20 16:53:27"
+        },
+        {
+          "type": "lolbin_execution",
+          "node_id": 0,
+          "technique": "bash_execution",
+          "purpose": "data_collection",
+          "timestamp": "2025-05-20 16:53:27"
+        },
+        {
+          "type": "credential_theft",
+          "node_id": 0,
+          "technique": "keylogging",
+          "timestamp": "2025-05-20 16:53:27"
+        },
+        {
+          "type": "lolbin_execution",
+          "node_id": 0,
+          "technique": "python_execution",
+          "purpose": "data_collection",
+          "timestamp": "2025-05-20 16:53:27"
+        }
+      ],
+      "campaign_status": {
+        "goal": "data_theft",
+        "progress": 0.61,
+        "compromised_nodes": 1,
+        "data_collected": 1,
+        "lateral_movements": 0
+      }
+    },
+    {
+      "step": 12,
+      "red_action": {
+        "strategy": "APT29",
+        "target": 2,
+        "attack_type": "sql_injection",
+        "success": true,
+        "detected": false,
+        "zero_day": false,
+        "evasion": false,
+        "info": "Attack successful",
+        "timestamp": "2025-05-20 16:53:27"
+      },
+      "blue_actions": [
+        {
+          "action": "investigate",
+          "node_id": 19,
+          "found_compromise": false,
+          "success": true
+        },
+        {
+          "action": "investigate",
+          "node_id": 32,
+          "found_compromise": false,
+          "success": true
+        },
+        {
+          "action": "investigate",
+          "node_id": 23,
+          "found_compromise": false,
+          "success": true
+        },
+        {
+          "action": "investigate",
+          "node_id": 25,
+          "found_compromise": false,
+          "success": true
+        },
+        {
+          "action": "investigate",
+          "node_id": 40,
+          "found_compromise": false,
+          "success": true
+        }
+      ],
+      "compromised_nodes": [
+        0,
+        2
+      ],
+      "patched_nodes": [
+        0
+      ],
+      "alerts": [
+        {
+          "type": "lolbin_execution",
+          "node_id": 0,
+          "technique": "bash_execution",
+          "purpose": "data_collection",
+          "timestamp": "2025-05-20 16:53:27"
+        },
+        {
+          "type": "credential_theft",
+          "node_id": 0,
+          "technique": "keylogging",
+          "timestamp": "2025-05-20 16:53:27"
+        },
+        {
+          "type": "lolbin_execution",
+          "node_id": 0,
+          "technique": "python_execution",
+          "purpose": "data_collection",
+          "timestamp": "2025-05-20 16:53:27"
+        },
+        {
+          "type": "compromise",
+          "node_id": 2,
+          "attack_type": "sql_injection",
+          "timestamp": "now"
+        },
+        {
+          "type": "credential_theft",
+          "node_id": 2,
+          "technique": "lsass_memory_dump",
+          "timestamp": "2025-05-20 16:53:27"
+        }
+      ],
+      "campaign_status": {
+        "goal": "data_theft",
+        "progress": 0.7100000000000001,
+        "compromised_nodes": 2,
+        "data_collected": 2,
+        "lateral_movements": 1
+      }
+    },
+    {
+      "step": 13,
+      "red_action": {
+        "strategy": "Random",
+        "target": 28,
+        "attack_type": "privilege_escalation",
+        "success": false,
+        "detected": false,
+        "zero_day": false,
+        "evasion": false,
+        "info": "Attack failed",
+        "timestamp": "2025-05-20 16:53:27"
+      },
+      "blue_actions": [
+        {
+          "action": "patch",
+          "node_id": 2,
+          "vulnerability_type": "unpatched_cve",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 3,
+          "vulnerability_type": "buffer_overflow",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 4,
+          "vulnerability_type": "sql_injection",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 1,
+          "vulnerability_type": "buffer_overflow",
+          "success": true
+        }
+      ],
+      "compromised_nodes": [
+        0,
+        2
+      ],
+      "patched_nodes": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "alerts": [
+        {
+          "type": "lolbin_execution",
+          "node_id": 0,
+          "technique": "bash_execution",
+          "purpose": "data_collection",
+          "timestamp": "2025-05-20 16:53:27"
+        },
+        {
+          "type": "credential_theft",
+          "node_id": 0,
+          "technique": "keylogging",
+          "timestamp": "2025-05-20 16:53:27"
+        },
+        {
+          "type": "lolbin_execution",
+          "node_id": 0,
+          "technique": "python_execution",
+          "purpose": "data_collection",
+          "timestamp": "2025-05-20 16:53:27"
+        },
+        {
+          "type": "compromise",
+          "node_id": 2,
+          "attack_type": "sql_injection",
+          "timestamp": "now"
+        },
+        {
+          "type": "credential_theft",
+          "node_id": 2,
+          "technique": "lsass_memory_dump",
+          "timestamp": "2025-05-20 16:53:27"
+        }
+      ],
+      "campaign_status": {
+        "goal": "data_theft",
+        "progress": 0.7100000000000001,
+        "compromised_nodes": 2,
+        "data_collected": 2,
+        "lateral_movements": 1
+      }
+    },
+    {
+      "step": 14,
+      "red_action": {
+        "strategy": "Planned",
+        "target": 0,
+        "attack_type": "unpatched_cve",
+        "success": false,
+        "detected": false,
+        "zero_day": false,
+        "evasion": true,
+        "info": "No unpatched_cve vulnerability found",
+        "timestamp": "2025-05-20 16:53:27"
+      },
+      "blue_actions": [
+        {
+          "action": "investigate",
+          "node_id": 17,
+          "found_compromise": false,
+          "success": true
+        },
+        {
+          "action": "investigate",
+          "node_id": 7,
+          "found_compromise": false,
+          "success": true
+        },
+        {
+          "action": "investigate",
+          "node_id": 28,
+          "found_compromise": false,
+          "success": true
+        }
+      ],
+      "compromised_nodes": [
+        0,
+        2
+      ],
+      "patched_nodes": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "alerts": [
+        {
+          "type": "lolbin_execution",
+          "node_id": 0,
+          "technique": "bash_execution",
+          "purpose": "data_collection",
+          "timestamp": "2025-05-20 16:53:27"
+        },
+        {
+          "type": "credential_theft",
+          "node_id": 0,
+          "technique": "keylogging",
+          "timestamp": "2025-05-20 16:53:27"
+        },
+        {
+          "type": "lolbin_execution",
+          "node_id": 0,
+          "technique": "python_execution",
+          "purpose": "data_collection",
+          "timestamp": "2025-05-20 16:53:27"
+        },
+        {
+          "type": "compromise",
+          "node_id": 2,
+          "attack_type": "sql_injection",
+          "timestamp": "now"
+        },
+        {
+          "type": "credential_theft",
+          "node_id": 2,
+          "technique": "lsass_memory_dump",
+          "timestamp": "2025-05-20 16:53:27"
+        }
+      ],
+      "campaign_status": {
+        "goal": "data_theft",
+        "progress": 0.7100000000000001,
+        "compromised_nodes": 2,
+        "data_collected": 2,
+        "lateral_movements": 1
+      }
+    },
+    {
+      "step": 15,
+      "red_action": {
+        "strategy": "Planned",
+        "target": 0,
+        "attack_type": "unpatched_cve",
+        "success": false,
+        "detected": false,
+        "zero_day": false,
+        "evasion": true,
+        "info": "No unpatched_cve vulnerability found",
+        "timestamp": "2025-05-20 16:53:27"
+      },
+      "blue_actions": [
+        {
+          "action": "investigate",
+          "node_id": 17,
+          "found_compromise": false,
+          "success": true
+        },
+        {
+          "action": "investigate",
+          "node_id": 7,
+          "found_compromise": false,
+          "success": true
+        },
+        {
+          "action": "investigate",
+          "node_id": 28,
+          "found_compromise": false,
+          "success": true
+        },
+        {
+          "action": "investigate",
+          "node_id": 5,
+          "found_compromise": false,
+          "success": true
+        },
+        {
+          "action": "investigate",
+          "node_id": 31,
+          "found_compromise": false,
+          "success": true
+        }
+      ],
+      "compromised_nodes": [
+        0,
+        2
+      ],
+      "patched_nodes": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "alerts": [
+        {
+          "type": "lolbin_execution",
+          "node_id": 0,
+          "technique": "bash_execution",
+          "purpose": "data_collection",
+          "timestamp": "2025-05-20 16:53:27"
+        },
+        {
+          "type": "credential_theft",
+          "node_id": 0,
+          "technique": "keylogging",
+          "timestamp": "2025-05-20 16:53:27"
+        },
+        {
+          "type": "lolbin_execution",
+          "node_id": 0,
+          "technique": "python_execution",
+          "purpose": "data_collection",
+          "timestamp": "2025-05-20 16:53:27"
+        },
+        {
+          "type": "compromise",
+          "node_id": 2,
+          "attack_type": "sql_injection",
+          "timestamp": "now"
+        },
+        {
+          "type": "credential_theft",
+          "node_id": 2,
+          "technique": "lsass_memory_dump",
+          "timestamp": "2025-05-20 16:53:27"
+        }
+      ],
+      "campaign_status": {
+        "goal": "data_theft",
+        "progress": 0.7100000000000001,
+        "compromised_nodes": 2,
+        "data_collected": 2,
+        "lateral_movements": 1
+      }
+    },
+    {
+      "step": 16,
+      "red_action": {
+        "strategy": "Planned",
+        "target": 0,
+        "attack_type": "unpatched_cve",
+        "success": false,
+        "detected": false,
+        "zero_day": false,
+        "evasion": true,
+        "info": "No unpatched_cve vulnerability found",
+        "timestamp": "2025-05-20 16:53:27"
+      },
+      "blue_actions": [
+        {
+          "action": "investigate",
+          "node_id": 7,
+          "found_compromise": false,
+          "success": true
+        },
+        {
+          "action": "investigate",
+          "node_id": 28,
+          "found_compromise": false,
+          "success": true
+        },
+        {
+          "action": "investigate",
+          "node_id": 5,
+          "found_compromise": false,
+          "success": true
+        },
+        {
+          "action": "investigate",
+          "node_id": 31,
+          "found_compromise": false,
+          "success": true
+        },
+        {
+          "action": "investigate",
+          "node_id": 17,
+          "found_compromise": false,
+          "success": true
+        }
+      ],
+      "compromised_nodes": [
+        0,
+        2
+      ],
+      "patched_nodes": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "alerts": [
+        {
+          "type": "lolbin_execution",
+          "node_id": 0,
+          "technique": "bash_execution",
+          "purpose": "data_collection",
+          "timestamp": "2025-05-20 16:53:27"
+        },
+        {
+          "type": "credential_theft",
+          "node_id": 0,
+          "technique": "keylogging",
+          "timestamp": "2025-05-20 16:53:27"
+        },
+        {
+          "type": "lolbin_execution",
+          "node_id": 0,
+          "technique": "python_execution",
+          "purpose": "data_collection",
+          "timestamp": "2025-05-20 16:53:27"
+        },
+        {
+          "type": "compromise",
+          "node_id": 2,
+          "attack_type": "sql_injection",
+          "timestamp": "now"
+        },
+        {
+          "type": "credential_theft",
+          "node_id": 2,
+          "technique": "lsass_memory_dump",
+          "timestamp": "2025-05-20 16:53:27"
+        }
+      ],
+      "campaign_status": {
+        "goal": "data_theft",
+        "progress": 0.7100000000000001,
+        "compromised_nodes": 2,
+        "data_collected": 2,
+        "lateral_movements": 1
+      }
+    },
+    {
+      "step": 17,
+      "red_action": {
+        "strategy": "Planned",
+        "target": 0,
+        "attack_type": "unpatched_cve",
+        "success": false,
+        "detected": false,
+        "zero_day": false,
+        "evasion": true,
+        "info": "No unpatched_cve vulnerability found",
+        "timestamp": "2025-05-20 16:53:27"
+      },
+      "blue_actions": [
+        {
+          "action": "investigate",
+          "node_id": 5,
+          "found_compromise": false,
+          "success": true
+        },
+        {
+          "action": "investigate",
+          "node_id": 31,
+          "found_compromise": false,
+          "success": true
+        },
+        {
+          "action": "investigate",
+          "node_id": 7,
+          "found_compromise": false,
+          "success": true
+        },
+        {
+          "action": "investigate",
+          "node_id": 17,
+          "found_compromise": false,
+          "success": true
+        },
+        {
+          "action": "investigate",
+          "node_id": 28,
+          "found_compromise": false,
+          "success": true
+        },
+        {
+          "action": "investigate",
+          "node_id": 35,
+          "found_compromise": false,
+          "success": true
+        },
+        {
+          "action": "investigate",
+          "node_id": 41,
+          "found_compromise": false,
+          "success": true
+        }
+      ],
+      "compromised_nodes": [
+        0,
+        2
+      ],
+      "patched_nodes": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "alerts": [
+        {
+          "type": "lolbin_execution",
+          "node_id": 0,
+          "technique": "bash_execution",
+          "purpose": "data_collection",
+          "timestamp": "2025-05-20 16:53:27"
+        },
+        {
+          "type": "credential_theft",
+          "node_id": 0,
+          "technique": "keylogging",
+          "timestamp": "2025-05-20 16:53:27"
+        },
+        {
+          "type": "lolbin_execution",
+          "node_id": 0,
+          "technique": "python_execution",
+          "purpose": "data_collection",
+          "timestamp": "2025-05-20 16:53:27"
+        },
+        {
+          "type": "compromise",
+          "node_id": 2,
+          "attack_type": "sql_injection",
+          "timestamp": "now"
+        },
+        {
+          "type": "credential_theft",
+          "node_id": 2,
+          "technique": "lsass_memory_dump",
+          "timestamp": "2025-05-20 16:53:27"
+        }
+      ],
+      "campaign_status": {
+        "goal": "data_theft",
+        "progress": 0.7100000000000001,
+        "compromised_nodes": 2,
+        "data_collected": 2,
+        "lateral_movements": 1
+      }
+    },
+    {
+      "step": 18,
+      "red_action": {
+        "strategy": "Planned",
+        "target": 0,
+        "attack_type": "unpatched_cve",
+        "success": false,
+        "detected": false,
+        "zero_day": false,
+        "evasion": true,
+        "info": "No unpatched_cve vulnerability found",
+        "timestamp": "2025-05-20 16:53:27"
+      },
+      "blue_actions": [
+        {
+          "action": "investigate",
+          "node_id": 17,
+          "found_compromise": false,
+          "success": true
+        },
+        {
+          "action": "investigate",
+          "node_id": 28,
+          "found_compromise": false,
+          "success": true
+        },
+        {
+          "action": "investigate",
+          "node_id": 35,
+          "found_compromise": false,
+          "success": true
+        },
+        {
+          "action": "investigate",
+          "node_id": 41,
+          "found_compromise": false,
+          "success": true
+        }
+      ],
+      "compromised_nodes": [
+        0,
+        2
+      ],
+      "patched_nodes": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "alerts": [
+        {
+          "type": "lolbin_execution",
+          "node_id": 0,
+          "technique": "bash_execution",
+          "purpose": "data_collection",
+          "timestamp": "2025-05-20 16:53:27"
+        },
+        {
+          "type": "credential_theft",
+          "node_id": 0,
+          "technique": "keylogging",
+          "timestamp": "2025-05-20 16:53:27"
+        },
+        {
+          "type": "lolbin_execution",
+          "node_id": 0,
+          "technique": "python_execution",
+          "purpose": "data_collection",
+          "timestamp": "2025-05-20 16:53:27"
+        },
+        {
+          "type": "compromise",
+          "node_id": 2,
+          "attack_type": "sql_injection",
+          "timestamp": "now"
+        },
+        {
+          "type": "credential_theft",
+          "node_id": 2,
+          "technique": "lsass_memory_dump",
+          "timestamp": "2025-05-20 16:53:27"
+        }
+      ],
+      "campaign_status": {
+        "goal": "data_theft",
+        "progress": 0.7100000000000001,
+        "compromised_nodes": 2,
+        "data_collected": 2,
+        "lateral_movements": 1
+      }
+    },
+    {
+      "step": 19,
+      "red_action": {
+        "strategy": "Random",
+        "target": 30,
+        "attack_type": "buffer_overflow",
+        "success": false,
+        "detected": false,
+        "zero_day": false,
+        "evasion": true,
+        "info": "Attack failed",
+        "timestamp": "2025-05-20 16:53:27"
+      },
+      "blue_actions": [
+        {
+          "action": "investigate",
+          "node_id": 28,
+          "found_compromise": false,
+          "success": true
+        },
+        {
+          "action": "investigate",
+          "node_id": 35,
+          "found_compromise": false,
+          "success": true
+        },
+        {
+          "action": "investigate",
+          "node_id": 41,
+          "found_compromise": false,
+          "success": true
+        }
+      ],
+      "compromised_nodes": [
+        0,
+        2
+      ],
+      "patched_nodes": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "alerts": [
+        {
+          "type": "lolbin_execution",
+          "node_id": 0,
+          "technique": "bash_execution",
+          "purpose": "data_collection",
+          "timestamp": "2025-05-20 16:53:27"
+        },
+        {
+          "type": "credential_theft",
+          "node_id": 0,
+          "technique": "keylogging",
+          "timestamp": "2025-05-20 16:53:27"
+        },
+        {
+          "type": "lolbin_execution",
+          "node_id": 0,
+          "technique": "python_execution",
+          "purpose": "data_collection",
+          "timestamp": "2025-05-20 16:53:27"
+        },
+        {
+          "type": "compromise",
+          "node_id": 2,
+          "attack_type": "sql_injection",
+          "timestamp": "now"
+        },
+        {
+          "type": "credential_theft",
+          "node_id": 2,
+          "technique": "lsass_memory_dump",
+          "timestamp": "2025-05-20 16:53:27"
+        }
+      ],
+      "campaign_status": {
+        "goal": "data_theft",
+        "progress": 0.7100000000000001,
+        "compromised_nodes": 2,
+        "data_collected": 2,
+        "lateral_movements": 1
+      }
+    },
+    {
+      "step": 20,
+      "red_action": {
+        "strategy": "Random",
+        "target": 6,
+        "attack_type": "privilege_escalation",
+        "success": false,
+        "detected": false,
+        "zero_day": false,
+        "evasion": false,
+        "info": "No privilege_escalation vulnerability found",
+        "timestamp": "2025-05-20 16:53:27"
+      },
+      "blue_actions": [
+        {
+          "action": "investigate",
+          "node_id": 36,
+          "found_compromise": false,
+          "success": true
+        },
+        {
+          "action": "investigate",
+          "node_id": 18,
+          "found_compromise": false,
+          "success": true
+        },
+        {
+          "action": "investigate",
+          "node_id": 35,
+          "found_compromise": false,
+          "success": true
+        }
+      ],
+      "compromised_nodes": [
+        0,
+        2
+      ],
+      "patched_nodes": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "alerts": [
+        {
+          "type": "lolbin_execution",
+          "node_id": 0,
+          "technique": "bash_execution",
+          "purpose": "data_collection",
+          "timestamp": "2025-05-20 16:53:27"
+        },
+        {
+          "type": "credential_theft",
+          "node_id": 0,
+          "technique": "keylogging",
+          "timestamp": "2025-05-20 16:53:27"
+        },
+        {
+          "type": "lolbin_execution",
+          "node_id": 0,
+          "technique": "python_execution",
+          "purpose": "data_collection",
+          "timestamp": "2025-05-20 16:53:27"
+        },
+        {
+          "type": "compromise",
+          "node_id": 2,
+          "attack_type": "sql_injection",
+          "timestamp": "now"
+        },
+        {
+          "type": "credential_theft",
+          "node_id": 2,
+          "technique": "lsass_memory_dump",
+          "timestamp": "2025-05-20 16:53:27"
+        }
+      ],
+      "campaign_status": {
+        "goal": "data_theft",
+        "progress": 0.7100000000000001,
+        "compromised_nodes": 2,
+        "data_collected": 2,
+        "lateral_movements": 1
+      }
+    }
+  ],
+  "summary": {
+    "total_compromised": 2,
+    "total_patched": 5,
+    "red_success_rate": 0.35,
+    "blue_success_rate": 1.0,
+    "simulation_time": 0.8992569446563721,
+    "campaign_goal": "data_theft",
+    "campaign_progress": 0.7100000000000001,
+    "data_collected": 2,
+    "lateral_movements": 1
+  }
+}

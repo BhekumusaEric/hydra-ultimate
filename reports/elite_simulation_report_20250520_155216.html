@@ -1,0 +1,201 @@
+
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <title>HYDRA Elite Simulation Report</title>
+        <style>
+            body { font-family: Arial, sans-serif; margin: 40px; }
+            h1, h2, h3 { color: #2c3e50; }
+            .summary { background-color: #f8f9fa; padding: 20px; border-radius: 5px; }
+            .metrics { display: flex; flex-wrap: wrap; }
+            .metric-card { background-color: #ffffff; border: 1px solid #e0e0e0; 
+                          border-radius: 5px; padding: 15px; margin: 10px; width: 200px; }
+            .metric-value { font-size: 24px; font-weight: bold; color: #3498db; }
+            .attack { background-color: #fff8f8; border-left: 4px solid #e74c3c; 
+                     padding: 10px; margin: 10px 0; }
+            .defense { background-color: #f8fff8; border-left: 4px solid #2ecc71; 
+                      padding: 10px; margin: 10px 0; }
+            .success { color: #2ecc71; }
+            .failure { color: #e74c3c; }
+            .attack-chain { background-color: #f0f8ff; border: 1px solid #b0c4de;
+                           padding: 15px; margin: 15px 0; border-radius: 5px; }
+            .high-value { background-color: #fff0f0; }
+        </style>
+    </head>
+    <body>
+        <h1>HYDRA Elite Simulation Report</h1>
+        <p>Advanced simulation conducted on 2025-05-20 15:52:23</p>
+        
+        <div class="summary">
+            <h2>Executive Summary</h2>
+            <p>This report presents the findings from an elite simulation conducted using HYDRA with advanced attack techniques.</p>
+            
+            <div class="metrics">
+                <div class="metric-card">
+                    <h3>Simulation Time</h3>
+                    <div class="metric-value">6.68s</div>
+                </div>
+                <div class="metric-card">
+                    <h3>Compromised Nodes</h3>
+                    <div class="metric-value">6</div>
+                </div>
+                <div class="metric-card">
+                    <h3>High-Value Compromised</h3>
+                    <div class="metric-value">1</div>
+                </div>
+                <div class="metric-card">
+                    <h3>Patched Nodes</h3>
+                    <div class="metric-value">11</div>
+                </div>
+                <div class="metric-card">
+                    <h3>Red Success Rate</h3>
+                    <div class="metric-value">34.0%</div>
+                </div>
+                <div class="metric-card">
+                    <h3>Blue Success Rate</h3>
+                    <div class="metric-value">100.0%</div>
+                </div>
+                <div class="metric-card">
+                    <h3>Campaign Goal</h3>
+                    <div class="metric-value">disruption</div>
+                </div>
+                <div class="metric-card">
+                    <h3>Campaign Progress</h3>
+                    <div class="metric-value">11.3%</div>
+                </div>
+                <div class="metric-card">
+                    <h3>Data Collected</h3>
+                    <div class="metric-value">0</div>
+                </div>
+                <div class="metric-card">
+                    <h3>Lateral Movements</h3>
+                    <div class="metric-value">0</div>
+                </div>
+                <div class="metric-card">
+                    <h3>Attack Chains</h3>
+                    <div class="metric-value">14</div>
+                </div>
+            </div>
+        </div>
+        
+        <h2>Simulation Configuration</h2>
+        <pre>{
+  "network_size": "medium",
+  "network_complexity": "high",
+  "num_steps": 150,
+  "red_skill_level": 0.98,
+  "threat_intel_file": "data/advanced_threat_intelligence.json",
+  "model_path": null
+}</pre>
+        
+        <h2>Key Findings</h2>
+        <p>The elite simulation revealed several important insights about your network's security posture:</p>
+        <ul>
+            <li>The Red Agent was able to compromise 6 nodes, including 1 high-value targets.</li>
+            <li>The Blue Agent successfully patched 11 nodes.</li>
+            <li>The Red Agent's campaign goal was <strong>disruption</strong> and achieved 11.3% progress.</li>
+            <li>The Red Agent collected data from 0 sources.</li>
+            <li>The Red Agent performed 0 lateral movements.</li>
+            <li>The simulation identified 14 distinct attack chains.</li>
+        </ul>
+        
+        <h2>Notable Attack Chains</h2>
+    
+        <div class="attack-chain">
+            <h3>Attack Chain #1 (2 steps)</h3>
+            <ol>
+        
+                <li class="">
+                    Step 9: default_credentials attack on firewall (Node 0)
+                </li>
+            
+                <li class="">
+                    Step 10: default_credentials attack on scada_controller (Node 47)
+                </li>
+            
+            </ol>
+        </div>
+        
+        <div class="attack-chain">
+            <h3>Attack Chain #2 (1 steps)</h3>
+            <ol>
+        
+                <li class="">
+                    Step 25: unpatched_cve attack on server (Node 6)
+                </li>
+            
+            </ol>
+        </div>
+        
+        <div class="attack-chain">
+            <h3>Attack Chain #3 (1 steps)</h3>
+            <ol>
+        
+                <li class="">
+                    Step 31: privilege_escalation attack on router (Node 2)
+                </li>
+            
+            </ol>
+        </div>
+        
+        <div class="attack-chain">
+            <h3>Attack Chain #4 (1 steps)</h3>
+            <ol>
+        
+                <li class=" high-value">
+                    Step 39: unpatched_cve attack on database (Node 45)
+                </li>
+            
+            </ol>
+        </div>
+        
+        <div class="attack-chain">
+            <h3>Attack Chain #5 (7 steps)</h3>
+            <ol>
+        
+                <li class="">
+                    Step 45: privilege_escalation attack on workstation (Node 28)
+                </li>
+            
+                <li class=" high-value">
+                    Step 46: unpatched_cve attack on database (Node 45)
+                </li>
+            
+                <li class="">
+                    Step 47: privilege_escalation attack on router (Node 2)
+                </li>
+            
+                <li class=" high-value">
+                    Step 48: unpatched_cve attack on database (Node 45)
+                </li>
+            
+                <li class="">
+                    Step 49: privilege_escalation attack on workstation (Node 28)
+                </li>
+            
+                <li class=" high-value">
+                    Step 50: unpatched_cve attack on database (Node 45)
+                </li>
+            
+                <li class="">
+                    Step 51: privilege_escalation attack on workstation (Node 28)
+                </li>
+            
+            </ol>
+        </div>
+        
+        <h2>Recommendations</h2>
+        <p>Based on the elite simulation results, consider the following recommendations:</p>
+        <ol>
+            <li>Implement advanced threat detection capabilities to identify sophisticated attack patterns.</li>
+            <li>Enhance network segmentation to limit lateral movement opportunities.</li>
+            <li>Deploy additional security controls for high-value assets.</li>
+            <li>Implement a comprehensive vulnerability management program.</li>
+            <li>Develop incident response playbooks for advanced persistent threats.</li>
+            <li>Conduct regular red team exercises to test defenses against sophisticated attacks.</li>
+            <li>Implement a zero-trust architecture for critical systems.</li>
+            <li>Deploy deception technology to detect and divert attackers.</li>
+        </ol>
+    </body>
+    </html>
+    

@@ -1,0 +1,75 @@
+
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <title>HYDRA Safe Network Test Report</title>
+        <style>
+            body { font-family: Arial, sans-serif; margin: 40px; }
+            h1, h2, h3 { color: #2c3e50; }
+            .summary { background-color: #f8f9fa; padding: 20px; border-radius: 5px; }
+            .metrics { display: flex; flex-wrap: wrap; }
+            .metric-card { background-color: #ffffff; border: 1px solid #e0e0e0; 
+                          border-radius: 5px; padding: 15px; margin: 10px; width: 200px; }
+            .metric-value { font-size: 24px; font-weight: bold; color: #3498db; }
+            .vulnerability { background-color: #fff8f8; border-left: 4px solid #e74c3c; 
+                            padding: 10px; margin: 10px 0; }
+            .high { border-left-color: #e74c3c; }
+            .medium { border-left-color: #f39c12; }
+            .low { border-left-color: #3498db; }
+        </style>
+    </head>
+    <body>
+        <h1>HYDRA Safe Network Test Report</h1>
+        <p>Test conducted on 2025-05-20 14:46:09</p>
+        
+        <div class="summary">
+            <h2>Executive Summary</h2>
+            <p>This report presents the findings from a safe network test conducted using HYDRA.</p>
+            <p>The test was configured to operate in observation-only mode with no disruptive actions.</p>
+            
+            <div class="metrics">
+                <div class="metric-card">
+                    <h3>Test Duration</h3>
+                    <div class="metric-value">0.81s</div>
+                </div>
+                <div class="metric-card">
+                    <h3>Vulnerabilities</h3>
+                    <div class="metric-value">0</div>
+                </div>
+                <div class="metric-card">
+                    <h3>Patched Issues</h3>
+                    <div class="metric-value">0</div>
+                </div>
+                <div class="metric-card">
+                    <h3>Red Success Rate</h3>
+                    <div class="metric-value">0.0%</div>
+                </div>
+            </div>
+        </div>
+        
+        <h2>Test Configuration</h2>
+        <pre>{
+  "network_size": "small",
+  "network_complexity": "medium",
+  "num_steps": 10,
+  "red_skill_level": 0.6,
+  "safe_mode": true,
+  "config_file": "hydra-safe-test.yml"
+}</pre>
+        
+        <h2>Key Findings</h2>
+        <!-- This would be populated with actual findings -->
+        
+        <h2>Recommendations</h2>
+        <!-- This would be populated with actual recommendations -->
+        
+        <h2>Next Steps</h2>
+        <ol>
+            <li>Review the detailed findings in the HYDRA dashboard</li>
+            <li>Prioritize vulnerabilities based on risk score</li>
+            <li>Develop a remediation plan for identified issues</li>
+            <li>Schedule a follow-up test to validate fixes</li>
+        </ol>
+    </body>
+    </html>
+    

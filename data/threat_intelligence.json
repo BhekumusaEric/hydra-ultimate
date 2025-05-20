@@ -1,0 +1,195 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "created": "2025-05-20",
+    "description": "Threat intelligence data for HYDRA Red Agent training"
+  },
+  "threat_actors": {
+    "APT29": {
+      "aliases": ["Cozy Bear", "The Dukes", "CozyDuke"],
+      "description": "Sophisticated state-sponsored threat actor known for stealthy operations and persistent access",
+      "attribution": "Russia",
+      "target_sectors": ["Government", "Defense", "Think Tanks", "Healthcare"],
+      "techniques": [
+        "spear_phishing",
+        "powershell_execution",
+        "credential_theft",
+        "privilege_escalation",
+        "defense_evasion",
+        "lateral_movement"
+      ],
+      "tools": ["MiniDuke", "CosmicDuke", "OnionDuke", "HAMMERTOSS", "WellMess"],
+      "ttps": [
+        {
+          "tactic": "initial_access",
+          "technique": "spear_phishing",
+          "procedure": "Targeted emails with malicious links or attachments, often leveraging current events or topics relevant to the target"
+        },
+        {
+          "tactic": "execution",
+          "technique": "powershell_execution",
+          "procedure": "Use of PowerShell for fileless execution and to evade detection"
+        },
+        {
+          "tactic": "credential_access",
+          "technique": "credential_dumping",
+          "procedure": "Use of Mimikatz and custom tools to extract credentials from memory"
+        },
+        {
+          "tactic": "lateral_movement",
+          "technique": "pass_the_hash",
+          "procedure": "Use of harvested NTLM hashes to authenticate to other systems without knowing the actual password"
+        }
+      ],
+      "vulnerabilities": [
+        {
+          "cve": "CVE-2020-0688",
+          "description": "Microsoft Exchange Server validation key vulnerability",
+          "exploitability": 0.9
+        },
+        {
+          "cve": "CVE-2020-1472",
+          "description": "Netlogon Elevation of Privilege (Zerologon)",
+          "exploitability": 0.95
+        }
+      ]
+    },
+    "APT41": {
+      "aliases": ["Double Dragon", "Wicked Panda", "BARIUM"],
+      "description": "Dual espionage and financially-motivated threat actor",
+      "attribution": "China",
+      "target_sectors": ["Healthcare", "Telecommunications", "Technology", "Video Games", "Financial Services"],
+      "techniques": [
+        "supply_chain_compromise",
+        "web_shell",
+        "backdoor_implantation",
+        "data_theft",
+        "ransomware"
+      ],
+      "tools": ["Poison Ivy", "PlugX", "Winnti", "ShadowPad", "Gh0st RAT"],
+      "ttps": [
+        {
+          "tactic": "initial_access",
+          "technique": "supply_chain_compromise",
+          "procedure": "Compromise of software vendors to distribute malware through legitimate software updates"
+        },
+        {
+          "tactic": "persistence",
+          "technique": "web_shell",
+          "procedure": "Deployment of web shells on internet-facing applications for persistent access"
+        },
+        {
+          "tactic": "collection",
+          "technique": "data_from_local_system",
+          "procedure": "Targeted theft of source code, customer data, and business information"
+        },
+        {
+          "tactic": "impact",
+          "technique": "data_encrypted_for_impact",
+          "procedure": "Deployment of ransomware after data exfiltration (double extortion)"
+        }
+      ],
+      "vulnerabilities": [
+        {
+          "cve": "CVE-2019-19781",
+          "description": "Citrix Application Delivery Controller and Gateway directory traversal",
+          "exploitability": 0.85
+        },
+        {
+          "cve": "CVE-2019-3396",
+          "description": "Atlassian Confluence Server remote code execution",
+          "exploitability": 0.8
+        }
+      ]
+    },
+    "Ransomware_Groups": {
+      "aliases": ["Various ransomware gangs"],
+      "description": "Financially motivated threat actors focusing on ransomware and data theft",
+      "attribution": "Various",
+      "target_sectors": ["Healthcare", "Education", "Manufacturing", "Government", "Financial Services"],
+      "techniques": [
+        "phishing",
+        "exploit_public_facing_applications",
+        "valid_accounts",
+        "lateral_movement",
+        "data_exfiltration",
+        "encryption"
+      ],
+      "tools": ["Cobalt Strike", "Mimikatz", "BloodHound", "PowerShell Empire"],
+      "ttps": [
+        {
+          "tactic": "initial_access",
+          "technique": "phishing",
+          "procedure": "Mass phishing campaigns with malicious attachments or links to malware"
+        },
+        {
+          "tactic": "privilege_escalation",
+          "technique": "exploit_vulnerability",
+          "procedure": "Exploitation of unpatched vulnerabilities to gain higher privileges"
+        },
+        {
+          "tactic": "lateral_movement",
+          "technique": "remote_services",
+          "procedure": "Use of RDP, WMI, and PsExec to move laterally within the network"
+        },
+        {
+          "tactic": "impact",
+          "technique": "data_encrypted_for_impact",
+          "procedure": "Encryption of critical data and systems, with ransom demands for decryption"
+        }
+      ],
+      "vulnerabilities": [
+        {
+          "cve": "CVE-2021-34527",
+          "description": "Windows Print Spooler Remote Code Execution (PrintNightmare)",
+          "exploitability": 0.9
+        },
+        {
+          "cve": "CVE-2021-26855",
+          "description": "Microsoft Exchange Server SSRF (ProxyLogon)",
+          "exploitability": 0.95
+        }
+      ]
+    }
+  },
+  "vulnerability_mappings": {
+    "sql_injection": ["CVE-2020-9484", "CVE-2020-11979", "CVE-2021-27896"],
+    "cross_site_scripting": ["CVE-2021-42013", "CVE-2020-14883", "CVE-2021-31166"],
+    "buffer_overflow": ["CVE-2021-3156", "CVE-2021-22204", "CVE-2021-22205"],
+    "privilege_escalation": ["CVE-2021-1675", "CVE-2021-34527", "CVE-2021-33909"],
+    "unpatched_cve": ["CVE-2021-44228", "CVE-2021-40444", "CVE-2021-26084"],
+    "default_credentials": ["CVE-2021-22205", "CVE-2021-22502", "CVE-2021-22017"],
+    "misconfiguration": ["CVE-2021-29441", "CVE-2021-32626", "CVE-2021-32633"]
+  },
+  "attack_patterns": {
+    "initial_access": {
+      "phishing": {
+        "success_rate": 0.65,
+        "detection_rate": 0.45,
+        "target_types": ["workstation"]
+      },
+      "exploit_public_facing_application": {
+        "success_rate": 0.55,
+        "detection_rate": 0.60,
+        "target_types": ["server", "cloud_instance"]
+      },
+      "valid_accounts": {
+        "success_rate": 0.75,
+        "detection_rate": 0.30,
+        "target_types": ["workstation", "server", "cloud_instance"]
+      }
+    },
+    "lateral_movement": {
+      "remote_services": {
+        "success_rate": 0.70,
+        "detection_rate": 0.50,
+        "target_types": ["workstation", "server"]
+      },
+      "pass_the_hash": {
+        "success_rate": 0.65,
+        "detection_rate": 0.40,
+        "target_types": ["workstation", "server"]
+      }
+    }
+  }
+}

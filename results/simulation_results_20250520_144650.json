@@ -1,0 +1,115 @@
+{
+  "config": {
+    "network_size": "small",
+    "network_complexity": "medium",
+    "num_steps": 5,
+    "red_skill_level": 0.6,
+    "safe_mode": true,
+    "config_file": "hydra-safe-test.yml"
+  },
+  "steps": [
+    {
+      "step": 1,
+      "red_action": {
+        "strategy": "Targeted",
+        "target": 0,
+        "attack_type": "sql_injection",
+        "success": false,
+        "info": "No sql_injection vulnerability found"
+      },
+      "blue_actions": [],
+      "compromised_nodes": [],
+      "patched_nodes": [],
+      "alerts": []
+    },
+    {
+      "step": 2,
+      "red_action": {
+        "strategy": "Stealthy",
+        "target": 0,
+        "attack_type": "privilege_escalation",
+        "success": false,
+        "info": "No privilege_escalation vulnerability found"
+      },
+      "blue_actions": [
+        {
+          "action": "investigate",
+          "node_id": 11,
+          "found_compromise": false,
+          "success": true
+        }
+      ],
+      "compromised_nodes": [],
+      "patched_nodes": [],
+      "alerts": []
+    },
+    {
+      "step": 3,
+      "red_action": {
+        "strategy": "Stealthy",
+        "target": 0,
+        "attack_type": "misconfiguration",
+        "success": false,
+        "info": "No misconfiguration vulnerability found"
+      },
+      "blue_actions": [],
+      "compromised_nodes": [],
+      "patched_nodes": [],
+      "alerts": []
+    },
+    {
+      "step": 4,
+      "red_action": {
+        "strategy": "Targeted",
+        "target": 0,
+        "attack_type": "privilege_escalation",
+        "success": false,
+        "info": "No privilege_escalation vulnerability found"
+      },
+      "blue_actions": [
+        {
+          "action": "investigate",
+          "node_id": 7,
+          "found_compromise": false,
+          "success": true
+        },
+        {
+          "action": "investigate",
+          "node_id": 11,
+          "found_compromise": false,
+          "success": true
+        },
+        {
+          "action": "investigate",
+          "node_id": 14,
+          "found_compromise": false,
+          "success": true
+        }
+      ],
+      "compromised_nodes": [],
+      "patched_nodes": [],
+      "alerts": []
+    },
+    {
+      "step": 5,
+      "red_action": {
+        "strategy": "Stealthy",
+        "target": 0,
+        "attack_type": "misconfiguration",
+        "success": false,
+        "info": "No misconfiguration vulnerability found"
+      },
+      "blue_actions": [],
+      "compromised_nodes": [],
+      "patched_nodes": [],
+      "alerts": []
+    }
+  ],
+  "summary": {
+    "total_compromised": 0,
+    "total_patched": 0,
+    "red_success_rate": 0.0,
+    "blue_success_rate": 1.0,
+    "simulation_time": 0.00392913818359375
+  }
+}

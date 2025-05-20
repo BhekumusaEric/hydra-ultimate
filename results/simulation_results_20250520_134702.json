@@ -1,0 +1,372 @@
+{
+  "config": {
+    "network_size": "small",
+    "network_complexity": "medium",
+    "num_steps": 20,
+    "red_skill_level": 0.6
+  },
+  "steps": [
+    {
+      "step": 1,
+      "red_action": {
+        "strategy": "Targeted",
+        "target": 0,
+        "attack_type": "buffer_overflow",
+        "success": false,
+        "info": "No buffer_overflow vulnerability found"
+      },
+      "blue_actions": [
+        {
+          "action": "patch",
+          "node_id": 1,
+          "vulnerability_type": "misconfiguration",
+          "success": true
+        }
+      ],
+      "compromised_nodes": [],
+      "patched_nodes": [
+        1
+      ],
+      "alerts": []
+    },
+    {
+      "step": 2,
+      "red_action": {
+        "strategy": "Targeted",
+        "target": 0,
+        "attack_type": "privilege_escalation",
+        "success": false,
+        "info": "No privilege_escalation vulnerability found"
+      },
+      "blue_actions": [
+        {
+          "action": "patch",
+          "node_id": 1,
+          "vulnerability_type": "cross_site_scripting",
+          "success": true
+        }
+      ],
+      "compromised_nodes": [],
+      "patched_nodes": [
+        1
+      ],
+      "alerts": []
+    },
+    {
+      "step": 3,
+      "red_action": {
+        "strategy": "Stealthy",
+        "target": 0,
+        "attack_type": "privilege_escalation",
+        "success": false,
+        "info": "No privilege_escalation vulnerability found"
+      },
+      "blue_actions": [
+        {
+          "action": "patch",
+          "node_id": 1,
+          "vulnerability_type": "buffer_overflow",
+          "success": true
+        }
+      ],
+      "compromised_nodes": [],
+      "patched_nodes": [
+        1
+      ],
+      "alerts": []
+    },
+    {
+      "step": 4,
+      "red_action": {
+        "strategy": "Targeted",
+        "target": 0,
+        "attack_type": "unpatched_cve",
+        "success": false,
+        "info": "No unpatched_cve vulnerability found"
+      },
+      "blue_actions": [
+        {
+          "action": "patch",
+          "node_id": 1,
+          "vulnerability_type": "privilege_escalation",
+          "success": true
+        }
+      ],
+      "compromised_nodes": [],
+      "patched_nodes": [
+        1
+      ],
+      "alerts": []
+    },
+    {
+      "step": 5,
+      "red_action": {
+        "strategy": "Targeted",
+        "target": 0,
+        "attack_type": "privilege_escalation",
+        "success": false,
+        "info": "No privilege_escalation vulnerability found"
+      },
+      "blue_actions": [
+        {
+          "action": "patch",
+          "node_id": 1,
+          "vulnerability_type": "default_credentials",
+          "success": true
+        }
+      ],
+      "compromised_nodes": [],
+      "patched_nodes": [
+        1
+      ],
+      "alerts": []
+    },
+    {
+      "step": 6,
+      "red_action": {
+        "strategy": "Targeted",
+        "target": 0,
+        "attack_type": "sql_injection",
+        "success": false,
+        "info": "No sql_injection vulnerability found"
+      },
+      "blue_actions": [],
+      "compromised_nodes": [],
+      "patched_nodes": [
+        1
+      ],
+      "alerts": []
+    },
+    {
+      "step": 7,
+      "red_action": {
+        "strategy": "Targeted",
+        "target": 0,
+        "attack_type": "cross_site_scripting",
+        "success": false,
+        "info": "No cross_site_scripting vulnerability found"
+      },
+      "blue_actions": [],
+      "compromised_nodes": [],
+      "patched_nodes": [
+        1
+      ],
+      "alerts": []
+    },
+    {
+      "step": 8,
+      "red_action": {
+        "strategy": "Stealthy",
+        "target": 0,
+        "attack_type": "misconfiguration",
+        "success": false,
+        "info": "No misconfiguration vulnerability found"
+      },
+      "blue_actions": [],
+      "compromised_nodes": [],
+      "patched_nodes": [
+        1
+      ],
+      "alerts": []
+    },
+    {
+      "step": 9,
+      "red_action": {
+        "strategy": "Targeted",
+        "target": 0,
+        "attack_type": "buffer_overflow",
+        "success": false,
+        "info": "No buffer_overflow vulnerability found"
+      },
+      "blue_actions": [],
+      "compromised_nodes": [],
+      "patched_nodes": [
+        1
+      ],
+      "alerts": []
+    },
+    {
+      "step": 10,
+      "red_action": {
+        "strategy": "Targeted",
+        "target": 0,
+        "attack_type": "privilege_escalation",
+        "success": false,
+        "info": "No privilege_escalation vulnerability found"
+      },
+      "blue_actions": [],
+      "compromised_nodes": [],
+      "patched_nodes": [
+        1
+      ],
+      "alerts": []
+    },
+    {
+      "step": 11,
+      "red_action": {
+        "strategy": "Targeted",
+        "target": 0,
+        "attack_type": "buffer_overflow",
+        "success": false,
+        "info": "No buffer_overflow vulnerability found"
+      },
+      "blue_actions": [],
+      "compromised_nodes": [],
+      "patched_nodes": [
+        1
+      ],
+      "alerts": []
+    },
+    {
+      "step": 12,
+      "red_action": {
+        "strategy": "Targeted",
+        "target": 0,
+        "attack_type": "sql_injection",
+        "success": false,
+        "info": "No sql_injection vulnerability found"
+      },
+      "blue_actions": [],
+      "compromised_nodes": [],
+      "patched_nodes": [
+        1
+      ],
+      "alerts": []
+    },
+    {
+      "step": 13,
+      "red_action": {
+        "strategy": "Targeted",
+        "target": 0,
+        "attack_type": "cross_site_scripting",
+        "success": false,
+        "info": "No cross_site_scripting vulnerability found"
+      },
+      "blue_actions": [],
+      "compromised_nodes": [],
+      "patched_nodes": [
+        1
+      ],
+      "alerts": []
+    },
+    {
+      "step": 14,
+      "red_action": {
+        "strategy": "Targeted",
+        "target": 0,
+        "attack_type": "buffer_overflow",
+        "success": false,
+        "info": "No buffer_overflow vulnerability found"
+      },
+      "blue_actions": [],
+      "compromised_nodes": [],
+      "patched_nodes": [
+        1
+      ],
+      "alerts": []
+    },
+    {
+      "step": 15,
+      "red_action": {
+        "strategy": "Stealthy",
+        "target": 0,
+        "attack_type": "default_credentials",
+        "success": false,
+        "info": "No default_credentials vulnerability found"
+      },
+      "blue_actions": [],
+      "compromised_nodes": [],
+      "patched_nodes": [
+        1
+      ],
+      "alerts": []
+    },
+    {
+      "step": 16,
+      "red_action": {
+        "strategy": "Stealthy",
+        "target": 0,
+        "attack_type": "misconfiguration",
+        "success": false,
+        "info": "No misconfiguration vulnerability found"
+      },
+      "blue_actions": [],
+      "compromised_nodes": [],
+      "patched_nodes": [
+        1
+      ],
+      "alerts": []
+    },
+    {
+      "step": 17,
+      "red_action": {
+        "strategy": "Targeted",
+        "target": 0,
+        "attack_type": "sql_injection",
+        "success": false,
+        "info": "No sql_injection vulnerability found"
+      },
+      "blue_actions": [],
+      "compromised_nodes": [],
+      "patched_nodes": [
+        1
+      ],
+      "alerts": []
+    },
+    {
+      "step": 18,
+      "red_action": {
+        "strategy": "Targeted",
+        "target": 0,
+        "attack_type": "sql_injection",
+        "success": false,
+        "info": "No sql_injection vulnerability found"
+      },
+      "blue_actions": [],
+      "compromised_nodes": [],
+      "patched_nodes": [
+        1
+      ],
+      "alerts": []
+    },
+    {
+      "step": 19,
+      "red_action": {
+        "strategy": "Targeted",
+        "target": 0,
+        "attack_type": "misconfiguration",
+        "success": false,
+        "info": "No misconfiguration vulnerability found"
+      },
+      "blue_actions": [],
+      "compromised_nodes": [],
+      "patched_nodes": [
+        1
+      ],
+      "alerts": []
+    },
+    {
+      "step": 20,
+      "red_action": {
+        "strategy": "Targeted",
+        "target": 0,
+        "attack_type": "default_credentials",
+        "success": false,
+        "info": "No default_credentials vulnerability found"
+      },
+      "blue_actions": [],
+      "compromised_nodes": [],
+      "patched_nodes": [
+        1
+      ],
+      "alerts": []
+    }
+  ],
+  "summary": {
+    "total_compromised": 0,
+    "total_patched": 1,
+    "red_success_rate": 0.0,
+    "blue_success_rate": 1.0,
+    "simulation_time": 0.03603243827819824
+  }
+}

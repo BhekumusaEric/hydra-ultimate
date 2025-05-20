@@ -1,0 +1,105 @@
+hydra:
+  environment: test
+  license: "YOUR-LICENSE-KEY"
+  
+  # Safe testing mode configuration
+  safe_testing:
+    enabled: true                # Enable safe testing mode
+    read_only: true              # Ensure no changes are made to production systems
+    observation_only: true       # Only observe network traffic, don't generate any
+    disable_exploits: true       # Disable actual exploit execution
+    log_only: true               # Only log findings, don't attempt remediation
+  
+  # Database configuration for storing results
+  database:
+    type: sqlite                 # Use local SQLite for testing
+    path: "./hydra_results.db"   # Local database file
+    
+  # Simulation parameters
+  simulation:
+    concurrency: 2               # Limit concurrent operations
+    timeout: 1800                # 30-minute timeout
+    max_bandwidth: "1MB/s"       # Limit bandwidth usage
+    throttling: true             # Enable throttling
+    
+  # Digital twin configuration
+  digital_twin:
+    storage_path: "./digital_twins"
+    snapshot_interval: 300       # Take snapshots every 5 minutes
+    import_from_network: true    # Import real network topology
+    
+  # Agent configuration
+  agents:
+    red:
+      # Configure Red Team agent for safe testing
+      strategies: ["stealthy"]   # Use only stealthy strategies to minimize impact
+      learning_rate: 0.001
+      safe_mode: true            # Enable safe mode for red agent
+      max_attempts_per_target: 3 # Limit attempts per target
+      excluded_attacks: [        # Exclude potentially disruptive attacks
+        "denial_of_service",
+        "brute_force",
+        "resource_exhaustion"
+      ]
+      excluded_targets: [        # Exclude critical systems
+        "production_db",
+        "payment_processor",
+        "authentication_server"
+      ]
+    
+    blue:
+      # Configure Blue Team agent
+      strategies: ["reactive", "proactive", "threat_hunting"]
+      learning_rate: 0.001
+      simulation_only: true      # Only simulate defensive actions
+      
+  # Analytics configuration
+  analytics:
+    retention_period: 30         # Keep data for 30 days
+    
+  # Integration configuration (disabled for initial testing)
+  integration:
+    siem:
+      enabled: false
+    ticketing:
+      enabled: false
+      
+  # Dashboard configuration
+  dashboard:
+    host: "localhost"
+    port: 8080
+    ssl:
+      enabled: false
+    
+  # API configuration
+  api:
+    host: "localhost"
+    port: 8443
+    ssl:
+      enabled: false
+    authentication:
+      type: "basic"
+      
+# Logging configuration
+logging:
+  level: INFO
+  format: json
+  output:
+    file:
+      path: "./logs"
+      max_size: 100MB
+      max_files: 10
+    console:
+      enabled: true
+
+# Network discovery configuration
+network_discovery:
+  passive_only: true             # Only passive discovery
+  scan_interval: 3600            # Scan once per hour
+  bandwidth_limit: "500KB/s"     # Limit bandwidth for discovery
+  excluded_subnets: []           # Add critical subnets to exclude
+  excluded_ports: [              # Exclude sensitive ports
+    22,                          # SSH
+    3389                         # RDP
+  ]
+  scan_timeout: 2                # Short timeouts to minimize impact

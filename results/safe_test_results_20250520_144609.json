@@ -1,0 +1,172 @@
+{
+  "config": {
+    "network_size": "small",
+    "network_complexity": "medium",
+    "num_steps": 10,
+    "red_skill_level": 0.6,
+    "safe_mode": true,
+    "config_file": "hydra-safe-test.yml"
+  },
+  "steps": [
+    {
+      "step": 1,
+      "red_action": {
+        "strategy": "Random",
+        "target": 0,
+        "attack_type": "misconfiguration",
+        "success": false,
+        "info": "No misconfiguration vulnerability found"
+      },
+      "blue_actions": [
+        {
+          "action": "investigate",
+          "node_id": 2,
+          "found_compromise": false,
+          "success": true
+        },
+        {
+          "action": "investigate",
+          "node_id": 12,
+          "found_compromise": false,
+          "success": true
+        }
+      ],
+      "compromised_nodes": [],
+      "patched_nodes": [],
+      "alerts": []
+    },
+    {
+      "step": 2,
+      "red_action": {
+        "strategy": "Random",
+        "target": 0,
+        "attack_type": "default_credentials",
+        "success": false,
+        "info": "Attack failed"
+      },
+      "blue_actions": [],
+      "compromised_nodes": [],
+      "patched_nodes": [],
+      "alerts": []
+    },
+    {
+      "step": 3,
+      "red_action": {
+        "strategy": "Random",
+        "target": 0,
+        "attack_type": "sql_injection",
+        "success": false,
+        "info": "No sql_injection vulnerability found"
+      },
+      "blue_actions": [],
+      "compromised_nodes": [],
+      "patched_nodes": [],
+      "alerts": []
+    },
+    {
+      "step": 4,
+      "red_action": {
+        "strategy": "Targeted",
+        "target": 0,
+        "attack_type": "default_credentials",
+        "success": false,
+        "info": "Attack failed"
+      },
+      "blue_actions": [],
+      "compromised_nodes": [],
+      "patched_nodes": [],
+      "alerts": []
+    },
+    {
+      "step": 5,
+      "red_action": {
+        "strategy": "Random",
+        "target": 0,
+        "attack_type": "default_credentials",
+        "success": false,
+        "info": "Attack failed"
+      },
+      "blue_actions": [],
+      "compromised_nodes": [],
+      "patched_nodes": [],
+      "alerts": []
+    },
+    {
+      "step": 6,
+      "red_action": {
+        "strategy": "Random",
+        "target": 0,
+        "attack_type": "unpatched_cve",
+        "success": false,
+        "info": "No unpatched_cve vulnerability found"
+      },
+      "blue_actions": [],
+      "compromised_nodes": [],
+      "patched_nodes": [],
+      "alerts": []
+    },
+    {
+      "step": 7,
+      "red_action": {
+        "strategy": "Random",
+        "target": 0,
+        "attack_type": "cross_site_scripting",
+        "success": false,
+        "info": "No cross_site_scripting vulnerability found"
+      },
+      "blue_actions": [],
+      "compromised_nodes": [],
+      "patched_nodes": [],
+      "alerts": []
+    },
+    {
+      "step": 8,
+      "red_action": {
+        "strategy": "Random",
+        "target": 0,
+        "attack_type": "sql_injection",
+        "success": false,
+        "info": "No sql_injection vulnerability found"
+      },
+      "blue_actions": [],
+      "compromised_nodes": [],
+      "patched_nodes": [],
+      "alerts": []
+    },
+    {
+      "step": 9,
+      "red_action": {
+        "strategy": "Random",
+        "target": 0,
+        "attack_type": "sql_injection",
+        "success": false,
+        "info": "No sql_injection vulnerability found"
+      },
+      "blue_actions": [],
+      "compromised_nodes": [],
+      "patched_nodes": [],
+      "alerts": []
+    },
+    {
+      "step": 10,
+      "red_action": {
+        "strategy": "Targeted",
+        "target": 0,
+        "attack_type": "default_credentials",
+        "success": false,
+        "info": "Attack failed"
+      },
+      "blue_actions": [],
+      "compromised_nodes": [],
+      "patched_nodes": [],
+      "alerts": []
+    }
+  ],
+  "summary": {
+    "total_compromised": 0,
+    "total_patched": 0,
+    "red_success_rate": 0.0,
+    "blue_success_rate": 1.0,
+    "simulation_time": 0.019164562225341797
+  }
+}

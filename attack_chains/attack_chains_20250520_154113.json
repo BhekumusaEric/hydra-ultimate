@@ -1,0 +1,98 @@
+[
+  [
+    {
+      "step": 5,
+      "action": "misconfiguration",
+      "target": 0,
+      "target_type": "firewall"
+    },
+    {
+      "step": 6,
+      "action": "default_credentials",
+      "target": 6,
+      "target_type": "cloud_instance"
+    },
+    {
+      "step": 7,
+      "action": "misconfiguration",
+      "target": 16,
+      "target_type": "cloud_instance"
+    }
+  ],
+  [
+    {
+      "step": 11,
+      "action": "buffer_overflow",
+      "target": 3,
+      "target_type": "server"
+    }
+  ],
+  [
+    {
+      "step": 15,
+      "action": "misconfiguration",
+      "target": 4,
+      "target_type": "database"
+    },
+    {
+      "step": 16,
+      "action": "default_credentials",
+      "target": 24,
+      "target_type": "database"
+    }
+  ],
+  [
+    {
+      "step": 34,
+      "action": "misconfiguration",
+      "target": 4,
+      "target_type": "database"
+    }
+  ],
+  [
+    {
+      "step": 37,
+      "action": "default_credentials",
+      "target": 24,
+      "target_type": "database"
+    }
+  ],
+  [
+    {
+      "step": 40,
+      "action": "default_credentials",
+      "target": 2,
+      "target_type": "server"
+    },
+    {
+      "step": 41,
+      "action": "default_credentials",
+      "target": 24,
+      "target_type": "database"
+    },
+    {
+      "step": 42,
+      "action": "buffer_overflow",
+      "target": 4,
+      "target_type": "database"
+    },
+    {
+      "step": 43,
+      "action": "default_credentials",
+      "target": 24,
+      "target_type": "database"
+    },
+    {
+      "step": 44,
+      "action": "default_credentials",
+      "target": 2,
+      "target_type": "server"
+    },
+    {
+      "step": 45,
+      "action": "default_credentials",
+      "target": 24,
+      "target_type": "database"
+    }
+  ]
+]

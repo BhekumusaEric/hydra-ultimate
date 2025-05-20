@@ -1,0 +1,93 @@
+
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <title>HYDRA Enhanced Simulation Report</title>
+        <style>
+            body { font-family: Arial, sans-serif; margin: 40px; }
+            h1, h2, h3 { color: #2c3e50; }
+            .summary { background-color: #f8f9fa; padding: 20px; border-radius: 5px; }
+            .metrics { display: flex; flex-wrap: wrap; }
+            .metric-card { background-color: #ffffff; border: 1px solid #e0e0e0;
+                          border-radius: 5px; padding: 15px; margin: 10px; width: 200px; }
+            .metric-value { font-size: 24px; font-weight: bold; color: #3498db; }
+            .attack { background-color: #fff8f8; border-left: 4px solid #e74c3c;
+                     padding: 10px; margin: 10px 0; }
+            .defense { background-color: #f8fff8; border-left: 4px solid #2ecc71;
+                      padding: 10px; margin: 10px 0; }
+            .success { color: #2ecc71; }
+            .failure { color: #e74c3c; }
+        </style>
+    </head>
+    <body>
+        <h1>HYDRA Enhanced Simulation Report</h1>
+        <p>Simulation conducted on 2025-05-20 16:12:03</p>
+
+        <div class="summary">
+            <h2>Executive Summary</h2>
+            <p>This report presents the findings from an enhanced simulation conducted using HYDRA with real-world attack patterns.</p>
+
+            <div class="metrics">
+                <div class="metric-card">
+                    <h3>Simulation Time</h3>
+                    <div class="metric-value">0.73s</div>
+                </div>
+                <div class="metric-card">
+                    <h3>Compromised Nodes</h3>
+                    <div class="metric-value">0</div>
+                </div>
+                <div class="metric-card">
+                    <h3>Patched Nodes</h3>
+                    <div class="metric-value">2</div>
+                </div>
+                <div class="metric-card">
+                    <h3>Red Success Rate</h3>
+                    <div class="metric-value">0.0%</div>
+                </div>
+                <div class="metric-card">
+                    <h3>Blue Success Rate</h3>
+                    <div class="metric-value">100.0%</div>
+                </div>
+                <div class="metric-card">
+                    <h3>Campaign Goal</h3>
+                    <div class="metric-value">persistence</div>
+                </div>
+                <div class="metric-card">
+                    <h3>Campaign Progress</h3>
+                    <div class="metric-value">0.0%</div>
+                </div>
+            </div>
+        </div>
+
+        <h2>Simulation Configuration</h2>
+        <pre>{
+  "network_size": "medium",
+  "network_complexity": "medium",
+  "num_steps": 10,
+  "red_skill_level": 0.9,
+  "threat_intel_file": "data/threat_intelligence.json",
+  "model_path": null
+}</pre>
+
+        <h2>Key Findings</h2>
+        <p>The simulation revealed several important insights about your network's security posture:</p>
+        <ul>
+            <li>The Red Agent was able to compromise 0 nodes.</li>
+            <li>The Blue Agent successfully patched 2 nodes.</li>
+            <li>The Red Agent's campaign goal was <strong>persistence</strong> and achieved 0.0% progress.</li>
+            <li>The Red Agent collected data from 0 sources.</li>
+            <li>The Red Agent performed 0 lateral movements.</li>
+        </ul>
+
+        <h2>Recommendations</h2>
+        <p>Based on the simulation results, consider the following recommendations:</p>
+        <ol>
+            <li>Improve detection capabilities for stealthy attack techniques.</li>
+            <li>Enhance network segmentation to limit lateral movement.</li>
+            <li>Implement stronger access controls for critical systems.</li>
+            <li>Regularly patch vulnerabilities to reduce attack surface.</li>
+            <li>Deploy additional monitoring for high-value assets.</li>
+        </ol>
+    </body>
+    </html>
+    

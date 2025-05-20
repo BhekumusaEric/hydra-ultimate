@@ -1,0 +1,118 @@
+{
+  "config": {
+    "network_size": "small",
+    "network_complexity": "medium",
+    "num_steps": 5,
+    "red_skill_level": 0.6,
+    "safe_mode": true,
+    "config_file": "hydra-safe-test.yml"
+  },
+  "steps": [
+    {
+      "step": 1,
+      "red_action": {
+        "strategy": "Random",
+        "target": 0,
+        "attack_type": "misconfiguration",
+        "success": false,
+        "info": "No misconfiguration vulnerability found"
+      },
+      "blue_actions": [],
+      "compromised_nodes": [],
+      "patched_nodes": [],
+      "alerts": []
+    },
+    {
+      "step": 2,
+      "red_action": {
+        "strategy": "Random",
+        "target": 0,
+        "attack_type": "sql_injection",
+        "success": false,
+        "info": "No sql_injection vulnerability found"
+      },
+      "blue_actions": [
+        {
+          "action": "patch",
+          "node_id": 1,
+          "vulnerability_type": "default_credentials",
+          "success": true
+        }
+      ],
+      "compromised_nodes": [],
+      "patched_nodes": [
+        1
+      ],
+      "alerts": []
+    },
+    {
+      "step": 3,
+      "red_action": {
+        "strategy": "Targeted",
+        "target": 0,
+        "attack_type": "buffer_overflow",
+        "success": false,
+        "info": "Attack failed"
+      },
+      "blue_actions": [
+        {
+          "action": "patch",
+          "node_id": 1,
+          "vulnerability_type": "misconfiguration",
+          "success": true
+        }
+      ],
+      "compromised_nodes": [],
+      "patched_nodes": [
+        1
+      ],
+      "alerts": []
+    },
+    {
+      "step": 4,
+      "red_action": {
+        "strategy": "Random",
+        "target": 0,
+        "attack_type": "privilege_escalation",
+        "success": false,
+        "info": "No privilege_escalation vulnerability found"
+      },
+      "blue_actions": [
+        {
+          "action": "patch",
+          "node_id": 1,
+          "vulnerability_type": "unpatched_cve",
+          "success": true
+        }
+      ],
+      "compromised_nodes": [],
+      "patched_nodes": [
+        1
+      ],
+      "alerts": []
+    },
+    {
+      "step": 5,
+      "red_action": {
+        "strategy": "Random",
+        "target": 0,
+        "attack_type": "unpatched_cve",
+        "success": false,
+        "info": "No unpatched_cve vulnerability found"
+      },
+      "blue_actions": [],
+      "compromised_nodes": [],
+      "patched_nodes": [
+        1
+      ],
+      "alerts": []
+    }
+  ],
+  "summary": {
+    "total_compromised": 0,
+    "total_patched": 1,
+    "red_success_rate": 0.0,
+    "blue_success_rate": 1.0,
+    "simulation_time": 0.006121158599853516
+  }
+}

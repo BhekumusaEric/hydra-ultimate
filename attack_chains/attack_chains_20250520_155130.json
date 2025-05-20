@@ -1,0 +1,150 @@
+[
+  [
+    {
+      "step": 16,
+      "action": "buffer_overflow",
+      "target": 0,
+      "target_type": "firewall"
+    }
+  ],
+  [
+    {
+      "step": 18,
+      "action": "buffer_overflow",
+      "target": 4,
+      "target_type": "router"
+    }
+  ],
+  [
+    {
+      "step": 20,
+      "action": "buffer_overflow",
+      "target": 7,
+      "target_type": "server"
+    },
+    {
+      "step": 21,
+      "action": "default_credentials",
+      "target": 50,
+      "target_type": "server"
+    }
+  ],
+  [
+    {
+      "step": 32,
+      "action": "default_credentials",
+      "target": 49,
+      "target_type": "workstation"
+    },
+    {
+      "step": 33,
+      "action": "default_credentials",
+      "target": 50,
+      "target_type": "server"
+    }
+  ],
+  [
+    {
+      "step": 38,
+      "action": "default_credentials",
+      "target": 7,
+      "target_type": "server"
+    }
+  ],
+  [
+    {
+      "step": 40,
+      "action": "default_credentials",
+      "target": 50,
+      "target_type": "server"
+    }
+  ],
+  [
+    {
+      "step": 43,
+      "action": "buffer_overflow",
+      "target": 7,
+      "target_type": "server"
+    },
+    {
+      "step": 44,
+      "action": "default_credentials",
+      "target": 50,
+      "target_type": "server"
+    }
+  ],
+  [
+    {
+      "step": 51,
+      "action": "default_credentials",
+      "target": 49,
+      "target_type": "workstation"
+    },
+    {
+      "step": 52,
+      "action": "default_credentials",
+      "target": 50,
+      "target_type": "server"
+    }
+  ],
+  [
+    {
+      "step": 72,
+      "action": "default_credentials",
+      "target": 7,
+      "target_type": "server"
+    }
+  ],
+  [
+    {
+      "step": 74,
+      "action": "privilege_escalation",
+      "target": 55,
+      "target_type": "database"
+    }
+  ],
+  [
+    {
+      "step": 82,
+      "action": "default_credentials",
+      "target": 7,
+      "target_type": "server"
+    }
+  ],
+  [
+    {
+      "step": 85,
+      "action": "privilege_escalation",
+      "target": 55,
+      "target_type": "database"
+    }
+  ],
+  [
+    {
+      "step": 93,
+      "action": "privilege_escalation",
+      "target": 24,
+      "target_type": "workstation"
+    },
+    {
+      "step": 94,
+      "action": "privilege_escalation",
+      "target": 55,
+      "target_type": "database"
+    }
+  ],
+  [
+    {
+      "step": 98,
+      "action": "default_credentials",
+      "target": 7,
+      "target_type": "server"
+    },
+    {
+      "step": 99,
+      "action": "privilege_escalation",
+      "target": 55,
+      "target_type": "database"
+    }
+  ]
+]

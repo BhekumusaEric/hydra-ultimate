@@ -1,0 +1,2100 @@
+{
+  "graph": {
+    "directed": true,
+    "multigraph": false,
+    "graph": {},
+    "nodes": [
+      {
+        "type": "firewall",
+        "vulnerabilities": [
+          {
+            "type": "cross_site_scripting",
+            "severity": 3.003233473325712,
+            "exploitability": 0.13944862250391307,
+            "patched": false
+          },
+          {
+            "type": "buffer_overflow",
+            "severity": 3.5434278153144185,
+            "exploitability": 0.6450470751252044,
+            "patched": false
+          },
+          {
+            "type": "privilege_escalation",
+            "severity": 1.8050432781152954,
+            "exploitability": 0.3464174827237921,
+            "patched": false
+          }
+        ],
+        "services": [],
+        "os": {
+          "type": "Windows",
+          "version": "Server 2022",
+          "patch_level": "Low",
+          "installed_patches": []
+        },
+        "patch_level": 0.6669142763469522,
+        "security_controls": [
+          "Antivirus",
+          "Host Firewall",
+          "EDR",
+          "Packet Inspection",
+          "IPS"
+        ],
+        "id": 0
+      },
+      {
+        "type": "router",
+        "vulnerabilities": [
+          {
+            "type": "sql_injection",
+            "severity": 3.876612460688618,
+            "exploitability": 0.28024895906330377,
+            "patched": true
+          },
+          {
+            "type": "buffer_overflow",
+            "severity": 1.7047682432211484,
+            "exploitability": 0.14432367213630273,
+            "patched": false
+          },
+          {
+            "type": "privilege_escalation",
+            "severity": 1.055581000765124,
+            "exploitability": 0.21874029197521044,
+            "patched": false
+          },
+          {
+            "type": "unpatched_cve",
+            "severity": 2.6144558179353448,
+            "exploitability": 0.7304320739639176,
+            "patched": true
+          },
+          {
+            "type": "default_credentials",
+            "severity": 2.4744410227878424,
+            "exploitability": 0.5003755594569257,
+            "patched": false
+          },
+          {
+            "type": "misconfiguration",
+            "severity": 6.997756297165427,
+            "exploitability": 0.6660683730461063,
+            "patched": true
+          }
+        ],
+        "services": [],
+        "os": {
+          "type": "macOS",
+          "version": "Ventura",
+          "patch_level": "Latest",
+          "installed_patches": []
+        },
+        "patch_level": 0.9836670560509,
+        "security_controls": [
+          "EDR"
+        ],
+        "id": 1
+      },
+      {
+        "type": "router",
+        "vulnerabilities": [
+          {
+            "type": "sql_injection",
+            "severity": 5.8459799752441945,
+            "exploitability": 0.8717700984213261,
+            "patched": true
+          },
+          {
+            "type": "cross_site_scripting",
+            "severity": 8.840481391700171,
+            "exploitability": 0.2775710337568925,
+            "patched": true
+          },
+          {
+            "type": "unpatched_cve",
+            "severity": 7.28991883976909,
+            "exploitability": 0.5618776539314253,
+            "patched": true
+          }
+        ],
+        "services": [],
+        "os": {
+          "type": "Windows",
+          "version": "Server 2022",
+          "patch_level": "Medium",
+          "installed_patches": [
+            "KB5005033",
+            "KB5003173",
+            "KB5001330"
+          ]
+        },
+        "patch_level": 0.6086345765786472,
+        "security_controls": [
+          "Antivirus",
+          "Host Firewall"
+        ],
+        "id": 2
+      },
+      {
+        "type": "router",
+        "vulnerabilities": [
+          {
+            "type": "buffer_overflow",
+            "severity": 4.92488346826839,
+            "exploitability": 0.994329643760944,
+            "patched": true
+          },
+          {
+            "type": "privilege_escalation",
+            "severity": 3.663471672502147,
+            "exploitability": 0.6409436696467921,
+            "patched": true
+          },
+          {
+            "type": "default_credentials",
+            "severity": 5.3295593975817415,
+            "exploitability": 0.3096854464165883,
+            "patched": true
+          }
+        ],
+        "services": [],
+        "os": {
+          "type": "Linux",
+          "version": "RHEL 8",
+          "patch_level": "High",
+          "installed_patches": []
+        },
+        "patch_level": 0.6670535980610829,
+        "security_controls": [
+          "Antivirus"
+        ],
+        "id": 3
+      },
+      {
+        "type": "server",
+        "vulnerabilities": [
+          {
+            "type": "cross_site_scripting",
+            "severity": 7.502187994518794,
+            "exploitability": 0.9221481302969028,
+            "patched": false
+          },
+          {
+            "type": "buffer_overflow",
+            "severity": 2.8664978772055605,
+            "exploitability": 0.6257705892011027,
+            "patched": false
+          }
+        ],
+        "services": [
+          {
+            "name": "DNS",
+            "version": "1.7.16",
+            "port": 53,
+            "exposed": true
+          },
+          {
+            "name": "FTP",
+            "version": "5.2.5",
+            "port": 21,
+            "exposed": true
+          },
+          {
+            "name": "HTTP",
+            "version": "2.3.17",
+            "port": 80,
+            "exposed": true
+          },
+          {
+            "name": "LDAP",
+            "version": "1.2.0",
+            "port": 389,
+            "exposed": false
+          }
+        ],
+        "os": {
+          "type": "Windows",
+          "version": "Server 2022",
+          "patch_level": "Medium",
+          "installed_patches": [
+            "KB5003173",
+            "KB5005033",
+            "KB5001330"
+          ]
+        },
+        "patch_level": 0.807739127121176,
+        "security_controls": [
+          "Antivirus",
+          "Intrusion Detection"
+        ],
+        "id": 4
+      },
+      {
+        "type": "server",
+        "vulnerabilities": [
+          {
+            "type": "sql_injection",
+            "severity": 9.430875407743331,
+            "exploitability": 0.1394745953492712,
+            "patched": false
+          },
+          {
+            "type": "cross_site_scripting",
+            "severity": 9.47067601190823,
+            "exploitability": 0.9440050994877309,
+            "patched": false
+          },
+          {
+            "type": "buffer_overflow",
+            "severity": 1.546496746237082,
+            "exploitability": 0.571677381681978,
+            "patched": false
+          },
+          {
+            "type": "privilege_escalation",
+            "severity": 7.773076207427771,
+            "exploitability": 0.8075277630575255,
+            "patched": false
+          },
+          {
+            "type": "unpatched_cve",
+            "severity": 2.589294489789906,
+            "exploitability": 0.12984165660663863,
+            "patched": false
+          },
+          {
+            "type": "misconfiguration",
+            "severity": 6.769803674724748,
+            "exploitability": 0.568390704624038,
+            "patched": false
+          }
+        ],
+        "services": [
+          {
+            "name": "HTTPS",
+            "version": "4.9.19",
+            "port": 443,
+            "exposed": false
+          },
+          {
+            "name": "SSH",
+            "version": "5.7.2",
+            "port": 22,
+            "exposed": false
+          },
+          {
+            "name": "HTTP",
+            "version": "1.4.11",
+            "port": 80,
+            "exposed": true
+          }
+        ],
+        "os": {
+          "type": "Windows",
+          "version": "11",
+          "patch_level": "Medium",
+          "installed_patches": []
+        },
+        "patch_level": 0.6033057696250552,
+        "security_controls": [
+          "Antivirus",
+          "Host Firewall",
+          "EDR",
+          "Intrusion Detection",
+          "File Integrity Monitoring"
+        ],
+        "id": 5
+      },
+      {
+        "type": "server",
+        "vulnerabilities": [
+          {
+            "type": "sql_injection",
+            "severity": 4.155828827368227,
+            "exploitability": 0.5631868261309214,
+            "patched": false
+          },
+          {
+            "type": "buffer_overflow",
+            "severity": 2.8641205095943527,
+            "exploitability": 0.5229021786608679,
+            "patched": false
+          },
+          {
+            "type": "privilege_escalation",
+            "severity": 3.7925963067230173,
+            "exploitability": 0.13750085398507772,
+            "patched": false
+          },
+          {
+            "type": "misconfiguration",
+            "severity": 7.88159023021578,
+            "exploitability": 0.4842502399545554,
+            "patched": false
+          }
+        ],
+        "services": [
+          {
+            "name": "HTTPS",
+            "version": "3.0.10",
+            "port": 443,
+            "exposed": true
+          },
+          {
+            "name": "LDAP",
+            "version": "2.6.20",
+            "port": 389,
+            "exposed": true
+          },
+          {
+            "name": "SSH",
+            "version": "1.6.5",
+            "port": 22,
+            "exposed": true
+          },
+          {
+            "name": "DNS",
+            "version": "2.4.11",
+            "port": 53,
+            "exposed": true
+          },
+          {
+            "name": "FTP",
+            "version": "1.8.2",
+            "port": 21,
+            "exposed": true
+          }
+        ],
+        "os": {
+          "type": "Linux",
+          "version": "Ubuntu 22.04",
+          "patch_level": "High",
+          "installed_patches": []
+        },
+        "patch_level": 0.6917274646259843,
+        "security_controls": [
+          "Antivirus",
+          "Intrusion Detection"
+        ],
+        "id": 6
+      },
+      {
+        "type": "database",
+        "vulnerabilities": [
+          {
+            "type": "sql_injection",
+            "severity": 3.7141250049332726,
+            "exploitability": 0.24147505397516372,
+            "patched": false
+          },
+          {
+            "type": "privilege_escalation",
+            "severity": 3.023715187539507,
+            "exploitability": 0.3614114402995938,
+            "patched": false
+          },
+          {
+            "type": "unpatched_cve",
+            "severity": 2.3181515306049834,
+            "exploitability": 0.11197167261564737,
+            "patched": false
+          },
+          {
+            "type": "default_credentials",
+            "severity": 2.249282467772334,
+            "exploitability": 0.664170851495158,
+            "patched": false
+          }
+        ],
+        "services": [
+          {
+            "name": "MongoDB",
+            "version": "9.8",
+            "port": 27017,
+            "exposed": true
+          }
+        ],
+        "os": {
+          "type": "Linux",
+          "version": "Ubuntu 20.04",
+          "patch_level": "High",
+          "installed_patches": []
+        },
+        "patch_level": 0.5269844216073629,
+        "security_controls": [
+          "Antivirus",
+          "Intrusion Detection"
+        ],
+        "id": 7
+      },
+      {
+        "type": "database",
+        "vulnerabilities": [
+          {
+            "type": "sql_injection",
+            "severity": 3.409168035779849,
+            "exploitability": 0.5508192297245352,
+            "patched": false
+          },
+          {
+            "type": "unpatched_cve",
+            "severity": 7.444222163551223,
+            "exploitability": 0.40857270337884577,
+            "patched": false
+          },
+          {
+            "type": "default_credentials",
+            "severity": 7.212488656107378,
+            "exploitability": 0.2910149821755168,
+            "patched": false
+          },
+          {
+            "type": "misconfiguration",
+            "severity": 7.098378908758726,
+            "exploitability": 0.6669422343129227,
+            "patched": false
+          }
+        ],
+        "services": [
+          {
+            "name": "PostgreSQL",
+            "version": "12.4",
+            "port": 5432,
+            "exposed": false
+          }
+        ],
+        "os": {
+          "type": "Linux",
+          "version": "Ubuntu 20.04",
+          "patch_level": "Low",
+          "installed_patches": []
+        },
+        "patch_level": 0.6891094468105549,
+        "security_controls": [
+          "Antivirus",
+          "Host Firewall",
+          "EDR",
+          "Intrusion Detection"
+        ],
+        "id": 8
+      },
+      {
+        "type": "database",
+        "vulnerabilities": [
+          {
+            "type": "buffer_overflow",
+            "severity": 1.8114748780046985,
+            "exploitability": 0.7962837633332298,
+            "patched": false
+          },
+          {
+            "type": "privilege_escalation",
+            "severity": 6.9800168627992285,
+            "exploitability": 0.8703025851820214,
+            "patched": false
+          },
+          {
+            "type": "unpatched_cve",
+            "severity": 3.7914261083386016,
+            "exploitability": 0.41088531103861115,
+            "patched": false
+          },
+          {
+            "type": "default_credentials",
+            "severity": 2.1554001318959495,
+            "exploitability": 0.9054245407026802,
+            "patched": false
+          },
+          {
+            "type": "misconfiguration",
+            "severity": 6.8250019870220955,
+            "exploitability": 0.1921642809430448,
+            "patched": false
+          }
+        ],
+        "services": [
+          {
+            "name": "SQL Server",
+            "version": "12.8",
+            "port": 1433,
+            "exposed": true
+          }
+        ],
+        "os": {
+          "type": "Linux",
+          "version": "CentOS 7",
+          "patch_level": "Medium",
+          "installed_patches": []
+        },
+        "patch_level": 0.84398119172952,
+        "security_controls": [
+          "Antivirus",
+          "Intrusion Detection",
+          "File Integrity Monitoring"
+        ],
+        "id": 9
+      },
+      {
+        "type": "cloud_instance",
+        "vulnerabilities": [
+          {
+            "type": "cross_site_scripting",
+            "severity": 1.1503429596964656,
+            "exploitability": 0.31329826733957844,
+            "patched": false
+          },
+          {
+            "type": "buffer_overflow",
+            "severity": 8.878697480006707,
+            "exploitability": 0.9536028130664532,
+            "patched": false
+          },
+          {
+            "type": "unpatched_cve",
+            "severity": 9.639898827363018,
+            "exploitability": 0.20340221032035039,
+            "patched": false
+          },
+          {
+            "type": "default_credentials",
+            "severity": 8.309763056179483,
+            "exploitability": 0.5572468399966235,
+            "patched": false
+          }
+        ],
+        "services": [],
+        "os": {
+          "type": "Linux",
+          "version": "RHEL 8",
+          "patch_level": "High",
+          "installed_patches": []
+        },
+        "patch_level": 0.8572621601637778,
+        "security_controls": [],
+        "id": 10
+      },
+      {
+        "type": "cloud_instance",
+        "vulnerabilities": [
+          {
+            "type": "sql_injection",
+            "severity": 2.418128429611002,
+            "exploitability": 0.6391556234469347,
+            "patched": false
+          },
+          {
+            "type": "buffer_overflow",
+            "severity": 6.285448718203998,
+            "exploitability": 0.5435409787126826,
+            "patched": false
+          },
+          {
+            "type": "privilege_escalation",
+            "severity": 9.367237735261464,
+            "exploitability": 0.8211936485056205,
+            "patched": false
+          },
+          {
+            "type": "unpatched_cve",
+            "severity": 8.456732241320143,
+            "exploitability": 0.7567668075696383,
+            "patched": false
+          },
+          {
+            "type": "default_credentials",
+            "severity": 1.9920326843767402,
+            "exploitability": 0.28174329437323686,
+            "patched": false
+          },
+          {
+            "type": "misconfiguration",
+            "severity": 3.0433283360921686,
+            "exploitability": 0.9628434535832865,
+            "patched": false
+          }
+        ],
+        "services": [],
+        "os": {
+          "type": "macOS",
+          "version": "Ventura",
+          "patch_level": "Low",
+          "installed_patches": []
+        },
+        "patch_level": 0.5779506349804606,
+        "security_controls": [
+          "Antivirus",
+          "Host Firewall"
+        ],
+        "id": 11
+      },
+      {
+        "type": "cloud_instance",
+        "vulnerabilities": [
+          {
+            "type": "sql_injection",
+            "severity": 4.623627724690615,
+            "exploitability": 0.23411880543034216,
+            "patched": false
+          },
+          {
+            "type": "cross_site_scripting",
+            "severity": 3.3535242802768765,
+            "exploitability": 0.2670193538336211,
+            "patched": false
+          },
+          {
+            "type": "buffer_overflow",
+            "severity": 7.274723267575071,
+            "exploitability": 0.5724443040839408,
+            "patched": false
+          },
+          {
+            "type": "privilege_escalation",
+            "severity": 1.0396366720684076,
+            "exploitability": 0.9725241252077756,
+            "patched": false
+          },
+          {
+            "type": "unpatched_cve",
+            "severity": 3.386774911519292,
+            "exploitability": 0.9604019427592806,
+            "patched": false
+          },
+          {
+            "type": "default_credentials",
+            "severity": 7.128987950179492,
+            "exploitability": 0.4079491887352876,
+            "patched": false
+          },
+          {
+            "type": "misconfiguration",
+            "severity": 3.6365724458726687,
+            "exploitability": 0.202856801355663,
+            "patched": false
+          }
+        ],
+        "services": [],
+        "os": {
+          "type": "macOS",
+          "version": "Sonoma",
+          "patch_level": "High",
+          "installed_patches": []
+        },
+        "patch_level": 0.6413840520079082,
+        "security_controls": [
+          "Antivirus"
+        ],
+        "id": 12
+      },
+      {
+        "type": "workstation",
+        "vulnerabilities": [
+          {
+            "type": "unpatched_cve",
+            "severity": 3.2647765279940173,
+            "exploitability": 0.46056129560090275,
+            "patched": false
+          },
+          {
+            "type": "misconfiguration",
+            "severity": 3.0939002805542914,
+            "exploitability": 0.27640148773213885,
+            "patched": false
+          }
+        ],
+        "services": [],
+        "os": {
+          "type": "macOS",
+          "version": "Ventura",
+          "patch_level": "Low",
+          "installed_patches": []
+        },
+        "patch_level": 0.8512852655320435,
+        "security_controls": [
+          "Host Firewall",
+          "EDR"
+        ],
+        "id": 13
+      },
+      {
+        "type": "workstation",
+        "vulnerabilities": [
+          {
+            "type": "sql_injection",
+            "severity": 3.5871559471298573,
+            "exploitability": 0.9016351432011313,
+            "patched": false
+          },
+          {
+            "type": "cross_site_scripting",
+            "severity": 8.111879110601228,
+            "exploitability": 0.7384276442332894,
+            "patched": false
+          },
+          {
+            "type": "privilege_escalation",
+            "severity": 2.7487005572555967,
+            "exploitability": 0.2548177722682548,
+            "patched": false
+          },
+          {
+            "type": "default_credentials",
+            "severity": 2.84950933759004,
+            "exploitability": 0.19157954070306077,
+            "patched": false
+          },
+          {
+            "type": "misconfiguration",
+            "severity": 4.923498455145056,
+            "exploitability": 0.8563995803725079,
+            "patched": false
+          }
+        ],
+        "services": [],
+        "os": {
+          "type": "macOS",
+          "version": "Sonoma",
+          "patch_level": "Medium",
+          "installed_patches": []
+        },
+        "patch_level": 0.6676259044688282,
+        "security_controls": [
+          "Antivirus"
+        ],
+        "id": 14
+      },
+      {
+        "type": "workstation",
+        "vulnerabilities": [
+          {
+            "type": "cross_site_scripting",
+            "severity": 9.302973064797808,
+            "exploitability": 0.41785688547232813,
+            "patched": false
+          },
+          {
+            "type": "buffer_overflow",
+            "severity": 2.02757612182618,
+            "exploitability": 0.33384713318136106,
+            "patched": false
+          },
+          {
+            "type": "privilege_escalation",
+            "severity": 3.7168630582032787,
+            "exploitability": 0.3451650645719981,
+            "patched": false
+          },
+          {
+            "type": "unpatched_cve",
+            "severity": 8.956056149933147,
+            "exploitability": 0.3681559049098577,
+            "patched": false
+          },
+          {
+            "type": "default_credentials",
+            "severity": 1.0041376139893572,
+            "exploitability": 0.900263626521005,
+            "patched": false
+          },
+          {
+            "type": "misconfiguration",
+            "severity": 4.18370260110828,
+            "exploitability": 0.826755751589894,
+            "patched": false
+          }
+        ],
+        "services": [],
+        "os": {
+          "type": "macOS",
+          "version": "Monterey",
+          "patch_level": "High",
+          "installed_patches": []
+        },
+        "patch_level": 0.7417953984732739,
+        "security_controls": [
+          "Antivirus"
+        ],
+        "id": 15
+      },
+      {
+        "type": "workstation",
+        "vulnerabilities": [
+          {
+            "type": "sql_injection",
+            "severity": 7.516506988623275,
+            "exploitability": 0.70599934696466,
+            "patched": false
+          },
+          {
+            "type": "cross_site_scripting",
+            "severity": 2.634025901829113,
+            "exploitability": 0.5429238879258936,
+            "patched": false
+          },
+          {
+            "type": "buffer_overflow",
+            "severity": 9.054592302825483,
+            "exploitability": 0.7780359061363973,
+            "patched": false
+          },
+          {
+            "type": "misconfiguration",
+            "severity": 9.486493878330844,
+            "exploitability": 0.6864009475048816,
+            "patched": false
+          }
+        ],
+        "services": [],
+        "os": {
+          "type": "Windows",
+          "version": "10",
+          "patch_level": "Low",
+          "installed_patches": [
+            "KB5001330"
+          ]
+        },
+        "patch_level": 0.7467530463218006,
+        "security_controls": [
+          "Antivirus",
+          "Host Firewall"
+        ],
+        "id": 16
+      },
+      {
+        "type": "workstation",
+        "vulnerabilities": [
+          {
+            "type": "sql_injection",
+            "severity": 6.505462651864164,
+            "exploitability": 0.33212173901359066,
+            "patched": false
+          },
+          {
+            "type": "buffer_overflow",
+            "severity": 8.428827881567443,
+            "exploitability": 0.5975123215298408,
+            "patched": false
+          },
+          {
+            "type": "privilege_escalation",
+            "severity": 2.45840386425093,
+            "exploitability": 0.7423437266873085,
+            "patched": false
+          }
+        ],
+        "services": [],
+        "os": {
+          "type": "Linux",
+          "version": "CentOS 7",
+          "patch_level": "High",
+          "installed_patches": []
+        },
+        "patch_level": 0.7822835103809465,
+        "security_controls": [],
+        "id": 17
+      },
+      {
+        "type": "workstation",
+        "vulnerabilities": [
+          {
+            "type": "buffer_overflow",
+            "severity": 2.503825205749854,
+            "exploitability": 0.920866624202867,
+            "patched": false
+          },
+          {
+            "type": "unpatched_cve",
+            "severity": 4.034605956641435,
+            "exploitability": 0.20455944086859779,
+            "patched": false
+          }
+        ],
+        "services": [],
+        "os": {
+          "type": "Linux",
+          "version": "Debian 11",
+          "patch_level": "Latest",
+          "installed_patches": []
+        },
+        "patch_level": 0.9815471133498472,
+        "security_controls": [
+          "Antivirus",
+          "Host Firewall",
+          "EDR"
+        ],
+        "id": 18
+      },
+      {
+        "type": "workstation",
+        "vulnerabilities": [
+          {
+            "type": "cross_site_scripting",
+            "severity": 3.3417520809078485,
+            "exploitability": 0.6327362887818517,
+            "patched": false
+          },
+          {
+            "type": "unpatched_cve",
+            "severity": 5.622869912599999,
+            "exploitability": 0.21936506638081804,
+            "patched": false
+          },
+          {
+            "type": "default_credentials",
+            "severity": 6.860639964554331,
+            "exploitability": 0.45505956915512946,
+            "patched": false
+          }
+        ],
+        "services": [],
+        "os": {
+          "type": "Linux",
+          "version": "CentOS 7",
+          "patch_level": "High",
+          "installed_patches": []
+        },
+        "patch_level": 0.5184311203190215,
+        "security_controls": [
+          "Antivirus",
+          "Host Firewall"
+        ],
+        "id": 19
+      },
+      {
+        "type": "workstation",
+        "vulnerabilities": [
+          {
+            "type": "cross_site_scripting",
+            "severity": 4.5136766496654985,
+            "exploitability": 0.9524257738640332,
+            "patched": false
+          },
+          {
+            "type": "buffer_overflow",
+            "severity": 1.714349589591989,
+            "exploitability": 0.36149600747306265,
+            "patched": false
+          },
+          {
+            "type": "privilege_escalation",
+            "severity": 4.238049191966091,
+            "exploitability": 0.6826258170509125,
+            "patched": false
+          },
+          {
+            "type": "unpatched_cve",
+            "severity": 5.313335796020871,
+            "exploitability": 0.29048544665961,
+            "patched": false
+          },
+          {
+            "type": "misconfiguration",
+            "severity": 3.255909540488429,
+            "exploitability": 0.3149542468636991,
+            "patched": false
+          }
+        ],
+        "services": [],
+        "os": {
+          "type": "Linux",
+          "version": "Debian 11",
+          "patch_level": "Latest",
+          "installed_patches": []
+        },
+        "patch_level": 0.9418572748984835,
+        "security_controls": [
+          "Antivirus"
+        ],
+        "id": 20
+      },
+      {
+        "type": "workstation",
+        "vulnerabilities": [
+          {
+            "type": "unpatched_cve",
+            "severity": 5.6851634664232655,
+            "exploitability": 0.8698760885518546,
+            "patched": false
+          },
+          {
+            "type": "default_credentials",
+            "severity": 2.9434104734007724,
+            "exploitability": 0.4998397795988875,
+            "patched": false
+          },
+          {
+            "type": "misconfiguration",
+            "severity": 8.206640049654865,
+            "exploitability": 0.410377740431774,
+            "patched": false
+          }
+        ],
+        "services": [],
+        "os": {
+          "type": "Windows",
+          "version": "11",
+          "patch_level": "Low",
+          "installed_patches": []
+        },
+        "patch_level": 0.5586992848519634,
+        "security_controls": [
+          "Antivirus",
+          "Host Firewall"
+        ],
+        "id": 21
+      },
+      {
+        "type": "workstation",
+        "vulnerabilities": [
+          {
+            "type": "cross_site_scripting",
+            "severity": 9.78325101363227,
+            "exploitability": 0.8205178611830646,
+            "patched": false
+          },
+          {
+            "type": "buffer_overflow",
+            "severity": 6.210245655722557,
+            "exploitability": 0.43120165293236234,
+            "patched": false
+          },
+          {
+            "type": "privilege_escalation",
+            "severity": 9.306429073460716,
+            "exploitability": 0.31971701766659805,
+            "patched": false
+          },
+          {
+            "type": "unpatched_cve",
+            "severity": 7.688347830313633,
+            "exploitability": 0.9390545265935274,
+            "patched": false
+          },
+          {
+            "type": "default_credentials",
+            "severity": 5.706545089287415,
+            "exploitability": 0.4680957659189626,
+            "patched": false
+          }
+        ],
+        "services": [],
+        "os": {
+          "type": "Windows",
+          "version": "Server 2019",
+          "patch_level": "Low",
+          "installed_patches": [
+            "KB5003173"
+          ]
+        },
+        "patch_level": 0.7080265375518462,
+        "security_controls": [
+          "Antivirus",
+          "EDR"
+        ],
+        "id": 22
+      },
+      {
+        "type": "workstation",
+        "vulnerabilities": [
+          {
+            "type": "sql_injection",
+            "severity": 5.007607016543347,
+            "exploitability": 0.9978809727342021,
+            "patched": false
+          },
+          {
+            "type": "privilege_escalation",
+            "severity": 2.134856849157577,
+            "exploitability": 0.7235106325170799,
+            "patched": false
+          }
+        ],
+        "services": [],
+        "os": {
+          "type": "macOS",
+          "version": "Sonoma",
+          "patch_level": "Low",
+          "installed_patches": []
+        },
+        "patch_level": 0.6407032826679424,
+        "security_controls": [
+          "Antivirus"
+        ],
+        "id": 23
+      },
+      {
+        "type": "workstation",
+        "vulnerabilities": [
+          {
+            "type": "sql_injection",
+            "severity": 8.10275762192284,
+            "exploitability": 0.2979215237477026,
+            "patched": false
+          },
+          {
+            "type": "privilege_escalation",
+            "severity": 8.289991366266303,
+            "exploitability": 0.36568430043425404,
+            "patched": false
+          },
+          {
+            "type": "unpatched_cve",
+            "severity": 3.706710099361945,
+            "exploitability": 0.6415535482125518,
+            "patched": false
+          }
+        ],
+        "services": [],
+        "os": {
+          "type": "macOS",
+          "version": "Sonoma",
+          "patch_level": "Low",
+          "installed_patches": []
+        },
+        "patch_level": 0.8421549055750726,
+        "security_controls": [
+          "Antivirus",
+          "Host Firewall"
+        ],
+        "id": 24
+      },
+      {
+        "type": "workstation",
+        "vulnerabilities": [
+          {
+            "type": "buffer_overflow",
+            "severity": 7.591204946020994,
+            "exploitability": 0.24572984854658766,
+            "patched": false
+          },
+          {
+            "type": "privilege_escalation",
+            "severity": 7.667830809548744,
+            "exploitability": 0.2981354334397067,
+            "patched": false
+          },
+          {
+            "type": "unpatched_cve",
+            "severity": 9.02463611181941,
+            "exploitability": 0.6447760173620659,
+            "patched": false
+          },
+          {
+            "type": "default_credentials",
+            "severity": 4.493976792309152,
+            "exploitability": 0.30280461494115185,
+            "patched": false
+          },
+          {
+            "type": "misconfiguration",
+            "severity": 9.192165871447912,
+            "exploitability": 0.1205604288283921,
+            "patched": false
+          }
+        ],
+        "services": [],
+        "os": {
+          "type": "Linux",
+          "version": "CentOS 7",
+          "patch_level": "Latest",
+          "installed_patches": []
+        },
+        "patch_level": 0.985378324774921,
+        "security_controls": [
+          "Host Firewall",
+          "EDR"
+        ],
+        "id": 25
+      },
+      {
+        "type": "workstation",
+        "vulnerabilities": [
+          {
+            "type": "cross_site_scripting",
+            "severity": 3.9441332822057102,
+            "exploitability": 0.44502929818348,
+            "patched": false
+          },
+          {
+            "type": "unpatched_cve",
+            "severity": 6.669654783880926,
+            "exploitability": 0.19077067634325445,
+            "patched": false
+          },
+          {
+            "type": "misconfiguration",
+            "severity": 7.504604614388845,
+            "exploitability": 0.6835391119907912,
+            "patched": false
+          }
+        ],
+        "services": [],
+        "os": {
+          "type": "Linux",
+          "version": "Ubuntu 22.04",
+          "patch_level": "Latest",
+          "installed_patches": []
+        },
+        "patch_level": 0.6645195186680956,
+        "security_controls": [
+          "Host Firewall",
+          "EDR"
+        ],
+        "id": 26
+      },
+      {
+        "type": "workstation",
+        "vulnerabilities": [
+          {
+            "type": "cross_site_scripting",
+            "severity": 6.637229702552092,
+            "exploitability": 0.5060414564272087,
+            "patched": false
+          },
+          {
+            "type": "privilege_escalation",
+            "severity": 4.136914410253708,
+            "exploitability": 0.667255765335328,
+            "patched": false
+          },
+          {
+            "type": "default_credentials",
+            "severity": 3.4005173521036056,
+            "exploitability": 0.14260553977549784,
+            "patched": false
+          },
+          {
+            "type": "misconfiguration",
+            "severity": 9.753776478174489,
+            "exploitability": 0.23144812713837148,
+            "patched": false
+          }
+        ],
+        "services": [],
+        "os": {
+          "type": "macOS",
+          "version": "Ventura",
+          "patch_level": "Low",
+          "installed_patches": []
+        },
+        "patch_level": 0.8020473918706937,
+        "security_controls": [
+          "Antivirus",
+          "Host Firewall"
+        ],
+        "id": 27
+      },
+      {
+        "type": "workstation",
+        "vulnerabilities": [
+          {
+            "type": "cross_site_scripting",
+            "severity": 1.1832156396633675,
+            "exploitability": 0.15143225733876042,
+            "patched": false
+          },
+          {
+            "type": "buffer_overflow",
+            "severity": 5.200633275393761,
+            "exploitability": 0.44285271585680475,
+            "patched": false
+          },
+          {
+            "type": "privilege_escalation",
+            "severity": 6.716998181246575,
+            "exploitability": 0.5051090003621123,
+            "patched": false
+          },
+          {
+            "type": "misconfiguration",
+            "severity": 8.205403192210799,
+            "exploitability": 0.5436586917868759,
+            "patched": false
+          }
+        ],
+        "services": [],
+        "os": {
+          "type": "Linux",
+          "version": "Ubuntu 20.04",
+          "patch_level": "Medium",
+          "installed_patches": []
+        },
+        "patch_level": 0.7158819723507188,
+        "security_controls": [
+          "Antivirus",
+          "Host Firewall"
+        ],
+        "id": 28
+      },
+      {
+        "type": "workstation",
+        "vulnerabilities": [
+          {
+            "type": "buffer_overflow",
+            "severity": 1.1928598074654082,
+            "exploitability": 0.34340943598129037,
+            "patched": false
+          },
+          {
+            "type": "default_credentials",
+            "severity": 9.176157212670702,
+            "exploitability": 0.2773725010793715,
+            "patched": false
+          }
+        ],
+        "services": [],
+        "os": {
+          "type": "Linux",
+          "version": "CentOS 7",
+          "patch_level": "Low",
+          "installed_patches": []
+        },
+        "patch_level": 0.5107226308104349,
+        "security_controls": [
+          "Antivirus",
+          "Host Firewall"
+        ],
+        "id": 29
+      },
+      {
+        "type": "workstation",
+        "vulnerabilities": [
+          {
+            "type": "sql_injection",
+            "severity": 9.520672807106445,
+            "exploitability": 0.662684021857779,
+            "patched": false
+          },
+          {
+            "type": "cross_site_scripting",
+            "severity": 5.596772003139172,
+            "exploitability": 0.42522615799383245,
+            "patched": false
+          },
+          {
+            "type": "default_credentials",
+            "severity": 8.847219397372712,
+            "exploitability": 0.7081336945822715,
+            "patched": false
+          }
+        ],
+        "services": [],
+        "os": {
+          "type": "macOS",
+          "version": "Ventura",
+          "patch_level": "High",
+          "installed_patches": []
+        },
+        "patch_level": 0.9698415710116252,
+        "security_controls": [
+          "Antivirus"
+        ],
+        "id": 30
+      },
+      {
+        "type": "workstation",
+        "vulnerabilities": [
+          {
+            "type": "sql_injection",
+            "severity": 8.752928972980822,
+            "exploitability": 0.9099178032275845,
+            "patched": false
+          },
+          {
+            "type": "cross_site_scripting",
+            "severity": 6.185817882060815,
+            "exploitability": 0.5124189064431108,
+            "patched": false
+          },
+          {
+            "type": "buffer_overflow",
+            "severity": 9.574422593262621,
+            "exploitability": 0.43165107256543955,
+            "patched": false
+          },
+          {
+            "type": "unpatched_cve",
+            "severity": 3.162896603678125,
+            "exploitability": 0.3607001008130325,
+            "patched": false
+          },
+          {
+            "type": "default_credentials",
+            "severity": 7.8587816769837,
+            "exploitability": 0.2061453863440425,
+            "patched": false
+          }
+        ],
+        "services": [
+          {
+            "name": "FTP",
+            "version": "2.0",
+            "port": 21,
+            "exposed": false
+          }
+        ],
+        "os": {
+          "type": "Windows",
+          "version": "10",
+          "patch_level": "High",
+          "installed_patches": []
+        },
+        "patch_level": 0.9930299076766188,
+        "security_controls": [
+          "Antivirus",
+          "Host Firewall"
+        ],
+        "id": 31
+      }
+    ],
+    "links": [
+      {
+        "weight": 1.0,
+        "source": 0,
+        "target": 1
+      },
+      {
+        "weight": 1.0,
+        "source": 0,
+        "target": 2
+      },
+      {
+        "weight": 1.0,
+        "source": 0,
+        "target": 3
+      },
+      {
+        "weight": 0.8336794615722949,
+        "source": 0,
+        "target": 10
+      },
+      {
+        "weight": 0.7848769930964987,
+        "source": 0,
+        "target": 11
+      },
+      {
+        "weight": 0.8522625227431515,
+        "source": 0,
+        "target": 12
+      },
+      {
+        "weight": 0.9888570557345315,
+        "source": 1,
+        "target": 4
+      },
+      {
+        "weight": 0.8815209050785163,
+        "source": 1,
+        "target": 5
+      },
+      {
+        "weight": 0.9487537086493911,
+        "source": 1,
+        "target": 6
+      },
+      {
+        "weight": 0.7924349166558815,
+        "source": 1,
+        "target": 13
+      },
+      {
+        "weight": 0.7547758590346834,
+        "source": 1,
+        "target": 15
+      },
+      {
+        "weight": 0.504164294629875,
+        "source": 1,
+        "target": 16
+      },
+      {
+        "weight": 0.6728249539512825,
+        "source": 1,
+        "target": 18
+      },
+      {
+        "weight": 0.8251218155920742,
+        "source": 1,
+        "target": 19
+      },
+      {
+        "weight": 0.9713469968373534,
+        "source": 1,
+        "target": 21
+      },
+      {
+        "weight": 0.7589326356496908,
+        "source": 1,
+        "target": 22
+      },
+      {
+        "weight": 0.5140813376180695,
+        "source": 1,
+        "target": 24
+      },
+      {
+        "weight": 0.8996867533077475,
+        "source": 1,
+        "target": 25
+      },
+      {
+        "weight": 0.588395975726587,
+        "source": 1,
+        "target": 26
+      },
+      {
+        "weight": 0.9693262062099351,
+        "source": 1,
+        "target": 27
+      },
+      {
+        "weight": 0.7442423934037081,
+        "source": 1,
+        "target": 28
+      },
+      {
+        "weight": 0.5131886982498504,
+        "source": 1,
+        "target": 29
+      },
+      {
+        "weight": 0.9014118102701562,
+        "source": 2,
+        "target": 4
+      },
+      {
+        "weight": 0.8375600825197355,
+        "source": 2,
+        "target": 5
+      },
+      {
+        "weight": 0.9487596039630413,
+        "source": 2,
+        "target": 6
+      },
+      {
+        "weight": 0.6716853753875273,
+        "source": 2,
+        "target": 15
+      },
+      {
+        "weight": 0.6964103540565322,
+        "source": 2,
+        "target": 17
+      },
+      {
+        "weight": 0.8896078574422468,
+        "source": 2,
+        "target": 18
+      },
+      {
+        "weight": 0.6913533661974061,
+        "source": 2,
+        "target": 19
+      },
+      {
+        "weight": 0.5645190128457103,
+        "source": 2,
+        "target": 21
+      },
+      {
+        "weight": 0.7906487859158091,
+        "source": 2,
+        "target": 22
+      },
+      {
+        "weight": 0.8557435330666223,
+        "source": 2,
+        "target": 23
+      },
+      {
+        "weight": 0.9195903407051814,
+        "source": 2,
+        "target": 26
+      },
+      {
+        "weight": 0.7211486267025097,
+        "source": 2,
+        "target": 27
+      },
+      {
+        "weight": 0.8456315104246606,
+        "source": 2,
+        "target": 28
+      },
+      {
+        "weight": 0.5389783736810666,
+        "source": 2,
+        "target": 29
+      },
+      {
+        "weight": 0.9940760350595611,
+        "source": 2,
+        "target": 31
+      },
+      {
+        "weight": 0.8004859204911907,
+        "source": 3,
+        "target": 4
+      },
+      {
+        "weight": 0.8759403449441239,
+        "source": 3,
+        "target": 5
+      },
+      {
+        "weight": 0.8837571303306935,
+        "source": 3,
+        "target": 6
+      },
+      {
+        "weight": 0.552282126043095,
+        "source": 3,
+        "target": 15
+      },
+      {
+        "weight": 0.7782318042129527,
+        "source": 3,
+        "target": 16
+      },
+      {
+        "weight": 0.6065638459243832,
+        "source": 3,
+        "target": 17
+      },
+      {
+        "weight": 0.6593728977565317,
+        "source": 3,
+        "target": 18
+      },
+      {
+        "weight": 0.9954957739450132,
+        "source": 3,
+        "target": 19
+      },
+      {
+        "weight": 0.8611454641905643,
+        "source": 3,
+        "target": 20
+      },
+      {
+        "weight": 0.9967047609219224,
+        "source": 3,
+        "target": 21
+      },
+      {
+        "weight": 0.8407770953246098,
+        "source": 3,
+        "target": 22
+      },
+      {
+        "weight": 0.6963339572176179,
+        "source": 3,
+        "target": 26
+      },
+      {
+        "weight": 0.5622692680769033,
+        "source": 3,
+        "target": 28
+      },
+      {
+        "weight": 0.9823049601431812,
+        "source": 3,
+        "target": 29
+      },
+      {
+        "weight": 0.8062339279571515,
+        "source": 3,
+        "target": 30
+      },
+      {
+        "weight": 0.8243330930795421,
+        "source": 3,
+        "target": 31
+      },
+      {
+        "weight": 0.9191855362605452,
+        "source": 4,
+        "target": 1
+      },
+      {
+        "weight": 0.8557884916870719,
+        "source": 4,
+        "target": 2
+      },
+      {
+        "weight": 0.9425026316181059,
+        "source": 4,
+        "target": 3
+      },
+      {
+        "weight": 0.9911641155303357,
+        "source": 4,
+        "target": 8
+      },
+      {
+        "weight": 0.9607390352642234,
+        "source": 4,
+        "target": 9
+      },
+      {
+        "weight": 0.5424007712225213,
+        "source": 4,
+        "target": 12
+      },
+      {
+        "weight": 0.8414517889485585,
+        "source": 5,
+        "target": 1
+      },
+      {
+        "weight": 0.9799871843030501,
+        "source": 5,
+        "target": 2
+      },
+      {
+        "weight": 0.9799492229876683,
+        "source": 5,
+        "target": 3
+      },
+      {
+        "weight": 0.9154743520524775,
+        "source": 6,
+        "target": 1
+      },
+      {
+        "weight": 0.8210812651815714,
+        "source": 6,
+        "target": 2
+      },
+      {
+        "weight": 0.9134161201608025,
+        "source": 6,
+        "target": 3
+      },
+      {
+        "weight": 0.8189332640376137,
+        "source": 6,
+        "target": 8
+      },
+      {
+        "weight": 0.7838788127324356,
+        "source": 6,
+        "target": 11
+      },
+      {
+        "weight": 0.7918015331622857,
+        "source": 8,
+        "target": 4
+      },
+      {
+        "weight": 0.7856824165413454,
+        "source": 8,
+        "target": 6
+      },
+      {
+        "weight": 0.781170310926904,
+        "source": 9,
+        "target": 4
+      },
+      {
+        "weight": 0.6378761287345156,
+        "source": 10,
+        "target": 0
+      },
+      {
+        "weight": 0.7240699490408002,
+        "source": 11,
+        "target": 0
+      },
+      {
+        "weight": 0.7334926196407479,
+        "source": 11,
+        "target": 6
+      },
+      {
+        "weight": 0.855641410493279,
+        "source": 12,
+        "target": 0
+      },
+      {
+        "weight": 0.5384925122307256,
+        "source": 12,
+        "target": 4
+      },
+      {
+        "weight": 0.7559160373763686,
+        "source": 13,
+        "target": 1
+      },
+      {
+        "weight": 0.5573365707433382,
+        "source": 15,
+        "target": 1
+      },
+      {
+        "weight": 0.9967719459614668,
+        "source": 15,
+        "target": 2
+      },
+      {
+        "weight": 0.8778775722923404,
+        "source": 15,
+        "target": 3
+      },
+      {
+        "weight": 0.9177699488063689,
+        "source": 16,
+        "target": 1
+      },
+      {
+        "weight": 0.7731634127196207,
+        "source": 16,
+        "target": 3
+      },
+      {
+        "weight": 0.6254328452583486,
+        "source": 17,
+        "target": 2
+      },
+      {
+        "weight": 0.6981199617725671,
+        "source": 17,
+        "target": 3
+      },
+      {
+        "weight": 0.6985877118037009,
+        "source": 18,
+        "target": 1
+      },
+      {
+        "weight": 0.606067601134616,
+        "source": 18,
+        "target": 2
+      },
+      {
+        "weight": 0.8228669493992284,
+        "source": 18,
+        "target": 3
+      },
+      {
+        "weight": 0.9250542656053493,
+        "source": 19,
+        "target": 1
+      },
+      {
+        "weight": 0.5965237550409261,
+        "source": 19,
+        "target": 2
+      },
+      {
+        "weight": 0.8269995264137373,
+        "source": 19,
+        "target": 3
+      },
+      {
+        "weight": 0.7849543165607871,
+        "source": 20,
+        "target": 3
+      },
+      {
+        "weight": 0.6103821607497815,
+        "source": 21,
+        "target": 1
+      },
+      {
+        "weight": 0.8574391219104681,
+        "source": 21,
+        "target": 2
+      },
+      {
+        "weight": 0.8036371750701012,
+        "source": 21,
+        "target": 3
+      },
+      {
+        "weight": 0.5582617957772108,
+        "source": 22,
+        "target": 1
+      },
+      {
+        "weight": 0.6144676205281483,
+        "source": 22,
+        "target": 2
+      },
+      {
+        "weight": 0.5818068403688874,
+        "source": 22,
+        "target": 3
+      },
+      {
+        "weight": 0.5591899679438033,
+        "source": 23,
+        "target": 2
+      },
+      {
+        "weight": 0.9490352116811748,
+        "source": 24,
+        "target": 1
+      },
+      {
+        "weight": 0.6271811467158261,
+        "source": 25,
+        "target": 1
+      },
+      {
+        "weight": 0.8627127725052599,
+        "source": 26,
+        "target": 1
+      },
+      {
+        "weight": 0.9120658595120447,
+        "source": 26,
+        "target": 2
+      },
+      {
+        "weight": 0.9760930987301203,
+        "source": 26,
+        "target": 3
+      },
+      {
+        "weight": 0.8094103776512009,
+        "source": 27,
+        "target": 1
+      },
+      {
+        "weight": 0.8745398592817836,
+        "source": 27,
+        "target": 2
+      },
+      {
+        "weight": 0.5476254337737758,
+        "source": 28,
+        "target": 1
+      },
+      {
+        "weight": 0.8347582753809129,
+        "source": 28,
+        "target": 2
+      },
+      {
+        "weight": 0.6023053141411789,
+        "source": 28,
+        "target": 3
+      },
+      {
+        "weight": 0.5705236613754976,
+        "source": 29,
+        "target": 1
+      },
+      {
+        "weight": 0.811673820695261,
+        "source": 29,
+        "target": 2
+      },
+      {
+        "weight": 0.7452231640792495,
+        "source": 29,
+        "target": 3
+      },
+      {
+        "weight": 0.6821082061720012,
+        "source": 30,
+        "target": 3
+      },
+      {
+        "weight": 0.5616347919983149,
+        "source": 31,
+        "target": 2
+      },
+      {
+        "weight": 0.859274962986867,
+        "source": 31,
+        "target": 3
+      }
+    ]
+  },
+  "compromised_nodes": [],
+  "patched_nodes": [
+    1,
+    2,
+    3
+  ],
+  "logs": [
+    "Enterprise network created with 32 nodes and 113 connections",
+    "Network saved to network_snapshots/network_initial_20250520_161213.json",
+    "Attack failed: privilege_escalation on node 0",
+    "Investigation found no compromise on node 29",
+    "Evasion techniques applied against node 0",
+    "Attack failed: privilege_escalation on node 0",
+    "Investigation found no compromise on node 29",
+    "Evasion techniques applied against node 0",
+    "Attack failed: buffer_overflow on node 0",
+    "Investigation found no compromise on node 31",
+    "Investigation found no compromise on node 29",
+    "Investigation found no compromise on node 4",
+    "Investigation found no compromise on node 17",
+    "Evasion techniques applied against node 0",
+    "Attack failed: privilege_escalation on node 0",
+    "Patched misconfiguration on node 1",
+    "Patched default_credentials on node 3",
+    "Patched cross_site_scripting on node 2",
+    "Attack failed: privilege_escalation on node 0",
+    "Investigation found no compromise on node 31",
+    "Investigation found no compromise on node 29",
+    "Investigation found no compromise on node 4",
+    "Investigation found no compromise on node 17",
+    "Investigation found no compromise on node 16",
+    "Evasion techniques applied against node 0",
+    "Attack failed: privilege_escalation on node 0",
+    "Patched sql_injection on node 1",
+    "Patched buffer_overflow on node 3",
+    "Patched unpatched_cve on node 2",
+    "Evasion techniques applied against node 0",
+    "Attack failed: privilege_escalation on node 0",
+    "Investigation found no compromise on node 29",
+    "Investigation found no compromise on node 17",
+    "Investigation found no compromise on node 24",
+    "Evasion techniques applied against node 0",
+    "Attack failed: privilege_escalation on node 0",
+    "Investigation found no compromise on node 4",
+    "Investigation found no compromise on node 24",
+    "Investigation found no compromise on node 21",
+    "Evasion techniques applied against node 0",
+    "Attack failed: privilege_escalation on node 0",
+    "Patched unpatched_cve on node 1",
+    "Patched privilege_escalation on node 3",
+    "Patched sql_injection on node 2",
+    "Evasion techniques applied against node 0",
+    "Attack failed: privilege_escalation on node 0",
+    "Investigation found no compromise on node 22",
+    "Investigation found no compromise on node 21",
+    "Investigation found no compromise on node 29",
+    "Investigation found no compromise on node 4"
+  ],
+  "alerts": [
+    {
+      "type": "attempt",
+      "node_id": 0,
+      "attack_type": "buffer_overflow",
+      "timestamp": "now"
+    },
+    {
+      "type": "attempt",
+      "node_id": 0,
+      "attack_type": "privilege_escalation",
+      "timestamp": "now"
+    },
+    {
+      "type": "attempt",
+      "node_id": 0,
+      "attack_type": "privilege_escalation",
+      "timestamp": "now"
+    }
+  ],
+  "entry_points": [
+    0
+  ]
+}

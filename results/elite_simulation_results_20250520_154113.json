@@ -1,0 +1,5563 @@
+{
+  "config": {
+    "network_size": "small",
+    "network_complexity": "high",
+    "num_steps": 50,
+    "red_skill_level": 0.95,
+    "threat_intel_file": "data/advanced_threat_intelligence.json",
+    "model_path": "models/elite_red_agent_final_20250520_153851.pt"
+  },
+  "steps": [
+    {
+      "step": 1,
+      "red_action": {
+        "strategy": "APT29",
+        "target": 0,
+        "attack_type": "misconfiguration",
+        "success": false,
+        "detected": false,
+        "info": "Attack failed",
+        "timestamp": "2025-05-20 15:41:13"
+      },
+      "blue_actions": [
+        {
+          "action": "patch",
+          "node_id": 1,
+          "vulnerability_type": "privilege_escalation",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 16,
+          "vulnerability_type": "misconfiguration",
+          "success": true
+        }
+      ],
+      "compromised_nodes": [],
+      "patched_nodes": [
+        16,
+        1
+      ],
+      "alerts": [
+        {
+          "type": "attempt",
+          "node_id": 0,
+          "attack_type": "misconfiguration",
+          "timestamp": "now"
+        }
+      ],
+      "campaign_status": {
+        "goal": "ransomware",
+        "progress": 0.0,
+        "elapsed_time": 0.009686470031738281,
+        "compromised_nodes": 0,
+        "data_collected": 0,
+        "lateral_movements": 0
+      }
+    },
+    {
+      "step": 2,
+      "red_action": {
+        "strategy": "APT29",
+        "target": 0,
+        "attack_type": "misconfiguration",
+        "success": false,
+        "detected": false,
+        "info": "Attack failed",
+        "timestamp": "2025-05-20 15:41:13"
+      },
+      "blue_actions": [
+        {
+          "action": "investigate",
+          "node_id": 3,
+          "found_compromise": false,
+          "success": true
+        },
+        {
+          "action": "investigate",
+          "node_id": 11,
+          "found_compromise": false,
+          "success": true
+        }
+      ],
+      "compromised_nodes": [],
+      "patched_nodes": [
+        16,
+        1
+      ],
+      "alerts": [
+        {
+          "type": "attempt",
+          "node_id": 0,
+          "attack_type": "misconfiguration",
+          "timestamp": "now"
+        },
+        {
+          "type": "attempt",
+          "node_id": 0,
+          "attack_type": "misconfiguration",
+          "timestamp": "now"
+        }
+      ],
+      "campaign_status": {
+        "goal": "ransomware",
+        "progress": 0.0,
+        "elapsed_time": 0.012093067169189453,
+        "compromised_nodes": 0,
+        "data_collected": 0,
+        "lateral_movements": 0
+      }
+    },
+    {
+      "step": 3,
+      "red_action": {
+        "strategy": "APT29",
+        "target": 0,
+        "attack_type": "misconfiguration",
+        "success": false,
+        "detected": false,
+        "info": "Attack failed",
+        "timestamp": "2025-05-20 15:41:13"
+      },
+      "blue_actions": [
+        {
+          "action": "investigate",
+          "node_id": 3,
+          "found_compromise": false,
+          "success": true
+        },
+        {
+          "action": "investigate",
+          "node_id": 11,
+          "found_compromise": false,
+          "success": true
+        },
+        {
+          "action": "investigate",
+          "node_id": 19,
+          "found_compromise": false,
+          "success": true
+        },
+        {
+          "action": "investigate",
+          "node_id": 18,
+          "found_compromise": false,
+          "success": true
+        }
+      ],
+      "compromised_nodes": [],
+      "patched_nodes": [
+        16,
+        1
+      ],
+      "alerts": [
+        {
+          "type": "attempt",
+          "node_id": 0,
+          "attack_type": "misconfiguration",
+          "timestamp": "now"
+        },
+        {
+          "type": "attempt",
+          "node_id": 0,
+          "attack_type": "misconfiguration",
+          "timestamp": "now"
+        }
+      ],
+      "campaign_status": {
+        "goal": "ransomware",
+        "progress": 0.0,
+        "elapsed_time": 0.01412820816040039,
+        "compromised_nodes": 0,
+        "data_collected": 0,
+        "lateral_movements": 0
+      }
+    },
+    {
+      "step": 4,
+      "red_action": {
+        "strategy": "APT29",
+        "target": 0,
+        "attack_type": "misconfiguration",
+        "success": false,
+        "detected": false,
+        "info": "Attack failed",
+        "timestamp": "2025-05-20 15:41:13"
+      },
+      "blue_actions": [
+        {
+          "action": "patch",
+          "node_id": 1,
+          "vulnerability_type": "cross_site_scripting",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 16,
+          "vulnerability_type": "buffer_overflow",
+          "success": true
+        }
+      ],
+      "compromised_nodes": [],
+      "patched_nodes": [
+        16,
+        1
+      ],
+      "alerts": [
+        {
+          "type": "attempt",
+          "node_id": 0,
+          "attack_type": "misconfiguration",
+          "timestamp": "now"
+        },
+        {
+          "type": "attempt",
+          "node_id": 0,
+          "attack_type": "misconfiguration",
+          "timestamp": "now"
+        }
+      ],
+      "campaign_status": {
+        "goal": "ransomware",
+        "progress": 0.0,
+        "elapsed_time": 0.01667952537536621,
+        "compromised_nodes": 0,
+        "data_collected": 0,
+        "lateral_movements": 0
+      }
+    },
+    {
+      "step": 5,
+      "red_action": {
+        "strategy": "APT29",
+        "target": 0,
+        "attack_type": "misconfiguration",
+        "success": true,
+        "detected": false,
+        "info": "Attack successful",
+        "timestamp": "2025-05-20 15:41:13"
+      },
+      "blue_actions": [
+        {
+          "action": "patch",
+          "node_id": 0,
+          "vulnerability_type": "misconfiguration",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 0,
+          "vulnerability_type": "misconfiguration",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 0,
+          "vulnerability_type": "misconfiguration",
+          "success": true
+        }
+      ],
+      "compromised_nodes": [
+        0
+      ],
+      "patched_nodes": [
+        16,
+        1,
+        0
+      ],
+      "alerts": [
+        {
+          "type": "attempt",
+          "node_id": 0,
+          "attack_type": "misconfiguration",
+          "timestamp": "now"
+        },
+        {
+          "type": "attempt",
+          "node_id": 0,
+          "attack_type": "misconfiguration",
+          "timestamp": "now"
+        },
+        {
+          "type": "compromise",
+          "node_id": 0,
+          "attack_type": "misconfiguration",
+          "timestamp": "now"
+        }
+      ],
+      "campaign_status": {
+        "goal": "ransomware",
+        "progress": 0.038461538461538464,
+        "elapsed_time": 0.018571138381958008,
+        "compromised_nodes": 1,
+        "data_collected": 0,
+        "lateral_movements": 0
+      }
+    },
+    {
+      "step": 6,
+      "red_action": {
+        "strategy": "APT29",
+        "target": 6,
+        "attack_type": "default_credentials",
+        "success": true,
+        "detected": false,
+        "info": "Attack successful",
+        "timestamp": "2025-05-20 15:41:13"
+      },
+      "blue_actions": [
+        {
+          "action": "patch",
+          "node_id": 0,
+          "vulnerability_type": "misconfiguration",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 0,
+          "vulnerability_type": "misconfiguration",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 0,
+          "vulnerability_type": "misconfiguration",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 6,
+          "vulnerability_type": "default_credentials",
+          "success": true
+        }
+      ],
+      "compromised_nodes": [
+        0,
+        6
+      ],
+      "patched_nodes": [
+        16,
+        1,
+        0,
+        6
+      ],
+      "alerts": [
+        {
+          "type": "attempt",
+          "node_id": 0,
+          "attack_type": "misconfiguration",
+          "timestamp": "now"
+        },
+        {
+          "type": "attempt",
+          "node_id": 0,
+          "attack_type": "misconfiguration",
+          "timestamp": "now"
+        },
+        {
+          "type": "compromise",
+          "node_id": 0,
+          "attack_type": "misconfiguration",
+          "timestamp": "now"
+        },
+        {
+          "type": "compromise",
+          "node_id": 6,
+          "attack_type": "default_credentials",
+          "timestamp": "now"
+        }
+      ],
+      "campaign_status": {
+        "goal": "ransomware",
+        "progress": 0.07692307692307693,
+        "elapsed_time": 0.020726442337036133,
+        "compromised_nodes": 2,
+        "data_collected": 0,
+        "lateral_movements": 0
+      }
+    },
+    {
+      "step": 7,
+      "red_action": {
+        "strategy": "APT29",
+        "target": 16,
+        "attack_type": "misconfiguration",
+        "success": true,
+        "detected": false,
+        "info": "Attack successful",
+        "timestamp": "2025-05-20 15:41:13"
+      },
+      "blue_actions": [
+        {
+          "action": "patch",
+          "node_id": 0,
+          "vulnerability_type": "misconfiguration",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 0,
+          "vulnerability_type": "misconfiguration",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 0,
+          "vulnerability_type": "misconfiguration",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 6,
+          "vulnerability_type": "default_credentials",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 16,
+          "vulnerability_type": "misconfiguration",
+          "success": true
+        }
+      ],
+      "compromised_nodes": [
+        0,
+        16,
+        6
+      ],
+      "patched_nodes": [
+        16,
+        1,
+        0,
+        6
+      ],
+      "alerts": [
+        {
+          "type": "attempt",
+          "node_id": 0,
+          "attack_type": "misconfiguration",
+          "timestamp": "now"
+        },
+        {
+          "type": "attempt",
+          "node_id": 0,
+          "attack_type": "misconfiguration",
+          "timestamp": "now"
+        },
+        {
+          "type": "compromise",
+          "node_id": 0,
+          "attack_type": "misconfiguration",
+          "timestamp": "now"
+        },
+        {
+          "type": "compromise",
+          "node_id": 6,
+          "attack_type": "default_credentials",
+          "timestamp": "now"
+        },
+        {
+          "type": "compromise",
+          "node_id": 16,
+          "attack_type": "misconfiguration",
+          "timestamp": "now"
+        }
+      ],
+      "campaign_status": {
+        "goal": "ransomware",
+        "progress": 0.11538461538461539,
+        "elapsed_time": 0.02466869354248047,
+        "compromised_nodes": 3,
+        "data_collected": 0,
+        "lateral_movements": 0
+      }
+    },
+    {
+      "step": 8,
+      "red_action": {
+        "strategy": "APT29",
+        "target": 9,
+        "attack_type": "privilege_escalation",
+        "success": false,
+        "detected": false,
+        "info": "Attack failed",
+        "timestamp": "2025-05-20 15:41:13"
+      },
+      "blue_actions": [
+        {
+          "action": "patch",
+          "node_id": 1,
+          "vulnerability_type": "sql_injection",
+          "success": true
+        }
+      ],
+      "compromised_nodes": [
+        0,
+        16,
+        6
+      ],
+      "patched_nodes": [
+        16,
+        1,
+        0,
+        6
+      ],
+      "alerts": [
+        {
+          "type": "attempt",
+          "node_id": 0,
+          "attack_type": "misconfiguration",
+          "timestamp": "now"
+        },
+        {
+          "type": "attempt",
+          "node_id": 0,
+          "attack_type": "misconfiguration",
+          "timestamp": "now"
+        },
+        {
+          "type": "compromise",
+          "node_id": 0,
+          "attack_type": "misconfiguration",
+          "timestamp": "now"
+        },
+        {
+          "type": "compromise",
+          "node_id": 6,
+          "attack_type": "default_credentials",
+          "timestamp": "now"
+        },
+        {
+          "type": "compromise",
+          "node_id": 16,
+          "attack_type": "misconfiguration",
+          "timestamp": "now"
+        }
+      ],
+      "campaign_status": {
+        "goal": "ransomware",
+        "progress": 0.11538461538461539,
+        "elapsed_time": 0.027625322341918945,
+        "compromised_nodes": 3,
+        "data_collected": 0,
+        "lateral_movements": 0
+      }
+    },
+    {
+      "step": 9,
+      "red_action": {
+        "strategy": "APT41",
+        "target": 3,
+        "attack_type": "buffer_overflow",
+        "success": false,
+        "detected": false,
+        "info": "Attack failed",
+        "timestamp": "2025-05-20 15:41:13"
+      },
+      "blue_actions": [
+        {
+          "action": "patch",
+          "node_id": 0,
+          "vulnerability_type": "misconfiguration",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 0,
+          "vulnerability_type": "misconfiguration",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 0,
+          "vulnerability_type": "misconfiguration",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 6,
+          "vulnerability_type": "default_credentials",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 16,
+          "vulnerability_type": "misconfiguration",
+          "success": true
+        }
+      ],
+      "compromised_nodes": [
+        0,
+        16,
+        6
+      ],
+      "patched_nodes": [
+        16,
+        1,
+        0,
+        6
+      ],
+      "alerts": [
+        {
+          "type": "attempt",
+          "node_id": 0,
+          "attack_type": "misconfiguration",
+          "timestamp": "now"
+        },
+        {
+          "type": "attempt",
+          "node_id": 0,
+          "attack_type": "misconfiguration",
+          "timestamp": "now"
+        },
+        {
+          "type": "compromise",
+          "node_id": 0,
+          "attack_type": "misconfiguration",
+          "timestamp": "now"
+        },
+        {
+          "type": "compromise",
+          "node_id": 6,
+          "attack_type": "default_credentials",
+          "timestamp": "now"
+        },
+        {
+          "type": "compromise",
+          "node_id": 16,
+          "attack_type": "misconfiguration",
+          "timestamp": "now"
+        }
+      ],
+      "campaign_status": {
+        "goal": "ransomware",
+        "progress": 0.11538461538461539,
+        "elapsed_time": 0.029462099075317383,
+        "compromised_nodes": 3,
+        "data_collected": 0,
+        "lateral_movements": 0
+      }
+    },
+    {
+      "step": 10,
+      "red_action": {
+        "strategy": "APT29",
+        "target": 13,
+        "attack_type": "misconfiguration",
+        "success": false,
+        "detected": false,
+        "info": "Attack failed",
+        "timestamp": "2025-05-20 15:41:13"
+      },
+      "blue_actions": [
+        {
+          "action": "patch",
+          "node_id": 0,
+          "vulnerability_type": "misconfiguration",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 0,
+          "vulnerability_type": "misconfiguration",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 0,
+          "vulnerability_type": "misconfiguration",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 6,
+          "vulnerability_type": "default_credentials",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 16,
+          "vulnerability_type": "misconfiguration",
+          "success": true
+        }
+      ],
+      "compromised_nodes": [
+        0,
+        16,
+        6
+      ],
+      "patched_nodes": [
+        16,
+        1,
+        0,
+        6
+      ],
+      "alerts": [
+        {
+          "type": "attempt",
+          "node_id": 0,
+          "attack_type": "misconfiguration",
+          "timestamp": "now"
+        },
+        {
+          "type": "attempt",
+          "node_id": 0,
+          "attack_type": "misconfiguration",
+          "timestamp": "now"
+        },
+        {
+          "type": "compromise",
+          "node_id": 0,
+          "attack_type": "misconfiguration",
+          "timestamp": "now"
+        },
+        {
+          "type": "compromise",
+          "node_id": 6,
+          "attack_type": "default_credentials",
+          "timestamp": "now"
+        },
+        {
+          "type": "compromise",
+          "node_id": 16,
+          "attack_type": "misconfiguration",
+          "timestamp": "now"
+        }
+      ],
+      "campaign_status": {
+        "goal": "ransomware",
+        "progress": 0.11538461538461539,
+        "elapsed_time": 0.03138899803161621,
+        "compromised_nodes": 3,
+        "data_collected": 0,
+        "lateral_movements": 0
+      }
+    },
+    {
+      "step": 11,
+      "red_action": {
+        "strategy": "Ransomware",
+        "target": 3,
+        "attack_type": "buffer_overflow",
+        "success": true,
+        "detected": false,
+        "info": "Attack successful",
+        "timestamp": "2025-05-20 15:41:13"
+      },
+      "blue_actions": [
+        {
+          "action": "patch",
+          "node_id": 0,
+          "vulnerability_type": "misconfiguration",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 0,
+          "vulnerability_type": "misconfiguration",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 0,
+          "vulnerability_type": "misconfiguration",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 6,
+          "vulnerability_type": "default_credentials",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 16,
+          "vulnerability_type": "misconfiguration",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 3,
+          "vulnerability_type": "buffer_overflow",
+          "success": true
+        }
+      ],
+      "compromised_nodes": [
+        0,
+        16,
+        3,
+        6
+      ],
+      "patched_nodes": [
+        0,
+        1,
+        3,
+        6,
+        16
+      ],
+      "alerts": [
+        {
+          "type": "attempt",
+          "node_id": 0,
+          "attack_type": "misconfiguration",
+          "timestamp": "now"
+        },
+        {
+          "type": "compromise",
+          "node_id": 0,
+          "attack_type": "misconfiguration",
+          "timestamp": "now"
+        },
+        {
+          "type": "compromise",
+          "node_id": 6,
+          "attack_type": "default_credentials",
+          "timestamp": "now"
+        },
+        {
+          "type": "compromise",
+          "node_id": 16,
+          "attack_type": "misconfiguration",
+          "timestamp": "now"
+        },
+        {
+          "type": "compromise",
+          "node_id": 3,
+          "attack_type": "buffer_overflow",
+          "timestamp": "now"
+        }
+      ],
+      "campaign_status": {
+        "goal": "ransomware",
+        "progress": 0.15384615384615385,
+        "elapsed_time": 0.03301715850830078,
+        "compromised_nodes": 4,
+        "data_collected": 0,
+        "lateral_movements": 0
+      }
+    },
+    {
+      "step": 12,
+      "red_action": {
+        "strategy": "APT29",
+        "target": 4,
+        "attack_type": "misconfiguration",
+        "success": false,
+        "detected": false,
+        "info": "Attack failed",
+        "timestamp": "2025-05-20 15:41:13"
+      },
+      "blue_actions": [
+        {
+          "action": "patch",
+          "node_id": 0,
+          "vulnerability_type": "misconfiguration",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 0,
+          "vulnerability_type": "misconfiguration",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 0,
+          "vulnerability_type": "misconfiguration",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 6,
+          "vulnerability_type": "default_credentials",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 16,
+          "vulnerability_type": "misconfiguration",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 3,
+          "vulnerability_type": "buffer_overflow",
+          "success": true
+        }
+      ],
+      "compromised_nodes": [
+        0,
+        16,
+        3,
+        6
+      ],
+      "patched_nodes": [
+        0,
+        1,
+        3,
+        6,
+        16
+      ],
+      "alerts": [
+        {
+          "type": "attempt",
+          "node_id": 0,
+          "attack_type": "misconfiguration",
+          "timestamp": "now"
+        },
+        {
+          "type": "compromise",
+          "node_id": 0,
+          "attack_type": "misconfiguration",
+          "timestamp": "now"
+        },
+        {
+          "type": "compromise",
+          "node_id": 6,
+          "attack_type": "default_credentials",
+          "timestamp": "now"
+        },
+        {
+          "type": "compromise",
+          "node_id": 16,
+          "attack_type": "misconfiguration",
+          "timestamp": "now"
+        },
+        {
+          "type": "compromise",
+          "node_id": 3,
+          "attack_type": "buffer_overflow",
+          "timestamp": "now"
+        }
+      ],
+      "campaign_status": {
+        "goal": "ransomware",
+        "progress": 0.15384615384615385,
+        "elapsed_time": 0.03475189208984375,
+        "compromised_nodes": 4,
+        "data_collected": 0,
+        "lateral_movements": 0
+      }
+    },
+    {
+      "step": 13,
+      "red_action": {
+        "strategy": "APT29",
+        "target": 4,
+        "attack_type": "misconfiguration",
+        "success": false,
+        "detected": false,
+        "info": "Attack failed",
+        "timestamp": "2025-05-20 15:41:13"
+      },
+      "blue_actions": [
+        {
+          "action": "patch",
+          "node_id": 0,
+          "vulnerability_type": "misconfiguration",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 0,
+          "vulnerability_type": "misconfiguration",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 0,
+          "vulnerability_type": "misconfiguration",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 6,
+          "vulnerability_type": "default_credentials",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 16,
+          "vulnerability_type": "misconfiguration",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 3,
+          "vulnerability_type": "buffer_overflow",
+          "success": true
+        }
+      ],
+      "compromised_nodes": [
+        0,
+        16,
+        3,
+        6
+      ],
+      "patched_nodes": [
+        0,
+        1,
+        3,
+        6,
+        16
+      ],
+      "alerts": [
+        {
+          "type": "attempt",
+          "node_id": 0,
+          "attack_type": "misconfiguration",
+          "timestamp": "now"
+        },
+        {
+          "type": "compromise",
+          "node_id": 0,
+          "attack_type": "misconfiguration",
+          "timestamp": "now"
+        },
+        {
+          "type": "compromise",
+          "node_id": 6,
+          "attack_type": "default_credentials",
+          "timestamp": "now"
+        },
+        {
+          "type": "compromise",
+          "node_id": 16,
+          "attack_type": "misconfiguration",
+          "timestamp": "now"
+        },
+        {
+          "type": "compromise",
+          "node_id": 3,
+          "attack_type": "buffer_overflow",
+          "timestamp": "now"
+        }
+      ],
+      "campaign_status": {
+        "goal": "ransomware",
+        "progress": 0.15384615384615385,
+        "elapsed_time": 0.036457061767578125,
+        "compromised_nodes": 4,
+        "data_collected": 0,
+        "lateral_movements": 0
+      }
+    },
+    {
+      "step": 14,
+      "red_action": {
+        "strategy": "APT29",
+        "target": 4,
+        "attack_type": "misconfiguration",
+        "success": false,
+        "detected": false,
+        "info": "Attack failed",
+        "timestamp": "2025-05-20 15:41:13"
+      },
+      "blue_actions": [
+        {
+          "action": "patch",
+          "node_id": 0,
+          "vulnerability_type": "misconfiguration",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 0,
+          "vulnerability_type": "misconfiguration",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 0,
+          "vulnerability_type": "misconfiguration",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 6,
+          "vulnerability_type": "default_credentials",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 16,
+          "vulnerability_type": "misconfiguration",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 3,
+          "vulnerability_type": "buffer_overflow",
+          "success": true
+        }
+      ],
+      "compromised_nodes": [
+        0,
+        16,
+        3,
+        6
+      ],
+      "patched_nodes": [
+        0,
+        1,
+        3,
+        6,
+        16
+      ],
+      "alerts": [
+        {
+          "type": "attempt",
+          "node_id": 0,
+          "attack_type": "misconfiguration",
+          "timestamp": "now"
+        },
+        {
+          "type": "compromise",
+          "node_id": 0,
+          "attack_type": "misconfiguration",
+          "timestamp": "now"
+        },
+        {
+          "type": "compromise",
+          "node_id": 6,
+          "attack_type": "default_credentials",
+          "timestamp": "now"
+        },
+        {
+          "type": "compromise",
+          "node_id": 16,
+          "attack_type": "misconfiguration",
+          "timestamp": "now"
+        },
+        {
+          "type": "compromise",
+          "node_id": 3,
+          "attack_type": "buffer_overflow",
+          "timestamp": "now"
+        }
+      ],
+      "campaign_status": {
+        "goal": "ransomware",
+        "progress": 0.15384615384615385,
+        "elapsed_time": 0.038248300552368164,
+        "compromised_nodes": 4,
+        "data_collected": 0,
+        "lateral_movements": 0
+      }
+    },
+    {
+      "step": 15,
+      "red_action": {
+        "strategy": "APT29",
+        "target": 4,
+        "attack_type": "misconfiguration",
+        "success": true,
+        "detected": false,
+        "info": "Attack successful",
+        "timestamp": "2025-05-20 15:41:13"
+      },
+      "blue_actions": [
+        {
+          "action": "patch",
+          "node_id": 0,
+          "vulnerability_type": "misconfiguration",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 0,
+          "vulnerability_type": "misconfiguration",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 0,
+          "vulnerability_type": "misconfiguration",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 6,
+          "vulnerability_type": "default_credentials",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 16,
+          "vulnerability_type": "misconfiguration",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 3,
+          "vulnerability_type": "buffer_overflow",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 4,
+          "vulnerability_type": "misconfiguration",
+          "success": true
+        }
+      ],
+      "compromised_nodes": [
+        0,
+        3,
+        4,
+        6,
+        16
+      ],
+      "patched_nodes": [
+        0,
+        1,
+        3,
+        4,
+        6,
+        16
+      ],
+      "alerts": [
+        {
+          "type": "compromise",
+          "node_id": 0,
+          "attack_type": "misconfiguration",
+          "timestamp": "now"
+        },
+        {
+          "type": "compromise",
+          "node_id": 6,
+          "attack_type": "default_credentials",
+          "timestamp": "now"
+        },
+        {
+          "type": "compromise",
+          "node_id": 16,
+          "attack_type": "misconfiguration",
+          "timestamp": "now"
+        },
+        {
+          "type": "compromise",
+          "node_id": 3,
+          "attack_type": "buffer_overflow",
+          "timestamp": "now"
+        },
+        {
+          "type": "compromise",
+          "node_id": 4,
+          "attack_type": "misconfiguration",
+          "timestamp": "now"
+        }
+      ],
+      "campaign_status": {
+        "goal": "ransomware",
+        "progress": 0.19230769230769232,
+        "elapsed_time": 0.04015660285949707,
+        "compromised_nodes": 5,
+        "data_collected": 0,
+        "lateral_movements": 0
+      }
+    },
+    {
+      "step": 16,
+      "red_action": {
+        "strategy": "APT29",
+        "target": 24,
+        "attack_type": "default_credentials",
+        "success": true,
+        "detected": false,
+        "info": "Attack successful",
+        "timestamp": "2025-05-20 15:41:13"
+      },
+      "blue_actions": [
+        {
+          "action": "patch",
+          "node_id": 0,
+          "vulnerability_type": "misconfiguration",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 0,
+          "vulnerability_type": "misconfiguration",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 0,
+          "vulnerability_type": "misconfiguration",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 6,
+          "vulnerability_type": "default_credentials",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 16,
+          "vulnerability_type": "misconfiguration",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 3,
+          "vulnerability_type": "buffer_overflow",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 4,
+          "vulnerability_type": "misconfiguration",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 24,
+          "vulnerability_type": "default_credentials",
+          "success": true
+        }
+      ],
+      "compromised_nodes": [
+        0,
+        3,
+        4,
+        6,
+        16,
+        24
+      ],
+      "patched_nodes": [
+        0,
+        1,
+        3,
+        4,
+        6,
+        16,
+        24
+      ],
+      "alerts": [
+        {
+          "type": "compromise",
+          "node_id": 6,
+          "attack_type": "default_credentials",
+          "timestamp": "now"
+        },
+        {
+          "type": "compromise",
+          "node_id": 16,
+          "attack_type": "misconfiguration",
+          "timestamp": "now"
+        },
+        {
+          "type": "compromise",
+          "node_id": 3,
+          "attack_type": "buffer_overflow",
+          "timestamp": "now"
+        },
+        {
+          "type": "compromise",
+          "node_id": 4,
+          "attack_type": "misconfiguration",
+          "timestamp": "now"
+        },
+        {
+          "type": "compromise",
+          "node_id": 24,
+          "attack_type": "default_credentials",
+          "timestamp": "now"
+        }
+      ],
+      "campaign_status": {
+        "goal": "ransomware",
+        "progress": 0.23076923076923078,
+        "elapsed_time": 0.04217791557312012,
+        "compromised_nodes": 6,
+        "data_collected": 0,
+        "lateral_movements": 0
+      }
+    },
+    {
+      "step": 17,
+      "red_action": {
+        "strategy": "Stealthy",
+        "target": 5,
+        "attack_type": "default_credentials",
+        "success": false,
+        "detected": false,
+        "info": "Attack failed",
+        "timestamp": "2025-05-20 15:41:13"
+      },
+      "blue_actions": [
+        {
+          "action": "patch",
+          "node_id": 1,
+          "vulnerability_type": "misconfiguration",
+          "success": true
+        }
+      ],
+      "compromised_nodes": [
+        0,
+        3,
+        4,
+        6,
+        16,
+        24
+      ],
+      "patched_nodes": [
+        0,
+        1,
+        3,
+        4,
+        6,
+        16,
+        24
+      ],
+      "alerts": [
+        {
+          "type": "compromise",
+          "node_id": 6,
+          "attack_type": "default_credentials",
+          "timestamp": "now"
+        },
+        {
+          "type": "compromise",
+          "node_id": 16,
+          "attack_type": "misconfiguration",
+          "timestamp": "now"
+        },
+        {
+          "type": "compromise",
+          "node_id": 3,
+          "attack_type": "buffer_overflow",
+          "timestamp": "now"
+        },
+        {
+          "type": "compromise",
+          "node_id": 4,
+          "attack_type": "misconfiguration",
+          "timestamp": "now"
+        },
+        {
+          "type": "compromise",
+          "node_id": 24,
+          "attack_type": "default_credentials",
+          "timestamp": "now"
+        }
+      ],
+      "campaign_status": {
+        "goal": "ransomware",
+        "progress": 0.23076923076923078,
+        "elapsed_time": 0.044759511947631836,
+        "compromised_nodes": 6,
+        "data_collected": 0,
+        "lateral_movements": 0
+      }
+    },
+    {
+      "step": 18,
+      "red_action": {
+        "strategy": "APT29",
+        "target": 4,
+        "attack_type": "misconfiguration",
+        "success": false,
+        "detected": false,
+        "info": "Attack failed",
+        "timestamp": "2025-05-20 15:41:14"
+      },
+      "blue_actions": [
+        {
+          "action": "patch",
+          "node_id": 0,
+          "vulnerability_type": "misconfiguration",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 0,
+          "vulnerability_type": "misconfiguration",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 0,
+          "vulnerability_type": "misconfiguration",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 6,
+          "vulnerability_type": "default_credentials",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 16,
+          "vulnerability_type": "misconfiguration",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 3,
+          "vulnerability_type": "buffer_overflow",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 4,
+          "vulnerability_type": "misconfiguration",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 24,
+          "vulnerability_type": "default_credentials",
+          "success": true
+        }
+      ],
+      "compromised_nodes": [
+        0,
+        3,
+        4,
+        6,
+        16,
+        24
+      ],
+      "patched_nodes": [
+        0,
+        1,
+        3,
+        4,
+        6,
+        16,
+        24
+      ],
+      "alerts": [
+        {
+          "type": "compromise",
+          "node_id": 6,
+          "attack_type": "default_credentials",
+          "timestamp": "now"
+        },
+        {
+          "type": "compromise",
+          "node_id": 16,
+          "attack_type": "misconfiguration",
+          "timestamp": "now"
+        },
+        {
+          "type": "compromise",
+          "node_id": 3,
+          "attack_type": "buffer_overflow",
+          "timestamp": "now"
+        },
+        {
+          "type": "compromise",
+          "node_id": 4,
+          "attack_type": "misconfiguration",
+          "timestamp": "now"
+        },
+        {
+          "type": "compromise",
+          "node_id": 24,
+          "attack_type": "default_credentials",
+          "timestamp": "now"
+        }
+      ],
+      "campaign_status": {
+        "goal": "ransomware",
+        "progress": 0.23076923076923078,
+        "elapsed_time": 0.04698348045349121,
+        "compromised_nodes": 6,
+        "data_collected": 0,
+        "lateral_movements": 0
+      }
+    },
+    {
+      "step": 19,
+      "red_action": {
+        "strategy": "APT29",
+        "target": 2,
+        "attack_type": "default_credentials",
+        "success": false,
+        "detected": false,
+        "info": "Attack failed",
+        "timestamp": "2025-05-20 15:41:14"
+      },
+      "blue_actions": [
+        {
+          "action": "patch",
+          "node_id": 0,
+          "vulnerability_type": "misconfiguration",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 0,
+          "vulnerability_type": "misconfiguration",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 0,
+          "vulnerability_type": "misconfiguration",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 6,
+          "vulnerability_type": "default_credentials",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 16,
+          "vulnerability_type": "misconfiguration",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 3,
+          "vulnerability_type": "buffer_overflow",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 4,
+          "vulnerability_type": "misconfiguration",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 24,
+          "vulnerability_type": "default_credentials",
+          "success": true
+        }
+      ],
+      "compromised_nodes": [
+        0,
+        3,
+        4,
+        6,
+        16,
+        24
+      ],
+      "patched_nodes": [
+        0,
+        1,
+        3,
+        4,
+        6,
+        16,
+        24
+      ],
+      "alerts": [
+        {
+          "type": "compromise",
+          "node_id": 6,
+          "attack_type": "default_credentials",
+          "timestamp": "now"
+        },
+        {
+          "type": "compromise",
+          "node_id": 16,
+          "attack_type": "misconfiguration",
+          "timestamp": "now"
+        },
+        {
+          "type": "compromise",
+          "node_id": 3,
+          "attack_type": "buffer_overflow",
+          "timestamp": "now"
+        },
+        {
+          "type": "compromise",
+          "node_id": 4,
+          "attack_type": "misconfiguration",
+          "timestamp": "now"
+        },
+        {
+          "type": "compromise",
+          "node_id": 24,
+          "attack_type": "default_credentials",
+          "timestamp": "now"
+        }
+      ],
+      "campaign_status": {
+        "goal": "ransomware",
+        "progress": 0.23076923076923078,
+        "elapsed_time": 0.04877328872680664,
+        "compromised_nodes": 6,
+        "data_collected": 0,
+        "lateral_movements": 0
+      }
+    },
+    {
+      "step": 20,
+      "red_action": {
+        "strategy": "APT29",
+        "target": 4,
+        "attack_type": "misconfiguration",
+        "success": false,
+        "detected": false,
+        "info": "Attack failed",
+        "timestamp": "2025-05-20 15:41:14"
+      },
+      "blue_actions": [
+        {
+          "action": "patch",
+          "node_id": 0,
+          "vulnerability_type": "misconfiguration",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 0,
+          "vulnerability_type": "misconfiguration",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 0,
+          "vulnerability_type": "misconfiguration",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 6,
+          "vulnerability_type": "default_credentials",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 16,
+          "vulnerability_type": "misconfiguration",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 3,
+          "vulnerability_type": "buffer_overflow",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 4,
+          "vulnerability_type": "misconfiguration",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 24,
+          "vulnerability_type": "default_credentials",
+          "success": true
+        }
+      ],
+      "compromised_nodes": [
+        0,
+        3,
+        4,
+        6,
+        16,
+        24
+      ],
+      "patched_nodes": [
+        0,
+        1,
+        3,
+        4,
+        6,
+        16,
+        24
+      ],
+      "alerts": [
+        {
+          "type": "compromise",
+          "node_id": 6,
+          "attack_type": "default_credentials",
+          "timestamp": "now"
+        },
+        {
+          "type": "compromise",
+          "node_id": 16,
+          "attack_type": "misconfiguration",
+          "timestamp": "now"
+        },
+        {
+          "type": "compromise",
+          "node_id": 3,
+          "attack_type": "buffer_overflow",
+          "timestamp": "now"
+        },
+        {
+          "type": "compromise",
+          "node_id": 4,
+          "attack_type": "misconfiguration",
+          "timestamp": "now"
+        },
+        {
+          "type": "compromise",
+          "node_id": 24,
+          "attack_type": "default_credentials",
+          "timestamp": "now"
+        }
+      ],
+      "campaign_status": {
+        "goal": "ransomware",
+        "progress": 0.23076923076923078,
+        "elapsed_time": 0.050661325454711914,
+        "compromised_nodes": 6,
+        "data_collected": 0,
+        "lateral_movements": 0
+      }
+    },
+    {
+      "step": 21,
+      "red_action": {
+        "strategy": "APT29",
+        "target": 4,
+        "attack_type": "misconfiguration",
+        "success": false,
+        "detected": false,
+        "info": "Attack failed",
+        "timestamp": "2025-05-20 15:41:14"
+      },
+      "blue_actions": [
+        {
+          "action": "investigate",
+          "node_id": 16,
+          "found_compromise": false,
+          "success": true
+        },
+        {
+          "action": "investigate",
+          "node_id": 15,
+          "found_compromise": false,
+          "success": true
+        },
+        {
+          "action": "investigate",
+          "node_id": 7,
+          "found_compromise": false,
+          "success": true
+        },
+        {
+          "action": "investigate",
+          "node_id": 23,
+          "found_compromise": false,
+          "success": true
+        }
+      ],
+      "compromised_nodes": [
+        0,
+        3,
+        4,
+        6,
+        16,
+        24
+      ],
+      "patched_nodes": [
+        0,
+        1,
+        3,
+        4,
+        6,
+        16,
+        24
+      ],
+      "alerts": [
+        {
+          "type": "compromise",
+          "node_id": 6,
+          "attack_type": "default_credentials",
+          "timestamp": "now"
+        },
+        {
+          "type": "compromise",
+          "node_id": 16,
+          "attack_type": "misconfiguration",
+          "timestamp": "now"
+        },
+        {
+          "type": "compromise",
+          "node_id": 3,
+          "attack_type": "buffer_overflow",
+          "timestamp": "now"
+        },
+        {
+          "type": "compromise",
+          "node_id": 4,
+          "attack_type": "misconfiguration",
+          "timestamp": "now"
+        },
+        {
+          "type": "compromise",
+          "node_id": 24,
+          "attack_type": "default_credentials",
+          "timestamp": "now"
+        }
+      ],
+      "campaign_status": {
+        "goal": "ransomware",
+        "progress": 0.23076923076923078,
+        "elapsed_time": 0.05252265930175781,
+        "compromised_nodes": 6,
+        "data_collected": 0,
+        "lateral_movements": 0
+      }
+    },
+    {
+      "step": 22,
+      "red_action": {
+        "strategy": "APT29",
+        "target": 4,
+        "attack_type": "misconfiguration",
+        "success": false,
+        "detected": false,
+        "info": "Attack failed",
+        "timestamp": "2025-05-20 15:41:14"
+      },
+      "blue_actions": [
+        {
+          "action": "patch",
+          "node_id": 1,
+          "vulnerability_type": "buffer_overflow",
+          "success": true
+        }
+      ],
+      "compromised_nodes": [
+        0,
+        3,
+        4,
+        6,
+        16,
+        24
+      ],
+      "patched_nodes": [
+        0,
+        1,
+        3,
+        4,
+        6,
+        16,
+        24
+      ],
+      "alerts": [
+        {
+          "type": "compromise",
+          "node_id": 6,
+          "attack_type": "default_credentials",
+          "timestamp": "now"
+        },
+        {
+          "type": "compromise",
+          "node_id": 16,
+          "attack_type": "misconfiguration",
+          "timestamp": "now"
+        },
+        {
+          "type": "compromise",
+          "node_id": 3,
+          "attack_type": "buffer_overflow",
+          "timestamp": "now"
+        },
+        {
+          "type": "compromise",
+          "node_id": 4,
+          "attack_type": "misconfiguration",
+          "timestamp": "now"
+        },
+        {
+          "type": "compromise",
+          "node_id": 24,
+          "attack_type": "default_credentials",
+          "timestamp": "now"
+        }
+      ],
+      "campaign_status": {
+        "goal": "ransomware",
+        "progress": 0.23076923076923078,
+        "elapsed_time": 0.05513119697570801,
+        "compromised_nodes": 6,
+        "data_collected": 0,
+        "lateral_movements": 0
+      }
+    },
+    {
+      "step": 23,
+      "red_action": {
+        "strategy": "APT29",
+        "target": 2,
+        "attack_type": "default_credentials",
+        "success": false,
+        "detected": false,
+        "info": "Attack failed",
+        "timestamp": "2025-05-20 15:41:14"
+      },
+      "blue_actions": [
+        {
+          "action": "patch",
+          "node_id": 0,
+          "vulnerability_type": "misconfiguration",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 0,
+          "vulnerability_type": "misconfiguration",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 0,
+          "vulnerability_type": "misconfiguration",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 6,
+          "vulnerability_type": "default_credentials",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 16,
+          "vulnerability_type": "misconfiguration",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 3,
+          "vulnerability_type": "buffer_overflow",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 4,
+          "vulnerability_type": "misconfiguration",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 24,
+          "vulnerability_type": "default_credentials",
+          "success": true
+        }
+      ],
+      "compromised_nodes": [
+        0,
+        3,
+        4,
+        6,
+        16,
+        24
+      ],
+      "patched_nodes": [
+        0,
+        1,
+        3,
+        4,
+        6,
+        16,
+        24
+      ],
+      "alerts": [
+        {
+          "type": "compromise",
+          "node_id": 6,
+          "attack_type": "default_credentials",
+          "timestamp": "now"
+        },
+        {
+          "type": "compromise",
+          "node_id": 16,
+          "attack_type": "misconfiguration",
+          "timestamp": "now"
+        },
+        {
+          "type": "compromise",
+          "node_id": 3,
+          "attack_type": "buffer_overflow",
+          "timestamp": "now"
+        },
+        {
+          "type": "compromise",
+          "node_id": 4,
+          "attack_type": "misconfiguration",
+          "timestamp": "now"
+        },
+        {
+          "type": "compromise",
+          "node_id": 24,
+          "attack_type": "default_credentials",
+          "timestamp": "now"
+        }
+      ],
+      "campaign_status": {
+        "goal": "ransomware",
+        "progress": 0.23076923076923078,
+        "elapsed_time": 0.05766415596008301,
+        "compromised_nodes": 6,
+        "data_collected": 0,
+        "lateral_movements": 0
+      }
+    },
+    {
+      "step": 24,
+      "red_action": {
+        "strategy": "APT29",
+        "target": 4,
+        "attack_type": "misconfiguration",
+        "success": false,
+        "detected": false,
+        "info": "Attack failed",
+        "timestamp": "2025-05-20 15:41:14"
+      },
+      "blue_actions": [
+        {
+          "action": "patch",
+          "node_id": 0,
+          "vulnerability_type": "misconfiguration",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 0,
+          "vulnerability_type": "misconfiguration",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 0,
+          "vulnerability_type": "misconfiguration",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 6,
+          "vulnerability_type": "default_credentials",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 16,
+          "vulnerability_type": "misconfiguration",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 3,
+          "vulnerability_type": "buffer_overflow",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 4,
+          "vulnerability_type": "misconfiguration",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 24,
+          "vulnerability_type": "default_credentials",
+          "success": true
+        }
+      ],
+      "compromised_nodes": [
+        0,
+        3,
+        4,
+        6,
+        16,
+        24
+      ],
+      "patched_nodes": [
+        0,
+        1,
+        3,
+        4,
+        6,
+        16,
+        24
+      ],
+      "alerts": [
+        {
+          "type": "compromise",
+          "node_id": 6,
+          "attack_type": "default_credentials",
+          "timestamp": "now"
+        },
+        {
+          "type": "compromise",
+          "node_id": 16,
+          "attack_type": "misconfiguration",
+          "timestamp": "now"
+        },
+        {
+          "type": "compromise",
+          "node_id": 3,
+          "attack_type": "buffer_overflow",
+          "timestamp": "now"
+        },
+        {
+          "type": "compromise",
+          "node_id": 4,
+          "attack_type": "misconfiguration",
+          "timestamp": "now"
+        },
+        {
+          "type": "compromise",
+          "node_id": 24,
+          "attack_type": "default_credentials",
+          "timestamp": "now"
+        }
+      ],
+      "campaign_status": {
+        "goal": "ransomware",
+        "progress": 0.23076923076923078,
+        "elapsed_time": 0.05983877182006836,
+        "compromised_nodes": 6,
+        "data_collected": 0,
+        "lateral_movements": 0
+      }
+    },
+    {
+      "step": 25,
+      "red_action": {
+        "strategy": "APT29",
+        "target": 2,
+        "attack_type": "default_credentials",
+        "success": false,
+        "detected": false,
+        "info": "Attack failed",
+        "timestamp": "2025-05-20 15:41:14"
+      },
+      "blue_actions": [
+        {
+          "action": "patch",
+          "node_id": 0,
+          "vulnerability_type": "misconfiguration",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 0,
+          "vulnerability_type": "misconfiguration",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 0,
+          "vulnerability_type": "misconfiguration",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 6,
+          "vulnerability_type": "default_credentials",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 16,
+          "vulnerability_type": "misconfiguration",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 3,
+          "vulnerability_type": "buffer_overflow",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 4,
+          "vulnerability_type": "misconfiguration",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 24,
+          "vulnerability_type": "default_credentials",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 2,
+          "vulnerability_type": "default_credentials",
+          "success": true
+        }
+      ],
+      "compromised_nodes": [
+        0,
+        3,
+        4,
+        6,
+        16,
+        24
+      ],
+      "patched_nodes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        6,
+        16,
+        24
+      ],
+      "alerts": [
+        {
+          "type": "compromise",
+          "node_id": 16,
+          "attack_type": "misconfiguration",
+          "timestamp": "now"
+        },
+        {
+          "type": "compromise",
+          "node_id": 3,
+          "attack_type": "buffer_overflow",
+          "timestamp": "now"
+        },
+        {
+          "type": "compromise",
+          "node_id": 4,
+          "attack_type": "misconfiguration",
+          "timestamp": "now"
+        },
+        {
+          "type": "compromise",
+          "node_id": 24,
+          "attack_type": "default_credentials",
+          "timestamp": "now"
+        },
+        {
+          "type": "attempt",
+          "node_id": 2,
+          "attack_type": "default_credentials",
+          "timestamp": "now"
+        }
+      ],
+      "campaign_status": {
+        "goal": "ransomware",
+        "progress": 0.23076923076923078,
+        "elapsed_time": 0.061806440353393555,
+        "compromised_nodes": 6,
+        "data_collected": 0,
+        "lateral_movements": 0
+      }
+    },
+    {
+      "step": 26,
+      "red_action": {
+        "strategy": "APT29",
+        "target": 2,
+        "attack_type": "default_credentials",
+        "success": false,
+        "detected": false,
+        "info": "Attack failed",
+        "timestamp": "2025-05-20 15:41:14"
+      },
+      "blue_actions": [
+        {
+          "action": "investigate",
+          "node_id": 20,
+          "found_compromise": false,
+          "success": true
+        },
+        {
+          "action": "investigate",
+          "node_id": 10,
+          "found_compromise": false,
+          "success": true
+        },
+        {
+          "action": "investigate",
+          "node_id": 25,
+          "found_compromise": false,
+          "success": true
+        }
+      ],
+      "compromised_nodes": [
+        0,
+        3,
+        4,
+        6,
+        16,
+        24
+      ],
+      "patched_nodes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        6,
+        16,
+        24
+      ],
+      "alerts": [
+        {
+          "type": "compromise",
+          "node_id": 16,
+          "attack_type": "misconfiguration",
+          "timestamp": "now"
+        },
+        {
+          "type": "compromise",
+          "node_id": 3,
+          "attack_type": "buffer_overflow",
+          "timestamp": "now"
+        },
+        {
+          "type": "compromise",
+          "node_id": 4,
+          "attack_type": "misconfiguration",
+          "timestamp": "now"
+        },
+        {
+          "type": "compromise",
+          "node_id": 24,
+          "attack_type": "default_credentials",
+          "timestamp": "now"
+        },
+        {
+          "type": "attempt",
+          "node_id": 2,
+          "attack_type": "default_credentials",
+          "timestamp": "now"
+        }
+      ],
+      "campaign_status": {
+        "goal": "ransomware",
+        "progress": 0.23076923076923078,
+        "elapsed_time": 0.06392741203308105,
+        "compromised_nodes": 6,
+        "data_collected": 0,
+        "lateral_movements": 0
+      }
+    },
+    {
+      "step": 27,
+      "red_action": {
+        "strategy": "APT29",
+        "target": 2,
+        "attack_type": "default_credentials",
+        "success": false,
+        "detected": false,
+        "info": "Attack failed",
+        "timestamp": "2025-05-20 15:41:14"
+      },
+      "blue_actions": [
+        {
+          "action": "patch",
+          "node_id": 0,
+          "vulnerability_type": "misconfiguration",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 0,
+          "vulnerability_type": "misconfiguration",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 0,
+          "vulnerability_type": "misconfiguration",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 6,
+          "vulnerability_type": "default_credentials",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 16,
+          "vulnerability_type": "misconfiguration",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 3,
+          "vulnerability_type": "buffer_overflow",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 4,
+          "vulnerability_type": "misconfiguration",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 24,
+          "vulnerability_type": "default_credentials",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 2,
+          "vulnerability_type": "default_credentials",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 2,
+          "vulnerability_type": "default_credentials",
+          "success": true
+        }
+      ],
+      "compromised_nodes": [
+        0,
+        3,
+        4,
+        6,
+        16,
+        24
+      ],
+      "patched_nodes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        6,
+        16,
+        24
+      ],
+      "alerts": [
+        {
+          "type": "compromise",
+          "node_id": 3,
+          "attack_type": "buffer_overflow",
+          "timestamp": "now"
+        },
+        {
+          "type": "compromise",
+          "node_id": 4,
+          "attack_type": "misconfiguration",
+          "timestamp": "now"
+        },
+        {
+          "type": "compromise",
+          "node_id": 24,
+          "attack_type": "default_credentials",
+          "timestamp": "now"
+        },
+        {
+          "type": "attempt",
+          "node_id": 2,
+          "attack_type": "default_credentials",
+          "timestamp": "now"
+        },
+        {
+          "type": "attempt",
+          "node_id": 2,
+          "attack_type": "default_credentials",
+          "timestamp": "now"
+        }
+      ],
+      "campaign_status": {
+        "goal": "ransomware",
+        "progress": 0.23076923076923078,
+        "elapsed_time": 0.06598806381225586,
+        "compromised_nodes": 6,
+        "data_collected": 0,
+        "lateral_movements": 0
+      }
+    },
+    {
+      "step": 28,
+      "red_action": {
+        "strategy": "APT29",
+        "target": 4,
+        "attack_type": "misconfiguration",
+        "success": false,
+        "detected": false,
+        "info": "Attack failed",
+        "timestamp": "2025-05-20 15:41:14"
+      },
+      "blue_actions": [
+        {
+          "action": "patch",
+          "node_id": 0,
+          "vulnerability_type": "misconfiguration",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 0,
+          "vulnerability_type": "misconfiguration",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 0,
+          "vulnerability_type": "misconfiguration",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 6,
+          "vulnerability_type": "default_credentials",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 16,
+          "vulnerability_type": "misconfiguration",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 3,
+          "vulnerability_type": "buffer_overflow",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 4,
+          "vulnerability_type": "misconfiguration",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 24,
+          "vulnerability_type": "default_credentials",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 2,
+          "vulnerability_type": "default_credentials",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 2,
+          "vulnerability_type": "default_credentials",
+          "success": true
+        }
+      ],
+      "compromised_nodes": [
+        0,
+        3,
+        4,
+        6,
+        16,
+        24
+      ],
+      "patched_nodes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        6,
+        16,
+        24
+      ],
+      "alerts": [
+        {
+          "type": "compromise",
+          "node_id": 3,
+          "attack_type": "buffer_overflow",
+          "timestamp": "now"
+        },
+        {
+          "type": "compromise",
+          "node_id": 4,
+          "attack_type": "misconfiguration",
+          "timestamp": "now"
+        },
+        {
+          "type": "compromise",
+          "node_id": 24,
+          "attack_type": "default_credentials",
+          "timestamp": "now"
+        },
+        {
+          "type": "attempt",
+          "node_id": 2,
+          "attack_type": "default_credentials",
+          "timestamp": "now"
+        },
+        {
+          "type": "attempt",
+          "node_id": 2,
+          "attack_type": "default_credentials",
+          "timestamp": "now"
+        }
+      ],
+      "campaign_status": {
+        "goal": "ransomware",
+        "progress": 0.23076923076923078,
+        "elapsed_time": 0.06777453422546387,
+        "compromised_nodes": 6,
+        "data_collected": 0,
+        "lateral_movements": 0
+      }
+    },
+    {
+      "step": 29,
+      "red_action": {
+        "strategy": "APT29",
+        "target": 2,
+        "attack_type": "default_credentials",
+        "success": false,
+        "detected": false,
+        "info": "Attack failed",
+        "timestamp": "2025-05-20 15:41:14"
+      },
+      "blue_actions": [
+        {
+          "action": "patch",
+          "node_id": 0,
+          "vulnerability_type": "misconfiguration",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 0,
+          "vulnerability_type": "misconfiguration",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 6,
+          "vulnerability_type": "default_credentials",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 16,
+          "vulnerability_type": "misconfiguration",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 3,
+          "vulnerability_type": "buffer_overflow",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 4,
+          "vulnerability_type": "misconfiguration",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 24,
+          "vulnerability_type": "default_credentials",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 2,
+          "vulnerability_type": "default_credentials",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 2,
+          "vulnerability_type": "default_credentials",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 2,
+          "vulnerability_type": "default_credentials",
+          "success": true
+        }
+      ],
+      "compromised_nodes": [
+        0,
+        3,
+        4,
+        6,
+        16,
+        24
+      ],
+      "patched_nodes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        6,
+        16,
+        24
+      ],
+      "alerts": [
+        {
+          "type": "compromise",
+          "node_id": 4,
+          "attack_type": "misconfiguration",
+          "timestamp": "now"
+        },
+        {
+          "type": "compromise",
+          "node_id": 24,
+          "attack_type": "default_credentials",
+          "timestamp": "now"
+        },
+        {
+          "type": "attempt",
+          "node_id": 2,
+          "attack_type": "default_credentials",
+          "timestamp": "now"
+        },
+        {
+          "type": "attempt",
+          "node_id": 2,
+          "attack_type": "default_credentials",
+          "timestamp": "now"
+        },
+        {
+          "type": "attempt",
+          "node_id": 2,
+          "attack_type": "default_credentials",
+          "timestamp": "now"
+        }
+      ],
+      "campaign_status": {
+        "goal": "ransomware",
+        "progress": 0.23076923076923078,
+        "elapsed_time": 0.06954407691955566,
+        "compromised_nodes": 6,
+        "data_collected": 0,
+        "lateral_movements": 0
+      }
+    },
+    {
+      "step": 30,
+      "red_action": {
+        "strategy": "APT29",
+        "target": 4,
+        "attack_type": "misconfiguration",
+        "success": false,
+        "detected": false,
+        "info": "Attack failed",
+        "timestamp": "2025-05-20 15:41:14"
+      },
+      "blue_actions": [
+        {
+          "action": "patch",
+          "node_id": 0,
+          "vulnerability_type": "misconfiguration",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 0,
+          "vulnerability_type": "misconfiguration",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 6,
+          "vulnerability_type": "default_credentials",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 16,
+          "vulnerability_type": "misconfiguration",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 3,
+          "vulnerability_type": "buffer_overflow",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 4,
+          "vulnerability_type": "misconfiguration",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 24,
+          "vulnerability_type": "default_credentials",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 2,
+          "vulnerability_type": "default_credentials",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 2,
+          "vulnerability_type": "default_credentials",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 2,
+          "vulnerability_type": "default_credentials",
+          "success": true
+        }
+      ],
+      "compromised_nodes": [
+        0,
+        3,
+        4,
+        6,
+        16,
+        24
+      ],
+      "patched_nodes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        6,
+        16,
+        24
+      ],
+      "alerts": [
+        {
+          "type": "compromise",
+          "node_id": 4,
+          "attack_type": "misconfiguration",
+          "timestamp": "now"
+        },
+        {
+          "type": "compromise",
+          "node_id": 24,
+          "attack_type": "default_credentials",
+          "timestamp": "now"
+        },
+        {
+          "type": "attempt",
+          "node_id": 2,
+          "attack_type": "default_credentials",
+          "timestamp": "now"
+        },
+        {
+          "type": "attempt",
+          "node_id": 2,
+          "attack_type": "default_credentials",
+          "timestamp": "now"
+        },
+        {
+          "type": "attempt",
+          "node_id": 2,
+          "attack_type": "default_credentials",
+          "timestamp": "now"
+        }
+      ],
+      "campaign_status": {
+        "goal": "ransomware",
+        "progress": 0.23076923076923078,
+        "elapsed_time": 0.07139229774475098,
+        "compromised_nodes": 6,
+        "data_collected": 0,
+        "lateral_movements": 0
+      }
+    },
+    {
+      "step": 31,
+      "red_action": {
+        "strategy": "APT29",
+        "target": 4,
+        "attack_type": "misconfiguration",
+        "success": false,
+        "detected": false,
+        "info": "Attack failed",
+        "timestamp": "2025-05-20 15:41:14"
+      },
+      "blue_actions": [
+        {
+          "action": "patch",
+          "node_id": 0,
+          "vulnerability_type": "misconfiguration",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 0,
+          "vulnerability_type": "misconfiguration",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 6,
+          "vulnerability_type": "default_credentials",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 16,
+          "vulnerability_type": "misconfiguration",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 3,
+          "vulnerability_type": "buffer_overflow",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 4,
+          "vulnerability_type": "misconfiguration",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 24,
+          "vulnerability_type": "default_credentials",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 2,
+          "vulnerability_type": "default_credentials",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 2,
+          "vulnerability_type": "default_credentials",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 2,
+          "vulnerability_type": "default_credentials",
+          "success": true
+        }
+      ],
+      "compromised_nodes": [
+        0,
+        3,
+        4,
+        6,
+        16,
+        24
+      ],
+      "patched_nodes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        6,
+        16,
+        24
+      ],
+      "alerts": [
+        {
+          "type": "compromise",
+          "node_id": 4,
+          "attack_type": "misconfiguration",
+          "timestamp": "now"
+        },
+        {
+          "type": "compromise",
+          "node_id": 24,
+          "attack_type": "default_credentials",
+          "timestamp": "now"
+        },
+        {
+          "type": "attempt",
+          "node_id": 2,
+          "attack_type": "default_credentials",
+          "timestamp": "now"
+        },
+        {
+          "type": "attempt",
+          "node_id": 2,
+          "attack_type": "default_credentials",
+          "timestamp": "now"
+        },
+        {
+          "type": "attempt",
+          "node_id": 2,
+          "attack_type": "default_credentials",
+          "timestamp": "now"
+        }
+      ],
+      "campaign_status": {
+        "goal": "ransomware",
+        "progress": 0.23076923076923078,
+        "elapsed_time": 0.07342696189880371,
+        "compromised_nodes": 6,
+        "data_collected": 0,
+        "lateral_movements": 0
+      }
+    },
+    {
+      "step": 32,
+      "red_action": {
+        "strategy": "APT29",
+        "target": 4,
+        "attack_type": "misconfiguration",
+        "success": false,
+        "detected": false,
+        "info": "Attack failed",
+        "timestamp": "2025-05-20 15:41:14"
+      },
+      "blue_actions": [
+        {
+          "action": "patch",
+          "node_id": 0,
+          "vulnerability_type": "misconfiguration",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 0,
+          "vulnerability_type": "misconfiguration",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 6,
+          "vulnerability_type": "default_credentials",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 16,
+          "vulnerability_type": "misconfiguration",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 3,
+          "vulnerability_type": "buffer_overflow",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 4,
+          "vulnerability_type": "misconfiguration",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 24,
+          "vulnerability_type": "default_credentials",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 2,
+          "vulnerability_type": "default_credentials",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 2,
+          "vulnerability_type": "default_credentials",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 2,
+          "vulnerability_type": "default_credentials",
+          "success": true
+        }
+      ],
+      "compromised_nodes": [
+        0,
+        3,
+        4,
+        6,
+        16,
+        24
+      ],
+      "patched_nodes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        6,
+        16,
+        24
+      ],
+      "alerts": [
+        {
+          "type": "compromise",
+          "node_id": 4,
+          "attack_type": "misconfiguration",
+          "timestamp": "now"
+        },
+        {
+          "type": "compromise",
+          "node_id": 24,
+          "attack_type": "default_credentials",
+          "timestamp": "now"
+        },
+        {
+          "type": "attempt",
+          "node_id": 2,
+          "attack_type": "default_credentials",
+          "timestamp": "now"
+        },
+        {
+          "type": "attempt",
+          "node_id": 2,
+          "attack_type": "default_credentials",
+          "timestamp": "now"
+        },
+        {
+          "type": "attempt",
+          "node_id": 2,
+          "attack_type": "default_credentials",
+          "timestamp": "now"
+        }
+      ],
+      "campaign_status": {
+        "goal": "ransomware",
+        "progress": 0.23076923076923078,
+        "elapsed_time": 0.07561945915222168,
+        "compromised_nodes": 6,
+        "data_collected": 0,
+        "lateral_movements": 0
+      }
+    },
+    {
+      "step": 33,
+      "red_action": {
+        "strategy": "APT29",
+        "target": 4,
+        "attack_type": "misconfiguration",
+        "success": false,
+        "detected": false,
+        "info": "Attack failed",
+        "timestamp": "2025-05-20 15:41:14"
+      },
+      "blue_actions": [],
+      "compromised_nodes": [
+        0,
+        3,
+        4,
+        6,
+        16,
+        24
+      ],
+      "patched_nodes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        6,
+        16,
+        24
+      ],
+      "alerts": [
+        {
+          "type": "compromise",
+          "node_id": 4,
+          "attack_type": "misconfiguration",
+          "timestamp": "now"
+        },
+        {
+          "type": "compromise",
+          "node_id": 24,
+          "attack_type": "default_credentials",
+          "timestamp": "now"
+        },
+        {
+          "type": "attempt",
+          "node_id": 2,
+          "attack_type": "default_credentials",
+          "timestamp": "now"
+        },
+        {
+          "type": "attempt",
+          "node_id": 2,
+          "attack_type": "default_credentials",
+          "timestamp": "now"
+        },
+        {
+          "type": "attempt",
+          "node_id": 2,
+          "attack_type": "default_credentials",
+          "timestamp": "now"
+        }
+      ],
+      "campaign_status": {
+        "goal": "ransomware",
+        "progress": 0.23076923076923078,
+        "elapsed_time": 2.029926300048828,
+        "compromised_nodes": 6,
+        "data_collected": 0,
+        "lateral_movements": 0
+      }
+    },
+    {
+      "step": 34,
+      "red_action": {
+        "strategy": "APT29",
+        "target": 4,
+        "attack_type": "misconfiguration",
+        "success": true,
+        "detected": false,
+        "info": "Attack successful",
+        "timestamp": "2025-05-20 15:41:15"
+      },
+      "blue_actions": [
+        {
+          "action": "patch",
+          "node_id": 0,
+          "vulnerability_type": "misconfiguration",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 6,
+          "vulnerability_type": "default_credentials",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 16,
+          "vulnerability_type": "misconfiguration",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 3,
+          "vulnerability_type": "buffer_overflow",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 4,
+          "vulnerability_type": "misconfiguration",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 24,
+          "vulnerability_type": "default_credentials",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 2,
+          "vulnerability_type": "default_credentials",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 2,
+          "vulnerability_type": "default_credentials",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 2,
+          "vulnerability_type": "default_credentials",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 4,
+          "vulnerability_type": "misconfiguration",
+          "success": true
+        }
+      ],
+      "compromised_nodes": [
+        0,
+        3,
+        4,
+        6,
+        16,
+        24
+      ],
+      "patched_nodes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        6,
+        16,
+        24
+      ],
+      "alerts": [
+        {
+          "type": "compromise",
+          "node_id": 24,
+          "attack_type": "default_credentials",
+          "timestamp": "now"
+        },
+        {
+          "type": "attempt",
+          "node_id": 2,
+          "attack_type": "default_credentials",
+          "timestamp": "now"
+        },
+        {
+          "type": "attempt",
+          "node_id": 2,
+          "attack_type": "default_credentials",
+          "timestamp": "now"
+        },
+        {
+          "type": "attempt",
+          "node_id": 2,
+          "attack_type": "default_credentials",
+          "timestamp": "now"
+        },
+        {
+          "type": "compromise",
+          "node_id": 4,
+          "attack_type": "misconfiguration",
+          "timestamp": "now"
+        }
+      ],
+      "campaign_status": {
+        "goal": "ransomware",
+        "progress": 0.23076923076923078,
+        "elapsed_time": 2.0678470134735107,
+        "compromised_nodes": 6,
+        "data_collected": 0,
+        "lateral_movements": 0
+      }
+    },
+    {
+      "step": 35,
+      "red_action": {
+        "strategy": "Random",
+        "target": 22,
+        "attack_type": "default_credentials",
+        "success": false,
+        "detected": false,
+        "info": "No default_credentials vulnerability found",
+        "timestamp": "2025-05-20 15:41:16"
+      },
+      "blue_actions": [
+        {
+          "action": "patch",
+          "node_id": 0,
+          "vulnerability_type": "misconfiguration",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 6,
+          "vulnerability_type": "default_credentials",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 16,
+          "vulnerability_type": "misconfiguration",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 3,
+          "vulnerability_type": "buffer_overflow",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 4,
+          "vulnerability_type": "misconfiguration",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 24,
+          "vulnerability_type": "default_credentials",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 2,
+          "vulnerability_type": "default_credentials",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 2,
+          "vulnerability_type": "default_credentials",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 2,
+          "vulnerability_type": "default_credentials",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 4,
+          "vulnerability_type": "misconfiguration",
+          "success": true
+        }
+      ],
+      "compromised_nodes": [
+        0,
+        3,
+        4,
+        6,
+        16,
+        24
+      ],
+      "patched_nodes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        6,
+        16,
+        24
+      ],
+      "alerts": [
+        {
+          "type": "compromise",
+          "node_id": 24,
+          "attack_type": "default_credentials",
+          "timestamp": "now"
+        },
+        {
+          "type": "attempt",
+          "node_id": 2,
+          "attack_type": "default_credentials",
+          "timestamp": "now"
+        },
+        {
+          "type": "attempt",
+          "node_id": 2,
+          "attack_type": "default_credentials",
+          "timestamp": "now"
+        },
+        {
+          "type": "attempt",
+          "node_id": 2,
+          "attack_type": "default_credentials",
+          "timestamp": "now"
+        },
+        {
+          "type": "compromise",
+          "node_id": 4,
+          "attack_type": "misconfiguration",
+          "timestamp": "now"
+        }
+      ],
+      "campaign_status": {
+        "goal": "ransomware",
+        "progress": 0.23076923076923078,
+        "elapsed_time": 2.1072800159454346,
+        "compromised_nodes": 6,
+        "data_collected": 0,
+        "lateral_movements": 0
+      }
+    },
+    {
+      "step": 36,
+      "red_action": {
+        "strategy": "APT29",
+        "target": 3,
+        "attack_type": "default_credentials",
+        "success": false,
+        "detected": false,
+        "info": "Attack failed",
+        "timestamp": "2025-05-20 15:41:16"
+      },
+      "blue_actions": [
+        {
+          "action": "patch",
+          "node_id": 0,
+          "vulnerability_type": "misconfiguration",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 6,
+          "vulnerability_type": "default_credentials",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 16,
+          "vulnerability_type": "misconfiguration",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 3,
+          "vulnerability_type": "buffer_overflow",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 4,
+          "vulnerability_type": "misconfiguration",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 24,
+          "vulnerability_type": "default_credentials",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 2,
+          "vulnerability_type": "default_credentials",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 2,
+          "vulnerability_type": "default_credentials",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 2,
+          "vulnerability_type": "default_credentials",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 4,
+          "vulnerability_type": "misconfiguration",
+          "success": true
+        }
+      ],
+      "compromised_nodes": [
+        0,
+        3,
+        4,
+        6,
+        16,
+        24
+      ],
+      "patched_nodes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        6,
+        16,
+        24
+      ],
+      "alerts": [
+        {
+          "type": "compromise",
+          "node_id": 24,
+          "attack_type": "default_credentials",
+          "timestamp": "now"
+        },
+        {
+          "type": "attempt",
+          "node_id": 2,
+          "attack_type": "default_credentials",
+          "timestamp": "now"
+        },
+        {
+          "type": "attempt",
+          "node_id": 2,
+          "attack_type": "default_credentials",
+          "timestamp": "now"
+        },
+        {
+          "type": "attempt",
+          "node_id": 2,
+          "attack_type": "default_credentials",
+          "timestamp": "now"
+        },
+        {
+          "type": "compromise",
+          "node_id": 4,
+          "attack_type": "misconfiguration",
+          "timestamp": "now"
+        }
+      ],
+      "campaign_status": {
+        "goal": "ransomware",
+        "progress": 0.23076923076923078,
+        "elapsed_time": 2.1436686515808105,
+        "compromised_nodes": 6,
+        "data_collected": 0,
+        "lateral_movements": 0
+      }
+    },
+    {
+      "step": 37,
+      "red_action": {
+        "strategy": "APT29",
+        "target": 24,
+        "attack_type": "default_credentials",
+        "success": true,
+        "detected": false,
+        "info": "Attack successful",
+        "timestamp": "2025-05-20 15:41:16"
+      },
+      "blue_actions": [
+        {
+          "action": "patch",
+          "node_id": 6,
+          "vulnerability_type": "default_credentials",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 16,
+          "vulnerability_type": "misconfiguration",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 3,
+          "vulnerability_type": "buffer_overflow",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 4,
+          "vulnerability_type": "misconfiguration",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 24,
+          "vulnerability_type": "default_credentials",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 2,
+          "vulnerability_type": "default_credentials",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 2,
+          "vulnerability_type": "default_credentials",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 2,
+          "vulnerability_type": "default_credentials",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 4,
+          "vulnerability_type": "misconfiguration",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 24,
+          "vulnerability_type": "default_credentials",
+          "success": true
+        }
+      ],
+      "compromised_nodes": [
+        0,
+        3,
+        4,
+        6,
+        16,
+        24
+      ],
+      "patched_nodes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        6,
+        16,
+        24
+      ],
+      "alerts": [
+        {
+          "type": "attempt",
+          "node_id": 2,
+          "attack_type": "default_credentials",
+          "timestamp": "now"
+        },
+        {
+          "type": "attempt",
+          "node_id": 2,
+          "attack_type": "default_credentials",
+          "timestamp": "now"
+        },
+        {
+          "type": "attempt",
+          "node_id": 2,
+          "attack_type": "default_credentials",
+          "timestamp": "now"
+        },
+        {
+          "type": "compromise",
+          "node_id": 4,
+          "attack_type": "misconfiguration",
+          "timestamp": "now"
+        },
+        {
+          "type": "compromise",
+          "node_id": 24,
+          "attack_type": "default_credentials",
+          "timestamp": "now"
+        }
+      ],
+      "campaign_status": {
+        "goal": "ransomware",
+        "progress": 0.23076923076923078,
+        "elapsed_time": 2.1810035705566406,
+        "compromised_nodes": 6,
+        "data_collected": 0,
+        "lateral_movements": 0
+      }
+    },
+    {
+      "step": 38,
+      "red_action": {
+        "strategy": "APT29",
+        "target": 4,
+        "attack_type": "misconfiguration",
+        "success": false,
+        "detected": false,
+        "info": "Attack failed",
+        "timestamp": "2025-05-20 15:41:16"
+      },
+      "blue_actions": [
+        {
+          "action": "patch",
+          "node_id": 6,
+          "vulnerability_type": "default_credentials",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 16,
+          "vulnerability_type": "misconfiguration",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 3,
+          "vulnerability_type": "buffer_overflow",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 4,
+          "vulnerability_type": "misconfiguration",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 24,
+          "vulnerability_type": "default_credentials",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 2,
+          "vulnerability_type": "default_credentials",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 2,
+          "vulnerability_type": "default_credentials",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 2,
+          "vulnerability_type": "default_credentials",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 4,
+          "vulnerability_type": "misconfiguration",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 24,
+          "vulnerability_type": "default_credentials",
+          "success": true
+        }
+      ],
+      "compromised_nodes": [
+        0,
+        3,
+        4,
+        6,
+        16,
+        24
+      ],
+      "patched_nodes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        6,
+        16,
+        24
+      ],
+      "alerts": [
+        {
+          "type": "attempt",
+          "node_id": 2,
+          "attack_type": "default_credentials",
+          "timestamp": "now"
+        },
+        {
+          "type": "attempt",
+          "node_id": 2,
+          "attack_type": "default_credentials",
+          "timestamp": "now"
+        },
+        {
+          "type": "attempt",
+          "node_id": 2,
+          "attack_type": "default_credentials",
+          "timestamp": "now"
+        },
+        {
+          "type": "compromise",
+          "node_id": 4,
+          "attack_type": "misconfiguration",
+          "timestamp": "now"
+        },
+        {
+          "type": "compromise",
+          "node_id": 24,
+          "attack_type": "default_credentials",
+          "timestamp": "now"
+        }
+      ],
+      "campaign_status": {
+        "goal": "ransomware",
+        "progress": 0.23076923076923078,
+        "elapsed_time": 2.2157998085021973,
+        "compromised_nodes": 6,
+        "data_collected": 0,
+        "lateral_movements": 0
+      }
+    },
+    {
+      "step": 39,
+      "red_action": {
+        "strategy": "APT29",
+        "target": 2,
+        "attack_type": "default_credentials",
+        "success": false,
+        "detected": false,
+        "info": "Attack failed",
+        "timestamp": "2025-05-20 15:41:16"
+      },
+      "blue_actions": [
+        {
+          "action": "patch",
+          "node_id": 6,
+          "vulnerability_type": "default_credentials",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 16,
+          "vulnerability_type": "misconfiguration",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 3,
+          "vulnerability_type": "buffer_overflow",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 4,
+          "vulnerability_type": "misconfiguration",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 24,
+          "vulnerability_type": "default_credentials",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 2,
+          "vulnerability_type": "default_credentials",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 2,
+          "vulnerability_type": "default_credentials",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 2,
+          "vulnerability_type": "default_credentials",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 4,
+          "vulnerability_type": "misconfiguration",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 24,
+          "vulnerability_type": "default_credentials",
+          "success": true
+        }
+      ],
+      "compromised_nodes": [
+        0,
+        3,
+        4,
+        6,
+        16,
+        24
+      ],
+      "patched_nodes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        6,
+        16,
+        24
+      ],
+      "alerts": [
+        {
+          "type": "attempt",
+          "node_id": 2,
+          "attack_type": "default_credentials",
+          "timestamp": "now"
+        },
+        {
+          "type": "attempt",
+          "node_id": 2,
+          "attack_type": "default_credentials",
+          "timestamp": "now"
+        },
+        {
+          "type": "attempt",
+          "node_id": 2,
+          "attack_type": "default_credentials",
+          "timestamp": "now"
+        },
+        {
+          "type": "compromise",
+          "node_id": 4,
+          "attack_type": "misconfiguration",
+          "timestamp": "now"
+        },
+        {
+          "type": "compromise",
+          "node_id": 24,
+          "attack_type": "default_credentials",
+          "timestamp": "now"
+        }
+      ],
+      "campaign_status": {
+        "goal": "ransomware",
+        "progress": 0.23076923076923078,
+        "elapsed_time": 2.250109910964966,
+        "compromised_nodes": 6,
+        "data_collected": 0,
+        "lateral_movements": 0
+      }
+    },
+    {
+      "step": 40,
+      "red_action": {
+        "strategy": "APT29",
+        "target": 2,
+        "attack_type": "default_credentials",
+        "success": true,
+        "detected": false,
+        "info": "Attack successful",
+        "timestamp": "2025-05-20 15:41:16"
+      },
+      "blue_actions": [
+        {
+          "action": "patch",
+          "node_id": 16,
+          "vulnerability_type": "misconfiguration",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 3,
+          "vulnerability_type": "buffer_overflow",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 4,
+          "vulnerability_type": "misconfiguration",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 24,
+          "vulnerability_type": "default_credentials",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 2,
+          "vulnerability_type": "default_credentials",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 2,
+          "vulnerability_type": "default_credentials",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 2,
+          "vulnerability_type": "default_credentials",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 4,
+          "vulnerability_type": "misconfiguration",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 24,
+          "vulnerability_type": "default_credentials",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 2,
+          "vulnerability_type": "default_credentials",
+          "success": true
+        }
+      ],
+      "compromised_nodes": [
+        0,
+        2,
+        3,
+        4,
+        6,
+        16,
+        24
+      ],
+      "patched_nodes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        6,
+        16,
+        24
+      ],
+      "alerts": [
+        {
+          "type": "attempt",
+          "node_id": 2,
+          "attack_type": "default_credentials",
+          "timestamp": "now"
+        },
+        {
+          "type": "attempt",
+          "node_id": 2,
+          "attack_type": "default_credentials",
+          "timestamp": "now"
+        },
+        {
+          "type": "compromise",
+          "node_id": 4,
+          "attack_type": "misconfiguration",
+          "timestamp": "now"
+        },
+        {
+          "type": "compromise",
+          "node_id": 24,
+          "attack_type": "default_credentials",
+          "timestamp": "now"
+        },
+        {
+          "type": "compromise",
+          "node_id": 2,
+          "attack_type": "default_credentials",
+          "timestamp": "now"
+        }
+      ],
+      "campaign_status": {
+        "goal": "ransomware",
+        "progress": 0.2692307692307692,
+        "elapsed_time": 2.2854092121124268,
+        "compromised_nodes": 7,
+        "data_collected": 0,
+        "lateral_movements": 0
+      }
+    },
+    {
+      "step": 41,
+      "red_action": {
+        "strategy": "APT29",
+        "target": 24,
+        "attack_type": "default_credentials",
+        "success": true,
+        "detected": false,
+        "info": "Attack successful",
+        "timestamp": "2025-05-20 15:41:16"
+      },
+      "blue_actions": [],
+      "compromised_nodes": [
+        0,
+        2,
+        3,
+        4,
+        6,
+        16,
+        24
+      ],
+      "patched_nodes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        6,
+        16,
+        24
+      ],
+      "alerts": [
+        {
+          "type": "attempt",
+          "node_id": 2,
+          "attack_type": "default_credentials",
+          "timestamp": "now"
+        },
+        {
+          "type": "compromise",
+          "node_id": 4,
+          "attack_type": "misconfiguration",
+          "timestamp": "now"
+        },
+        {
+          "type": "compromise",
+          "node_id": 24,
+          "attack_type": "default_credentials",
+          "timestamp": "now"
+        },
+        {
+          "type": "compromise",
+          "node_id": 2,
+          "attack_type": "default_credentials",
+          "timestamp": "now"
+        },
+        {
+          "type": "compromise",
+          "node_id": 24,
+          "attack_type": "default_credentials",
+          "timestamp": "now"
+        }
+      ],
+      "campaign_status": {
+        "goal": "ransomware",
+        "progress": 0.2692307692307692,
+        "elapsed_time": 2.320810079574585,
+        "compromised_nodes": 7,
+        "data_collected": 0,
+        "lateral_movements": 0
+      }
+    },
+    {
+      "step": 42,
+      "red_action": {
+        "strategy": "Ransomware",
+        "target": 4,
+        "attack_type": "buffer_overflow",
+        "success": true,
+        "detected": false,
+        "info": "Attack successful",
+        "timestamp": "2025-05-20 15:41:16"
+      },
+      "blue_actions": [
+        {
+          "action": "patch",
+          "node_id": 4,
+          "vulnerability_type": "misconfiguration",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 24,
+          "vulnerability_type": "default_credentials",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 2,
+          "vulnerability_type": "default_credentials",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 2,
+          "vulnerability_type": "default_credentials",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 2,
+          "vulnerability_type": "default_credentials",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 4,
+          "vulnerability_type": "misconfiguration",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 24,
+          "vulnerability_type": "default_credentials",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 2,
+          "vulnerability_type": "default_credentials",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 24,
+          "vulnerability_type": "default_credentials",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 4,
+          "vulnerability_type": "buffer_overflow",
+          "success": true
+        }
+      ],
+      "compromised_nodes": [
+        0,
+        2,
+        3,
+        4,
+        6,
+        16,
+        24
+      ],
+      "patched_nodes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        6,
+        16,
+        24
+      ],
+      "alerts": [
+        {
+          "type": "compromise",
+          "node_id": 4,
+          "attack_type": "misconfiguration",
+          "timestamp": "now"
+        },
+        {
+          "type": "compromise",
+          "node_id": 24,
+          "attack_type": "default_credentials",
+          "timestamp": "now"
+        },
+        {
+          "type": "compromise",
+          "node_id": 2,
+          "attack_type": "default_credentials",
+          "timestamp": "now"
+        },
+        {
+          "type": "compromise",
+          "node_id": 24,
+          "attack_type": "default_credentials",
+          "timestamp": "now"
+        },
+        {
+          "type": "compromise",
+          "node_id": 4,
+          "attack_type": "buffer_overflow",
+          "timestamp": "now"
+        }
+      ],
+      "campaign_status": {
+        "goal": "ransomware",
+        "progress": 0.2692307692307692,
+        "elapsed_time": 2.3977999687194824,
+        "compromised_nodes": 7,
+        "data_collected": 0,
+        "lateral_movements": 0
+      }
+    },
+    {
+      "step": 43,
+      "red_action": {
+        "strategy": "APT29",
+        "target": 24,
+        "attack_type": "default_credentials",
+        "success": true,
+        "detected": false,
+        "info": "Attack successful",
+        "timestamp": "2025-05-20 15:41:16"
+      },
+      "blue_actions": [
+        {
+          "action": "patch",
+          "node_id": 24,
+          "vulnerability_type": "default_credentials",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 2,
+          "vulnerability_type": "default_credentials",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 2,
+          "vulnerability_type": "default_credentials",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 2,
+          "vulnerability_type": "default_credentials",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 4,
+          "vulnerability_type": "misconfiguration",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 24,
+          "vulnerability_type": "default_credentials",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 2,
+          "vulnerability_type": "default_credentials",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 24,
+          "vulnerability_type": "default_credentials",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 4,
+          "vulnerability_type": "buffer_overflow",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 24,
+          "vulnerability_type": "default_credentials",
+          "success": true
+        }
+      ],
+      "compromised_nodes": [
+        0,
+        2,
+        3,
+        4,
+        6,
+        16,
+        24
+      ],
+      "patched_nodes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        6,
+        16,
+        24
+      ],
+      "alerts": [
+        {
+          "type": "compromise",
+          "node_id": 24,
+          "attack_type": "default_credentials",
+          "timestamp": "now"
+        },
+        {
+          "type": "compromise",
+          "node_id": 2,
+          "attack_type": "default_credentials",
+          "timestamp": "now"
+        },
+        {
+          "type": "compromise",
+          "node_id": 24,
+          "attack_type": "default_credentials",
+          "timestamp": "now"
+        },
+        {
+          "type": "compromise",
+          "node_id": 4,
+          "attack_type": "buffer_overflow",
+          "timestamp": "now"
+        },
+        {
+          "type": "compromise",
+          "node_id": 24,
+          "attack_type": "default_credentials",
+          "timestamp": "now"
+        }
+      ],
+      "campaign_status": {
+        "goal": "ransomware",
+        "progress": 0.2692307692307692,
+        "elapsed_time": 2.4380056858062744,
+        "compromised_nodes": 7,
+        "data_collected": 0,
+        "lateral_movements": 0
+      }
+    },
+    {
+      "step": 44,
+      "red_action": {
+        "strategy": "APT29",
+        "target": 2,
+        "attack_type": "default_credentials",
+        "success": true,
+        "detected": false,
+        "info": "Attack successful",
+        "timestamp": "2025-05-20 15:41:16"
+      },
+      "blue_actions": [
+        {
+          "action": "patch",
+          "node_id": 2,
+          "vulnerability_type": "default_credentials",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 2,
+          "vulnerability_type": "default_credentials",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 2,
+          "vulnerability_type": "default_credentials",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 4,
+          "vulnerability_type": "misconfiguration",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 24,
+          "vulnerability_type": "default_credentials",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 2,
+          "vulnerability_type": "default_credentials",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 24,
+          "vulnerability_type": "default_credentials",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 4,
+          "vulnerability_type": "buffer_overflow",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 24,
+          "vulnerability_type": "default_credentials",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 2,
+          "vulnerability_type": "default_credentials",
+          "success": true
+        }
+      ],
+      "compromised_nodes": [
+        0,
+        2,
+        3,
+        4,
+        6,
+        16,
+        24
+      ],
+      "patched_nodes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        6,
+        16,
+        24
+      ],
+      "alerts": [
+        {
+          "type": "compromise",
+          "node_id": 2,
+          "attack_type": "default_credentials",
+          "timestamp": "now"
+        },
+        {
+          "type": "compromise",
+          "node_id": 24,
+          "attack_type": "default_credentials",
+          "timestamp": "now"
+        },
+        {
+          "type": "compromise",
+          "node_id": 4,
+          "attack_type": "buffer_overflow",
+          "timestamp": "now"
+        },
+        {
+          "type": "compromise",
+          "node_id": 24,
+          "attack_type": "default_credentials",
+          "timestamp": "now"
+        },
+        {
+          "type": "compromise",
+          "node_id": 2,
+          "attack_type": "default_credentials",
+          "timestamp": "now"
+        }
+      ],
+      "campaign_status": {
+        "goal": "ransomware",
+        "progress": 0.2692307692307692,
+        "elapsed_time": 2.474937915802002,
+        "compromised_nodes": 7,
+        "data_collected": 0,
+        "lateral_movements": 0
+      }
+    },
+    {
+      "step": 45,
+      "red_action": {
+        "strategy": "APT29",
+        "target": 24,
+        "attack_type": "default_credentials",
+        "success": true,
+        "detected": false,
+        "info": "Attack successful",
+        "timestamp": "2025-05-20 15:41:16"
+      },
+      "blue_actions": [
+        {
+          "action": "patch",
+          "node_id": 2,
+          "vulnerability_type": "default_credentials",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 2,
+          "vulnerability_type": "default_credentials",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 4,
+          "vulnerability_type": "misconfiguration",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 24,
+          "vulnerability_type": "default_credentials",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 2,
+          "vulnerability_type": "default_credentials",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 24,
+          "vulnerability_type": "default_credentials",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 4,
+          "vulnerability_type": "buffer_overflow",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 24,
+          "vulnerability_type": "default_credentials",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 2,
+          "vulnerability_type": "default_credentials",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 24,
+          "vulnerability_type": "default_credentials",
+          "success": true
+        }
+      ],
+      "compromised_nodes": [
+        0,
+        2,
+        3,
+        4,
+        6,
+        16,
+        24
+      ],
+      "patched_nodes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        6,
+        16,
+        24
+      ],
+      "alerts": [
+        {
+          "type": "compromise",
+          "node_id": 24,
+          "attack_type": "default_credentials",
+          "timestamp": "now"
+        },
+        {
+          "type": "compromise",
+          "node_id": 4,
+          "attack_type": "buffer_overflow",
+          "timestamp": "now"
+        },
+        {
+          "type": "compromise",
+          "node_id": 24,
+          "attack_type": "default_credentials",
+          "timestamp": "now"
+        },
+        {
+          "type": "compromise",
+          "node_id": 2,
+          "attack_type": "default_credentials",
+          "timestamp": "now"
+        },
+        {
+          "type": "compromise",
+          "node_id": 24,
+          "attack_type": "default_credentials",
+          "timestamp": "now"
+        }
+      ],
+      "campaign_status": {
+        "goal": "ransomware",
+        "progress": 0.2692307692307692,
+        "elapsed_time": 2.5161685943603516,
+        "compromised_nodes": 7,
+        "data_collected": 0,
+        "lateral_movements": 0
+      }
+    },
+    {
+      "step": 46,
+      "red_action": {
+        "strategy": "APT29",
+        "target": 2,
+        "attack_type": "default_credentials",
+        "success": false,
+        "detected": false,
+        "info": "Attack failed",
+        "timestamp": "2025-05-20 15:41:16"
+      },
+      "blue_actions": [
+        {
+          "action": "investigate",
+          "node_id": 10,
+          "found_compromise": false,
+          "success": true
+        },
+        {
+          "action": "investigate",
+          "node_id": 14,
+          "found_compromise": false,
+          "success": true
+        },
+        {
+          "action": "investigate",
+          "node_id": 12,
+          "found_compromise": false,
+          "success": true
+        }
+      ],
+      "compromised_nodes": [
+        0,
+        2,
+        3,
+        4,
+        6,
+        16,
+        24
+      ],
+      "patched_nodes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        6,
+        16,
+        24
+      ],
+      "alerts": [
+        {
+          "type": "compromise",
+          "node_id": 24,
+          "attack_type": "default_credentials",
+          "timestamp": "now"
+        },
+        {
+          "type": "compromise",
+          "node_id": 4,
+          "attack_type": "buffer_overflow",
+          "timestamp": "now"
+        },
+        {
+          "type": "compromise",
+          "node_id": 24,
+          "attack_type": "default_credentials",
+          "timestamp": "now"
+        },
+        {
+          "type": "compromise",
+          "node_id": 2,
+          "attack_type": "default_credentials",
+          "timestamp": "now"
+        },
+        {
+          "type": "compromise",
+          "node_id": 24,
+          "attack_type": "default_credentials",
+          "timestamp": "now"
+        }
+      ],
+      "campaign_status": {
+        "goal": "ransomware",
+        "progress": 0.2692307692307692,
+        "elapsed_time": 2.551987886428833,
+        "compromised_nodes": 7,
+        "data_collected": 0,
+        "lateral_movements": 0
+      }
+    },
+    {
+      "step": 47,
+      "red_action": {
+        "strategy": "APT29",
+        "target": 4,
+        "attack_type": "misconfiguration",
+        "success": false,
+        "detected": false,
+        "info": "Attack failed",
+        "timestamp": "2025-05-20 15:41:16"
+      },
+      "blue_actions": [
+        {
+          "action": "patch",
+          "node_id": 2,
+          "vulnerability_type": "default_credentials",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 2,
+          "vulnerability_type": "default_credentials",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 4,
+          "vulnerability_type": "misconfiguration",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 24,
+          "vulnerability_type": "default_credentials",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 2,
+          "vulnerability_type": "default_credentials",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 24,
+          "vulnerability_type": "default_credentials",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 4,
+          "vulnerability_type": "buffer_overflow",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 24,
+          "vulnerability_type": "default_credentials",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 2,
+          "vulnerability_type": "default_credentials",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 24,
+          "vulnerability_type": "default_credentials",
+          "success": true
+        }
+      ],
+      "compromised_nodes": [
+        0,
+        2,
+        3,
+        4,
+        6,
+        16,
+        24
+      ],
+      "patched_nodes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        6,
+        16,
+        24
+      ],
+      "alerts": [
+        {
+          "type": "compromise",
+          "node_id": 24,
+          "attack_type": "default_credentials",
+          "timestamp": "now"
+        },
+        {
+          "type": "compromise",
+          "node_id": 4,
+          "attack_type": "buffer_overflow",
+          "timestamp": "now"
+        },
+        {
+          "type": "compromise",
+          "node_id": 24,
+          "attack_type": "default_credentials",
+          "timestamp": "now"
+        },
+        {
+          "type": "compromise",
+          "node_id": 2,
+          "attack_type": "default_credentials",
+          "timestamp": "now"
+        },
+        {
+          "type": "compromise",
+          "node_id": 24,
+          "attack_type": "default_credentials",
+          "timestamp": "now"
+        }
+      ],
+      "campaign_status": {
+        "goal": "ransomware",
+        "progress": 0.2692307692307692,
+        "elapsed_time": 2.5883421897888184,
+        "compromised_nodes": 7,
+        "data_collected": 0,
+        "lateral_movements": 0
+      }
+    },
+    {
+      "step": 48,
+      "red_action": {
+        "strategy": "APT29",
+        "target": 2,
+        "attack_type": "default_credentials",
+        "success": false,
+        "detected": false,
+        "info": "Attack failed",
+        "timestamp": "2025-05-20 15:41:16"
+      },
+      "blue_actions": [
+        {
+          "action": "patch",
+          "node_id": 2,
+          "vulnerability_type": "default_credentials",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 2,
+          "vulnerability_type": "default_credentials",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 4,
+          "vulnerability_type": "misconfiguration",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 24,
+          "vulnerability_type": "default_credentials",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 2,
+          "vulnerability_type": "default_credentials",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 24,
+          "vulnerability_type": "default_credentials",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 4,
+          "vulnerability_type": "buffer_overflow",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 24,
+          "vulnerability_type": "default_credentials",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 2,
+          "vulnerability_type": "default_credentials",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 24,
+          "vulnerability_type": "default_credentials",
+          "success": true
+        }
+      ],
+      "compromised_nodes": [
+        0,
+        2,
+        3,
+        4,
+        6,
+        16,
+        24
+      ],
+      "patched_nodes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        6,
+        16,
+        24
+      ],
+      "alerts": [
+        {
+          "type": "compromise",
+          "node_id": 24,
+          "attack_type": "default_credentials",
+          "timestamp": "now"
+        },
+        {
+          "type": "compromise",
+          "node_id": 4,
+          "attack_type": "buffer_overflow",
+          "timestamp": "now"
+        },
+        {
+          "type": "compromise",
+          "node_id": 24,
+          "attack_type": "default_credentials",
+          "timestamp": "now"
+        },
+        {
+          "type": "compromise",
+          "node_id": 2,
+          "attack_type": "default_credentials",
+          "timestamp": "now"
+        },
+        {
+          "type": "compromise",
+          "node_id": 24,
+          "attack_type": "default_credentials",
+          "timestamp": "now"
+        }
+      ],
+      "campaign_status": {
+        "goal": "ransomware",
+        "progress": 0.2692307692307692,
+        "elapsed_time": 2.624239921569824,
+        "compromised_nodes": 7,
+        "data_collected": 0,
+        "lateral_movements": 0
+      }
+    },
+    {
+      "step": 49,
+      "red_action": {
+        "strategy": "Ransomware",
+        "target": 4,
+        "attack_type": "buffer_overflow",
+        "success": false,
+        "detected": false,
+        "info": "Attack failed",
+        "timestamp": "2025-05-20 15:41:16"
+      },
+      "blue_actions": [
+        {
+          "action": "patch",
+          "node_id": 2,
+          "vulnerability_type": "default_credentials",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 2,
+          "vulnerability_type": "default_credentials",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 4,
+          "vulnerability_type": "misconfiguration",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 24,
+          "vulnerability_type": "default_credentials",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 2,
+          "vulnerability_type": "default_credentials",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 24,
+          "vulnerability_type": "default_credentials",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 4,
+          "vulnerability_type": "buffer_overflow",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 24,
+          "vulnerability_type": "default_credentials",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 2,
+          "vulnerability_type": "default_credentials",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 24,
+          "vulnerability_type": "default_credentials",
+          "success": true
+        }
+      ],
+      "compromised_nodes": [
+        0,
+        2,
+        3,
+        4,
+        6,
+        16,
+        24
+      ],
+      "patched_nodes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        6,
+        16,
+        24
+      ],
+      "alerts": [
+        {
+          "type": "compromise",
+          "node_id": 24,
+          "attack_type": "default_credentials",
+          "timestamp": "now"
+        },
+        {
+          "type": "compromise",
+          "node_id": 4,
+          "attack_type": "buffer_overflow",
+          "timestamp": "now"
+        },
+        {
+          "type": "compromise",
+          "node_id": 24,
+          "attack_type": "default_credentials",
+          "timestamp": "now"
+        },
+        {
+          "type": "compromise",
+          "node_id": 2,
+          "attack_type": "default_credentials",
+          "timestamp": "now"
+        },
+        {
+          "type": "compromise",
+          "node_id": 24,
+          "attack_type": "default_credentials",
+          "timestamp": "now"
+        }
+      ],
+      "campaign_status": {
+        "goal": "ransomware",
+        "progress": 0.2692307692307692,
+        "elapsed_time": 2.660301923751831,
+        "compromised_nodes": 7,
+        "data_collected": 0,
+        "lateral_movements": 0
+      }
+    },
+    {
+      "step": 50,
+      "red_action": {
+        "strategy": "APT29",
+        "target": 2,
+        "attack_type": "default_credentials",
+        "success": false,
+        "detected": false,
+        "info": "Attack failed",
+        "timestamp": "2025-05-20 15:41:16"
+      },
+      "blue_actions": [
+        {
+          "action": "patch",
+          "node_id": 2,
+          "vulnerability_type": "default_credentials",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 2,
+          "vulnerability_type": "default_credentials",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 4,
+          "vulnerability_type": "misconfiguration",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 24,
+          "vulnerability_type": "default_credentials",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 2,
+          "vulnerability_type": "default_credentials",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 24,
+          "vulnerability_type": "default_credentials",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 4,
+          "vulnerability_type": "buffer_overflow",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 24,
+          "vulnerability_type": "default_credentials",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 2,
+          "vulnerability_type": "default_credentials",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 24,
+          "vulnerability_type": "default_credentials",
+          "success": true
+        }
+      ],
+      "compromised_nodes": [
+        0,
+        2,
+        3,
+        4,
+        6,
+        16,
+        24
+      ],
+      "patched_nodes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        6,
+        16,
+        24
+      ],
+      "alerts": [
+        {
+          "type": "compromise",
+          "node_id": 24,
+          "attack_type": "default_credentials",
+          "timestamp": "now"
+        },
+        {
+          "type": "compromise",
+          "node_id": 4,
+          "attack_type": "buffer_overflow",
+          "timestamp": "now"
+        },
+        {
+          "type": "compromise",
+          "node_id": 24,
+          "attack_type": "default_credentials",
+          "timestamp": "now"
+        },
+        {
+          "type": "compromise",
+          "node_id": 2,
+          "attack_type": "default_credentials",
+          "timestamp": "now"
+        },
+        {
+          "type": "compromise",
+          "node_id": 24,
+          "attack_type": "default_credentials",
+          "timestamp": "now"
+        }
+      ],
+      "campaign_status": {
+        "goal": "ransomware",
+        "progress": 0.2692307692307692,
+        "elapsed_time": 2.6951277256011963,
+        "compromised_nodes": 7,
+        "data_collected": 0,
+        "lateral_movements": 0
+      }
+    }
+  ],
+  "attack_chains": [
+    [
+      {
+        "step": 5,
+        "action": "misconfiguration",
+        "target": 0,
+        "target_type": "firewall"
+      },
+      {
+        "step": 6,
+        "action": "default_credentials",
+        "target": 6,
+        "target_type": "cloud_instance"
+      },
+      {
+        "step": 7,
+        "action": "misconfiguration",
+        "target": 16,
+        "target_type": "cloud_instance"
+      }
+    ],
+    [
+      {
+        "step": 11,
+        "action": "buffer_overflow",
+        "target": 3,
+        "target_type": "server"
+      }
+    ],
+    [
+      {
+        "step": 15,
+        "action": "misconfiguration",
+        "target": 4,
+        "target_type": "database"
+      },
+      {
+        "step": 16,
+        "action": "default_credentials",
+        "target": 24,
+        "target_type": "database"
+      }
+    ],
+    [
+      {
+        "step": 34,
+        "action": "misconfiguration",
+        "target": 4,
+        "target_type": "database"
+      }
+    ],
+    [
+      {
+        "step": 37,
+        "action": "default_credentials",
+        "target": 24,
+        "target_type": "database"
+      }
+    ],
+    [
+      {
+        "step": 40,
+        "action": "default_credentials",
+        "target": 2,
+        "target_type": "server"
+      },
+      {
+        "step": 41,
+        "action": "default_credentials",
+        "target": 24,
+        "target_type": "database"
+      },
+      {
+        "step": 42,
+        "action": "buffer_overflow",
+        "target": 4,
+        "target_type": "database"
+      },
+      {
+        "step": 43,
+        "action": "default_credentials",
+        "target": 24,
+        "target_type": "database"
+      },
+      {
+        "step": 44,
+        "action": "default_credentials",
+        "target": 2,
+        "target_type": "server"
+      },
+      {
+        "step": 45,
+        "action": "default_credentials",
+        "target": 24,
+        "target_type": "database"
+      }
+    ]
+  ],
+  "summary": {
+    "total_compromised": 7,
+    "total_patched": 8,
+    "red_success_rate": 0.28,
+    "blue_success_rate": 1.0,
+    "simulation_time": 3.5091092586517334,
+    "campaign_goal": "ransomware",
+    "campaign_progress": 0.2692307692307692,
+    "high_value_compromised": 2,
+    "data_collected": 0,
+    "lateral_movements": 0
+  }
+}

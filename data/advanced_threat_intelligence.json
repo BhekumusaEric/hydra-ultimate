@@ -1,0 +1,518 @@
+{
+  "metadata": {
+    "version": "2.0",
+    "created": "2025-05-20",
+    "description": "Advanced threat intelligence data for elite Red Agent training"
+  },
+  "threat_actors": {
+    "APT29": {
+      "aliases": ["Cozy Bear", "The Dukes", "CozyDuke", "NobleBarrier"],
+      "description": "Highly sophisticated state-sponsored threat actor known for extremely stealthy operations and persistent access",
+      "attribution": "Russia",
+      "target_sectors": ["Government", "Defense", "Think Tanks", "Healthcare", "Critical Infrastructure"],
+      "techniques": [
+        "spear_phishing_with_zero_day",
+        "custom_malware_implants",
+        "living_off_the_land",
+        "supply_chain_compromise",
+        "credential_theft",
+        "privilege_escalation",
+        "defense_evasion",
+        "lateral_movement",
+        "data_exfiltration_via_encrypted_channels"
+      ],
+      "tools": ["MiniDuke", "CosmicDuke", "OnionDuke", "HAMMERTOSS", "WellMess", "WellMail", "SoreFang", "CozyBear", "FatDuke"],
+      "ttps": [
+        {
+          "tactic": "initial_access",
+          "technique": "spear_phishing_with_zero_day",
+          "procedure": "Highly targeted emails with zero-day exploits in document attachments, often leveraging current events or topics relevant to the target"
+        },
+        {
+          "tactic": "execution",
+          "technique": "living_off_the_land",
+          "procedure": "Use of legitimate system tools and LOLBins to execute malicious code and evade detection"
+        },
+        {
+          "tactic": "persistence",
+          "technique": "bootkit",
+          "procedure": "Use of bootkits to maintain persistence across system reboots and evade disk encryption"
+        },
+        {
+          "tactic": "credential_access",
+          "technique": "kerberoasting",
+          "procedure": "Exploitation of Kerberos authentication to extract service account credentials"
+        },
+        {
+          "tactic": "lateral_movement",
+          "technique": "pass_the_ticket",
+          "procedure": "Use of stolen Kerberos tickets to move laterally within the network"
+        },
+        {
+          "tactic": "defense_evasion",
+          "technique": "timestomping",
+          "procedure": "Modification of file timestamps to avoid detection based on file creation/modification times"
+        }
+      ],
+      "vulnerabilities": [
+        {
+          "cve": "CVE-2021-40444",
+          "description": "Microsoft MSHTML Remote Code Execution Vulnerability",
+          "exploitability": 0.95
+        },
+        {
+          "cve": "CVE-2020-1472",
+          "description": "Netlogon Elevation of Privilege (Zerologon)",
+          "exploitability": 0.98
+        },
+        {
+          "cve": "CVE-2021-44228",
+          "description": "Log4j Remote Code Execution (Log4Shell)",
+          "exploitability": 0.99
+        }
+      ]
+    },
+    "APT41": {
+      "aliases": ["Double Dragon", "Wicked Panda", "BARIUM", "Winnti"],
+      "description": "Elite dual espionage and financially-motivated threat actor with exceptional technical capabilities",
+      "attribution": "China",
+      "target_sectors": ["Healthcare", "Telecommunications", "Technology", "Video Games", "Financial Services", "Media", "Pharmaceuticals"],
+      "techniques": [
+        "supply_chain_compromise",
+        "zero_day_exploitation",
+        "firmware_implants",
+        "web_shell",
+        "backdoor_implantation",
+        "data_theft",
+        "ransomware",
+        "code_signing_certificate_theft"
+      ],
+      "tools": ["Poison Ivy", "PlugX", "Winnti", "ShadowPad", "Gh0st RAT", "Cobalt Strike", "China Chopper", "Derusbi"],
+      "ttps": [
+        {
+          "tactic": "initial_access",
+          "technique": "supply_chain_compromise",
+          "procedure": "Sophisticated compromise of software vendors to distribute malware through legitimate software updates"
+        },
+        {
+          "tactic": "persistence",
+          "technique": "firmware_implant",
+          "procedure": "Deployment of UEFI/BIOS implants for ultra-persistent access that survives OS reinstallation"
+        },
+        {
+          "tactic": "defense_evasion",
+          "technique": "signed_binary_proxy_execution",
+          "procedure": "Use of stolen code signing certificates to sign malware and evade security controls"
+        },
+        {
+          "tactic": "collection",
+          "technique": "automated_collection",
+          "procedure": "Automated scanning and exfiltration of targeted file types and databases"
+        },
+        {
+          "tactic": "command_and_control",
+          "technique": "domain_fronting",
+          "procedure": "Use of trusted domains as proxies for command and control traffic"
+        }
+      ],
+      "vulnerabilities": [
+        {
+          "cve": "CVE-2021-26855",
+          "description": "Microsoft Exchange Server SSRF (ProxyLogon)",
+          "exploitability": 0.97
+        },
+        {
+          "cve": "CVE-2021-21972",
+          "description": "VMware vCenter Server RCE",
+          "exploitability": 0.96
+        },
+        {
+          "cve": "CVE-2021-22893",
+          "description": "Pulse Connect Secure RCE",
+          "exploitability": 0.95
+        }
+      ]
+    },
+    "Lazarus_Group": {
+      "aliases": ["Hidden Cobra", "Guardians of Peace", "APT38", "BlueNoroff"],
+      "description": "Highly skilled state-sponsored threat actor known for destructive attacks and financial theft",
+      "attribution": "North Korea",
+      "target_sectors": ["Financial", "Cryptocurrency", "Defense", "Media", "Critical Infrastructure"],
+      "techniques": [
+        "watering_hole",
+        "destructive_malware",
+        "custom_backdoors",
+        "wiping_malware",
+        "cryptocurrency_theft",
+        "swift_fraud",
+        "anti_forensics"
+      ],
+      "tools": ["Destover", "WannaCry", "ELECTRICFISH", "HOPLIGHT", "APPLESEED", "BADCALL", "BANKSHOT"],
+      "ttps": [
+        {
+          "tactic": "initial_access",
+          "technique": "watering_hole",
+          "procedure": "Compromise of websites frequently visited by targets to deliver exploits"
+        },
+        {
+          "tactic": "impact",
+          "technique": "data_destruction",
+          "procedure": "Deployment of wipers to destroy data and disrupt operations"
+        },
+        {
+          "tactic": "defense_evasion",
+          "technique": "rootkit",
+          "procedure": "Use of rootkits to hide malicious activity at the kernel level"
+        },
+        {
+          "tactic": "exfiltration",
+          "technique": "exfiltration_over_c2",
+          "procedure": "Data exfiltration over encrypted command and control channels"
+        }
+      ],
+      "vulnerabilities": [
+        {
+          "cve": "CVE-2021-3156",
+          "description": "Sudo Heap-Based Buffer Overflow",
+          "exploitability": 0.94
+        },
+        {
+          "cve": "CVE-2021-22986",
+          "description": "F5 BIG-IP iControl REST Unauthenticated RCE",
+          "exploitability": 0.96
+        }
+      ]
+    },
+    "FIN7": {
+      "aliases": ["Carbanak", "Navigator", "Carbon Spider"],
+      "description": "Elite financially-motivated threat actor targeting payment card data and financial systems",
+      "attribution": "Criminal Organization",
+      "target_sectors": ["Retail", "Hospitality", "Restaurant", "Financial Services"],
+      "techniques": [
+        "targeted_spear_phishing",
+        "social_engineering",
+        "point_of_sale_malware",
+        "custom_backdoors",
+        "lateral_movement",
+        "data_exfiltration"
+      ],
+      "tools": ["Carbanak", "GRIFFON", "PowerShell Empire", "Cobalt Strike", "Metasploit", "Mimikatz"],
+      "ttps": [
+        {
+          "tactic": "initial_access",
+          "technique": "spear_phishing_attachment",
+          "procedure": "Highly convincing spear phishing emails with malicious Office documents"
+        },
+        {
+          "tactic": "execution",
+          "technique": "user_execution",
+          "procedure": "Social engineering to convince users to enable macros in malicious documents"
+        },
+        {
+          "tactic": "persistence",
+          "technique": "scheduled_task",
+          "procedure": "Creation of scheduled tasks for persistence that blend in with legitimate system tasks"
+        },
+        {
+          "tactic": "lateral_movement",
+          "technique": "remote_desktop_protocol",
+          "procedure": "Use of stolen credentials to move laterally via RDP"
+        }
+      ],
+      "vulnerabilities": [
+        {
+          "cve": "CVE-2021-40444",
+          "description": "Microsoft MSHTML Remote Code Execution Vulnerability",
+          "exploitability": 0.93
+        },
+        {
+          "cve": "CVE-2021-1675",
+          "description": "Windows Print Spooler Elevation of Privilege (PrintNightmare)",
+          "exploitability": 0.97
+        }
+      ]
+    }
+  },
+  "vulnerability_mappings": {
+    "sql_injection": ["CVE-2021-27896", "CVE-2021-21433", "CVE-2021-32640"],
+    "cross_site_scripting": ["CVE-2021-42013", "CVE-2021-31166", "CVE-2021-43798"],
+    "buffer_overflow": ["CVE-2021-3156", "CVE-2021-22204", "CVE-2021-22205"],
+    "privilege_escalation": ["CVE-2021-1675", "CVE-2021-34527", "CVE-2021-33909"],
+    "unpatched_cve": ["CVE-2021-44228", "CVE-2021-40444", "CVE-2021-26084"],
+    "default_credentials": ["CVE-2021-22205", "CVE-2021-22502", "CVE-2021-22017"],
+    "misconfiguration": ["CVE-2021-29441", "CVE-2021-32626", "CVE-2021-32633"],
+    "zero_day": ["CVE-2021-30116", "CVE-2021-40539", "CVE-2021-41773"],
+    "firmware_vulnerability": ["CVE-2021-20090", "CVE-2021-42321", "CVE-2021-36934"],
+    "supply_chain": ["CVE-2021-44228", "CVE-2021-26084", "CVE-2021-27852"]
+  },
+  "attack_patterns": {
+    "initial_access": {
+      "spear_phishing": {
+        "success_rate": 0.85,
+        "detection_rate": 0.35,
+        "target_types": ["workstation", "user"]
+      },
+      "exploit_public_facing_application": {
+        "success_rate": 0.80,
+        "detection_rate": 0.40,
+        "target_types": ["server", "cloud_instance", "web_application"]
+      },
+      "valid_accounts": {
+        "success_rate": 0.90,
+        "detection_rate": 0.20,
+        "target_types": ["workstation", "server", "cloud_instance", "admin_account"]
+      },
+      "supply_chain_compromise": {
+        "success_rate": 0.95,
+        "detection_rate": 0.15,
+        "target_types": ["server", "application", "update_server"]
+      },
+      "zero_day_exploit": {
+        "success_rate": 0.98,
+        "detection_rate": 0.05,
+        "target_types": ["workstation", "server", "network_device", "security_appliance"]
+      },
+      "trusted_relationship": {
+        "success_rate": 0.92,
+        "detection_rate": 0.10,
+        "target_types": ["workstation", "server", "cloud_instance", "admin_account"]
+      },
+      "hardware_additions": {
+        "success_rate": 0.95,
+        "detection_rate": 0.20,
+        "target_types": ["workstation", "server", "network_device"]
+      }
+    },
+    "lateral_movement": {
+      "remote_services": {
+        "success_rate": 0.85,
+        "detection_rate": 0.40,
+        "target_types": ["workstation", "server"]
+      },
+      "pass_the_hash": {
+        "success_rate": 0.80,
+        "detection_rate": 0.30,
+        "target_types": ["workstation", "server", "domain_controller"]
+      },
+      "pass_the_ticket": {
+        "success_rate": 0.85,
+        "detection_rate": 0.25,
+        "target_types": ["workstation", "server", "domain_controller"]
+      },
+      "internal_spearphishing": {
+        "success_rate": 0.90,
+        "detection_rate": 0.20,
+        "target_types": ["workstation", "user", "admin_account"]
+      },
+      "lateral_tool_transfer": {
+        "success_rate": 0.88,
+        "detection_rate": 0.35,
+        "target_types": ["workstation", "server"]
+      },
+      "remote_service_session_hijacking": {
+        "success_rate": 0.82,
+        "detection_rate": 0.30,
+        "target_types": ["workstation", "server", "admin_account"]
+      },
+      "ssh_hijacking": {
+        "success_rate": 0.85,
+        "detection_rate": 0.25,
+        "target_types": ["server", "cloud_instance"]
+      }
+    },
+    "privilege_escalation": {
+      "exploit_vulnerability": {
+        "success_rate": 0.85,
+        "detection_rate": 0.35,
+        "target_types": ["workstation", "server", "application"]
+      },
+      "access_token_manipulation": {
+        "success_rate": 0.80,
+        "detection_rate": 0.30,
+        "target_types": ["workstation", "server"]
+      },
+      "bypass_user_account_control": {
+        "success_rate": 0.75,
+        "detection_rate": 0.40,
+        "target_types": ["workstation"]
+      },
+      "process_injection": {
+        "success_rate": 0.88,
+        "detection_rate": 0.25,
+        "target_types": ["workstation", "server"]
+      },
+      "zero_day_privilege_escalation": {
+        "success_rate": 0.95,
+        "detection_rate": 0.08,
+        "target_types": ["workstation", "server", "domain_controller"]
+      }
+    },
+    "defense_evasion": {
+      "obfuscated_files": {
+        "success_rate": 0.85,
+        "detection_rate": 0.25,
+        "target_types": ["workstation", "server"]
+      },
+      "indicator_removal": {
+        "success_rate": 0.80,
+        "detection_rate": 0.20,
+        "target_types": ["workstation", "server"]
+      },
+      "masquerading": {
+        "success_rate": 0.75,
+        "detection_rate": 0.30,
+        "target_types": ["workstation", "server"]
+      },
+      "rootkit": {
+        "success_rate": 0.90,
+        "detection_rate": 0.15,
+        "target_types": ["workstation", "server"]
+      },
+      "living_off_the_land": {
+        "success_rate": 0.92,
+        "detection_rate": 0.10,
+        "target_types": ["workstation", "server"]
+      },
+      "fileless_execution": {
+        "success_rate": 0.88,
+        "detection_rate": 0.15,
+        "target_types": ["workstation", "server"]
+      },
+      "virtualization_sandbox_evasion": {
+        "success_rate": 0.85,
+        "detection_rate": 0.10,
+        "target_types": ["workstation", "server", "cloud_instance"]
+      }
+    },
+    "persistence": {
+      "bootkit": {
+        "success_rate": 0.90,
+        "detection_rate": 0.15,
+        "target_types": ["workstation", "server"]
+      },
+      "create_account": {
+        "success_rate": 0.85,
+        "detection_rate": 0.30,
+        "target_types": ["workstation", "server", "domain_controller"]
+      },
+      "registry_run_keys": {
+        "success_rate": 0.80,
+        "detection_rate": 0.35,
+        "target_types": ["workstation", "server"]
+      },
+      "scheduled_task_job": {
+        "success_rate": 0.85,
+        "detection_rate": 0.30,
+        "target_types": ["workstation", "server"]
+      },
+      "valid_accounts_persistence": {
+        "success_rate": 0.90,
+        "detection_rate": 0.20,
+        "target_types": ["workstation", "server", "domain_controller", "cloud_instance"]
+      }
+    },
+    "impact": {
+      "data_encryption": {
+        "success_rate": 0.95,
+        "detection_rate": 0.40,
+        "target_types": ["workstation", "server", "database"]
+      },
+      "data_destruction": {
+        "success_rate": 0.98,
+        "detection_rate": 0.35,
+        "target_types": ["workstation", "server", "database"]
+      },
+      "service_stop": {
+        "success_rate": 0.90,
+        "detection_rate": 0.45,
+        "target_types": ["server", "domain_controller", "network_device"]
+      },
+      "firmware_corruption": {
+        "success_rate": 0.95,
+        "detection_rate": 0.10,
+        "target_types": ["network_device", "router", "firewall"]
+      }
+    }
+  },
+  "zero_day_exploits": [
+    {
+      "name": "zero_day_privilege_escalation",
+      "description": "Undisclosed privilege escalation vulnerability",
+      "success_rate": 0.95,
+      "detection_rate": 0.08,
+      "applicable_systems": ["windows", "linux"]
+    },
+    {
+      "name": "zero_day_remote_code_execution",
+      "description": "Undisclosed remote code execution vulnerability",
+      "success_rate": 0.92,
+      "detection_rate": 0.10,
+      "applicable_systems": ["web_servers", "application_servers"]
+    },
+    {
+      "name": "zero_day_browser_exploitation",
+      "description": "Undisclosed browser vulnerability",
+      "success_rate": 0.90,
+      "detection_rate": 0.15,
+      "applicable_systems": ["workstations"]
+    },
+    {
+      "name": "zero_day_kernel_exploitation",
+      "description": "Undisclosed kernel vulnerability",
+      "success_rate": 0.95,
+      "detection_rate": 0.05,
+      "applicable_systems": ["windows", "linux", "macos"]
+    },
+    {
+      "name": "zero_day_firmware_exploitation",
+      "description": "Undisclosed firmware vulnerability",
+      "success_rate": 0.98,
+      "detection_rate": 0.03,
+      "applicable_systems": ["routers", "firewalls", "iot_devices"]
+    }
+  ],
+  "evasion_techniques": [
+    {
+      "name": "living_off_the_land",
+      "description": "Using legitimate system tools to avoid detection",
+      "effectiveness": 0.92,
+      "applicable_systems": ["windows", "linux", "macos"]
+    },
+    {
+      "name": "fileless_execution",
+      "description": "Executing malicious code directly in memory without writing to disk",
+      "effectiveness": 0.90,
+      "applicable_systems": ["windows", "linux"]
+    },
+    {
+      "name": "rootkit",
+      "description": "Hiding malicious activity at the kernel level",
+      "effectiveness": 0.95,
+      "applicable_systems": ["windows", "linux", "macos"]
+    },
+    {
+      "name": "virtualization_sandbox_evasion",
+      "description": "Detecting and evading analysis environments",
+      "effectiveness": 0.88,
+      "applicable_systems": ["all"]
+    },
+    {
+      "name": "timestomp",
+      "description": "Modifying file timestamps to avoid detection",
+      "effectiveness": 0.85,
+      "applicable_systems": ["windows", "linux", "macos"]
+    },
+    {
+      "name": "reflective_code_loading",
+      "description": "Loading code into memory without standard loading mechanisms",
+      "effectiveness": 0.90,
+      "applicable_systems": ["windows"]
+    },
+    {
+      "name": "indirect_command_execution",
+      "description": "Using indirect methods to execute commands",
+      "effectiveness": 0.87,
+      "applicable_systems": ["windows", "linux", "macos"]
+    }
+  ]
+}

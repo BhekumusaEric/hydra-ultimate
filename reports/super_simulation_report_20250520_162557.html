@@ -1,0 +1,109 @@
+
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <title>HYDRA Super Red Agent Simulation Report</title>
+        <style>
+            body { font-family: Arial, sans-serif; margin: 40px; }
+            h1, h2, h3 { color: #2c3e50; }
+            .summary { background-color: #f8f9fa; padding: 20px; border-radius: 5px; }
+            .metrics { display: flex; flex-wrap: wrap; }
+            .metric-card { background-color: #ffffff; border: 1px solid #e0e0e0;
+                          border-radius: 5px; padding: 15px; margin: 10px; width: 200px; }
+            .metric-value { font-size: 24px; font-weight: bold; color: #3498db; }
+            .critical { color: #e74c3c; }
+            .attack { background-color: #fff8f8; border-left: 4px solid #e74c3c;
+                     padding: 10px; margin: 10px 0; }
+            .defense { background-color: #f8fff8; border-left: 4px solid #2ecc71;
+                      padding: 10px; margin: 10px 0; }
+            .success { color: #2ecc71; }
+            .failure { color: #e74c3c; }
+            .data-table { width: 100%; border-collapse: collapse; margin: 20px 0; }
+            .data-table th, .data-table td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+            .data-table th { background-color: #f2f2f2; }
+            .data-table tr:nth-child(even) { background-color: #f9f9f9; }
+        </style>
+    </head>
+    <body>
+        <h1>HYDRA Super Red Agent Simulation Report</h1>
+        <p>Simulation conducted on 2025-05-20 16:25:58</p>
+
+        <div class="summary">
+            <h2>Executive Summary</h2>
+            <p>This report presents the findings from a simulation conducted using HYDRA's Super Red Agent,
+            which demonstrates advanced attack capabilities and provides a challenging test for blue teams.</p>
+
+            <div class="metrics">
+                <div class="metric-card">
+                    <h3>Simulation Time</h3>
+                    <div class="metric-value">1.12s</div>
+                </div>
+                <div class="metric-card">
+                    <h3>Compromised Nodes</h3>
+                    <div class="metric-value critical">20</div>
+                </div>
+                <div class="metric-card">
+                    <h3>Patched Nodes</h3>
+                    <div class="metric-value">3</div>
+                </div>
+                <div class="metric-card">
+                    <h3>Red Success Rate</h3>
+                    <div class="metric-value critical">100.0%</div>
+                </div>
+                <div class="metric-card">
+                    <h3>Blue Success Rate</h3>
+                    <div class="metric-value">100.0%</div>
+                </div>
+                <div class="metric-card">
+                    <h3>Campaign Goal</h3>
+                    <div class="metric-value">data_theft</div>
+                </div>
+                <div class="metric-card">
+                    <h3>Campaign Progress</h3>
+                    <div class="metric-value critical">100.0%</div>
+                </div>
+                <div class="metric-card">
+                    <h3>Data Exfiltrated</h3>
+                    <div class="metric-value critical">1108.03 MB</div>
+                </div>
+                <div class="metric-card">
+                    <h3>Backdoors Installed</h3>
+                    <div class="metric-value critical">19</div>
+                </div>
+            </div>
+        </div>
+
+        <h2>Simulation Configuration</h2>
+        <pre>{
+  "network_size": "medium",
+  "network_complexity": "medium",
+  "num_steps": 20,
+  "red_skill_level": 0.95,
+  "threat_intel_file": "data/threat_intelligence.json"
+}</pre>
+
+        <h2>Key Findings</h2>
+        <p>The simulation revealed several critical security issues in your network:</p>
+        <ul>
+            <li class="critical">The Red Agent was able to compromise 20 nodes.</li>
+            <li class="critical">The Red Agent exfiltrated 1108.03 MB of sensitive data.</li>
+            <li class="critical">The Red Agent installed 19 backdoors for persistent access.</li>
+            <li class="critical">The Red Agent performed 19 lateral movements.</li>
+            <li>The Blue Agent successfully patched 3 nodes.</li>
+        </ul>
+
+        <h2>Recommendations</h2>
+        <p>Based on the simulation results, consider the following critical recommendations:</p>
+        <ol>
+            <li>Implement network segmentation to limit lateral movement capabilities</li>
+            <li>Deploy advanced endpoint detection and response (EDR) solutions</li>
+            <li>Enhance data loss prevention (DLP) controls</li>
+            <li>Implement multi-factor authentication across all systems</li>
+            <li>Conduct regular vulnerability assessments and patch management</li>
+            <li>Deploy honeypots to detect attacker movement</li>
+            <li>Implement behavioral analytics to detect unusual network activity</li>
+            <li>Enhance logging and monitoring capabilities</li>
+        </ol>
+    </body>
+    </html>
+    

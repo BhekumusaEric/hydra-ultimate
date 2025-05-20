@@ -1,0 +1,1866 @@
+{
+  "graph": {
+    "directed": true,
+    "multigraph": false,
+    "graph": {},
+    "nodes": [
+      {
+        "type": "firewall",
+        "vulnerabilities": [
+          {
+            "type": "sql_injection",
+            "severity": 2.5323157109311003,
+            "exploitability": 0.2549198274574374,
+            "patched": false
+          },
+          {
+            "type": "cross_site_scripting",
+            "severity": 4.454127397753344,
+            "exploitability": 0.24928741117200565,
+            "patched": false
+          },
+          {
+            "type": "privilege_escalation",
+            "severity": 9.541826662700764,
+            "exploitability": 0.7645823037562514,
+            "patched": false
+          },
+          {
+            "type": "misconfiguration",
+            "severity": 8.767955774632316,
+            "exploitability": 0.772375219714073,
+            "patched": true
+          }
+        ],
+        "services": [],
+        "os": {
+          "type": "Linux",
+          "version": "RHEL 8",
+          "patch_level": "Latest",
+          "installed_patches": []
+        },
+        "patch_level": 0.6965441705831447,
+        "security_controls": [
+          "Antivirus",
+          "Host Firewall",
+          "EDR",
+          "Packet Inspection",
+          "IPS"
+        ],
+        "id": 0
+      },
+      {
+        "type": "router",
+        "vulnerabilities": [
+          {
+            "type": "sql_injection",
+            "severity": 4.113187049817263,
+            "exploitability": 0.6971495041269,
+            "patched": true
+          },
+          {
+            "type": "cross_site_scripting",
+            "severity": 6.535907294848522,
+            "exploitability": 0.5280258437853498,
+            "patched": true
+          },
+          {
+            "type": "buffer_overflow",
+            "severity": 2.009691250404505,
+            "exploitability": 0.6004915507562786,
+            "patched": true
+          },
+          {
+            "type": "privilege_escalation",
+            "severity": 9.836320271676533,
+            "exploitability": 0.8046241012335372,
+            "patched": true
+          },
+          {
+            "type": "misconfiguration",
+            "severity": 3.3635845261860347,
+            "exploitability": 0.22155944932596233,
+            "patched": true
+          }
+        ],
+        "services": [],
+        "os": {
+          "type": "Windows",
+          "version": "10",
+          "patch_level": "Low",
+          "installed_patches": [
+            "KB5003173"
+          ]
+        },
+        "patch_level": 0.8510720012509664,
+        "security_controls": [
+          "Antivirus"
+        ],
+        "id": 1
+      },
+      {
+        "type": "server",
+        "vulnerabilities": [
+          {
+            "type": "sql_injection",
+            "severity": 5.607058004537656,
+            "exploitability": 0.45702400689785394,
+            "patched": false
+          },
+          {
+            "type": "default_credentials",
+            "severity": 9.986361196693153,
+            "exploitability": 0.8473344221812388,
+            "patched": true
+          }
+        ],
+        "services": [
+          {
+            "name": "SSH",
+            "version": "4.2.3",
+            "port": 22,
+            "exposed": true
+          },
+          {
+            "name": "SMTP",
+            "version": "1.5.7",
+            "port": 25,
+            "exposed": true
+          },
+          {
+            "name": "DNS",
+            "version": "1.0.8",
+            "port": 53,
+            "exposed": true
+          }
+        ],
+        "os": {
+          "type": "Linux",
+          "version": "CentOS 7",
+          "patch_level": "Latest",
+          "installed_patches": []
+        },
+        "patch_level": 0.8011783869112734,
+        "security_controls": [
+          "Host Firewall",
+          "Intrusion Detection"
+        ],
+        "id": 2
+      },
+      {
+        "type": "server",
+        "vulnerabilities": [
+          {
+            "type": "sql_injection",
+            "severity": 5.028126317761354,
+            "exploitability": 0.4008566714524314,
+            "patched": false
+          },
+          {
+            "type": "buffer_overflow",
+            "severity": 3.9391201124974526,
+            "exploitability": 0.40894315420303706,
+            "patched": true
+          },
+          {
+            "type": "unpatched_cve",
+            "severity": 1.767324819145025,
+            "exploitability": 0.6456405567202524,
+            "patched": false
+          },
+          {
+            "type": "default_credentials",
+            "severity": 1.8389468232660495,
+            "exploitability": 0.7553848094001926,
+            "patched": false
+          },
+          {
+            "type": "misconfiguration",
+            "severity": 1.1142364694959859,
+            "exploitability": 0.691147757124013,
+            "patched": false
+          }
+        ],
+        "services": [
+          {
+            "name": "DNS",
+            "version": "3.5.1",
+            "port": 53,
+            "exposed": true
+          },
+          {
+            "name": "LDAP",
+            "version": "4.4.20",
+            "port": 389,
+            "exposed": true
+          },
+          {
+            "name": "HTTP",
+            "version": "3.1.13",
+            "port": 80,
+            "exposed": true
+          }
+        ],
+        "os": {
+          "type": "Linux",
+          "version": "CentOS 7",
+          "patch_level": "Medium",
+          "installed_patches": []
+        },
+        "patch_level": 0.6624866496133062,
+        "security_controls": [
+          "Antivirus"
+        ],
+        "id": 3
+      },
+      {
+        "type": "database",
+        "vulnerabilities": [
+          {
+            "type": "cross_site_scripting",
+            "severity": 6.576213543275781,
+            "exploitability": 0.1321476916064584,
+            "patched": false
+          },
+          {
+            "type": "buffer_overflow",
+            "severity": 6.74592029147974,
+            "exploitability": 0.8978643934239011,
+            "patched": true
+          },
+          {
+            "type": "privilege_escalation",
+            "severity": 4.858982214440946,
+            "exploitability": 0.2957126011801129,
+            "patched": false
+          },
+          {
+            "type": "default_credentials",
+            "severity": 4.353613946724836,
+            "exploitability": 0.7504922041214549,
+            "patched": false
+          },
+          {
+            "type": "misconfiguration",
+            "severity": 7.815806124296916,
+            "exploitability": 0.9115865341058945,
+            "patched": true
+          }
+        ],
+        "services": [
+          {
+            "name": "MySQL",
+            "version": "10.3",
+            "port": 3306,
+            "exposed": false
+          }
+        ],
+        "os": {
+          "type": "macOS",
+          "version": "Ventura",
+          "patch_level": "Medium",
+          "installed_patches": []
+        },
+        "patch_level": 0.7814254416642136,
+        "security_controls": [
+          "File Integrity Monitoring"
+        ],
+        "high_value": true,
+        "data_sensitivity": 0.8188955939213929,
+        "id": 4
+      },
+      {
+        "type": "cloud_instance",
+        "vulnerabilities": [
+          {
+            "type": "sql_injection",
+            "severity": 8.027859807488236,
+            "exploitability": 0.495454680631222,
+            "patched": false
+          },
+          {
+            "type": "default_credentials",
+            "severity": 7.087983626789035,
+            "exploitability": 0.7981852134302371,
+            "patched": false
+          },
+          {
+            "type": "misconfiguration",
+            "severity": 4.058534068003774,
+            "exploitability": 0.9250215547771162,
+            "patched": false
+          }
+        ],
+        "services": [],
+        "os": {
+          "type": "Windows",
+          "version": "Server 2022",
+          "patch_level": "Medium",
+          "installed_patches": []
+        },
+        "patch_level": 0.9080892131591444,
+        "security_controls": [
+          "Antivirus"
+        ],
+        "id": 5
+      },
+      {
+        "type": "cloud_instance",
+        "vulnerabilities": [
+          {
+            "type": "sql_injection",
+            "severity": 9.569216216591268,
+            "exploitability": 0.8101463756095695,
+            "patched": false
+          },
+          {
+            "type": "cross_site_scripting",
+            "severity": 3.9904460473999674,
+            "exploitability": 0.9008541137323945,
+            "patched": false
+          },
+          {
+            "type": "buffer_overflow",
+            "severity": 3.604687912941028,
+            "exploitability": 0.6011054823621664,
+            "patched": false
+          },
+          {
+            "type": "unpatched_cve",
+            "severity": 4.298475323694675,
+            "exploitability": 0.34128906539502124,
+            "patched": false
+          },
+          {
+            "type": "default_credentials",
+            "severity": 7.291598158393078,
+            "exploitability": 0.6612607976782117,
+            "patched": true
+          }
+        ],
+        "services": [],
+        "os": {
+          "type": "Windows",
+          "version": "Server 2022",
+          "patch_level": "Low",
+          "installed_patches": [
+            "KB5005033"
+          ]
+        },
+        "patch_level": 0.9411606605446713,
+        "security_controls": [
+          "Antivirus",
+          "Host Firewall"
+        ],
+        "id": 6
+      },
+      {
+        "type": "workstation",
+        "vulnerabilities": [
+          {
+            "type": "buffer_overflow",
+            "severity": 6.321938648918045,
+            "exploitability": 0.4858915505497068,
+            "patched": false
+          },
+          {
+            "type": "default_credentials",
+            "severity": 8.902254073227919,
+            "exploitability": 0.887127480104638,
+            "patched": false
+          }
+        ],
+        "services": [],
+        "os": {
+          "type": "Windows",
+          "version": "Server 2019",
+          "patch_level": "Medium",
+          "installed_patches": []
+        },
+        "patch_level": 0.6573658671267093,
+        "security_controls": [
+          "Antivirus",
+          "Host Firewall"
+        ],
+        "id": 7
+      },
+      {
+        "type": "workstation",
+        "vulnerabilities": [
+          {
+            "type": "privilege_escalation",
+            "severity": 4.549929982512572,
+            "exploitability": 0.347717086037411,
+            "patched": false
+          },
+          {
+            "type": "default_credentials",
+            "severity": 9.659629952988237,
+            "exploitability": 0.17931936577415372,
+            "patched": false
+          },
+          {
+            "type": "misconfiguration",
+            "severity": 3.9653814753097656,
+            "exploitability": 0.3340049885120747,
+            "patched": false
+          }
+        ],
+        "services": [
+          {
+            "name": "SSH",
+            "version": "3.3",
+            "port": 22,
+            "exposed": false
+          }
+        ],
+        "os": {
+          "type": "Windows",
+          "version": "Server 2019",
+          "patch_level": "Latest",
+          "installed_patches": []
+        },
+        "patch_level": 0.6042876234262751,
+        "security_controls": [
+          "Antivirus",
+          "EDR"
+        ],
+        "id": 8
+      },
+      {
+        "type": "workstation",
+        "vulnerabilities": [
+          {
+            "type": "cross_site_scripting",
+            "severity": 2.167272815059569,
+            "exploitability": 0.32164475313787516,
+            "patched": false
+          },
+          {
+            "type": "buffer_overflow",
+            "severity": 7.932910026598121,
+            "exploitability": 0.17530383968260577,
+            "patched": false
+          },
+          {
+            "type": "privilege_escalation",
+            "severity": 7.126361207911852,
+            "exploitability": 0.8835016323604173,
+            "patched": false
+          },
+          {
+            "type": "unpatched_cve",
+            "severity": 8.299824171684795,
+            "exploitability": 0.8817508184069294,
+            "patched": false
+          },
+          {
+            "type": "default_credentials",
+            "severity": 3.9741194918060976,
+            "exploitability": 0.7009024643866499,
+            "patched": false
+          }
+        ],
+        "services": [],
+        "os": {
+          "type": "Windows",
+          "version": "Server 2022",
+          "patch_level": "Latest",
+          "installed_patches": [
+            "KB5003173",
+            "KB5004945",
+            "KB5005033"
+          ]
+        },
+        "patch_level": 0.7271104743134076,
+        "security_controls": [
+          "Host Firewall"
+        ],
+        "id": 9
+      },
+      {
+        "type": "workstation",
+        "vulnerabilities": [
+          {
+            "type": "sql_injection",
+            "severity": 3.239218073464878,
+            "exploitability": 0.7052143668129484,
+            "patched": false
+          },
+          {
+            "type": "cross_site_scripting",
+            "severity": 6.575114395200586,
+            "exploitability": 0.6788072532433407,
+            "patched": false
+          },
+          {
+            "type": "buffer_overflow",
+            "severity": 4.2335106207331075,
+            "exploitability": 0.4209523191267497,
+            "patched": false
+          },
+          {
+            "type": "default_credentials",
+            "severity": 7.407918401098737,
+            "exploitability": 0.3389119391878845,
+            "patched": false
+          }
+        ],
+        "services": [],
+        "os": {
+          "type": "Windows",
+          "version": "Server 2019",
+          "patch_level": "Medium",
+          "installed_patches": []
+        },
+        "patch_level": 0.8852429871924903,
+        "security_controls": [],
+        "id": 10
+      },
+      {
+        "type": "workstation",
+        "vulnerabilities": [
+          {
+            "type": "sql_injection",
+            "severity": 6.745098260375876,
+            "exploitability": 0.5404324139358986,
+            "patched": false
+          },
+          {
+            "type": "cross_site_scripting",
+            "severity": 3.7896423447332275,
+            "exploitability": 0.5454402172326432,
+            "patched": false
+          },
+          {
+            "type": "privilege_escalation",
+            "severity": 4.335557247333336,
+            "exploitability": 0.17455126427672568,
+            "patched": false
+          },
+          {
+            "type": "unpatched_cve",
+            "severity": 8.305105758632362,
+            "exploitability": 0.7471945677029578,
+            "patched": false
+          },
+          {
+            "type": "misconfiguration",
+            "severity": 9.277196273120023,
+            "exploitability": 0.7282814991051901,
+            "patched": false
+          }
+        ],
+        "services": [],
+        "os": {
+          "type": "macOS",
+          "version": "Monterey",
+          "patch_level": "Latest",
+          "installed_patches": []
+        },
+        "patch_level": 0.5898343862498783,
+        "security_controls": [
+          "Antivirus"
+        ],
+        "id": 11
+      },
+      {
+        "type": "workstation",
+        "vulnerabilities": [
+          {
+            "type": "cross_site_scripting",
+            "severity": 3.2824126703729,
+            "exploitability": 0.9448732346080575,
+            "patched": false
+          },
+          {
+            "type": "privilege_escalation",
+            "severity": 9.006199676201817,
+            "exploitability": 0.664057370920217,
+            "patched": false
+          },
+          {
+            "type": "default_credentials",
+            "severity": 5.791641223567343,
+            "exploitability": 0.6629291225326412,
+            "patched": false
+          },
+          {
+            "type": "misconfiguration",
+            "severity": 4.424684033083207,
+            "exploitability": 0.637515260656948,
+            "patched": false
+          }
+        ],
+        "services": [],
+        "os": {
+          "type": "Linux",
+          "version": "Ubuntu 22.04",
+          "patch_level": "Latest",
+          "installed_patches": []
+        },
+        "patch_level": 0.648410950976088,
+        "security_controls": [
+          "Antivirus"
+        ],
+        "id": 12
+      },
+      {
+        "type": "workstation",
+        "vulnerabilities": [
+          {
+            "type": "privilege_escalation",
+            "severity": 6.88339709584048,
+            "exploitability": 0.5887697490379128,
+            "patched": false
+          },
+          {
+            "type": "default_credentials",
+            "severity": 4.608437902109252,
+            "exploitability": 0.9062254389472878,
+            "patched": false
+          },
+          {
+            "type": "misconfiguration",
+            "severity": 7.110511935317925,
+            "exploitability": 0.9245463556227984,
+            "patched": false
+          }
+        ],
+        "services": [
+          {
+            "name": "SSH",
+            "version": "1.6",
+            "port": 22,
+            "exposed": true
+          }
+        ],
+        "os": {
+          "type": "macOS",
+          "version": "Ventura",
+          "patch_level": "High",
+          "installed_patches": []
+        },
+        "patch_level": 0.9867956996697924,
+        "security_controls": [
+          "Host Firewall"
+        ],
+        "id": 13
+      },
+      {
+        "type": "workstation",
+        "vulnerabilities": [
+          {
+            "type": "cross_site_scripting",
+            "severity": 7.004923613556446,
+            "exploitability": 0.24346064573767304,
+            "patched": false
+          },
+          {
+            "type": "buffer_overflow",
+            "severity": 8.667037230318469,
+            "exploitability": 0.481888160576605,
+            "patched": false
+          },
+          {
+            "type": "unpatched_cve",
+            "severity": 7.7369625625576575,
+            "exploitability": 0.418195414915588,
+            "patched": false
+          },
+          {
+            "type": "misconfiguration",
+            "severity": 7.004439846464022,
+            "exploitability": 0.6012509667933674,
+            "patched": false
+          }
+        ],
+        "services": [],
+        "os": {
+          "type": "Windows",
+          "version": "Server 2022",
+          "patch_level": "Low",
+          "installed_patches": [
+            "KB5004945",
+            "KB5001330",
+            "KB5003173"
+          ]
+        },
+        "patch_level": 0.8547583977685882,
+        "security_controls": [
+          "Antivirus",
+          "EDR"
+        ],
+        "id": 14
+      },
+      {
+        "type": "workstation",
+        "vulnerabilities": [
+          {
+            "type": "buffer_overflow",
+            "severity": 4.566845454582456,
+            "exploitability": 0.38353058832906295,
+            "patched": false
+          },
+          {
+            "type": "default_credentials",
+            "severity": 4.101606291451312,
+            "exploitability": 0.6155265630579143,
+            "patched": false
+          }
+        ],
+        "services": [],
+        "os": {
+          "type": "macOS",
+          "version": "Sonoma",
+          "patch_level": "Medium",
+          "installed_patches": []
+        },
+        "patch_level": 0.863698412485914,
+        "security_controls": [
+          "Antivirus",
+          "Host Firewall"
+        ],
+        "id": 15
+      },
+      {
+        "type": "cloud_instance",
+        "security_controls": [
+          "IDS",
+          "DLP"
+        ],
+        "vulnerabilities": [
+          {
+            "type": "misconfiguration",
+            "severity": 0.7241025667411927,
+            "exploitability": 0.8620702006202002,
+            "patched": true
+          },
+          {
+            "type": "buffer_overflow",
+            "severity": 0.7042521512353151,
+            "exploitability": 0.7378542765447194,
+            "patched": true
+          }
+        ],
+        "id": 16
+      },
+      {
+        "type": "scada_controller",
+        "security_controls": [
+          "IDS",
+          "Antivirus"
+        ],
+        "vulnerabilities": [
+          {
+            "type": "unpatched_cve",
+            "severity": 0.6750818978975806,
+            "exploitability": 0.7507631695340695
+          },
+          {
+            "type": "unpatched_cve",
+            "severity": 0.6484285906519291,
+            "exploitability": 0.7177114309202763
+          }
+        ],
+        "id": 17
+      },
+      {
+        "type": "iot_device",
+        "security_controls": [
+          "IDS"
+        ],
+        "vulnerabilities": [
+          {
+            "type": "misconfiguration",
+            "severity": 0.8531171220956524,
+            "exploitability": 0.6673524269841169
+          },
+          {
+            "type": "buffer_overflow",
+            "severity": 0.608491018207101,
+            "exploitability": 0.8358083554183395
+          },
+          {
+            "type": "misconfiguration",
+            "severity": 0.8592782731745148,
+            "exploitability": 0.8120248927950917
+          }
+        ],
+        "id": 18
+      },
+      {
+        "type": "file_server",
+        "security_controls": [
+          "IDS"
+        ],
+        "vulnerabilities": [
+          {
+            "type": "privilege_escalation",
+            "severity": 0.8102008545238198,
+            "exploitability": 0.618316753749
+          },
+          {
+            "type": "default_credentials",
+            "severity": 0.5299116489559116,
+            "exploitability": 0.8692057979782217
+          },
+          {
+            "type": "privilege_escalation",
+            "severity": 0.5463787091956727,
+            "exploitability": 0.752835625975945
+          }
+        ],
+        "high_value": true,
+        "data_sensitivity": 0.8041144218055986,
+        "id": 19
+      },
+      {
+        "type": "web_server",
+        "security_controls": [
+          "Antivirus",
+          "EDR"
+        ],
+        "vulnerabilities": [
+          {
+            "type": "misconfiguration",
+            "severity": 0.6072916577707616,
+            "exploitability": 0.78230115285928
+          },
+          {
+            "type": "cross_site_scripting",
+            "severity": 0.6462270380799251,
+            "exploitability": 0.8906422468668501
+          },
+          {
+            "type": "misconfiguration",
+            "severity": 0.7136322888761489,
+            "exploitability": 0.6175340483200766
+          }
+        ],
+        "id": 20
+      },
+      {
+        "type": "email_server",
+        "security_controls": [
+          "Firewall",
+          "EDR"
+        ],
+        "vulnerabilities": [
+          {
+            "type": "misconfiguration",
+            "severity": 0.8323305077791614,
+            "exploitability": 0.8451794334492057
+          },
+          {
+            "type": "default_credentials",
+            "severity": 0.7734427098474004,
+            "exploitability": 0.674171896642314
+          },
+          {
+            "type": "privilege_escalation",
+            "severity": 0.5396612704635491,
+            "exploitability": 0.7389740683769958
+          }
+        ],
+        "id": 21
+      },
+      {
+        "type": "router",
+        "security_controls": [
+          "EDR",
+          "Firewall"
+        ],
+        "vulnerabilities": [
+          {
+            "type": "misconfiguration",
+            "severity": 0.5513661149440581,
+            "exploitability": 0.796166768726303
+          }
+        ],
+        "id": 22
+      },
+      {
+        "type": "firewall",
+        "security_controls": [
+          "EDR",
+          "DLP",
+          "Antivirus"
+        ],
+        "vulnerabilities": [
+          {
+            "type": "misconfiguration",
+            "severity": 0.8933031343497693,
+            "exploitability": 0.6557100587135821
+          }
+        ],
+        "id": 23
+      },
+      {
+        "type": "database",
+        "security_controls": [
+          "IDS"
+        ],
+        "vulnerabilities": [
+          {
+            "type": "default_credentials",
+            "severity": 0.8359707453157594,
+            "exploitability": 0.7793421095115592,
+            "patched": true
+          },
+          {
+            "type": "buffer_overflow",
+            "severity": 0.7836532882218779,
+            "exploitability": 0.6637786637517129
+          },
+          {
+            "type": "privilege_escalation",
+            "severity": 0.7805640115918054,
+            "exploitability": 0.6487333082335721
+          }
+        ],
+        "high_value": true,
+        "data_sensitivity": 0.868539782661829,
+        "id": 24
+      },
+      {
+        "type": "router",
+        "security_controls": [
+          "DLP",
+          "Antivirus",
+          "Firewall"
+        ],
+        "vulnerabilities": [
+          {
+            "type": "unpatched_cve",
+            "severity": 0.6758490480042434,
+            "exploitability": 0.8542274124115586
+          }
+        ],
+        "id": 25
+      }
+    ],
+    "links": [
+      {
+        "weight": 1.0,
+        "source": 0,
+        "target": 1
+      },
+      {
+        "weight": 0.7314927583120565,
+        "source": 0,
+        "target": 5
+      },
+      {
+        "weight": 0.6512827912985474,
+        "source": 0,
+        "target": 6
+      },
+      {
+        "source": 0,
+        "target": 25
+      },
+      {
+        "weight": 0.8391145201795832,
+        "source": 1,
+        "target": 2
+      },
+      {
+        "weight": 0.9443631847054081,
+        "source": 1,
+        "target": 3
+      },
+      {
+        "weight": 0.981779120708603,
+        "source": 1,
+        "target": 7
+      },
+      {
+        "weight": 0.5014526263428987,
+        "source": 1,
+        "target": 10
+      },
+      {
+        "weight": 0.7242220684331726,
+        "source": 1,
+        "target": 11
+      },
+      {
+        "weight": 0.8566803095930583,
+        "source": 1,
+        "target": 12
+      },
+      {
+        "weight": 0.7965633162434271,
+        "source": 1,
+        "target": 14
+      },
+      {
+        "weight": 0.5399826010270845,
+        "source": 1,
+        "target": 15
+      },
+      {
+        "weight": 0.9717931409957462,
+        "source": 2,
+        "target": 1
+      },
+      {
+        "source": 2,
+        "target": 20
+      },
+      {
+        "source": 2,
+        "target": 22
+      },
+      {
+        "source": 2,
+        "target": 24
+      },
+      {
+        "weight": 0.8596935189324085,
+        "source": 3,
+        "target": 1
+      },
+      {
+        "weight": 0.9308916034112467,
+        "source": 3,
+        "target": 4
+      },
+      {
+        "source": 3,
+        "target": 16
+      },
+      {
+        "source": 3,
+        "target": 19
+      },
+      {
+        "weight": 0.7112848839864527,
+        "source": 4,
+        "target": 3
+      },
+      {
+        "source": 4,
+        "target": 22
+      },
+      {
+        "source": 4,
+        "target": 23
+      },
+      {
+        "source": 4,
+        "target": 24
+      },
+      {
+        "weight": 0.7147315702225749,
+        "source": 5,
+        "target": 0
+      },
+      {
+        "source": 5,
+        "target": 19
+      },
+      {
+        "source": 5,
+        "target": 24
+      },
+      {
+        "weight": 0.839070442510119,
+        "source": 6,
+        "target": 0
+      },
+      {
+        "source": 6,
+        "target": 16
+      },
+      {
+        "source": 6,
+        "target": 18
+      },
+      {
+        "source": 6,
+        "target": 22
+      },
+      {
+        "source": 6,
+        "target": 23
+      },
+      {
+        "weight": 0.6438187851766811,
+        "source": 7,
+        "target": 1
+      },
+      {
+        "source": 7,
+        "target": 18
+      },
+      {
+        "source": 7,
+        "target": 20
+      },
+      {
+        "source": 7,
+        "target": 22
+      },
+      {
+        "source": 8,
+        "target": 16
+      },
+      {
+        "source": 8,
+        "target": 21
+      },
+      {
+        "source": 9,
+        "target": 16
+      },
+      {
+        "source": 9,
+        "target": 17
+      },
+      {
+        "source": 9,
+        "target": 19
+      },
+      {
+        "weight": 0.6154860582038859,
+        "source": 10,
+        "target": 1
+      },
+      {
+        "source": 10,
+        "target": 18
+      },
+      {
+        "source": 10,
+        "target": 22
+      },
+      {
+        "weight": 0.9696877506290045,
+        "source": 11,
+        "target": 1
+      },
+      {
+        "source": 11,
+        "target": 19
+      },
+      {
+        "source": 11,
+        "target": 21
+      },
+      {
+        "weight": 0.5805561139026649,
+        "source": 12,
+        "target": 1
+      },
+      {
+        "source": 12,
+        "target": 20
+      },
+      {
+        "source": 12,
+        "target": 25
+      },
+      {
+        "source": 13,
+        "target": 16
+      },
+      {
+        "source": 13,
+        "target": 20
+      },
+      {
+        "weight": 0.6391738578067878,
+        "source": 14,
+        "target": 1
+      },
+      {
+        "source": 14,
+        "target": 23
+      },
+      {
+        "weight": 0.9178825191075537,
+        "source": 15,
+        "target": 1
+      },
+      {
+        "source": 15,
+        "target": 17
+      },
+      {
+        "source": 16,
+        "target": 8
+      },
+      {
+        "source": 16,
+        "target": 6
+      },
+      {
+        "source": 16,
+        "target": 13
+      },
+      {
+        "source": 16,
+        "target": 3
+      },
+      {
+        "source": 16,
+        "target": 9
+      },
+      {
+        "source": 17,
+        "target": 15
+      },
+      {
+        "source": 17,
+        "target": 9
+      },
+      {
+        "source": 18,
+        "target": 6
+      },
+      {
+        "source": 18,
+        "target": 10
+      },
+      {
+        "source": 18,
+        "target": 7
+      },
+      {
+        "source": 19,
+        "target": 9
+      },
+      {
+        "source": 19,
+        "target": 3
+      },
+      {
+        "source": 19,
+        "target": 11
+      },
+      {
+        "source": 19,
+        "target": 5
+      },
+      {
+        "source": 20,
+        "target": 12
+      },
+      {
+        "source": 20,
+        "target": 2
+      },
+      {
+        "source": 20,
+        "target": 13
+      },
+      {
+        "source": 20,
+        "target": 7
+      },
+      {
+        "source": 21,
+        "target": 11
+      },
+      {
+        "source": 21,
+        "target": 8
+      },
+      {
+        "source": 22,
+        "target": 4
+      },
+      {
+        "source": 22,
+        "target": 7
+      },
+      {
+        "source": 22,
+        "target": 10
+      },
+      {
+        "source": 22,
+        "target": 2
+      },
+      {
+        "source": 22,
+        "target": 6
+      },
+      {
+        "source": 23,
+        "target": 6
+      },
+      {
+        "source": 23,
+        "target": 4
+      },
+      {
+        "source": 23,
+        "target": 14
+      },
+      {
+        "source": 24,
+        "target": 2
+      },
+      {
+        "source": 24,
+        "target": 4
+      },
+      {
+        "source": 24,
+        "target": 5
+      },
+      {
+        "source": 25,
+        "target": 0
+      },
+      {
+        "source": 25,
+        "target": 12
+      }
+    ]
+  },
+  "compromised_nodes": [],
+  "patched_nodes": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    6,
+    16,
+    24
+  ],
+  "logs": [
+    "Enterprise network created with 16 nodes and 23 connections",
+    "Network saved to network_snapshots/network_initial_20250520_154113.json",
+    "Attack failed: misconfiguration on node 0",
+    "Patched privilege_escalation on node 1",
+    "Patched misconfiguration on node 16",
+    "Attack failed: misconfiguration on node 0",
+    "Investigation found no compromise on node 3",
+    "Investigation found no compromise on node 11",
+    "Attack failed: misconfiguration on node 0",
+    "Investigation found no compromise on node 3",
+    "Investigation found no compromise on node 11",
+    "Investigation found no compromise on node 19",
+    "Investigation found no compromise on node 18",
+    "Attack failed: misconfiguration on node 0",
+    "Patched cross_site_scripting on node 1",
+    "Patched buffer_overflow on node 16",
+    "Node 0 (firewall) compromised via misconfiguration",
+    "Patched misconfiguration on node 0",
+    "Patched misconfiguration on node 0",
+    "Node 0 secured after patching",
+    "Patched misconfiguration on node 0",
+    "Node 6 (cloud_instance) compromised via default_credentials",
+    "Patched misconfiguration on node 0",
+    "Patched misconfiguration on node 0",
+    "Patched misconfiguration on node 0",
+    "Patched default_credentials on node 6",
+    "Node 6 secured after patching",
+    "Node 16 (cloud_instance) compromised via misconfiguration",
+    "Patched misconfiguration on node 0",
+    "Patched misconfiguration on node 0",
+    "Patched misconfiguration on node 0",
+    "Patched default_credentials on node 6",
+    "Patched misconfiguration on node 16",
+    "Node 16 secured after patching",
+    "Attack failed: privilege_escalation on node 9",
+    "Patched sql_injection on node 1",
+    "Attack failed: buffer_overflow on node 3",
+    "Patched misconfiguration on node 0",
+    "Patched misconfiguration on node 0",
+    "Patched misconfiguration on node 0",
+    "Patched default_credentials on node 6",
+    "Patched misconfiguration on node 16",
+    "Attack failed: misconfiguration on node 13",
+    "Patched misconfiguration on node 0",
+    "Patched misconfiguration on node 0",
+    "Patched misconfiguration on node 0",
+    "Patched default_credentials on node 6",
+    "Patched misconfiguration on node 16",
+    "Node 3 (server) compromised via buffer_overflow",
+    "Patched misconfiguration on node 0",
+    "Patched misconfiguration on node 0",
+    "Patched misconfiguration on node 0",
+    "Patched default_credentials on node 6",
+    "Patched misconfiguration on node 16",
+    "Patched buffer_overflow on node 3",
+    "Node 3 secured after patching",
+    "Attack failed: misconfiguration on node 4",
+    "Patched misconfiguration on node 0",
+    "Patched misconfiguration on node 0",
+    "Patched misconfiguration on node 0",
+    "Patched default_credentials on node 6",
+    "Patched misconfiguration on node 16",
+    "Patched buffer_overflow on node 3",
+    "Attack failed: misconfiguration on node 4",
+    "Patched misconfiguration on node 0",
+    "Patched misconfiguration on node 0",
+    "Patched misconfiguration on node 0",
+    "Patched default_credentials on node 6",
+    "Patched misconfiguration on node 16",
+    "Patched buffer_overflow on node 3",
+    "Attack failed: misconfiguration on node 4",
+    "Patched misconfiguration on node 0",
+    "Patched misconfiguration on node 0",
+    "Patched misconfiguration on node 0",
+    "Patched default_credentials on node 6",
+    "Patched misconfiguration on node 16",
+    "Patched buffer_overflow on node 3",
+    "Node 4 (database) compromised via misconfiguration",
+    "Patched misconfiguration on node 0",
+    "Patched misconfiguration on node 0",
+    "Patched misconfiguration on node 0",
+    "Patched default_credentials on node 6",
+    "Patched misconfiguration on node 16",
+    "Patched buffer_overflow on node 3",
+    "Patched misconfiguration on node 4",
+    "Node 4 secured after patching",
+    "Node 24 (database) compromised via default_credentials",
+    "Patched misconfiguration on node 0",
+    "Patched misconfiguration on node 0",
+    "Patched misconfiguration on node 0",
+    "Patched default_credentials on node 6",
+    "Patched misconfiguration on node 16",
+    "Patched buffer_overflow on node 3",
+    "Patched misconfiguration on node 4",
+    "Patched default_credentials on node 24",
+    "Attack failed: default_credentials on node 5",
+    "Patched misconfiguration on node 1",
+    "Attack failed: misconfiguration on node 4",
+    "Patched misconfiguration on node 0",
+    "Patched misconfiguration on node 0",
+    "Patched misconfiguration on node 0",
+    "Patched default_credentials on node 6",
+    "Patched misconfiguration on node 16",
+    "Patched buffer_overflow on node 3",
+    "Patched misconfiguration on node 4",
+    "Patched default_credentials on node 24",
+    "Attack failed: default_credentials on node 2",
+    "Patched misconfiguration on node 0",
+    "Patched misconfiguration on node 0",
+    "Patched misconfiguration on node 0",
+    "Patched default_credentials on node 6",
+    "Patched misconfiguration on node 16",
+    "Patched buffer_overflow on node 3",
+    "Patched misconfiguration on node 4",
+    "Patched default_credentials on node 24",
+    "Node 24 secured after patching",
+    "Attack failed: misconfiguration on node 4",
+    "Patched misconfiguration on node 0",
+    "Patched misconfiguration on node 0",
+    "Patched misconfiguration on node 0",
+    "Patched default_credentials on node 6",
+    "Patched misconfiguration on node 16",
+    "Patched buffer_overflow on node 3",
+    "Patched misconfiguration on node 4",
+    "Patched default_credentials on node 24",
+    "Attack failed: misconfiguration on node 4",
+    "Investigation found no compromise on node 16",
+    "Investigation found no compromise on node 15",
+    "Investigation found no compromise on node 7",
+    "Investigation found no compromise on node 23",
+    "Attack failed: misconfiguration on node 4",
+    "Patched buffer_overflow on node 1",
+    "Attack failed: default_credentials on node 2",
+    "Patched misconfiguration on node 0",
+    "Patched misconfiguration on node 0",
+    "Patched misconfiguration on node 0",
+    "Patched default_credentials on node 6",
+    "Patched misconfiguration on node 16",
+    "Patched buffer_overflow on node 3",
+    "Patched misconfiguration on node 4",
+    "Patched default_credentials on node 24",
+    "Attack failed: misconfiguration on node 4",
+    "Patched misconfiguration on node 0",
+    "Patched misconfiguration on node 0",
+    "Patched misconfiguration on node 0",
+    "Patched default_credentials on node 6",
+    "Patched misconfiguration on node 16",
+    "Patched buffer_overflow on node 3",
+    "Patched misconfiguration on node 4",
+    "Patched default_credentials on node 24",
+    "Attack failed: default_credentials on node 2",
+    "Patched misconfiguration on node 0",
+    "Patched misconfiguration on node 0",
+    "Patched misconfiguration on node 0",
+    "Patched default_credentials on node 6",
+    "Patched misconfiguration on node 16",
+    "Patched buffer_overflow on node 3",
+    "Patched misconfiguration on node 4",
+    "Patched default_credentials on node 24",
+    "Patched default_credentials on node 2",
+    "Attack failed: default_credentials on node 2",
+    "Investigation found no compromise on node 20",
+    "Investigation found no compromise on node 10",
+    "Investigation found no compromise on node 25",
+    "Attack failed: default_credentials on node 2",
+    "Patched misconfiguration on node 0",
+    "Patched misconfiguration on node 0",
+    "Patched misconfiguration on node 0",
+    "Patched default_credentials on node 6",
+    "Patched misconfiguration on node 16",
+    "Patched buffer_overflow on node 3",
+    "Patched misconfiguration on node 4",
+    "Patched default_credentials on node 24",
+    "Patched default_credentials on node 2",
+    "Patched default_credentials on node 2",
+    "Attack failed: misconfiguration on node 4",
+    "Patched misconfiguration on node 0",
+    "Patched misconfiguration on node 0",
+    "Patched misconfiguration on node 0",
+    "Patched default_credentials on node 6",
+    "Patched misconfiguration on node 16",
+    "Patched buffer_overflow on node 3",
+    "Patched misconfiguration on node 4",
+    "Patched default_credentials on node 24",
+    "Patched default_credentials on node 2",
+    "Patched default_credentials on node 2",
+    "Attack failed: default_credentials on node 2",
+    "Patched misconfiguration on node 0",
+    "Patched misconfiguration on node 0",
+    "Patched default_credentials on node 6",
+    "Patched misconfiguration on node 16",
+    "Patched buffer_overflow on node 3",
+    "Patched misconfiguration on node 4",
+    "Patched default_credentials on node 24",
+    "Patched default_credentials on node 2",
+    "Patched default_credentials on node 2",
+    "Patched default_credentials on node 2",
+    "Attack failed: misconfiguration on node 4",
+    "Patched misconfiguration on node 0",
+    "Patched misconfiguration on node 0",
+    "Patched default_credentials on node 6",
+    "Patched misconfiguration on node 16",
+    "Patched buffer_overflow on node 3",
+    "Patched misconfiguration on node 4",
+    "Patched default_credentials on node 24",
+    "Patched default_credentials on node 2",
+    "Patched default_credentials on node 2",
+    "Patched default_credentials on node 2",
+    "Attack failed: misconfiguration on node 4",
+    "Patched misconfiguration on node 0",
+    "Patched misconfiguration on node 0",
+    "Patched default_credentials on node 6",
+    "Patched misconfiguration on node 16",
+    "Patched buffer_overflow on node 3",
+    "Patched misconfiguration on node 4",
+    "Patched default_credentials on node 24",
+    "Patched default_credentials on node 2",
+    "Patched default_credentials on node 2",
+    "Patched default_credentials on node 2",
+    "Attack failed: misconfiguration on node 4",
+    "Patched misconfiguration on node 0",
+    "Patched misconfiguration on node 0",
+    "Patched default_credentials on node 6",
+    "Patched misconfiguration on node 16",
+    "Patched buffer_overflow on node 3",
+    "Patched misconfiguration on node 4",
+    "Patched default_credentials on node 24",
+    "Patched default_credentials on node 2",
+    "Patched default_credentials on node 2",
+    "Patched default_credentials on node 2",
+    "Attack failed: misconfiguration on node 4",
+    "Node 4 (database) compromised via misconfiguration",
+    "Patched misconfiguration on node 0",
+    "Patched default_credentials on node 6",
+    "Patched misconfiguration on node 16",
+    "Patched buffer_overflow on node 3",
+    "Patched misconfiguration on node 4",
+    "Node 4 secured after patching",
+    "Patched default_credentials on node 24",
+    "Patched default_credentials on node 2",
+    "Patched default_credentials on node 2",
+    "Patched default_credentials on node 2",
+    "Patched misconfiguration on node 4",
+    "Attack failed: No default_credentials vulnerability on node 22",
+    "Patched misconfiguration on node 0",
+    "Patched default_credentials on node 6",
+    "Patched misconfiguration on node 16",
+    "Patched buffer_overflow on node 3",
+    "Patched misconfiguration on node 4",
+    "Patched default_credentials on node 24",
+    "Patched default_credentials on node 2",
+    "Patched default_credentials on node 2",
+    "Patched default_credentials on node 2",
+    "Patched misconfiguration on node 4",
+    "Attack failed: default_credentials on node 3",
+    "Patched misconfiguration on node 0",
+    "Patched default_credentials on node 6",
+    "Patched misconfiguration on node 16",
+    "Patched buffer_overflow on node 3",
+    "Patched misconfiguration on node 4",
+    "Patched default_credentials on node 24",
+    "Patched default_credentials on node 2",
+    "Patched default_credentials on node 2",
+    "Patched default_credentials on node 2",
+    "Patched misconfiguration on node 4",
+    "Node 24 (database) compromised via default_credentials",
+    "Patched default_credentials on node 6",
+    "Patched misconfiguration on node 16",
+    "Patched buffer_overflow on node 3",
+    "Patched misconfiguration on node 4",
+    "Patched default_credentials on node 24",
+    "Patched default_credentials on node 2",
+    "Patched default_credentials on node 2",
+    "Patched default_credentials on node 2",
+    "Patched misconfiguration on node 4",
+    "Patched default_credentials on node 24",
+    "Node 24 secured after patching",
+    "Attack failed: misconfiguration on node 4",
+    "Patched default_credentials on node 6",
+    "Patched misconfiguration on node 16",
+    "Patched buffer_overflow on node 3",
+    "Patched misconfiguration on node 4",
+    "Patched default_credentials on node 24",
+    "Patched default_credentials on node 2",
+    "Patched default_credentials on node 2",
+    "Patched default_credentials on node 2",
+    "Patched misconfiguration on node 4",
+    "Patched default_credentials on node 24",
+    "Attack failed: default_credentials on node 2",
+    "Patched default_credentials on node 6",
+    "Patched misconfiguration on node 16",
+    "Patched buffer_overflow on node 3",
+    "Patched misconfiguration on node 4",
+    "Patched default_credentials on node 24",
+    "Patched default_credentials on node 2",
+    "Patched default_credentials on node 2",
+    "Patched default_credentials on node 2",
+    "Patched misconfiguration on node 4",
+    "Patched default_credentials on node 24",
+    "Node 2 (server) compromised via default_credentials",
+    "Patched misconfiguration on node 16",
+    "Patched buffer_overflow on node 3",
+    "Patched misconfiguration on node 4",
+    "Patched default_credentials on node 24",
+    "Patched default_credentials on node 2",
+    "Node 2 secured after patching",
+    "Patched default_credentials on node 2",
+    "Patched default_credentials on node 2",
+    "Patched misconfiguration on node 4",
+    "Patched default_credentials on node 24",
+    "Patched default_credentials on node 2",
+    "Node 24 (database) compromised via default_credentials",
+    "Node 4 (database) compromised via buffer_overflow",
+    "Patched misconfiguration on node 4",
+    "Node 4 secured after patching",
+    "Patched default_credentials on node 24",
+    "Node 24 secured after patching",
+    "Patched default_credentials on node 2",
+    "Patched default_credentials on node 2",
+    "Patched default_credentials on node 2",
+    "Patched misconfiguration on node 4",
+    "Patched default_credentials on node 24",
+    "Patched default_credentials on node 2",
+    "Patched default_credentials on node 24",
+    "Patched buffer_overflow on node 4",
+    "Node 24 (database) compromised via default_credentials",
+    "Patched default_credentials on node 24",
+    "Node 24 secured after patching",
+    "Patched default_credentials on node 2",
+    "Patched default_credentials on node 2",
+    "Patched default_credentials on node 2",
+    "Patched misconfiguration on node 4",
+    "Patched default_credentials on node 24",
+    "Patched default_credentials on node 2",
+    "Patched default_credentials on node 24",
+    "Patched buffer_overflow on node 4",
+    "Patched default_credentials on node 24",
+    "Node 2 (server) compromised via default_credentials",
+    "Patched default_credentials on node 2",
+    "Patched default_credentials on node 2",
+    "Node 2 secured after patching",
+    "Patched default_credentials on node 2",
+    "Patched misconfiguration on node 4",
+    "Patched default_credentials on node 24",
+    "Patched default_credentials on node 2",
+    "Patched default_credentials on node 24",
+    "Patched buffer_overflow on node 4",
+    "Patched default_credentials on node 24",
+    "Patched default_credentials on node 2",
+    "Node 24 (database) compromised via default_credentials",
+    "Patched default_credentials on node 2",
+    "Patched default_credentials on node 2",
+    "Patched misconfiguration on node 4",
+    "Patched default_credentials on node 24",
+    "Node 24 secured after patching",
+    "Patched default_credentials on node 2",
+    "Patched default_credentials on node 24",
+    "Patched buffer_overflow on node 4",
+    "Patched default_credentials on node 24",
+    "Patched default_credentials on node 2",
+    "Patched default_credentials on node 24",
+    "Attack failed: default_credentials on node 2",
+    "Investigation found no compromise on node 10",
+    "Investigation found no compromise on node 14",
+    "Investigation found no compromise on node 12",
+    "Attack failed: misconfiguration on node 4",
+    "Patched default_credentials on node 2",
+    "Patched default_credentials on node 2",
+    "Patched misconfiguration on node 4",
+    "Patched default_credentials on node 24",
+    "Patched default_credentials on node 2",
+    "Patched default_credentials on node 24",
+    "Patched buffer_overflow on node 4",
+    "Patched default_credentials on node 24",
+    "Patched default_credentials on node 2",
+    "Patched default_credentials on node 24",
+    "Attack failed: default_credentials on node 2",
+    "Patched default_credentials on node 2",
+    "Patched default_credentials on node 2",
+    "Patched misconfiguration on node 4",
+    "Patched default_credentials on node 24",
+    "Patched default_credentials on node 2",
+    "Patched default_credentials on node 24",
+    "Patched buffer_overflow on node 4",
+    "Patched default_credentials on node 24",
+    "Patched default_credentials on node 2",
+    "Patched default_credentials on node 24",
+    "Attack failed: buffer_overflow on node 4",
+    "Patched default_credentials on node 2",
+    "Patched default_credentials on node 2",
+    "Patched misconfiguration on node 4",
+    "Patched default_credentials on node 24",
+    "Patched default_credentials on node 2",
+    "Patched default_credentials on node 24",
+    "Patched buffer_overflow on node 4",
+    "Patched default_credentials on node 24",
+    "Patched default_credentials on node 2",
+    "Patched default_credentials on node 24",
+    "Attack failed: default_credentials on node 2",
+    "Patched default_credentials on node 2",
+    "Patched default_credentials on node 2",
+    "Patched misconfiguration on node 4",
+    "Patched default_credentials on node 24",
+    "Patched default_credentials on node 2",
+    "Patched default_credentials on node 24",
+    "Patched buffer_overflow on node 4",
+    "Patched default_credentials on node 24",
+    "Patched default_credentials on node 2",
+    "Patched default_credentials on node 24"
+  ],
+  "alerts": [
+    {
+      "type": "attempt",
+      "node_id": 0,
+      "attack_type": "misconfiguration",
+      "timestamp": "now"
+    },
+    {
+      "type": "attempt",
+      "node_id": 0,
+      "attack_type": "misconfiguration",
+      "timestamp": "now"
+    },
+    {
+      "type": "compromise",
+      "node_id": 0,
+      "attack_type": "misconfiguration",
+      "timestamp": "now"
+    },
+    {
+      "type": "compromise",
+      "node_id": 6,
+      "attack_type": "default_credentials",
+      "timestamp": "now"
+    },
+    {
+      "type": "compromise",
+      "node_id": 16,
+      "attack_type": "misconfiguration",
+      "timestamp": "now"
+    },
+    {
+      "type": "compromise",
+      "node_id": 3,
+      "attack_type": "buffer_overflow",
+      "timestamp": "now"
+    },
+    {
+      "type": "compromise",
+      "node_id": 4,
+      "attack_type": "misconfiguration",
+      "timestamp": "now"
+    },
+    {
+      "type": "compromise",
+      "node_id": 24,
+      "attack_type": "default_credentials",
+      "timestamp": "now"
+    },
+    {
+      "type": "attempt",
+      "node_id": 2,
+      "attack_type": "default_credentials",
+      "timestamp": "now"
+    },
+    {
+      "type": "attempt",
+      "node_id": 2,
+      "attack_type": "default_credentials",
+      "timestamp": "now"
+    },
+    {
+      "type": "attempt",
+      "node_id": 2,
+      "attack_type": "default_credentials",
+      "timestamp": "now"
+    },
+    {
+      "type": "compromise",
+      "node_id": 4,
+      "attack_type": "misconfiguration",
+      "timestamp": "now"
+    },
+    {
+      "type": "compromise",
+      "node_id": 24,
+      "attack_type": "default_credentials",
+      "timestamp": "now"
+    },
+    {
+      "type": "compromise",
+      "node_id": 2,
+      "attack_type": "default_credentials",
+      "timestamp": "now"
+    },
+    {
+      "type": "compromise",
+      "node_id": 24,
+      "attack_type": "default_credentials",
+      "timestamp": "now"
+    },
+    {
+      "type": "compromise",
+      "node_id": 4,
+      "attack_type": "buffer_overflow",
+      "timestamp": "now"
+    },
+    {
+      "type": "compromise",
+      "node_id": 24,
+      "attack_type": "default_credentials",
+      "timestamp": "now"
+    },
+    {
+      "type": "compromise",
+      "node_id": 2,
+      "attack_type": "default_credentials",
+      "timestamp": "now"
+    },
+    {
+      "type": "compromise",
+      "node_id": 24,
+      "attack_type": "default_credentials",
+      "timestamp": "now"
+    }
+  ],
+  "entry_points": [
+    0
+  ]
+}

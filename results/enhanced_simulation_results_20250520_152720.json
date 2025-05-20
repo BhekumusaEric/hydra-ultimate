@@ -1,0 +1,896 @@
+{
+  "config": {
+    "network_size": "small",
+    "network_complexity": "medium",
+    "num_steps": 20,
+    "red_skill_level": 0.7,
+    "threat_intel_file": "data/threat_intelligence.json",
+    "model_path": null
+  },
+  "steps": [
+    {
+      "step": 1,
+      "red_action": {
+        "strategy": "Random",
+        "target": 0,
+        "attack_type": "privilege_escalation",
+        "success": false,
+        "detected": false,
+        "info": "Attack failed",
+        "timestamp": "2025-05-20 15:27:21"
+      },
+      "blue_actions": [],
+      "compromised_nodes": [],
+      "patched_nodes": [],
+      "alerts": [],
+      "campaign_status": {
+        "goal": "data_theft",
+        "progress": 0.0,
+        "elapsed_time": 0.004932403564453125,
+        "compromised_nodes": 0,
+        "data_collected": 0,
+        "lateral_movements": 0
+      }
+    },
+    {
+      "step": 2,
+      "red_action": {
+        "strategy": "Random",
+        "target": 0,
+        "attack_type": "sql_injection",
+        "success": false,
+        "detected": false,
+        "info": "Attack failed",
+        "timestamp": "2025-05-20 15:27:21"
+      },
+      "blue_actions": [],
+      "compromised_nodes": [],
+      "patched_nodes": [],
+      "alerts": [],
+      "campaign_status": {
+        "goal": "data_theft",
+        "progress": 0.0,
+        "elapsed_time": 0.005747556686401367,
+        "compromised_nodes": 0,
+        "data_collected": 0,
+        "lateral_movements": 0
+      }
+    },
+    {
+      "step": 3,
+      "red_action": {
+        "strategy": "Random",
+        "target": 0,
+        "attack_type": "buffer_overflow",
+        "success": false,
+        "detected": false,
+        "info": "No buffer_overflow vulnerability found",
+        "timestamp": "2025-05-20 15:27:21"
+      },
+      "blue_actions": [],
+      "compromised_nodes": [],
+      "patched_nodes": [],
+      "alerts": [],
+      "campaign_status": {
+        "goal": "data_theft",
+        "progress": 0.0,
+        "elapsed_time": 0.0065081119537353516,
+        "compromised_nodes": 0,
+        "data_collected": 0,
+        "lateral_movements": 0
+      }
+    },
+    {
+      "step": 4,
+      "red_action": {
+        "strategy": "Random",
+        "target": 0,
+        "attack_type": "unpatched_cve",
+        "success": false,
+        "detected": false,
+        "info": "No unpatched_cve vulnerability found",
+        "timestamp": "2025-05-20 15:27:21"
+      },
+      "blue_actions": [],
+      "compromised_nodes": [],
+      "patched_nodes": [],
+      "alerts": [],
+      "campaign_status": {
+        "goal": "data_theft",
+        "progress": 0.0,
+        "elapsed_time": 0.007266044616699219,
+        "compromised_nodes": 0,
+        "data_collected": 0,
+        "lateral_movements": 0
+      }
+    },
+    {
+      "step": 5,
+      "red_action": {
+        "strategy": "Random",
+        "target": 0,
+        "attack_type": "unpatched_cve",
+        "success": false,
+        "detected": false,
+        "info": "No unpatched_cve vulnerability found",
+        "timestamp": "2025-05-20 15:27:21"
+      },
+      "blue_actions": [],
+      "compromised_nodes": [],
+      "patched_nodes": [],
+      "alerts": [],
+      "campaign_status": {
+        "goal": "data_theft",
+        "progress": 0.0,
+        "elapsed_time": 0.008011341094970703,
+        "compromised_nodes": 0,
+        "data_collected": 0,
+        "lateral_movements": 0
+      }
+    },
+    {
+      "step": 6,
+      "red_action": {
+        "strategy": "Random",
+        "target": 0,
+        "attack_type": "buffer_overflow",
+        "success": false,
+        "detected": false,
+        "info": "No buffer_overflow vulnerability found",
+        "timestamp": "2025-05-20 15:27:21"
+      },
+      "blue_actions": [],
+      "compromised_nodes": [],
+      "patched_nodes": [],
+      "alerts": [],
+      "campaign_status": {
+        "goal": "data_theft",
+        "progress": 0.0,
+        "elapsed_time": 0.00875997543334961,
+        "compromised_nodes": 0,
+        "data_collected": 0,
+        "lateral_movements": 0
+      }
+    },
+    {
+      "step": 7,
+      "red_action": {
+        "strategy": "APT41",
+        "target": 0,
+        "attack_type": "default_credentials",
+        "success": false,
+        "detected": false,
+        "info": "Attack failed",
+        "timestamp": "2025-05-20 15:27:21"
+      },
+      "blue_actions": [],
+      "compromised_nodes": [],
+      "patched_nodes": [],
+      "alerts": [],
+      "campaign_status": {
+        "goal": "data_theft",
+        "progress": 0.0,
+        "elapsed_time": 0.00946187973022461,
+        "compromised_nodes": 0,
+        "data_collected": 0,
+        "lateral_movements": 0
+      }
+    },
+    {
+      "step": 8,
+      "red_action": {
+        "strategy": "Random",
+        "target": 0,
+        "attack_type": "default_credentials",
+        "success": false,
+        "detected": false,
+        "info": "Attack failed",
+        "timestamp": "2025-05-20 15:27:21"
+      },
+      "blue_actions": [
+        {
+          "action": "patch",
+          "node_id": 1,
+          "vulnerability_type": "buffer_overflow",
+          "success": true
+        }
+      ],
+      "compromised_nodes": [],
+      "patched_nodes": [
+        1
+      ],
+      "alerts": [],
+      "campaign_status": {
+        "goal": "data_theft",
+        "progress": 0.0,
+        "elapsed_time": 0.011111974716186523,
+        "compromised_nodes": 0,
+        "data_collected": 0,
+        "lateral_movements": 0
+      }
+    },
+    {
+      "step": 9,
+      "red_action": {
+        "strategy": "Random",
+        "target": 0,
+        "attack_type": "privilege_escalation",
+        "success": false,
+        "detected": false,
+        "info": "Attack failed",
+        "timestamp": "2025-05-20 15:27:21"
+      },
+      "blue_actions": [],
+      "compromised_nodes": [],
+      "patched_nodes": [
+        1
+      ],
+      "alerts": [
+        {
+          "type": "attempt",
+          "node_id": 0,
+          "attack_type": "privilege_escalation",
+          "timestamp": "now"
+        }
+      ],
+      "campaign_status": {
+        "goal": "data_theft",
+        "progress": 0.0,
+        "elapsed_time": 0.013891458511352539,
+        "compromised_nodes": 0,
+        "data_collected": 0,
+        "lateral_movements": 0
+      }
+    },
+    {
+      "step": 10,
+      "red_action": {
+        "strategy": "Random",
+        "target": 0,
+        "attack_type": "privilege_escalation",
+        "success": false,
+        "detected": false,
+        "info": "Attack failed",
+        "timestamp": "2025-05-20 15:27:21"
+      },
+      "blue_actions": [
+        {
+          "action": "patch",
+          "node_id": 0,
+          "vulnerability_type": "privilege_escalation",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 0,
+          "vulnerability_type": "privilege_escalation",
+          "success": true
+        }
+      ],
+      "compromised_nodes": [],
+      "patched_nodes": [
+        0,
+        1
+      ],
+      "alerts": [
+        {
+          "type": "attempt",
+          "node_id": 0,
+          "attack_type": "privilege_escalation",
+          "timestamp": "now"
+        },
+        {
+          "type": "attempt",
+          "node_id": 0,
+          "attack_type": "privilege_escalation",
+          "timestamp": "now"
+        }
+      ],
+      "campaign_status": {
+        "goal": "data_theft",
+        "progress": 0.0,
+        "elapsed_time": 0.016762256622314453,
+        "compromised_nodes": 0,
+        "data_collected": 0,
+        "lateral_movements": 0
+      }
+    },
+    {
+      "step": 11,
+      "red_action": {
+        "strategy": "Random",
+        "target": 0,
+        "attack_type": "buffer_overflow",
+        "success": false,
+        "detected": false,
+        "info": "No buffer_overflow vulnerability found",
+        "timestamp": "2025-05-20 15:27:21"
+      },
+      "blue_actions": [
+        {
+          "action": "patch",
+          "node_id": 0,
+          "vulnerability_type": "privilege_escalation",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 0,
+          "vulnerability_type": "privilege_escalation",
+          "success": true
+        }
+      ],
+      "compromised_nodes": [],
+      "patched_nodes": [
+        0,
+        1
+      ],
+      "alerts": [
+        {
+          "type": "attempt",
+          "node_id": 0,
+          "attack_type": "privilege_escalation",
+          "timestamp": "now"
+        },
+        {
+          "type": "attempt",
+          "node_id": 0,
+          "attack_type": "privilege_escalation",
+          "timestamp": "now"
+        }
+      ],
+      "campaign_status": {
+        "goal": "data_theft",
+        "progress": 0.0,
+        "elapsed_time": 0.01902294158935547,
+        "compromised_nodes": 0,
+        "data_collected": 0,
+        "lateral_movements": 0
+      }
+    },
+    {
+      "step": 12,
+      "red_action": {
+        "strategy": "Random",
+        "target": 0,
+        "attack_type": "unpatched_cve",
+        "success": false,
+        "detected": false,
+        "info": "No unpatched_cve vulnerability found",
+        "timestamp": "2025-05-20 15:27:21"
+      },
+      "blue_actions": [
+        {
+          "action": "patch",
+          "node_id": 0,
+          "vulnerability_type": "privilege_escalation",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 0,
+          "vulnerability_type": "privilege_escalation",
+          "success": true
+        }
+      ],
+      "compromised_nodes": [],
+      "patched_nodes": [
+        0,
+        1
+      ],
+      "alerts": [
+        {
+          "type": "attempt",
+          "node_id": 0,
+          "attack_type": "privilege_escalation",
+          "timestamp": "now"
+        },
+        {
+          "type": "attempt",
+          "node_id": 0,
+          "attack_type": "privilege_escalation",
+          "timestamp": "now"
+        }
+      ],
+      "campaign_status": {
+        "goal": "data_theft",
+        "progress": 0.0,
+        "elapsed_time": 0.01988673210144043,
+        "compromised_nodes": 0,
+        "data_collected": 0,
+        "lateral_movements": 0
+      }
+    },
+    {
+      "step": 13,
+      "red_action": {
+        "strategy": "Random",
+        "target": 0,
+        "attack_type": "privilege_escalation",
+        "success": false,
+        "detected": false,
+        "info": "Attack failed",
+        "timestamp": "2025-05-20 15:27:21"
+      },
+      "blue_actions": [
+        {
+          "action": "patch",
+          "node_id": 0,
+          "vulnerability_type": "privilege_escalation",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 0,
+          "vulnerability_type": "privilege_escalation",
+          "success": true
+        }
+      ],
+      "compromised_nodes": [],
+      "patched_nodes": [
+        0,
+        1
+      ],
+      "alerts": [
+        {
+          "type": "attempt",
+          "node_id": 0,
+          "attack_type": "privilege_escalation",
+          "timestamp": "now"
+        },
+        {
+          "type": "attempt",
+          "node_id": 0,
+          "attack_type": "privilege_escalation",
+          "timestamp": "now"
+        }
+      ],
+      "campaign_status": {
+        "goal": "data_theft",
+        "progress": 0.0,
+        "elapsed_time": 0.02081465721130371,
+        "compromised_nodes": 0,
+        "data_collected": 0,
+        "lateral_movements": 0
+      }
+    },
+    {
+      "step": 14,
+      "red_action": {
+        "strategy": "Random",
+        "target": 0,
+        "attack_type": "sql_injection",
+        "success": false,
+        "detected": false,
+        "info": "Attack failed",
+        "timestamp": "2025-05-20 15:27:21"
+      },
+      "blue_actions": [
+        {
+          "action": "patch",
+          "node_id": 0,
+          "vulnerability_type": "privilege_escalation",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 0,
+          "vulnerability_type": "privilege_escalation",
+          "success": true
+        }
+      ],
+      "compromised_nodes": [],
+      "patched_nodes": [
+        0,
+        1
+      ],
+      "alerts": [
+        {
+          "type": "attempt",
+          "node_id": 0,
+          "attack_type": "privilege_escalation",
+          "timestamp": "now"
+        },
+        {
+          "type": "attempt",
+          "node_id": 0,
+          "attack_type": "privilege_escalation",
+          "timestamp": "now"
+        }
+      ],
+      "campaign_status": {
+        "goal": "data_theft",
+        "progress": 0.0,
+        "elapsed_time": 0.02214527130126953,
+        "compromised_nodes": 0,
+        "data_collected": 0,
+        "lateral_movements": 0
+      }
+    },
+    {
+      "step": 15,
+      "red_action": {
+        "strategy": "Random",
+        "target": 0,
+        "attack_type": "cross_site_scripting",
+        "success": false,
+        "detected": false,
+        "info": "No cross_site_scripting vulnerability found",
+        "timestamp": "2025-05-20 15:27:21"
+      },
+      "blue_actions": [
+        {
+          "action": "patch",
+          "node_id": 0,
+          "vulnerability_type": "privilege_escalation",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 0,
+          "vulnerability_type": "privilege_escalation",
+          "success": true
+        }
+      ],
+      "compromised_nodes": [],
+      "patched_nodes": [
+        0,
+        1
+      ],
+      "alerts": [
+        {
+          "type": "attempt",
+          "node_id": 0,
+          "attack_type": "privilege_escalation",
+          "timestamp": "now"
+        },
+        {
+          "type": "attempt",
+          "node_id": 0,
+          "attack_type": "privilege_escalation",
+          "timestamp": "now"
+        }
+      ],
+      "campaign_status": {
+        "goal": "data_theft",
+        "progress": 0.0,
+        "elapsed_time": 0.02292180061340332,
+        "compromised_nodes": 0,
+        "data_collected": 0,
+        "lateral_movements": 0
+      }
+    },
+    {
+      "step": 16,
+      "red_action": {
+        "strategy": "Random",
+        "target": 0,
+        "attack_type": "misconfiguration",
+        "success": false,
+        "detected": false,
+        "info": "No misconfiguration vulnerability found",
+        "timestamp": "2025-05-20 15:27:21"
+      },
+      "blue_actions": [
+        {
+          "action": "patch",
+          "node_id": 0,
+          "vulnerability_type": "privilege_escalation",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 0,
+          "vulnerability_type": "privilege_escalation",
+          "success": true
+        }
+      ],
+      "compromised_nodes": [],
+      "patched_nodes": [
+        0,
+        1
+      ],
+      "alerts": [
+        {
+          "type": "attempt",
+          "node_id": 0,
+          "attack_type": "privilege_escalation",
+          "timestamp": "now"
+        },
+        {
+          "type": "attempt",
+          "node_id": 0,
+          "attack_type": "privilege_escalation",
+          "timestamp": "now"
+        }
+      ],
+      "campaign_status": {
+        "goal": "data_theft",
+        "progress": 0.0,
+        "elapsed_time": 0.023545265197753906,
+        "compromised_nodes": 0,
+        "data_collected": 0,
+        "lateral_movements": 0
+      }
+    },
+    {
+      "step": 17,
+      "red_action": {
+        "strategy": "Stealthy",
+        "target": 0,
+        "attack_type": "privilege_escalation",
+        "success": true,
+        "detected": false,
+        "info": "Attack successful",
+        "timestamp": "2025-05-20 15:27:21"
+      },
+      "blue_actions": [
+        {
+          "action": "patch",
+          "node_id": 0,
+          "vulnerability_type": "privilege_escalation",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 0,
+          "vulnerability_type": "privilege_escalation",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 0,
+          "vulnerability_type": "privilege_escalation",
+          "success": true
+        }
+      ],
+      "compromised_nodes": [
+        0
+      ],
+      "patched_nodes": [
+        0,
+        1
+      ],
+      "alerts": [
+        {
+          "type": "attempt",
+          "node_id": 0,
+          "attack_type": "privilege_escalation",
+          "timestamp": "now"
+        },
+        {
+          "type": "attempt",
+          "node_id": 0,
+          "attack_type": "privilege_escalation",
+          "timestamp": "now"
+        },
+        {
+          "type": "compromise",
+          "node_id": 0,
+          "attack_type": "privilege_escalation",
+          "timestamp": "now"
+        }
+      ],
+      "campaign_status": {
+        "goal": "data_theft",
+        "progress": 0.0,
+        "elapsed_time": 0.024205923080444336,
+        "compromised_nodes": 1,
+        "data_collected": 1,
+        "lateral_movements": 0
+      }
+    },
+    {
+      "step": 18,
+      "red_action": {
+        "strategy": "Targeted",
+        "target": 5,
+        "attack_type": "privilege_escalation",
+        "success": false,
+        "detected": false,
+        "info": "Attack failed",
+        "timestamp": "2025-05-20 15:27:21"
+      },
+      "blue_actions": [
+        {
+          "action": "patch",
+          "node_id": 0,
+          "vulnerability_type": "privilege_escalation",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 0,
+          "vulnerability_type": "privilege_escalation",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 0,
+          "vulnerability_type": "privilege_escalation",
+          "success": true
+        }
+      ],
+      "compromised_nodes": [
+        0
+      ],
+      "patched_nodes": [
+        0,
+        1
+      ],
+      "alerts": [
+        {
+          "type": "attempt",
+          "node_id": 0,
+          "attack_type": "privilege_escalation",
+          "timestamp": "now"
+        },
+        {
+          "type": "attempt",
+          "node_id": 0,
+          "attack_type": "privilege_escalation",
+          "timestamp": "now"
+        },
+        {
+          "type": "compromise",
+          "node_id": 0,
+          "attack_type": "privilege_escalation",
+          "timestamp": "now"
+        }
+      ],
+      "campaign_status": {
+        "goal": "data_theft",
+        "progress": 0.0,
+        "elapsed_time": 0.02485203742980957,
+        "compromised_nodes": 1,
+        "data_collected": 1,
+        "lateral_movements": 0
+      }
+    },
+    {
+      "step": 19,
+      "red_action": {
+        "strategy": "Random",
+        "target": 1,
+        "attack_type": "privilege_escalation",
+        "success": false,
+        "detected": false,
+        "info": "No privilege_escalation vulnerability found",
+        "timestamp": "2025-05-20 15:27:21"
+      },
+      "blue_actions": [
+        {
+          "action": "patch",
+          "node_id": 0,
+          "vulnerability_type": "privilege_escalation",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 0,
+          "vulnerability_type": "privilege_escalation",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 0,
+          "vulnerability_type": "privilege_escalation",
+          "success": true
+        }
+      ],
+      "compromised_nodes": [
+        0
+      ],
+      "patched_nodes": [
+        0,
+        1
+      ],
+      "alerts": [
+        {
+          "type": "attempt",
+          "node_id": 0,
+          "attack_type": "privilege_escalation",
+          "timestamp": "now"
+        },
+        {
+          "type": "attempt",
+          "node_id": 0,
+          "attack_type": "privilege_escalation",
+          "timestamp": "now"
+        },
+        {
+          "type": "compromise",
+          "node_id": 0,
+          "attack_type": "privilege_escalation",
+          "timestamp": "now"
+        }
+      ],
+      "campaign_status": {
+        "goal": "data_theft",
+        "progress": 0.0,
+        "elapsed_time": 0.025524377822875977,
+        "compromised_nodes": 1,
+        "data_collected": 1,
+        "lateral_movements": 0
+      }
+    },
+    {
+      "step": 20,
+      "red_action": {
+        "strategy": "Random",
+        "target": 7,
+        "attack_type": "default_credentials",
+        "success": false,
+        "detected": false,
+        "info": "No default_credentials vulnerability found",
+        "timestamp": "2025-05-20 15:27:21"
+      },
+      "blue_actions": [
+        {
+          "action": "patch",
+          "node_id": 0,
+          "vulnerability_type": "privilege_escalation",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 0,
+          "vulnerability_type": "privilege_escalation",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 0,
+          "vulnerability_type": "privilege_escalation",
+          "success": true
+        }
+      ],
+      "compromised_nodes": [
+        0
+      ],
+      "patched_nodes": [
+        0,
+        1
+      ],
+      "alerts": [
+        {
+          "type": "attempt",
+          "node_id": 0,
+          "attack_type": "privilege_escalation",
+          "timestamp": "now"
+        },
+        {
+          "type": "attempt",
+          "node_id": 0,
+          "attack_type": "privilege_escalation",
+          "timestamp": "now"
+        },
+        {
+          "type": "compromise",
+          "node_id": 0,
+          "attack_type": "privilege_escalation",
+          "timestamp": "now"
+        }
+      ],
+      "campaign_status": {
+        "goal": "data_theft",
+        "progress": 0.0,
+        "elapsed_time": 0.02620244026184082,
+        "compromised_nodes": 1,
+        "data_collected": 1,
+        "lateral_movements": 0
+      }
+    }
+  ],
+  "summary": {
+    "total_compromised": 1,
+    "total_patched": 2,
+    "red_success_rate": 0.05,
+    "blue_success_rate": 1.0,
+    "simulation_time": 0.9031777381896973,
+    "campaign_goal": "data_theft",
+    "campaign_progress": 0.0,
+    "data_collected": 1,
+    "lateral_movements": 0
+  }
+}

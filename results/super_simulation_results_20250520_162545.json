@@ -1,0 +1,699 @@
+{
+  "config": {
+    "network_size": "small",
+    "network_complexity": "medium",
+    "num_steps": 10,
+    "red_skill_level": 0.95,
+    "threat_intel_file": "data/threat_intelligence.json"
+  },
+  "steps": [
+    {
+      "step": 1,
+      "red_action": {
+        "strategy": "SuperRedAgent",
+        "target": 0,
+        "attack_type": "buffer_overflow",
+        "success": true,
+        "detected": false,
+        "zero_day": true,
+        "info": "Attack successful",
+        "timestamp": "2025-05-20 16:25:46"
+      },
+      "blue_actions": [
+        {
+          "action": "patch",
+          "node_id": 0,
+          "vulnerability_type": "default_credentials",
+          "success": true
+        }
+      ],
+      "compromised_nodes": [
+        0
+      ],
+      "patched_nodes": [
+        0
+      ],
+      "alerts": [],
+      "campaign_status": {
+        "goal": "data_theft",
+        "progress": 0.1,
+        "compromised_nodes": 1,
+        "total_nodes": 10,
+        "network_compromise_percentage": 10.0,
+        "data_collected": 0,
+        "data_exfiltrated_kb": 0,
+        "data_exfiltration_percentage": 0.0,
+        "lateral_movements": 0,
+        "backdoors_installed": 0,
+        "has_domain_admin": false,
+        "exfiltrated_data_by_type": {
+          "pii": 126819,
+          "financial": 10791,
+          "customer_data": 11859,
+          "employee_data": 9811,
+          "authentication": 14246,
+          "configuration": 9235,
+          "system_logs": 7458,
+          "source_code": 102124,
+          "business_plans": 35200,
+          "ip": 18680
+        }
+      }
+    },
+    {
+      "step": 2,
+      "red_action": {
+        "strategy": "SuperRedAgent",
+        "target": 2,
+        "attack_type": "cross_site_scripting",
+        "success": true,
+        "detected": false,
+        "zero_day": true,
+        "info": "Attack successful",
+        "timestamp": "2025-05-20 16:25:46"
+      },
+      "blue_actions": [
+        {
+          "action": "investigate",
+          "node_id": 7,
+          "found_compromise": false,
+          "success": true
+        }
+      ],
+      "compromised_nodes": [
+        0,
+        2
+      ],
+      "patched_nodes": [
+        0
+      ],
+      "alerts": [],
+      "campaign_status": {
+        "goal": "data_theft",
+        "progress": 0.25,
+        "compromised_nodes": 2,
+        "total_nodes": 10,
+        "network_compromise_percentage": 20.0,
+        "data_collected": 1,
+        "data_exfiltrated_kb": 50475,
+        "data_exfiltration_percentage": 55.61370647862495,
+        "lateral_movements": 1,
+        "backdoors_installed": 1,
+        "has_domain_admin": false,
+        "exfiltrated_data_by_type": {
+          "pii": 126819,
+          "financial": 10791,
+          "customer_data": 11859,
+          "employee_data": 9811,
+          "authentication": 14246,
+          "configuration": 9235,
+          "system_logs": 7458,
+          "source_code": 102124,
+          "business_plans": 35200,
+          "ip": 18680
+        }
+      }
+    },
+    {
+      "step": 3,
+      "red_action": {
+        "strategy": "SuperRedAgent",
+        "target": 3,
+        "attack_type": "sql_injection",
+        "success": true,
+        "detected": false,
+        "zero_day": true,
+        "info": "Attack successful",
+        "timestamp": "2025-05-20 16:25:46"
+      },
+      "blue_actions": [
+        {
+          "action": "investigate",
+          "node_id": 9,
+          "found_compromise": false,
+          "success": true
+        },
+        {
+          "action": "investigate",
+          "node_id": 7,
+          "found_compromise": false,
+          "success": true
+        }
+      ],
+      "compromised_nodes": [
+        0,
+        2,
+        3
+      ],
+      "patched_nodes": [
+        0
+      ],
+      "alerts": [],
+      "campaign_status": {
+        "goal": "data_theft",
+        "progress": 0.3,
+        "compromised_nodes": 3,
+        "total_nodes": 10,
+        "network_compromise_percentage": 30.0,
+        "data_collected": 1,
+        "data_exfiltrated_kb": 50475,
+        "data_exfiltration_percentage": 55.61370647862495,
+        "lateral_movements": 2,
+        "backdoors_installed": 2,
+        "has_domain_admin": false,
+        "exfiltrated_data_by_type": {
+          "pii": 126819,
+          "financial": 10791,
+          "customer_data": 11859,
+          "employee_data": 9811,
+          "authentication": 14246,
+          "configuration": 9235,
+          "system_logs": 7458,
+          "source_code": 102124,
+          "business_plans": 35200,
+          "ip": 18680
+        }
+      }
+    },
+    {
+      "step": 4,
+      "red_action": {
+        "strategy": "SuperRedAgent",
+        "target": 1,
+        "attack_type": "sql_injection",
+        "success": true,
+        "detected": false,
+        "zero_day": true,
+        "info": "Attack successful",
+        "timestamp": "2025-05-20 16:25:46"
+      },
+      "blue_actions": [
+        {
+          "action": "investigate",
+          "node_id": 9,
+          "found_compromise": false,
+          "success": true
+        },
+        {
+          "action": "investigate",
+          "node_id": 7,
+          "found_compromise": false,
+          "success": true
+        }
+      ],
+      "compromised_nodes": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "patched_nodes": [
+        0
+      ],
+      "alerts": [],
+      "campaign_status": {
+        "goal": "data_theft",
+        "progress": 0.44999999999999996,
+        "compromised_nodes": 4,
+        "total_nodes": 10,
+        "network_compromise_percentage": 40.0,
+        "data_collected": 2,
+        "data_exfiltrated_kb": 91903,
+        "data_exfiltration_percentage": 101.25936535918908,
+        "lateral_movements": 3,
+        "backdoors_installed": 3,
+        "has_domain_admin": false,
+        "exfiltrated_data_by_type": {
+          "pii": 126819,
+          "financial": 10791,
+          "customer_data": 11859,
+          "employee_data": 9811,
+          "authentication": 14246,
+          "configuration": 9235,
+          "system_logs": 7458,
+          "source_code": 102124,
+          "business_plans": 35200,
+          "ip": 18680
+        }
+      }
+    },
+    {
+      "step": 5,
+      "red_action": {
+        "strategy": "SuperRedAgent",
+        "target": 4,
+        "attack_type": "sql_injection",
+        "success": true,
+        "detected": false,
+        "zero_day": true,
+        "info": "Attack successful",
+        "timestamp": "2025-05-20 16:25:46"
+      },
+      "blue_actions": [
+        {
+          "action": "investigate",
+          "node_id": 9,
+          "found_compromise": false,
+          "success": true
+        },
+        {
+          "action": "investigate",
+          "node_id": 7,
+          "found_compromise": false,
+          "success": true
+        }
+      ],
+      "compromised_nodes": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "patched_nodes": [
+        0
+      ],
+      "alerts": [],
+      "campaign_status": {
+        "goal": "data_theft",
+        "progress": 0.6,
+        "compromised_nodes": 5,
+        "total_nodes": 10,
+        "network_compromise_percentage": 50.0,
+        "data_collected": 3,
+        "data_exfiltrated_kb": 144615,
+        "data_exfiltration_percentage": 159.33781401498456,
+        "lateral_movements": 4,
+        "backdoors_installed": 4,
+        "has_domain_admin": false,
+        "exfiltrated_data_by_type": {
+          "pii": 126819,
+          "financial": 10791,
+          "customer_data": 11859,
+          "employee_data": 9811,
+          "authentication": 14246,
+          "configuration": 9235,
+          "system_logs": 7458,
+          "source_code": 102124,
+          "business_plans": 35200,
+          "ip": 18680
+        }
+      }
+    },
+    {
+      "step": 6,
+      "red_action": {
+        "strategy": "SuperRedAgent",
+        "target": 5,
+        "attack_type": "sql_injection",
+        "success": true,
+        "detected": false,
+        "zero_day": true,
+        "info": "Attack successful",
+        "timestamp": "2025-05-20 16:25:46"
+      },
+      "blue_actions": [
+        {
+          "action": "investigate",
+          "node_id": 9,
+          "found_compromise": false,
+          "success": true
+        },
+        {
+          "action": "investigate",
+          "node_id": 7,
+          "found_compromise": false,
+          "success": true
+        }
+      ],
+      "compromised_nodes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "patched_nodes": [
+        0
+      ],
+      "alerts": [],
+      "campaign_status": {
+        "goal": "data_theft",
+        "progress": 0.75,
+        "compromised_nodes": 6,
+        "total_nodes": 10,
+        "network_compromise_percentage": 60.0,
+        "data_collected": 4,
+        "data_exfiltrated_kb": 169560,
+        "data_exfiltration_percentage": 186.8223887174967,
+        "lateral_movements": 5,
+        "backdoors_installed": 5,
+        "has_domain_admin": false,
+        "exfiltrated_data_by_type": {
+          "pii": 126819,
+          "financial": 10791,
+          "customer_data": 11859,
+          "employee_data": 9811,
+          "authentication": 14246,
+          "configuration": 9235,
+          "system_logs": 7458,
+          "source_code": 102124,
+          "business_plans": 35200,
+          "ip": 18680
+        }
+      }
+    },
+    {
+      "step": 7,
+      "red_action": {
+        "strategy": "SuperRedAgent",
+        "target": 6,
+        "attack_type": "cross_site_scripting",
+        "success": true,
+        "detected": false,
+        "zero_day": true,
+        "info": "Attack successful",
+        "timestamp": "2025-05-20 16:25:46"
+      },
+      "blue_actions": [
+        {
+          "action": "investigate",
+          "node_id": 9,
+          "found_compromise": false,
+          "success": true
+        },
+        {
+          "action": "investigate",
+          "node_id": 1,
+          "found_compromise": true,
+          "success": true
+        },
+        {
+          "action": "investigate",
+          "node_id": 7,
+          "found_compromise": false,
+          "success": true
+        }
+      ],
+      "compromised_nodes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "patched_nodes": [
+        0
+      ],
+      "alerts": [
+        {
+          "type": "compromise",
+          "node_id": 6,
+          "attack_type": "cross_site_scripting",
+          "timestamp": "now"
+        }
+      ],
+      "campaign_status": {
+        "goal": "data_theft",
+        "progress": 0.9,
+        "compromised_nodes": 7,
+        "total_nodes": 10,
+        "network_compromise_percentage": 70.0,
+        "data_collected": 5,
+        "data_exfiltrated_kb": 230940,
+        "data_exfiltration_percentage": 254.45130013221683,
+        "lateral_movements": 6,
+        "backdoors_installed": 6,
+        "has_domain_admin": false,
+        "exfiltrated_data_by_type": {
+          "pii": 126819,
+          "financial": 10791,
+          "customer_data": 11859,
+          "employee_data": 9811,
+          "authentication": 14246,
+          "configuration": 9235,
+          "system_logs": 7458,
+          "source_code": 102124,
+          "business_plans": 35200,
+          "ip": 18680
+        }
+      }
+    },
+    {
+      "step": 8,
+      "red_action": {
+        "strategy": "SuperRedAgent",
+        "target": 0,
+        "attack_type": "buffer_overflow",
+        "success": true,
+        "detected": false,
+        "zero_day": true,
+        "info": "Node already compromised",
+        "timestamp": "2025-05-20 16:25:46"
+      },
+      "blue_actions": [
+        {
+          "action": "investigate",
+          "node_id": 9,
+          "found_compromise": false,
+          "success": true
+        },
+        {
+          "action": "investigate",
+          "node_id": 7,
+          "found_compromise": false,
+          "success": true
+        }
+      ],
+      "compromised_nodes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "patched_nodes": [
+        0
+      ],
+      "alerts": [
+        {
+          "type": "compromise",
+          "node_id": 6,
+          "attack_type": "cross_site_scripting",
+          "timestamp": "now"
+        }
+      ],
+      "campaign_status": {
+        "goal": "data_theft",
+        "progress": 0.9500000000000001,
+        "compromised_nodes": 7,
+        "total_nodes": 10,
+        "network_compromise_percentage": 70.0,
+        "data_collected": 5,
+        "data_exfiltrated_kb": 230940,
+        "data_exfiltration_percentage": 254.45130013221683,
+        "lateral_movements": 7,
+        "backdoors_installed": 7,
+        "has_domain_admin": false,
+        "exfiltrated_data_by_type": {
+          "pii": 126819,
+          "financial": 10791,
+          "customer_data": 11859,
+          "employee_data": 9811,
+          "authentication": 14246,
+          "configuration": 9235,
+          "system_logs": 7458,
+          "source_code": 102124,
+          "business_plans": 35200,
+          "ip": 18680
+        }
+      }
+    },
+    {
+      "step": 9,
+      "red_action": {
+        "strategy": "SuperRedAgent",
+        "target": 7,
+        "attack_type": "buffer_overflow",
+        "success": true,
+        "detected": false,
+        "zero_day": true,
+        "info": "Attack successful (forced)",
+        "timestamp": "2025-05-20 16:25:46"
+      },
+      "blue_actions": [
+        {
+          "action": "investigate",
+          "node_id": 1,
+          "found_compromise": false,
+          "success": true
+        },
+        {
+          "action": "investigate",
+          "node_id": 8,
+          "found_compromise": false,
+          "success": true
+        },
+        {
+          "action": "investigate",
+          "node_id": 9,
+          "found_compromise": false,
+          "success": true
+        },
+        {
+          "action": "investigate",
+          "node_id": 7,
+          "found_compromise": true,
+          "success": true
+        }
+      ],
+      "compromised_nodes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "patched_nodes": [
+        0
+      ],
+      "alerts": [
+        {
+          "type": "compromise",
+          "node_id": 6,
+          "attack_type": "cross_site_scripting",
+          "timestamp": "now"
+        }
+      ],
+      "campaign_status": {
+        "goal": "data_theft",
+        "progress": 1.0,
+        "compromised_nodes": 8,
+        "total_nodes": 10,
+        "network_compromise_percentage": 80.0,
+        "data_collected": 6,
+        "data_exfiltrated_kb": 280872,
+        "data_exfiltration_percentage": 309.46672542970475,
+        "lateral_movements": 8,
+        "backdoors_installed": 8,
+        "has_domain_admin": false,
+        "exfiltrated_data_by_type": {
+          "pii": 126819,
+          "financial": 10791,
+          "customer_data": 11859,
+          "employee_data": 9811,
+          "authentication": 14246,
+          "configuration": 9235,
+          "system_logs": 7458,
+          "source_code": 102124,
+          "business_plans": 35200,
+          "ip": 18680
+        }
+      }
+    },
+    {
+      "step": 10,
+      "red_action": {
+        "strategy": "SuperRedAgent",
+        "target": 8,
+        "attack_type": "sql_injection",
+        "success": true,
+        "detected": false,
+        "zero_day": true,
+        "info": "Attack successful",
+        "timestamp": "2025-05-20 16:25:46"
+      },
+      "blue_actions": [
+        {
+          "action": "patch",
+          "node_id": 6,
+          "vulnerability_type": "cross_site_scripting",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 8,
+          "vulnerability_type": "sql_injection",
+          "success": true
+        }
+      ],
+      "compromised_nodes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "patched_nodes": [
+        0,
+        8,
+        6
+      ],
+      "alerts": [
+        {
+          "type": "compromise",
+          "node_id": 6,
+          "attack_type": "cross_site_scripting",
+          "timestamp": "now"
+        },
+        {
+          "type": "compromise",
+          "node_id": 8,
+          "attack_type": "sql_injection",
+          "timestamp": "now"
+        }
+      ],
+      "campaign_status": {
+        "goal": "data_theft",
+        "progress": 1.0,
+        "compromised_nodes": 9,
+        "total_nodes": 10,
+        "network_compromise_percentage": 90.0,
+        "data_collected": 7,
+        "data_exfiltrated_kb": 346223,
+        "data_exfiltration_percentage": 381.4709122961657,
+        "lateral_movements": 9,
+        "backdoors_installed": 9,
+        "has_domain_admin": false,
+        "exfiltrated_data_by_type": {
+          "pii": 126819,
+          "financial": 10791,
+          "customer_data": 11859,
+          "employee_data": 9811,
+          "authentication": 14246,
+          "configuration": 9235,
+          "system_logs": 7458,
+          "source_code": 102124,
+          "business_plans": 35200,
+          "ip": 18680
+        }
+      }
+    }
+  ],
+  "summary": {
+    "total_compromised": 9,
+    "total_patched": 3,
+    "red_success_rate": 1.0,
+    "blue_success_rate": 1.0,
+    "simulation_time": 0.822455644607544,
+    "campaign_goal": "data_theft",
+    "campaign_progress": 1.0,
+    "data_exfiltrated": 346223,
+    "data_exfiltration_percentage": 381.4709122961657,
+    "data_collected": 7,
+    "lateral_movements": 9,
+    "backdoors_installed": 9
+  }
+}
