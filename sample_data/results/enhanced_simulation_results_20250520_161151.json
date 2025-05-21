@@ -1,0 +1,167 @@
+{
+  "config": {
+    "network_size": "medium",
+    "network_complexity": "medium",
+    "num_steps": 5,
+    "red_skill_level": 0.7,
+    "threat_intel_file": "data/threat_intelligence.json",
+    "model_path": null
+  },
+  "steps": [
+    {
+      "step": 1,
+      "red_action": {
+        "strategy": "Planned",
+        "target": 0,
+        "attack_type": "cross_site_scripting",
+        "success": false,
+        "detected": false,
+        "zero_day": false,
+        "evasion": false,
+        "info": "No cross_site_scripting vulnerability found",
+        "timestamp": "2025-05-20 16:11:52"
+      },
+      "blue_actions": [],
+      "compromised_nodes": [],
+      "patched_nodes": [],
+      "alerts": [],
+      "campaign_status": {
+        "goal": "persistence",
+        "progress": 0.0,
+        "compromised_nodes": 0,
+        "data_collected": 0,
+        "lateral_movements": 0
+      }
+    },
+    {
+      "step": 2,
+      "red_action": {
+        "strategy": "Targeted",
+        "target": 0,
+        "attack_type": "sql_injection",
+        "success": false,
+        "detected": false,
+        "zero_day": false,
+        "evasion": false,
+        "info": "No sql_injection vulnerability found",
+        "timestamp": "2025-05-20 16:11:52"
+      },
+      "blue_actions": [],
+      "compromised_nodes": [],
+      "patched_nodes": [],
+      "alerts": [],
+      "campaign_status": {
+        "goal": "persistence",
+        "progress": 0.0,
+        "compromised_nodes": 0,
+        "data_collected": 0,
+        "lateral_movements": 0
+      }
+    },
+    {
+      "step": 3,
+      "red_action": {
+        "strategy": "Planned",
+        "target": 0,
+        "attack_type": "privilege_escalation",
+        "success": false,
+        "detected": false,
+        "zero_day": false,
+        "evasion": false,
+        "info": "No privilege_escalation vulnerability found",
+        "timestamp": "2025-05-20 16:11:52"
+      },
+      "blue_actions": [],
+      "compromised_nodes": [],
+      "patched_nodes": [],
+      "alerts": [],
+      "campaign_status": {
+        "goal": "persistence",
+        "progress": 0.0,
+        "compromised_nodes": 0,
+        "data_collected": 0,
+        "lateral_movements": 0
+      }
+    },
+    {
+      "step": 4,
+      "red_action": {
+        "strategy": "Planned",
+        "target": 0,
+        "attack_type": "misconfiguration",
+        "success": false,
+        "detected": false,
+        "zero_day": false,
+        "evasion": false,
+        "info": "No misconfiguration vulnerability found",
+        "timestamp": "2025-05-20 16:11:52"
+      },
+      "blue_actions": [],
+      "compromised_nodes": [],
+      "patched_nodes": [],
+      "alerts": [],
+      "campaign_status": {
+        "goal": "persistence",
+        "progress": 0.0,
+        "compromised_nodes": 0,
+        "data_collected": 0,
+        "lateral_movements": 0
+      }
+    },
+    {
+      "step": 5,
+      "red_action": {
+        "strategy": "Planned",
+        "target": 0,
+        "attack_type": "unpatched_cve",
+        "success": false,
+        "detected": false,
+        "zero_day": false,
+        "evasion": true,
+        "info": "No unpatched_cve vulnerability found",
+        "timestamp": "2025-05-20 16:11:52"
+      },
+      "blue_actions": [
+        {
+          "action": "investigate",
+          "node_id": 34,
+          "found_compromise": false,
+          "success": true
+        },
+        {
+          "action": "investigate",
+          "node_id": 24,
+          "found_compromise": false,
+          "success": true
+        },
+        {
+          "action": "investigate",
+          "node_id": 28,
+          "found_compromise": false,
+          "success": true
+        }
+      ],
+      "compromised_nodes": [],
+      "patched_nodes": [],
+      "alerts": [],
+      "campaign_status": {
+        "goal": "persistence",
+        "progress": 0.0,
+        "compromised_nodes": 0,
+        "data_collected": 0,
+        "lateral_movements": 0
+      }
+    }
+  ],
+  "summary": {
+    "total_compromised": 0,
+    "total_patched": 0,
+    "red_success_rate": 0.0,
+    "blue_success_rate": 1.0,
+    "simulation_time": 0.8304510116577148,
+    "campaign_goal": "persistence",
+    "campaign_progress": 0.0,
+    "data_collected": 0,
+    "lateral_movements": 0
+  }
+}

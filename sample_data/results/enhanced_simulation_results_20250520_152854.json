@@ -1,0 +1,557 @@
+{
+  "config": {
+    "network_size": "small",
+    "network_complexity": "medium",
+    "num_steps": 20,
+    "red_skill_level": 0.7,
+    "threat_intel_file": "data/threat_intelligence.json",
+    "model_path": null
+  },
+  "steps": [
+    {
+      "step": 1,
+      "red_action": {
+        "strategy": "Ransomware",
+        "target": 0,
+        "attack_type": "cross_site_scripting",
+        "success": false,
+        "detected": false,
+        "info": "Attack failed",
+        "timestamp": "2025-05-20 15:28:55"
+      },
+      "blue_actions": [
+        {
+          "action": "patch",
+          "node_id": 1,
+          "vulnerability_type": "default_credentials",
+          "success": true
+        }
+      ],
+      "compromised_nodes": [],
+      "patched_nodes": [
+        1
+      ],
+      "alerts": [],
+      "campaign_status": {
+        "goal": "disruption",
+        "progress": 0.0,
+        "elapsed_time": 0.002570629119873047,
+        "compromised_nodes": 0,
+        "data_collected": 0,
+        "lateral_movements": 0
+      }
+    },
+    {
+      "step": 2,
+      "red_action": {
+        "strategy": "Ransomware",
+        "target": 0,
+        "attack_type": "cross_site_scripting",
+        "success": false,
+        "detected": false,
+        "info": "Attack failed",
+        "timestamp": "2025-05-20 15:28:55"
+      },
+      "blue_actions": [
+        {
+          "action": "patch",
+          "node_id": 1,
+          "vulnerability_type": "sql_injection",
+          "success": true
+        }
+      ],
+      "compromised_nodes": [],
+      "patched_nodes": [
+        1
+      ],
+      "alerts": [],
+      "campaign_status": {
+        "goal": "disruption",
+        "progress": 0.0,
+        "elapsed_time": 0.0032269954681396484,
+        "compromised_nodes": 0,
+        "data_collected": 0,
+        "lateral_movements": 0
+      }
+    },
+    {
+      "step": 3,
+      "red_action": {
+        "strategy": "Ransomware",
+        "target": 0,
+        "attack_type": "cross_site_scripting",
+        "success": false,
+        "detected": false,
+        "info": "Attack failed",
+        "timestamp": "2025-05-20 15:28:55"
+      },
+      "blue_actions": [],
+      "compromised_nodes": [],
+      "patched_nodes": [
+        1
+      ],
+      "alerts": [],
+      "campaign_status": {
+        "goal": "disruption",
+        "progress": 0.0,
+        "elapsed_time": 0.003815889358520508,
+        "compromised_nodes": 0,
+        "data_collected": 0,
+        "lateral_movements": 0
+      }
+    },
+    {
+      "step": 4,
+      "red_action": {
+        "strategy": "Ransomware",
+        "target": 0,
+        "attack_type": "cross_site_scripting",
+        "success": false,
+        "detected": false,
+        "info": "Attack failed",
+        "timestamp": "2025-05-20 15:28:55"
+      },
+      "blue_actions": [],
+      "compromised_nodes": [],
+      "patched_nodes": [
+        1
+      ],
+      "alerts": [],
+      "campaign_status": {
+        "goal": "disruption",
+        "progress": 0.0,
+        "elapsed_time": 0.004390239715576172,
+        "compromised_nodes": 0,
+        "data_collected": 0,
+        "lateral_movements": 0
+      }
+    },
+    {
+      "step": 5,
+      "red_action": {
+        "strategy": "Ransomware",
+        "target": 0,
+        "attack_type": "cross_site_scripting",
+        "success": false,
+        "detected": false,
+        "info": "Attack failed",
+        "timestamp": "2025-05-20 15:28:55"
+      },
+      "blue_actions": [],
+      "compromised_nodes": [],
+      "patched_nodes": [
+        1
+      ],
+      "alerts": [],
+      "campaign_status": {
+        "goal": "disruption",
+        "progress": 0.0,
+        "elapsed_time": 0.004937887191772461,
+        "compromised_nodes": 0,
+        "data_collected": 0,
+        "lateral_movements": 0
+      }
+    },
+    {
+      "step": 6,
+      "red_action": {
+        "strategy": "Ransomware",
+        "target": 0,
+        "attack_type": "cross_site_scripting",
+        "success": false,
+        "detected": false,
+        "info": "Attack failed",
+        "timestamp": "2025-05-20 15:28:55"
+      },
+      "blue_actions": [],
+      "compromised_nodes": [],
+      "patched_nodes": [
+        1
+      ],
+      "alerts": [],
+      "campaign_status": {
+        "goal": "disruption",
+        "progress": 0.0,
+        "elapsed_time": 0.0054934024810791016,
+        "compromised_nodes": 0,
+        "data_collected": 0,
+        "lateral_movements": 0
+      }
+    },
+    {
+      "step": 7,
+      "red_action": {
+        "strategy": "APT41",
+        "target": 0,
+        "attack_type": "cross_site_scripting",
+        "success": false,
+        "detected": false,
+        "info": "Attack failed",
+        "timestamp": "2025-05-20 15:28:55"
+      },
+      "blue_actions": [],
+      "compromised_nodes": [],
+      "patched_nodes": [
+        1
+      ],
+      "alerts": [],
+      "campaign_status": {
+        "goal": "disruption",
+        "progress": 0.0,
+        "elapsed_time": 0.006030559539794922,
+        "compromised_nodes": 0,
+        "data_collected": 0,
+        "lateral_movements": 0
+      }
+    },
+    {
+      "step": 8,
+      "red_action": {
+        "strategy": "APT41",
+        "target": 0,
+        "attack_type": "cross_site_scripting",
+        "success": false,
+        "detected": false,
+        "info": "Attack failed",
+        "timestamp": "2025-05-20 15:28:55"
+      },
+      "blue_actions": [],
+      "compromised_nodes": [],
+      "patched_nodes": [
+        1
+      ],
+      "alerts": [],
+      "campaign_status": {
+        "goal": "disruption",
+        "progress": 0.0,
+        "elapsed_time": 0.0064465999603271484,
+        "compromised_nodes": 0,
+        "data_collected": 0,
+        "lateral_movements": 0
+      }
+    },
+    {
+      "step": 9,
+      "red_action": {
+        "strategy": "Ransomware",
+        "target": 0,
+        "attack_type": "cross_site_scripting",
+        "success": false,
+        "detected": false,
+        "info": "Attack failed",
+        "timestamp": "2025-05-20 15:28:55"
+      },
+      "blue_actions": [],
+      "compromised_nodes": [],
+      "patched_nodes": [
+        1
+      ],
+      "alerts": [],
+      "campaign_status": {
+        "goal": "disruption",
+        "progress": 0.0,
+        "elapsed_time": 0.0070536136627197266,
+        "compromised_nodes": 0,
+        "data_collected": 0,
+        "lateral_movements": 0
+      }
+    },
+    {
+      "step": 10,
+      "red_action": {
+        "strategy": "Ransomware",
+        "target": 0,
+        "attack_type": "cross_site_scripting",
+        "success": false,
+        "detected": false,
+        "info": "Attack failed",
+        "timestamp": "2025-05-20 15:28:55"
+      },
+      "blue_actions": [],
+      "compromised_nodes": [],
+      "patched_nodes": [
+        1
+      ],
+      "alerts": [],
+      "campaign_status": {
+        "goal": "disruption",
+        "progress": 0.0,
+        "elapsed_time": 0.007670164108276367,
+        "compromised_nodes": 0,
+        "data_collected": 0,
+        "lateral_movements": 0
+      }
+    },
+    {
+      "step": 11,
+      "red_action": {
+        "strategy": "Ransomware",
+        "target": 0,
+        "attack_type": "cross_site_scripting",
+        "success": false,
+        "detected": false,
+        "info": "Attack failed",
+        "timestamp": "2025-05-20 15:28:55"
+      },
+      "blue_actions": [],
+      "compromised_nodes": [],
+      "patched_nodes": [
+        1
+      ],
+      "alerts": [],
+      "campaign_status": {
+        "goal": "disruption",
+        "progress": 0.0,
+        "elapsed_time": 0.009242773056030273,
+        "compromised_nodes": 0,
+        "data_collected": 0,
+        "lateral_movements": 0
+      }
+    },
+    {
+      "step": 12,
+      "red_action": {
+        "strategy": "Ransomware",
+        "target": 0,
+        "attack_type": "cross_site_scripting",
+        "success": false,
+        "detected": false,
+        "info": "Attack failed",
+        "timestamp": "2025-05-20 15:28:55"
+      },
+      "blue_actions": [],
+      "compromised_nodes": [],
+      "patched_nodes": [
+        1
+      ],
+      "alerts": [],
+      "campaign_status": {
+        "goal": "disruption",
+        "progress": 0.0,
+        "elapsed_time": 0.009906291961669922,
+        "compromised_nodes": 0,
+        "data_collected": 0,
+        "lateral_movements": 0
+      }
+    },
+    {
+      "step": 13,
+      "red_action": {
+        "strategy": "Ransomware",
+        "target": 0,
+        "attack_type": "cross_site_scripting",
+        "success": false,
+        "detected": false,
+        "info": "Attack failed",
+        "timestamp": "2025-05-20 15:28:55"
+      },
+      "blue_actions": [],
+      "compromised_nodes": [],
+      "patched_nodes": [
+        1
+      ],
+      "alerts": [],
+      "campaign_status": {
+        "goal": "disruption",
+        "progress": 0.0,
+        "elapsed_time": 0.01054525375366211,
+        "compromised_nodes": 0,
+        "data_collected": 0,
+        "lateral_movements": 0
+      }
+    },
+    {
+      "step": 14,
+      "red_action": {
+        "strategy": "Ransomware",
+        "target": 0,
+        "attack_type": "cross_site_scripting",
+        "success": false,
+        "detected": false,
+        "info": "Attack failed",
+        "timestamp": "2025-05-20 15:28:55"
+      },
+      "blue_actions": [],
+      "compromised_nodes": [],
+      "patched_nodes": [
+        1
+      ],
+      "alerts": [],
+      "campaign_status": {
+        "goal": "disruption",
+        "progress": 0.0,
+        "elapsed_time": 0.011118888854980469,
+        "compromised_nodes": 0,
+        "data_collected": 0,
+        "lateral_movements": 0
+      }
+    },
+    {
+      "step": 15,
+      "red_action": {
+        "strategy": "Ransomware",
+        "target": 0,
+        "attack_type": "cross_site_scripting",
+        "success": false,
+        "detected": false,
+        "info": "Attack failed",
+        "timestamp": "2025-05-20 15:28:55"
+      },
+      "blue_actions": [],
+      "compromised_nodes": [],
+      "patched_nodes": [
+        1
+      ],
+      "alerts": [],
+      "campaign_status": {
+        "goal": "disruption",
+        "progress": 0.0,
+        "elapsed_time": 0.011677742004394531,
+        "compromised_nodes": 0,
+        "data_collected": 0,
+        "lateral_movements": 0
+      }
+    },
+    {
+      "step": 16,
+      "red_action": {
+        "strategy": "Ransomware",
+        "target": 0,
+        "attack_type": "cross_site_scripting",
+        "success": false,
+        "detected": false,
+        "info": "Attack failed",
+        "timestamp": "2025-05-20 15:28:55"
+      },
+      "blue_actions": [],
+      "compromised_nodes": [],
+      "patched_nodes": [
+        1
+      ],
+      "alerts": [],
+      "campaign_status": {
+        "goal": "disruption",
+        "progress": 0.0,
+        "elapsed_time": 0.012235641479492188,
+        "compromised_nodes": 0,
+        "data_collected": 0,
+        "lateral_movements": 0
+      }
+    },
+    {
+      "step": 17,
+      "red_action": {
+        "strategy": "APT41",
+        "target": 0,
+        "attack_type": "cross_site_scripting",
+        "success": false,
+        "detected": false,
+        "info": "Attack failed",
+        "timestamp": "2025-05-20 15:28:55"
+      },
+      "blue_actions": [],
+      "compromised_nodes": [],
+      "patched_nodes": [
+        1
+      ],
+      "alerts": [],
+      "campaign_status": {
+        "goal": "disruption",
+        "progress": 0.0,
+        "elapsed_time": 0.012581586837768555,
+        "compromised_nodes": 0,
+        "data_collected": 0,
+        "lateral_movements": 0
+      }
+    },
+    {
+      "step": 18,
+      "red_action": {
+        "strategy": "Ransomware",
+        "target": 0,
+        "attack_type": "cross_site_scripting",
+        "success": false,
+        "detected": false,
+        "info": "Attack failed",
+        "timestamp": "2025-05-20 15:28:55"
+      },
+      "blue_actions": [],
+      "compromised_nodes": [],
+      "patched_nodes": [
+        1
+      ],
+      "alerts": [],
+      "campaign_status": {
+        "goal": "disruption",
+        "progress": 0.0,
+        "elapsed_time": 0.013181686401367188,
+        "compromised_nodes": 0,
+        "data_collected": 0,
+        "lateral_movements": 0
+      }
+    },
+    {
+      "step": 19,
+      "red_action": {
+        "strategy": "Ransomware",
+        "target": 0,
+        "attack_type": "cross_site_scripting",
+        "success": false,
+        "detected": false,
+        "info": "Attack failed",
+        "timestamp": "2025-05-20 15:28:55"
+      },
+      "blue_actions": [],
+      "compromised_nodes": [],
+      "patched_nodes": [
+        1
+      ],
+      "alerts": [],
+      "campaign_status": {
+        "goal": "disruption",
+        "progress": 0.0,
+        "elapsed_time": 0.013973712921142578,
+        "compromised_nodes": 0,
+        "data_collected": 0,
+        "lateral_movements": 0
+      }
+    },
+    {
+      "step": 20,
+      "red_action": {
+        "strategy": "Ransomware",
+        "target": 0,
+        "attack_type": "cross_site_scripting",
+        "success": false,
+        "detected": false,
+        "info": "Attack failed",
+        "timestamp": "2025-05-20 15:28:55"
+      },
+      "blue_actions": [],
+      "compromised_nodes": [],
+      "patched_nodes": [
+        1
+      ],
+      "alerts": [],
+      "campaign_status": {
+        "goal": "disruption",
+        "progress": 0.0,
+        "elapsed_time": 0.01461338996887207,
+        "compromised_nodes": 0,
+        "data_collected": 0,
+        "lateral_movements": 0
+      }
+    }
+  ],
+  "summary": {
+    "total_compromised": 0,
+    "total_patched": 1,
+    "red_success_rate": 0.0,
+    "blue_success_rate": 1.0,
+    "simulation_time": 0.6176290512084961,
+    "campaign_goal": "disruption",
+    "campaign_progress": 0.0,
+    "data_collected": 0,
+    "lateral_movements": 0
+  }
+}

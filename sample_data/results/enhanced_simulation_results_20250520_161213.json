@@ -1,0 +1,978 @@
+{
+  "config": {
+    "network_size": "medium",
+    "network_complexity": "high",
+    "num_steps": 15,
+    "red_skill_level": 0.95,
+    "threat_intel_file": "data/threat_intelligence.json",
+    "model_path": null
+  },
+  "steps": [
+    {
+      "step": 1,
+      "red_action": {
+        "strategy": "Planned",
+        "target": 0,
+        "attack_type": "privilege_escalation",
+        "success": false,
+        "detected": false,
+        "zero_day": false,
+        "evasion": false,
+        "info": "Attack failed",
+        "timestamp": "2025-05-20 16:12:14"
+      },
+      "blue_actions": [
+        {
+          "action": "investigate",
+          "node_id": 29,
+          "found_compromise": false,
+          "success": true
+        }
+      ],
+      "compromised_nodes": [],
+      "patched_nodes": [],
+      "alerts": [],
+      "campaign_status": {
+        "goal": "persistence",
+        "progress": 0.0,
+        "compromised_nodes": 0,
+        "data_collected": 0,
+        "lateral_movements": 0
+      }
+    },
+    {
+      "step": 2,
+      "red_action": {
+        "strategy": "Stealthy",
+        "target": 0,
+        "attack_type": "privilege_escalation",
+        "success": false,
+        "detected": false,
+        "zero_day": false,
+        "evasion": true,
+        "info": "Attack failed",
+        "timestamp": "2025-05-20 16:12:14"
+      },
+      "blue_actions": [
+        {
+          "action": "investigate",
+          "node_id": 29,
+          "found_compromise": false,
+          "success": true
+        }
+      ],
+      "compromised_nodes": [],
+      "patched_nodes": [],
+      "alerts": [],
+      "campaign_status": {
+        "goal": "persistence",
+        "progress": 0.0,
+        "compromised_nodes": 0,
+        "data_collected": 0,
+        "lateral_movements": 0
+      }
+    },
+    {
+      "step": 3,
+      "red_action": {
+        "strategy": "Planned",
+        "target": 0,
+        "attack_type": "buffer_overflow",
+        "success": false,
+        "detected": false,
+        "zero_day": false,
+        "evasion": true,
+        "info": "Attack failed",
+        "timestamp": "2025-05-20 16:12:14"
+      },
+      "blue_actions": [
+        {
+          "action": "investigate",
+          "node_id": 31,
+          "found_compromise": false,
+          "success": true
+        },
+        {
+          "action": "investigate",
+          "node_id": 29,
+          "found_compromise": false,
+          "success": true
+        },
+        {
+          "action": "investigate",
+          "node_id": 4,
+          "found_compromise": false,
+          "success": true
+        },
+        {
+          "action": "investigate",
+          "node_id": 17,
+          "found_compromise": false,
+          "success": true
+        }
+      ],
+      "compromised_nodes": [],
+      "patched_nodes": [],
+      "alerts": [
+        {
+          "type": "attempt",
+          "node_id": 0,
+          "attack_type": "buffer_overflow",
+          "timestamp": "now"
+        }
+      ],
+      "campaign_status": {
+        "goal": "persistence",
+        "progress": 0.0,
+        "compromised_nodes": 0,
+        "data_collected": 0,
+        "lateral_movements": 0
+      }
+    },
+    {
+      "step": 4,
+      "red_action": {
+        "strategy": "Planned",
+        "target": 0,
+        "attack_type": "privilege_escalation",
+        "success": false,
+        "detected": false,
+        "zero_day": false,
+        "evasion": true,
+        "info": "Attack failed",
+        "timestamp": "2025-05-20 16:12:14"
+      },
+      "blue_actions": [
+        {
+          "action": "patch",
+          "node_id": 1,
+          "vulnerability_type": "misconfiguration",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 3,
+          "vulnerability_type": "default_credentials",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 2,
+          "vulnerability_type": "cross_site_scripting",
+          "success": true
+        }
+      ],
+      "compromised_nodes": [],
+      "patched_nodes": [
+        1,
+        2,
+        3
+      ],
+      "alerts": [
+        {
+          "type": "attempt",
+          "node_id": 0,
+          "attack_type": "buffer_overflow",
+          "timestamp": "now"
+        }
+      ],
+      "campaign_status": {
+        "goal": "persistence",
+        "progress": 0.0,
+        "compromised_nodes": 0,
+        "data_collected": 0,
+        "lateral_movements": 0
+      }
+    },
+    {
+      "step": 5,
+      "red_action": {
+        "strategy": "Stealthy",
+        "target": 0,
+        "attack_type": "privilege_escalation",
+        "success": false,
+        "detected": false,
+        "zero_day": false,
+        "evasion": false,
+        "info": "Attack failed",
+        "timestamp": "2025-05-20 16:12:14"
+      },
+      "blue_actions": [
+        {
+          "action": "investigate",
+          "node_id": 31,
+          "found_compromise": false,
+          "success": true
+        },
+        {
+          "action": "investigate",
+          "node_id": 29,
+          "found_compromise": false,
+          "success": true
+        },
+        {
+          "action": "investigate",
+          "node_id": 4,
+          "found_compromise": false,
+          "success": true
+        },
+        {
+          "action": "investigate",
+          "node_id": 17,
+          "found_compromise": false,
+          "success": true
+        },
+        {
+          "action": "investigate",
+          "node_id": 16,
+          "found_compromise": false,
+          "success": true
+        }
+      ],
+      "compromised_nodes": [],
+      "patched_nodes": [
+        1,
+        2,
+        3
+      ],
+      "alerts": [
+        {
+          "type": "attempt",
+          "node_id": 0,
+          "attack_type": "buffer_overflow",
+          "timestamp": "now"
+        }
+      ],
+      "campaign_status": {
+        "goal": "persistence",
+        "progress": 0.0,
+        "compromised_nodes": 0,
+        "data_collected": 0,
+        "lateral_movements": 0
+      }
+    },
+    {
+      "step": 6,
+      "red_action": {
+        "strategy": "Planned",
+        "target": 0,
+        "attack_type": "privilege_escalation",
+        "success": false,
+        "detected": false,
+        "zero_day": false,
+        "evasion": true,
+        "info": "Attack failed",
+        "timestamp": "2025-05-20 16:12:14"
+      },
+      "blue_actions": [
+        {
+          "action": "patch",
+          "node_id": 1,
+          "vulnerability_type": "sql_injection",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 3,
+          "vulnerability_type": "buffer_overflow",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 2,
+          "vulnerability_type": "unpatched_cve",
+          "success": true
+        }
+      ],
+      "compromised_nodes": [],
+      "patched_nodes": [
+        1,
+        2,
+        3
+      ],
+      "alerts": [
+        {
+          "type": "attempt",
+          "node_id": 0,
+          "attack_type": "buffer_overflow",
+          "timestamp": "now"
+        },
+        {
+          "type": "attempt",
+          "node_id": 0,
+          "attack_type": "privilege_escalation",
+          "timestamp": "now"
+        }
+      ],
+      "campaign_status": {
+        "goal": "persistence",
+        "progress": 0.0,
+        "compromised_nodes": 0,
+        "data_collected": 0,
+        "lateral_movements": 0
+      }
+    },
+    {
+      "step": 7,
+      "red_action": {
+        "strategy": "Stealthy",
+        "target": 0,
+        "attack_type": "privilege_escalation",
+        "success": false,
+        "detected": false,
+        "zero_day": false,
+        "evasion": true,
+        "info": "Attack failed",
+        "timestamp": "2025-05-20 16:12:14"
+      },
+      "blue_actions": [
+        {
+          "action": "investigate",
+          "node_id": 29,
+          "found_compromise": false,
+          "success": true
+        },
+        {
+          "action": "investigate",
+          "node_id": 17,
+          "found_compromise": false,
+          "success": true
+        },
+        {
+          "action": "investigate",
+          "node_id": 24,
+          "found_compromise": false,
+          "success": true
+        }
+      ],
+      "compromised_nodes": [],
+      "patched_nodes": [
+        1,
+        2,
+        3
+      ],
+      "alerts": [
+        {
+          "type": "attempt",
+          "node_id": 0,
+          "attack_type": "buffer_overflow",
+          "timestamp": "now"
+        },
+        {
+          "type": "attempt",
+          "node_id": 0,
+          "attack_type": "privilege_escalation",
+          "timestamp": "now"
+        },
+        {
+          "type": "attempt",
+          "node_id": 0,
+          "attack_type": "privilege_escalation",
+          "timestamp": "now"
+        }
+      ],
+      "campaign_status": {
+        "goal": "persistence",
+        "progress": 0.0,
+        "compromised_nodes": 0,
+        "data_collected": 0,
+        "lateral_movements": 0
+      }
+    },
+    {
+      "step": 8,
+      "red_action": {
+        "strategy": "Stealthy",
+        "target": 0,
+        "attack_type": "privilege_escalation",
+        "success": false,
+        "detected": false,
+        "zero_day": false,
+        "evasion": true,
+        "info": "Attack failed",
+        "timestamp": "2025-05-20 16:12:14"
+      },
+      "blue_actions": [
+        {
+          "action": "investigate",
+          "node_id": 4,
+          "found_compromise": false,
+          "success": true
+        },
+        {
+          "action": "investigate",
+          "node_id": 24,
+          "found_compromise": false,
+          "success": true
+        },
+        {
+          "action": "investigate",
+          "node_id": 21,
+          "found_compromise": false,
+          "success": true
+        }
+      ],
+      "compromised_nodes": [],
+      "patched_nodes": [
+        1,
+        2,
+        3
+      ],
+      "alerts": [
+        {
+          "type": "attempt",
+          "node_id": 0,
+          "attack_type": "buffer_overflow",
+          "timestamp": "now"
+        },
+        {
+          "type": "attempt",
+          "node_id": 0,
+          "attack_type": "privilege_escalation",
+          "timestamp": "now"
+        },
+        {
+          "type": "attempt",
+          "node_id": 0,
+          "attack_type": "privilege_escalation",
+          "timestamp": "now"
+        }
+      ],
+      "campaign_status": {
+        "goal": "persistence",
+        "progress": 0.0,
+        "compromised_nodes": 0,
+        "data_collected": 0,
+        "lateral_movements": 0
+      }
+    },
+    {
+      "step": 9,
+      "red_action": {
+        "strategy": "Stealthy",
+        "target": 0,
+        "attack_type": "privilege_escalation",
+        "success": false,
+        "detected": false,
+        "zero_day": false,
+        "evasion": true,
+        "info": "Attack failed",
+        "timestamp": "2025-05-20 16:12:14"
+      },
+      "blue_actions": [
+        {
+          "action": "patch",
+          "node_id": 1,
+          "vulnerability_type": "unpatched_cve",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 3,
+          "vulnerability_type": "privilege_escalation",
+          "success": true
+        },
+        {
+          "action": "patch",
+          "node_id": 2,
+          "vulnerability_type": "sql_injection",
+          "success": true
+        }
+      ],
+      "compromised_nodes": [],
+      "patched_nodes": [
+        1,
+        2,
+        3
+      ],
+      "alerts": [
+        {
+          "type": "attempt",
+          "node_id": 0,
+          "attack_type": "buffer_overflow",
+          "timestamp": "now"
+        },
+        {
+          "type": "attempt",
+          "node_id": 0,
+          "attack_type": "privilege_escalation",
+          "timestamp": "now"
+        },
+        {
+          "type": "attempt",
+          "node_id": 0,
+          "attack_type": "privilege_escalation",
+          "timestamp": "now"
+        }
+      ],
+      "campaign_status": {
+        "goal": "persistence",
+        "progress": 0.0,
+        "compromised_nodes": 0,
+        "data_collected": 0,
+        "lateral_movements": 0
+      }
+    },
+    {
+      "step": 10,
+      "red_action": {
+        "strategy": "Planned",
+        "target": 0,
+        "attack_type": "privilege_escalation",
+        "success": false,
+        "detected": false,
+        "zero_day": false,
+        "evasion": true,
+        "info": "Attack failed",
+        "timestamp": "2025-05-20 16:12:14"
+      },
+      "blue_actions": [
+        {
+          "action": "investigate",
+          "node_id": 22,
+          "found_compromise": false,
+          "success": true
+        },
+        {
+          "action": "investigate",
+          "node_id": 21,
+          "found_compromise": false,
+          "success": true
+        },
+        {
+          "action": "investigate",
+          "node_id": 29,
+          "found_compromise": false,
+          "success": true
+        },
+        {
+          "action": "investigate",
+          "node_id": 4,
+          "found_compromise": false,
+          "success": true
+        }
+      ],
+      "compromised_nodes": [],
+      "patched_nodes": [
+        1,
+        2,
+        3
+      ],
+      "alerts": [
+        {
+          "type": "attempt",
+          "node_id": 0,
+          "attack_type": "buffer_overflow",
+          "timestamp": "now"
+        },
+        {
+          "type": "attempt",
+          "node_id": 0,
+          "attack_type": "privilege_escalation",
+          "timestamp": "now"
+        },
+        {
+          "type": "attempt",
+          "node_id": 0,
+          "attack_type": "privilege_escalation",
+          "timestamp": "now"
+        }
+      ],
+      "campaign_status": {
+        "goal": "persistence",
+        "progress": 0.0,
+        "compromised_nodes": 0,
+        "data_collected": 0,
+        "lateral_movements": 0
+      }
+    },
+    {
+      "step": 11,
+      "red_action": {
+        "strategy": "Planned",
+        "target": 0,
+        "attack_type": "privilege_escalation",
+        "success": false,
+        "detected": false,
+        "zero_day": false,
+        "evasion": true,
+        "info": "Attack failed",
+        "timestamp": "2025-05-20 16:12:14"
+      },
+      "blue_actions": [
+        {
+          "action": "investigate",
+          "node_id": 29,
+          "found_compromise": false,
+          "success": true
+        },
+        {
+          "action": "investigate",
+          "node_id": 5,
+          "found_compromise": false,
+          "success": true
+        },
+        {
+          "action": "investigate",
+          "node_id": 4,
+          "found_compromise": false,
+          "success": true
+        },
+        {
+          "action": "investigate",
+          "node_id": 22,
+          "found_compromise": false,
+          "success": true
+        },
+        {
+          "action": "investigate",
+          "node_id": 21,
+          "found_compromise": false,
+          "success": true
+        },
+        {
+          "action": "investigate",
+          "node_id": 15,
+          "found_compromise": false,
+          "success": true
+        }
+      ],
+      "compromised_nodes": [],
+      "patched_nodes": [
+        1,
+        2,
+        3
+      ],
+      "alerts": [
+        {
+          "type": "attempt",
+          "node_id": 0,
+          "attack_type": "buffer_overflow",
+          "timestamp": "now"
+        },
+        {
+          "type": "attempt",
+          "node_id": 0,
+          "attack_type": "privilege_escalation",
+          "timestamp": "now"
+        },
+        {
+          "type": "attempt",
+          "node_id": 0,
+          "attack_type": "privilege_escalation",
+          "timestamp": "now"
+        }
+      ],
+      "campaign_status": {
+        "goal": "persistence",
+        "progress": 0.0,
+        "compromised_nodes": 0,
+        "data_collected": 0,
+        "lateral_movements": 0
+      }
+    },
+    {
+      "step": 12,
+      "red_action": {
+        "strategy": "Planned",
+        "target": 0,
+        "attack_type": "privilege_escalation",
+        "success": false,
+        "detected": false,
+        "zero_day": false,
+        "evasion": true,
+        "info": "Attack failed",
+        "timestamp": "2025-05-20 16:12:14"
+      },
+      "blue_actions": [
+        {
+          "action": "investigate",
+          "node_id": 21,
+          "found_compromise": false,
+          "success": true
+        },
+        {
+          "action": "investigate",
+          "node_id": 4,
+          "found_compromise": false,
+          "success": true
+        },
+        {
+          "action": "investigate",
+          "node_id": 5,
+          "found_compromise": false,
+          "success": true
+        },
+        {
+          "action": "investigate",
+          "node_id": 15,
+          "found_compromise": false,
+          "success": true
+        }
+      ],
+      "compromised_nodes": [],
+      "patched_nodes": [
+        1,
+        2,
+        3
+      ],
+      "alerts": [
+        {
+          "type": "attempt",
+          "node_id": 0,
+          "attack_type": "buffer_overflow",
+          "timestamp": "now"
+        },
+        {
+          "type": "attempt",
+          "node_id": 0,
+          "attack_type": "privilege_escalation",
+          "timestamp": "now"
+        },
+        {
+          "type": "attempt",
+          "node_id": 0,
+          "attack_type": "privilege_escalation",
+          "timestamp": "now"
+        }
+      ],
+      "campaign_status": {
+        "goal": "persistence",
+        "progress": 0.0,
+        "compromised_nodes": 0,
+        "data_collected": 0,
+        "lateral_movements": 0
+      }
+    },
+    {
+      "step": 13,
+      "red_action": {
+        "strategy": "Planned",
+        "target": 0,
+        "attack_type": "privilege_escalation",
+        "success": false,
+        "detected": false,
+        "zero_day": false,
+        "evasion": true,
+        "info": "Attack failed",
+        "timestamp": "2025-05-20 16:12:14"
+      },
+      "blue_actions": [
+        {
+          "action": "investigate",
+          "node_id": 29,
+          "found_compromise": false,
+          "success": true
+        },
+        {
+          "action": "investigate",
+          "node_id": 31,
+          "found_compromise": false,
+          "success": true
+        },
+        {
+          "action": "investigate",
+          "node_id": 5,
+          "found_compromise": false,
+          "success": true
+        }
+      ],
+      "compromised_nodes": [],
+      "patched_nodes": [
+        1,
+        2,
+        3
+      ],
+      "alerts": [
+        {
+          "type": "attempt",
+          "node_id": 0,
+          "attack_type": "buffer_overflow",
+          "timestamp": "now"
+        },
+        {
+          "type": "attempt",
+          "node_id": 0,
+          "attack_type": "privilege_escalation",
+          "timestamp": "now"
+        },
+        {
+          "type": "attempt",
+          "node_id": 0,
+          "attack_type": "privilege_escalation",
+          "timestamp": "now"
+        }
+      ],
+      "campaign_status": {
+        "goal": "persistence",
+        "progress": 0.0,
+        "compromised_nodes": 0,
+        "data_collected": 0,
+        "lateral_movements": 0
+      }
+    },
+    {
+      "step": 14,
+      "red_action": {
+        "strategy": "Planned",
+        "target": 0,
+        "attack_type": "privilege_escalation",
+        "success": false,
+        "detected": false,
+        "zero_day": false,
+        "evasion": true,
+        "info": "Attack failed",
+        "timestamp": "2025-05-20 16:12:14"
+      },
+      "blue_actions": [
+        {
+          "action": "investigate",
+          "node_id": 18,
+          "found_compromise": false,
+          "success": true
+        },
+        {
+          "action": "investigate",
+          "node_id": 31,
+          "found_compromise": false,
+          "success": true
+        },
+        {
+          "action": "investigate",
+          "node_id": 5,
+          "found_compromise": false,
+          "success": true
+        },
+        {
+          "action": "investigate",
+          "node_id": 24,
+          "found_compromise": false,
+          "success": true
+        }
+      ],
+      "compromised_nodes": [],
+      "patched_nodes": [
+        1,
+        2,
+        3
+      ],
+      "alerts": [
+        {
+          "type": "attempt",
+          "node_id": 0,
+          "attack_type": "buffer_overflow",
+          "timestamp": "now"
+        },
+        {
+          "type": "attempt",
+          "node_id": 0,
+          "attack_type": "privilege_escalation",
+          "timestamp": "now"
+        },
+        {
+          "type": "attempt",
+          "node_id": 0,
+          "attack_type": "privilege_escalation",
+          "timestamp": "now"
+        }
+      ],
+      "campaign_status": {
+        "goal": "persistence",
+        "progress": 0.0,
+        "compromised_nodes": 0,
+        "data_collected": 0,
+        "lateral_movements": 0
+      }
+    },
+    {
+      "step": 15,
+      "red_action": {
+        "strategy": "APT29",
+        "target": 0,
+        "attack_type": "buffer_overflow",
+        "success": false,
+        "detected": false,
+        "zero_day": false,
+        "evasion": false,
+        "info": "Attack failed",
+        "timestamp": "2025-05-20 16:12:14"
+      },
+      "blue_actions": [
+        {
+          "action": "investigate",
+          "node_id": 31,
+          "found_compromise": false,
+          "success": true
+        },
+        {
+          "action": "investigate",
+          "node_id": 5,
+          "found_compromise": false,
+          "success": true
+        },
+        {
+          "action": "investigate",
+          "node_id": 24,
+          "found_compromise": false,
+          "success": true
+        },
+        {
+          "action": "investigate",
+          "node_id": 29,
+          "found_compromise": false,
+          "success": true
+        },
+        {
+          "action": "investigate",
+          "node_id": 28,
+          "found_compromise": false,
+          "success": true
+        }
+      ],
+      "compromised_nodes": [],
+      "patched_nodes": [
+        1,
+        2,
+        3
+      ],
+      "alerts": [
+        {
+          "type": "attempt",
+          "node_id": 0,
+          "attack_type": "buffer_overflow",
+          "timestamp": "now"
+        },
+        {
+          "type": "attempt",
+          "node_id": 0,
+          "attack_type": "privilege_escalation",
+          "timestamp": "now"
+        },
+        {
+          "type": "attempt",
+          "node_id": 0,
+          "attack_type": "privilege_escalation",
+          "timestamp": "now"
+        }
+      ],
+      "campaign_status": {
+        "goal": "persistence",
+        "progress": 0.0,
+        "compromised_nodes": 0,
+        "data_collected": 0,
+        "lateral_movements": 0
+      }
+    }
+  ],
+  "summary": {
+    "total_compromised": 0,
+    "total_patched": 3,
+    "red_success_rate": 0.0,
+    "blue_success_rate": 1.0,
+    "simulation_time": 0.6893432140350342,
+    "campaign_goal": "persistence",
+    "campaign_progress": 0.0,
+    "data_collected": 0,
+    "lateral_movements": 0
+  }
+}
