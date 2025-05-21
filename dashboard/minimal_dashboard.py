@@ -445,6 +445,249 @@ def visualize_network(network_data, attack_paths=None):
 
 def main():
     """Main dashboard application"""
+    # Custom CSS with enhanced visual elements
+    st.markdown("""
+    <style>
+        .main-header {
+            font-size: 2.5rem;
+            color: #0066cc;
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+        .sub-header {
+            font-size: 1.5rem;
+            color: #0066cc;
+            margin-top: 1rem;
+            margin-bottom: 0.5rem;
+        }
+        .card {
+            border-radius: 8px;
+            padding: 1.2rem;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .metric-card {
+            background-color: #f0f2f6;
+            border-left: 5px solid #0066cc;
+        }
+        .alert-card {
+            background-color: #fff0f0;
+            border-left: 5px solid #cc0000;
+        }
+        .success-card {
+            background-color: #f0fff0;
+            border-left: 5px solid #00cc00;
+        }
+        .info-text {
+            font-size: 0.9rem;
+            color: #444;
+            margin-top: 0.5rem;
+        }
+        .highlight {
+            color: #0066cc;
+            font-weight: bold;
+            font-size: 2rem;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 3rem;
+            color: #666;
+            font-size: 0.8rem;
+        }
+        .credential-theft-card {
+            background-color: #f8f0ff;
+            border-left: 5px solid #9b59b6;
+            padding: 1.2rem;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .lolbin-card {
+            background-color: #fffaf0;
+            border-left: 5px solid #f39c12;
+            padding: 1.2rem;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .mitre-tag {
+            display: inline-block;
+            background-color: #34495e;
+            color: white;
+            padding: 3px 8px;
+            border-radius: 3px;
+            font-size: 12px;
+            margin-right: 5px;
+            margin-bottom: 5px;
+        }
+        .mitre-tactic {
+            font-weight: bold;
+            margin-top: 10px;
+            margin-bottom: 5px;
+            color: #333333;
+        }
+        .attack-path-card {
+            background-color: #f0f7ff;
+            border-left: 5px solid #3498db;
+            padding: 1.2rem;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .attack-button {
+            background-color: #e74c3c;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-right: 10px;
+            margin-bottom: 10px;
+        }
+        .data-theft-card {
+            background-color: #e8f4f8;
+            border-left: 5px solid #3498db;
+            padding: 1.2rem;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        /* New styles for enhanced dashboard */
+        .overall-result-card {
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+            text-align: center;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+        .overall-result-card h3 {
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+            font-weight: bold;
+            color: #333333;
+        }
+        .overall-result-card p {
+            font-size: 1.1rem;
+            color: #333333;
+            margin-bottom: 0.5rem;
+        }
+        .attack-success {
+            background-color: #ffebee;
+            border: 2px solid #f44336;
+        }
+        .defense-success {
+            background-color: #e8f5e9;
+            border: 2px solid #4caf50;
+        }
+        .progress-container {
+            width: 100%;
+            height: 20px;
+            background-color: #f0f0f0;
+            border-radius: 10px;
+            margin: 10px 0;
+            overflow: hidden;
+        }
+        .progress-bar {
+            height: 100%;
+            background-color: #e74c3c;
+            border-radius: 10px;
+        }
+
+        /* Enhanced credential theft visualization */
+        .credential-details {
+            background-color: #f8f0ff;
+            border-radius: 8px;
+            padding: 15px;
+            margin-top: 10px;
+            border: 1px solid #9b59b6;
+        }
+        .credential-item {
+            padding: 8px;
+            margin-bottom: 5px;
+            background-color: #fff;
+            border-radius: 4px;
+            border-left: 3px solid #9b59b6;
+        }
+
+        /* Enhanced data theft visualization */
+        .data-details {
+            background-color: #e8f4f8;
+            border-radius: 8px;
+            padding: 15px;
+            margin-top: 10px;
+            border: 1px solid #3498db;
+        }
+        .data-item {
+            padding: 8px;
+            margin-bottom: 5px;
+            background-color: #fff;
+            border-radius: 4px;
+            border-left: 3px solid #3498db;
+        }
+
+        /* Fix specific areas with white text on white background */
+        .attack-path-card li {
+            color: #333333; /* Dark text for attack path steps */
+        }
+        .credential-theft-card p, .lolbin-card p, .data-theft-card p {
+            color: #333333; /* Dark text for card content */
+        }
+        .attack-path-step {
+            color: #333333; /* Dark text for attack path steps */
+        }
+
+        /* Fix for Streamlit's tab text */
+        .stTabs [data-baseweb="tab-list"] button [data-testid="stMarkdownContainer"] p {
+            color: #333333; /* Dark text for tab labels */
+        }
+
+        /* Status indicators */
+        .status-success {
+            color: #4caf50;
+            font-weight: bold;
+        }
+        .status-failure {
+            color: #f44336;
+            font-weight: bold;
+        }
+        .status-warning {
+            color: #ff9800;
+            font-weight: bold;
+        }
+
+        /* Enhanced attack technique cards */
+        .technique-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        .technique-name {
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #333333;
+        }
+        .technique-status {
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-weight: bold;
+        }
+        .status-successful {
+            background-color: #ffebee;
+            color: #d32f2f;
+        }
+        .status-failed {
+            background-color: #e8f5e9;
+            color: #388e3c;
+        }
+        .status-detected {
+            background-color: #e3f2fd;
+            color: #1976d2;
+        }
+        .status-undetected {
+            background-color: #fff3e0;
+            color: #e64a19;
+        }
+    </style>
+    """, unsafe_allow_html=True)
+
     # Header
     st.markdown('<h1 class="main-header">HYDRA Advanced Dashboard</h1>', unsafe_allow_html=True)
     st.markdown('<p style="text-align: center;">AI-based Red-Blue simulation platform for automated penetration testing and self-defense</p>', unsafe_allow_html=True)
@@ -520,50 +763,117 @@ def main():
                 st.info("No timeline data available.")
 
         with col2:
-            # Summary metrics
-            st.markdown('<h2 class="sub-header">Simulation Summary</h2>', unsafe_allow_html=True)
+            # Summary metrics with enhanced visual impact
+            st.markdown('<h2 class="sub-header">Simulation Results</h2>', unsafe_allow_html=True)
 
             summary = selected_simulation.get('summary', {})
 
+            # Overall assessment
+            red_success = summary.get('red_success_rate', 0)
+            blue_success = summary.get('blue_success_rate', 0)
+
+            if red_success > blue_success:
+                st.markdown(f"""
+                <div class="overall-result-card attack-success">
+                    <h3>🚨 NETWORK COMPROMISED 🚨</h3>
+                    <p>The red team successfully penetrated the network defenses with a {red_success:.1%} success rate.</p>
+                    <p>Critical vulnerabilities were exploited, leading to significant security breaches.</p>
+                </div>
+                """, unsafe_allow_html=True)
+            else:
+                st.markdown(f"""
+                <div class="overall-result-card defense-success">
+                    <h3>✅ NETWORK DEFENDED ✅</h3>
+                    <p>The blue team successfully defended the network with a {blue_success:.1%} success rate.</p>
+                    <p>Security measures effectively prevented or mitigated potential attacks.</p>
+                </div>
+                """, unsafe_allow_html=True)
+
+            # Detailed metrics
             col_a, col_b = st.columns(2)
             with col_a:
+                total_compromised = summary.get('total_compromised', 0)
                 st.markdown(f"""
-                <div class="card metric-card">
-                    <h3>Compromised</h3>
-                    <h2 class="highlight">{summary.get('total_compromised', 'N/A')}</h2>
-                    <p class="info-text">Total nodes compromised</p>
+                <div class="card {'alert-card' if total_compromised > 0 else 'metric-card'}">
+                    <h3>Compromised Nodes</h3>
+                    <h2 class="highlight">{total_compromised}</h2>
+                    <p class="info-text">{'⚠️ Security breach detected' if total_compromised > 0 else '✅ No nodes compromised'}</p>
                 </div>
                 """, unsafe_allow_html=True)
 
             with col_b:
+                total_patched = summary.get('total_patched', 0)
                 st.markdown(f"""
-                <div class="card metric-card">
-                    <h3>Patched</h3>
-                    <h2 class="highlight">{summary.get('total_patched', 'N/A')}</h2>
-                    <p class="info-text">Total nodes patched</p>
+                <div class="card {'success-card' if total_patched > 0 else 'metric-card'}">
+                    <h3>Patched Nodes</h3>
+                    <h2 class="highlight">{total_patched}</h2>
+                    <p class="info-text">{'✅ Vulnerabilities remediated' if total_patched > 0 else '⚠️ No patches applied'}</p>
                 </div>
                 """, unsafe_allow_html=True)
 
             col_c, col_d = st.columns(2)
             with col_c:
-                red_success = summary.get('red_success_rate', 0)
                 st.markdown(f"""
                 <div class="card {'alert-card' if red_success > 0.5 else 'success-card'}">
-                    <h3>Red Team</h3>
+                    <h3>Red Team Performance</h3>
                     <h2 class="highlight">{red_success:.1%}</h2>
-                    <p class="info-text">Attack success rate</p>
+                    <p class="info-text">{'⚠️ High attack success rate' if red_success > 0.5 else '✅ Low attack success rate'}</p>
                 </div>
                 """, unsafe_allow_html=True)
 
             with col_d:
-                blue_success = summary.get('blue_success_rate', 0)
                 st.markdown(f"""
                 <div class="card {'success-card' if blue_success > 0.5 else 'alert-card'}">
-                    <h3>Blue Team</h3>
+                    <h3>Blue Team Performance</h3>
                     <h2 class="highlight">{blue_success:.1%}</h2>
-                    <p class="info-text">Defense success rate</p>
+                    <p class="info-text">{'✅ Effective defense' if blue_success > 0.5 else '⚠️ Defense needs improvement'}</p>
                 </div>
                 """, unsafe_allow_html=True)
+
+            # Campaign outcome
+            campaign_status = selected_simulation.get('steps', [])[-1].get('campaign_status', {}) if selected_simulation.get('steps') else {}
+            if campaign_status:
+                goal = campaign_status.get('goal', 'Unknown')
+                progress = campaign_status.get('progress', 0)
+
+                if goal == 'data_theft':
+                    goal_display = "Data Theft"
+                    data_collected = campaign_status.get('data_collected', 0)
+
+                    st.markdown(f"""
+                    <div class="card {'alert-card' if progress > 0.5 else 'success-card'}">
+                        <h3>Data Theft Campaign</h3>
+                        <div class="progress-container">
+                            <div class="progress-bar" style="width: {progress*100}%;"></div>
+                        </div>
+                        <p class="info-text">{'⚠️ Critical data compromised' if progress > 0.5 else '✅ Most data protected'}</p>
+                        <p class="info-text">Data sources compromised: {data_collected}</p>
+                    </div>
+                    """, unsafe_allow_html=True)
+                elif goal == 'credential_theft':
+                    goal_display = "Credential Theft"
+                    creds_stolen = campaign_status.get('credentials_stolen', 0)
+
+                    st.markdown(f"""
+                    <div class="card {'alert-card' if progress > 0.5 else 'success-card'}">
+                        <h3>Credential Theft Campaign</h3>
+                        <div class="progress-container">
+                            <div class="progress-bar" style="width: {progress*100}%;"></div>
+                        </div>
+                        <p class="info-text">{'⚠️ Credentials compromised' if progress > 0.5 else '✅ Most credentials protected'}</p>
+                        <p class="info-text">Credentials stolen: {creds_stolen}</p>
+                    </div>
+                    """, unsafe_allow_html=True)
+                else:
+                    st.markdown(f"""
+                    <div class="card {'alert-card' if progress > 0.5 else 'success-card'}">
+                        <h3>{goal.replace('_', ' ').title()} Campaign</h3>
+                        <div class="progress-container">
+                            <div class="progress-bar" style="width: {progress*100}%;"></div>
+                        </div>
+                        <p class="info-text">Campaign progress: {progress*100:.1f}%</p>
+                    </div>
+                    """, unsafe_allow_html=True)
 
             # Compromise vs Patched chart
             st.markdown('<h2 class="sub-header">Security Posture Over Time</h2>', unsafe_allow_html=True)
@@ -573,65 +883,235 @@ def main():
     with tab2:
         st.markdown('<h2 class="sub-header">Advanced Attack Techniques</h2>', unsafe_allow_html=True)
 
-        # Attack paths visualization
+        # Attack paths visualization with enhanced clarity
         st.markdown('<h3>Attack Paths</h3>', unsafe_allow_html=True)
         if attack_paths:
+            # Summary of attack paths
+            total_paths = len(attack_paths)
+            longest_path = max([len(path) for path in attack_paths])
+
+            # Create a summary card
+            st.markdown(f"""
+            <div class="overall-result-card attack-success">
+                <h3>🔍 ATTACK PATHS IDENTIFIED 🔍</h3>
+                <p>HYDRA identified {total_paths} distinct attack path{'s' if total_paths > 1 else ''} through your network.</p>
+                <p>The longest attack path consisted of {longest_path} steps, demonstrating how attackers can chain multiple techniques.</p>
+            </div>
+            """, unsafe_allow_html=True)
+
+            # Display each attack path with enhanced visualization
             for i, path in enumerate(attack_paths):
+                # Create a more descriptive title based on the path
+                first_node = path[0].get('source') if path else "Unknown"
+                last_node = path[-1].get('target') if path else "Unknown"
+
                 path_html = f"""
                 <div class="attack-path-card">
-                    <h4 style="color: #333333;">Attack Path #{i+1} ({len(path)} steps)</h4>
-                    <ol style="color: #333333;">
+                    <div class="technique-header">
+                        <div class="technique-name">Attack Path #{i+1}: Node {first_node} → Node {last_node}</div>
+                        <div class="technique-status status-successful">{len(path)} STEPS</div>
+                    </div>
+
+                    <p style="color: #333333; margin-bottom: 15px;">
+                        This attack path shows how an attacker can move from Node {first_node} to Node {last_node},
+                        potentially gaining access to sensitive data or critical systems.
+                    </p>
+
+                    <div style="background-color: #f8f9fa; border-radius: 8px; padding: 15px; margin-bottom: 15px;">
+                        <h4 style="color: #333333; margin-bottom: 10px;">Step-by-Step Attack Progression</h4>
+                        <ol style="color: #333333;">
                 """
 
-                for step in path:
+                for j, step in enumerate(path):
+                    source = step.get('source')
+                    target = step.get('target')
+                    technique = step.get('technique')
+                    timestamp = step.get('timestamp')
+
+                    # Add more context based on the technique
+                    technique_description = ""
+                    if 'exploit' in technique.lower():
+                        technique_description = "Exploited a vulnerability to gain initial access"
+                    elif 'lateral' in technique.lower():
+                        technique_description = "Moved laterally to expand access within the network"
+                    elif 'privilege' in technique.lower():
+                        technique_description = "Escalated privileges to gain higher-level access"
+                    elif 'credential' in technique.lower():
+                        technique_description = "Stole credentials to authenticate as a legitimate user"
+                    elif 'data' in technique.lower():
+                        technique_description = "Accessed and exfiltrated sensitive data"
+                    else:
+                        technique_description = "Used attack technique to compromise the target"
+
                     path_html += f"""
-                    <li style="color: #333333;">
-                        Node {step.get('source')} → Node {step.get('target')} using {step.get('technique')} ({step.get('timestamp')})
+                    <li style="color: #333333; margin-bottom: 10px;">
+                        <strong>Step {j+1}:</strong> Node {source} → Node {target}
+                        <div style="margin-left: 20px; margin-top: 5px;">
+                            <div><strong>Technique:</strong> {technique}</div>
+                            <div><strong>Description:</strong> {technique_description}</div>
+                            <div><strong>Timestamp:</strong> {timestamp}</div>
+                        </div>
                     </li>
                     """
 
                 path_html += """
-                    </ol>
+                        </ol>
+                    </div>
+
+                    <div style="margin-top: 15px;">
+                        <strong>Recommendation:</strong> Implement network segmentation and least privilege access controls to break this attack path and prevent lateral movement.
+                    </div>
                 </div>
                 """
                 st.markdown(path_html, unsafe_allow_html=True)
         else:
             st.info("No attack paths detected in this simulation.")
 
-        # Credential theft section
+        # Credential theft section with enhanced visualization
         st.markdown('<h3>Credential Theft Techniques</h3>', unsafe_allow_html=True)
         if credential_theft_attempts:
+            # Summary of credential theft
+            successful_attempts = sum(1 for attempt in credential_theft_attempts if attempt.get('success', False))
+            total_attempts = len(credential_theft_attempts)
+
+            # Create a summary card
+            st.markdown(f"""
+            <div class="overall-result-card {'attack-success' if successful_attempts > 0 else 'defense-success'}">
+                <h3>{'🔑 CREDENTIALS COMPROMISED 🔑' if successful_attempts > 0 else '🔒 CREDENTIALS PROTECTED 🔒'}</h3>
+                <p>{'Attackers successfully stole credentials from ' + str(successful_attempts) + ' node(s).' if successful_attempts > 0 else 'All credential theft attempts were blocked.'}</p>
+                <p>Success rate: {successful_attempts}/{total_attempts} attempts ({successful_attempts/total_attempts*100:.1f}%)</p>
+            </div>
+            """, unsafe_allow_html=True)
+
+            # Display each credential theft attempt with enhanced visualization
             for attempt in credential_theft_attempts:
                 success = attempt.get('success', False)
                 detected = attempt.get('detected', False)
 
+                # Determine status classes
+                success_class = "status-successful" if success else "status-failed"
+                detection_class = "status-undetected" if success and not detected else "status-detected"
+
                 st.markdown(f"""
                 <div class="credential-theft-card">
-                    <h4 style="color: #333333;">Credential Theft on Node {attempt.get('node_id')}</h4>
-                    <p style="color: #333333;"><strong style="color: #333333;">Technique:</strong> {attempt.get('technique')}</p>
-                    <p style="color: #333333;"><strong style="color: #333333;">Status:</strong> {'Successful' if success else 'Failed'} {'(Detected)' if detected else '(Undetected)'}</p>
-                    <p style="color: #333333;"><strong style="color: #333333;">Timestamp:</strong> {attempt.get('timestamp')}</p>
+                    <div class="technique-header">
+                        <div class="technique-name">Credential Theft on Node {attempt.get('node_id')}</div>
+                        <div class="technique-status {success_class}">{'SUCCESSFUL' if success else 'FAILED'}</div>
+                    </div>
+
+                    <div class="credential-details">
+                        <div class="credential-item">
+                            <strong>Technique:</strong> {attempt.get('technique')}
+                        </div>
+                        <div class="credential-item">
+                            <strong>Detection Status:</strong> <span class="{detection_class}">{('UNDETECTED' if success else 'DETECTED') if not detected else 'DETECTED'}</span>
+                        </div>
+                        <div class="credential-item">
+                            <strong>Timestamp:</strong> {attempt.get('timestamp')}
+                        </div>
+                        <div class="credential-item">
+                            <strong>Impact:</strong> {
+                                'Critical - Attacker gained access to credentials that can be used for further attacks.' if success else
+                                'None - The credential theft attempt was blocked.'
+                            }
+                        </div>
+                    </div>
+
+                    <div style="margin-top: 15px;">
+                        <strong>Recommendation:</strong> {
+                            'Implement multi-factor authentication and credential guard to prevent this type of attack.' if success else
+                            'Continue monitoring for similar attacks and maintain current security controls.'
+                        }
+                    </div>
                 </div>
                 """, unsafe_allow_html=True)
         else:
             st.info("No credential theft attempts detected in this simulation.")
 
-        # Living-off-the-land section
+        # Living-off-the-land section with enhanced visualization
         st.markdown('<h3>Living-Off-The-Land Techniques</h3>', unsafe_allow_html=True)
         if lolbin_techniques:
-            for technique in lolbin_techniques:
-                success = technique.get('success', False)
-                detected = technique.get('detected', False)
+            # Summary of LOLBin techniques
+            successful_techniques = sum(1 for technique in lolbin_techniques if technique.get('success', False))
+            total_techniques = len(lolbin_techniques)
 
-                st.markdown(f"""
-                <div class="lolbin-card">
-                    <h4 style="color: #333333;">LOLBin Technique on Node {technique.get('node_id')}</h4>
-                    <p style="color: #333333;"><strong style="color: #333333;">Technique:</strong> {technique.get('technique')}</p>
-                    <p style="color: #333333;"><strong style="color: #333333;">Purpose:</strong> {technique.get('purpose', 'Unknown')}</p>
-                    <p style="color: #333333;"><strong style="color: #333333;">Status:</strong> {'Successful' if success else 'Failed'} {'(Detected)' if detected else '(Undetected)'}</p>
-                    <p style="color: #333333;"><strong style="color: #333333;">Timestamp:</strong> {technique.get('timestamp')}</p>
-                </div>
-                """, unsafe_allow_html=True)
+            # Create a summary card
+            st.markdown(f"""
+            <div class="overall-result-card {'attack-success' if successful_techniques > 0 else 'defense-success'}">
+                <h3>{'⚠️ SYSTEM TOOLS ABUSED ⚠️' if successful_techniques > 0 else '✅ SYSTEM TOOLS PROTECTED ✅'}</h3>
+                <p>{'Attackers successfully used legitimate system tools for malicious purposes on ' + str(successful_techniques) + ' node(s).' if successful_techniques > 0 else 'All attempts to abuse system tools were blocked.'}</p>
+                <p>Success rate: {successful_techniques}/{total_techniques} attempts ({successful_techniques/total_techniques*100:.1f}%)</p>
+            </div>
+            """, unsafe_allow_html=True)
+
+            # Group techniques by purpose
+            techniques_by_purpose = {}
+            for technique in lolbin_techniques:
+                purpose = technique.get('purpose', 'Unknown')
+                if purpose not in techniques_by_purpose:
+                    techniques_by_purpose[purpose] = []
+                techniques_by_purpose[purpose].append(technique)
+
+            # Display techniques grouped by purpose
+            for purpose, techniques in techniques_by_purpose.items():
+                st.markdown(f"<h4>Purpose: {purpose.replace('_', ' ').title()}</h4>", unsafe_allow_html=True)
+
+                for technique in techniques:
+                    success = technique.get('success', False)
+                    detected = technique.get('detected', False)
+
+                    # Determine status classes
+                    success_class = "status-successful" if success else "status-failed"
+                    detection_class = "status-undetected" if success and not detected else "status-detected"
+
+                    # Get a description based on the technique
+                    technique_name = technique.get('technique', '').lower()
+                    description = ""
+                    if 'powershell' in technique_name:
+                        description = "PowerShell was used to execute commands with potentially elevated privileges, bypassing security controls."
+                    elif 'wmic' in technique_name:
+                        description = "Windows Management Instrumentation Command-line was used to gather system information or execute commands."
+                    elif 'certutil' in technique_name:
+                        description = "Certificate utility was abused to download files from the internet, bypassing download restrictions."
+                    elif 'regsvr32' in technique_name:
+                        description = "Regsvr32 was used to execute arbitrary code, bypassing application whitelisting."
+                    elif 'mshta' in technique_name:
+                        description = "Microsoft HTML Application host was used to execute arbitrary code, bypassing security controls."
+                    else:
+                        description = f"The {technique_name} tool was used for malicious purposes, potentially bypassing security controls."
+
+                    st.markdown(f"""
+                    <div class="lolbin-card">
+                        <div class="technique-header">
+                            <div class="technique-name">LOLBin: {technique.get('technique')} on Node {technique.get('node_id')}</div>
+                            <div class="technique-status {success_class}">{'SUCCESSFUL' if success else 'FAILED'}</div>
+                        </div>
+
+                        <p style="color: #333333; margin-bottom: 15px;">{description}</p>
+
+                        <div class="credential-details">
+                            <div class="credential-item">
+                                <strong>Detection Status:</strong> <span class="{detection_class}">{('UNDETECTED' if success else 'DETECTED') if not detected else 'DETECTED'}</span>
+                            </div>
+                            <div class="credential-item">
+                                <strong>Timestamp:</strong> {technique.get('timestamp')}
+                            </div>
+                            <div class="credential-item">
+                                <strong>Impact:</strong> {
+                                    'High - Attacker used legitimate system tools to evade detection and maintain persistence.' if success else
+                                    'None - The attempt to abuse system tools was blocked.'
+                                }
+                            </div>
+                        </div>
+
+                        <div style="margin-top: 15px;">
+                            <strong>Recommendation:</strong> {
+                                'Implement application control policies and monitor for suspicious use of system utilities.' if success else
+                                'Continue monitoring for similar attacks and maintain current security controls.'
+                            }
+                        </div>
+                    </div>
+                    """, unsafe_allow_html=True)
         else:
             st.info("No living-off-the-land techniques detected in this simulation.")
 
